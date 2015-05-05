@@ -1,9 +1,10 @@
 fileFormatVersion: 2
-guid: 59a84b50fda816540834da4edf7778ef
-timeCreated: 1430786079
+guid: ac7372d3def8fbd49bf3509d4e883355
+timeCreated: 1430788886
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: JapaneseVillage_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -48,7 +49,17 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: JapaneseVillage_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1216
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
