@@ -27,7 +27,6 @@ using Random = UnityEngine.Random;      //Tells Random to use the Unity Engine r
 		public int rows = 20;                                            //Number of rows in our game board.
 		public Count rockCount = new Count (5, 9);                      //Lower and upper limit for our random number of rocks per level.
 		public Count barrelCount = new Count (1, 5);                      //Lower and upper limit for our random number of barrels per level.
-		public GameObject exit;                                         //Prefab to spawn for exit.
 		public GameObject[] floorTiles;                                 //Array of floor prefabs.
 		public GameObject[] rockTiles;                                  //Array of wall prefabs.
 		public GameObject[] barrelTiles;                                  //Array of food prefabs.
@@ -54,7 +53,7 @@ using Random = UnityEngine.Random;      //Tells Random to use the Unity Engine r
 			//Spawn enemies with the game manager
 			
 			//Instantiate the exit tile in the upper right hand corner of our game board
-			Instantiate (exit, new Vector3 (columns - 1, rows - 1, 0f), Quaternion.identity);
+			//Instantiate (exit, new Vector3 (columns - 1, rows - 1, 0f), Quaternion.identity);
 		}
 		
 		
