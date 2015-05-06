@@ -4,7 +4,7 @@ using System.Collections;
 public class GameManager : MonoBehaviour 
 {
 	//Our level generator
-	public LevelGen gen;
+	public LevelGen generator;
 	public static GameManager instance = null;              //Static instance of GameManager which allows it to be accessed by any other script.
 	private int level = 3;
 
@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
 		DontDestroyOnLoad(gameObject);
 		
 		//Get a component reference to the attached BoardManager script
-		boardScript = GetComponent<BoardManager>();
+		generator = GetComponent<LevelGen>();
 		
 		//Call the InitGame function to initialize the first level 
 		InitGame();
@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
 	void InitGame()
 	{
 		//Call the SetupScene function of the BoardManager script, pass it current level number.
-		boardScript.SetupScene(level);
+		generator.SetupScene(level);
 		
 	}
 	
