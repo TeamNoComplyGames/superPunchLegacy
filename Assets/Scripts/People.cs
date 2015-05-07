@@ -31,7 +31,6 @@ public abstract class People : MonoBehaviour
 	//Move takes parameters for x direction, y direction and a RaycastHit2D to check collision.
 	protected bool Move (int xDir, int yDir, out RaycastHit2D hit)
 	{
-		Debug.Log ("person move");
 		//Store start position to move from, based on objects current transform position.
 		Vector2 start = transform.position;
 		
@@ -46,13 +45,10 @@ public abstract class People : MonoBehaviour
 		
 		//Re-enable boxCollider after linecast
 		boxCollider.enabled = true;
-
-		Debug.Log (hit.transform);
 		
 		//Check if anything was hit
 		if(hit.transform == null)
 		{
-			Debug.Log ("WE MOVIN NIGGGmove");
 			//If nothing was hit, start SmoothMovement co-routine passing in the Vector2 end as destination
 			StartCoroutine (SmoothMovement (end));
 			
@@ -83,9 +79,9 @@ public abstract class People : MonoBehaviour
 			
 			//Recalculate the remaining distance after moving.
 			sqrRemainingDistance = (transform.position - end).sqrMagnitude;
-			
+			Debug.Log(end.y);
 			//Return and loop until sqrRemainingDistance is close enough to zero to end the function
-			yield return null;
+				yield return null;
 		}
 	}
 	

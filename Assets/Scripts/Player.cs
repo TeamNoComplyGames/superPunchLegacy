@@ -28,10 +28,26 @@ public class Player : People
 		vertical = (int) (Input.GetAxisRaw ("Vertical"));
 
 		//Get our input
-		if (Input.GetKeyDown( KeyCode.W) )
-		{
-			//Add to vertical
-			vertical++;
+		if (horizontal == 0 && vertical == 0) {
+			if (Input.GetKeyDown (KeyCode.W)) {
+				//Add to vertical
+				++vertical;
+			}
+
+			if (Input.GetKeyDown (KeyCode.D)) {
+				//Add to Horizontal
+				++horizontal;
+			}
+
+			if (Input.GetKeyDown (KeyCode.A)) {
+				//Add to horizontal
+				--horizontal;
+			}
+
+			if (Input.GetKeyDown (KeyCode.S)) {
+				//Add to vertical
+				--vertical;
+			}
 		}
 		
 		//Check if moving horizontally, if so set vertical to zero.
@@ -53,7 +69,6 @@ public class Player : People
 	//AttemptMove takes a generic parameter T which for Player will be of the type Wall, it also takes integers for x and y direction to move in.
 	protected override void AttemptMove <T> (int xDir, int yDir)
 	{
-		Debug.Log ("player attempt move");
 		//Call the AttemptMove method of the base class, passing in the component T (in this case Wall) and x and y direction to move.
 		base.AttemptMove <T> (xDir, yDir);
 		
