@@ -47,6 +47,6 @@ public class GameManager : MonoBehaviour
 	//Update is called every frame.
 	void Update()
 	{
-		
+		return;
 	}
 }

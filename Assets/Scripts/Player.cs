@@ -27,29 +27,6 @@ public class Player : People
 		//Get input from the input manager, round it to an integer and store in vertical to set y axis move direction
 		vertical = (int) (Input.GetAxisRaw ("Vertical"));
 
-		//Get our input
-		if (horizontal == 0 && vertical == 0) {
-			if (Input.GetKeyDown (KeyCode.W)) {
-				//Add to vertical
-				++vertical;
-			}
-
-			if (Input.GetKeyDown (KeyCode.D)) {
-				//Add to Horizontal
-				++horizontal;
-			}
-
-			if (Input.GetKeyDown (KeyCode.A)) {
-				//Add to horizontal
-				--horizontal;
-			}
-
-			if (Input.GetKeyDown (KeyCode.S)) {
-				//Add to vertical
-				--vertical;
-			}
-		}
-		
 		//Check if moving horizontally, if so set vertical to zero.
 		if(horizontal != 0)
 		{
