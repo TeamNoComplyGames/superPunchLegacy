@@ -1,9 +1,12 @@
 fileFormatVersion: 2
 guid: 77cf737efc972e941aebab4450227565
-timeCreated: 1430965249
+timeCreated: 1430966299
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: NinjaF-1
+    21300002: NinjaF-2
+    21300004: NinjaF-3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -48,7 +51,37 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: NinjaF-1
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 167
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaF-2
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 166
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaF-3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 166
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
