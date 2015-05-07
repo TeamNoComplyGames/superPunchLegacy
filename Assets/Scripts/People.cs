@@ -46,6 +46,8 @@ public abstract class People : MonoBehaviour
 		
 		//Re-enable boxCollider after linecast
 		boxCollider.enabled = true;
+
+		Debug.Log (hit.transform);
 		
 		//Check if anything was hit
 		if(hit.transform == null)
