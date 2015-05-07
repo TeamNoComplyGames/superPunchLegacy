@@ -53,6 +53,7 @@ public class Player : People
 	//AttemptMove takes a generic parameter T which for Player will be of the type Wall, it also takes integers for x and y direction to move in.
 	protected override void AttemptMove <T> (int xDir, int yDir)
 	{
+		Debug.Log ("player attempt move");
 		//Call the AttemptMove method of the base class, passing in the component T (in this case Wall) and x and y direction to move.
 		base.AttemptMove <T> (xDir, yDir);
 		
@@ -71,5 +72,6 @@ public class Player : People
 	protected override void OnCantMove <T> (T component)
 	{
 		//Fill with stuff when we cant move
+		Debug.Log ("HHHHH");
 	}
 }
