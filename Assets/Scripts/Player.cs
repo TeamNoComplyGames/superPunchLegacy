@@ -10,7 +10,8 @@ public class Player : MonoBehaviour
 
 	//Our player stats
 	private int health;
-	private int level;
+	//Static makes it available to other classes
+	public static int level;
 	private int exp;
 
 	// Use this for initialization
