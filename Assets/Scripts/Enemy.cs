@@ -36,12 +36,13 @@ public class Enemy : MonoBehaviour
 	//Function to move our player
 	void Move ()
 	{
-		//Create a vector to where we are moving
-		//Vector2 movement = new Vector3(Player.player.position.x, Player.player.position.y); 
+		//Create a vector to where we are moving;
+		Vector2 playerPos = GameObject.Find ("Person").transform.position;
+		Vector2 movement = new Vector2(playerPos.x, playerPos.y); 
 		//Get our speed according to our current level
 		float superSpeed = emoveSpeed + (elevel / 15);
 		
 		//Move to that position
-		//enemy.MovePosition(enemy.position + movement * superSpeed);
+		enemy.MovePosition(enemy.position + movement * superSpeed);
 	}
 }

@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
 		float h = Input.GetAxis("Horizontal");
 		float v = Input.GetAxis("Vertical"); 
 		//Create a vector to where we are moving
-		Vector2 movement = new Vector3(h, v); 
+		Vector2 movement = new Vector2(h, v); 
 		//Get our speed according to our current level
 		float superSpeed = moveSpeed + (level / 10);
 
