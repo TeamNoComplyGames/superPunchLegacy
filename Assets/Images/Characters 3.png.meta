@@ -1,9 +1,12 @@
 fileFormatVersion: 2
 guid: d33ca60632d71414cb89a0c451ce01cd
-timeCreated: 1430965249
+timeCreated: 1431208423
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Characters 3_0
+    21300002: Characters 3_1
+    21300004: Characters 3_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -48,7 +51,37 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Characters 3_0
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 166
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Characters 3_1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 167
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Characters 3_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 166
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
