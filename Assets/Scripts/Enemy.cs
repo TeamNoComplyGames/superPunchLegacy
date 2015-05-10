@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour
 	void Update ()
 	{
 		//Move our player
-		Move();
+		//Move();
 		
 		//Attacks with our player (Check for a level up here as well)
 	}
@@ -38,7 +38,20 @@ public class Enemy : MonoBehaviour
 	{
 		//Create a vector to where we are moving;
 		Vector2 playerPos = GameObject.Find ("Person").transform.position;
-		Vector2 movement = new Vector2(playerPos.x, playerPos.y); 
+
+		//Get our h and v
+		float h = playerPos.x;
+		float v = playerPos.y;
+
+		while (h > 1 && h < -1) {
+			h = h / 10;
+		}
+
+		while (v > 1 && v < -1) {
+			v = v / 10;
+		}
+
+		Vector2 movement = new Vector2(h, v); 
 		//Get our speed according to our current level
 		float superSpeed = emoveSpeed + (elevel / 15);
 		
