@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8f2668fe5d8659942b1784f5a74bc5c3
-timeCreated: 1431240150
+timeCreated: 1431242639
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -12,6 +12,7 @@ TextureImporter:
     21300010: Dojo Tileset_5
     21300012: Dojo Tileset_6
     21300014: Dojo Tileset_7
+    21300016: Dojo Tileset_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -134,6 +135,16 @@ TextureImporter:
         y: 416
         width: 25
         height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dojo Tileset_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 725
+        width: 32
+        height: 11
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
