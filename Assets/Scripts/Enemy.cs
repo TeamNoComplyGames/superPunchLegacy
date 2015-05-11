@@ -12,6 +12,9 @@ public class Enemy : MonoBehaviour
 	private int ehealth;
 	//Static makes it available to other classes
 	private int elevel;
+
+	//Our target to fight
+	public Transform player;
 	
 	// Use this for initialization
 	void Start () 
@@ -28,7 +31,7 @@ public class Enemy : MonoBehaviour
 	void Update ()
 	{
 		//Move our player
-		//Move();
+		Move();
 		
 		//Attacks with our player (Check for a level up here as well)
 	}
@@ -36,26 +39,10 @@ public class Enemy : MonoBehaviour
 	//Function to move our player
 	void Move ()
 	{
-		//Create a vector to where we are moving;
-		Vector2 playerPos = GameObject.Find ("Person").transform.position;
-
-		//Get our h and v
-		float h = playerPos.x;
-		float v = playerPos.y;
-
-		while (h > 1 && h < -1) {
-			h = h / 10;
-		}
-
-		while (v > 1 && v < -1) {
-			v = v / 10;
-		}
-
-		Vector2 movement = new Vector2(h, v); 
 		//Get our speed according to our current level
 		float superSpeed = emoveSpeed + (elevel / 15);
 		
-		//Move to that position
-		enemy.MovePosition(enemy.position + movement * superSpeed);
+		//Get the position we want to move to, and go to it using move towards
+		transform.position =  Vector2.MoveTowards(transform.position, player.position, superSpeed * Time.deltaTime);
 	}
 }
