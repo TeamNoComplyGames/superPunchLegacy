@@ -1,9 +1,25 @@
 fileFormatVersion: 2
 guid: 38c02271f76adea41bfb79571a0922b4
-timeCreated: 1430965248
+timeCreated: 1431385506
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: NinjaB1
+    21300002: NinjaB2
+    21300004: NinjaB3
+    21300006: NinjaB4
+    21300008: NinjaR1
+    21300010: NinjaR2
+    21300012: NinjaR3
+    21300014: NinjaR4
+    21300016: NinjaF1
+    21300018: NinjaF2
+    21300020: NinjaF3
+    21300022: NinjaF4
+    21300024: NinjaL1
+    21300026: NinjaL2
+    21300028: NinjaL3
+    21300030: NinjaL4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -48,7 +64,167 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: NinjaB1
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1001
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaB2
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1000
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaB3
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 1000
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaB4
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1000
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaR1
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 980
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaR2
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 980
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaR3
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 980
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaR4
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 980
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaF1
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 961
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaF2
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 960
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaF3
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 960
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaF4
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 960
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaL1
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 940
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaL2
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 940
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaL3
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 940
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaL4
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 940
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

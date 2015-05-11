@@ -1,12 +1,21 @@
 fileFormatVersion: 2
 guid: 77cf737efc972e941aebab4450227565
-timeCreated: 1430966299
+timeCreated: 1431384985
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: NinjaF-1
     21300002: NinjaF-2
     21300004: NinjaF-3
+    21300006: NinjaR-1
+    21300008: NinjaR-2
+    21300010: NinjaR-3
+    21300012: NinjaB-3
+    21300014: NinjaB-2
+    21300016: NinjaB-1
+    21300018: NinjaL-1
+    21300020: NinjaL-2
+    21300022: NinjaL-3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -77,6 +86,96 @@ TextureImporter:
         serializedVersion: 2
         x: 194
         y: 166
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaR-1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 184
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaR-2
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 185
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaR-3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 184
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaB-3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 202
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaB-2
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 203
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaB-1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 201
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaL-1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 148
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaL-2
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 149
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaL-3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 148
         width: 13
         height: 17
       alignment: 0
