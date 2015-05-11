@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
 	private int elevel;
 
 	//Our target to fight
-	public Transform player;
+	private Transform player;
 	
 	// Use this for initialization
 	void Start () 
@@ -25,6 +25,9 @@ public class Enemy : MonoBehaviour
 		if (elevel <= 0)
 			elevel = 1;
 		ehealth = elevel * 2;
+
+		//Go after our player!
+		player = GameObject.Find("Person").transform;
 	}
 	
 	//Called every frame
