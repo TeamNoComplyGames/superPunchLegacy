@@ -104,7 +104,7 @@ public class GameManager : MonoBehaviour
 		//Now re-create our spawn rates
 		//Get our enemy index
 		int enemyIndex = Random.Range (0, enemies.Length);
-		Instantiate(Resources.Load("Enemy"), spawnPos, Quaternion.identity); 
+		Instantiate(enemies[enemyIndex], spawnPos, Quaternion.identity); 
 
 	}
 }
