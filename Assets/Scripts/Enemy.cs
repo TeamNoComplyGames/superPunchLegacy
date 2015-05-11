@@ -19,12 +19,15 @@ public class Enemy : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		int playerLevel = Player.level;
+		int playerLevel = Player.playerLevel;
 		//Create our enemy based off our the player's current level
 		elevel = playerLevel / 2;
 		if (elevel <= 0)
 			elevel = 1;
 		ehealth = elevel * 2;
+
+		//Set the mass of the rigid body to be really hgihg so they dont go flying
+		enemy.mass = 10000;
 
 		//Go after our player!
 		player = GameObject.Find("Person").transform;

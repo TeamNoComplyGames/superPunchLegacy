@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
 	//Our player stats
 	private int health;
 	//Static makes it available to other classes
-	public static int level;
+	public static int playerLevel;
 	private int exp;
 
 	// Use this for initialization
@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
 	{
 		//Set our default values
 		health = 5;
-		level = 1;
+		playerLevel = 1;
 		exp = 0;
 	}
 
@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
 		//Create a vector to where we are moving
 		Vector2 movement = new Vector2(h, v); 
 		//Get our speed according to our current level
-		float superSpeed = moveSpeed + (level / 10);
+		float superSpeed = moveSpeed + (playerLevel / 10);
 
 		//Move to that position
 		player.MovePosition(player.position + movement * superSpeed);
