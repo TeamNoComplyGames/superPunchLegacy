@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
+using System; //Allows us to catch exception
 using System.Collections;
-using System.Collections.Generic;       //Allows us to use Lists.
 
 public class GameManager : MonoBehaviour 
 {
@@ -77,34 +77,41 @@ public class GameManager : MonoBehaviour
 		float enemyY = 0;
 		if(userPos.x > this.transform.position.x)
 		{
-			enemyX = Random.Range(2, 48);
+			enemyX = UnityEngine.Random.Range(2, 48);
 		}
 		//Less than or equal to
 		else
 		{
-			enemyX = Random.Range(60, 98);
+			enemyX = UnityEngine.Random.Range(60, 98);
 		}
 		
 		if(userPos.y > this.transform.position.y)
 		{
-			enemyY = Random.Range(-24, -44);
+			enemyY = UnityEngine.Random.Range(-24, -44);
 		}
 		//Less than or equal to
 		else
 		{
-			enemyY = Random.Range(1, -17);
+			enemyY = UnityEngine.Random.Range(1, -17);
 		}
 		
 		//Now create a vector with our x and y
 		Vector2 spawnPos = new Vector2(enemyX,enemyY);
-		
-		//Now spawn our enemy, our prefab, our spawn position, 0,0,0 rotation
-		Debug.Log("Spawning!");
 
 		//Now re-create our spawn rates
 		//Get our enemy index
-		int enemyIndex = Random.Range (0, enemies.Length);
-		Instantiate(enemies[enemyIndex], spawnPos, Quaternion.identity); 
+		int enemyIndex = UnityEngine.Random.Range (0, enemies.Length);
+
+		//Try catch for index out of range
+		try
+		{
+			Instantiate (enemies [enemyIndex], spawnPos, Quaternion.identity); 
+		}
+		catch(IndexOutOfRangeException ex)
+		{
+			//Print our exception to the console
+			Debug.Log(ex);
+		}
 
 	}
 }
