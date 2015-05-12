@@ -57,7 +57,8 @@ public class GameManager : MonoBehaviour
 		CancelInvoke();
 
 		//Now invoke our enemies
-		InvokeRepeating("spawnEnemies", 0 , spawnRate / Player.playerLevel);
+		float superRate = spawnRate / Player.playerLevel;
+		InvokeRepeating("spawnEnemies", 0 , superRate);
 	}
 
 
@@ -100,17 +101,18 @@ public class GameManager : MonoBehaviour
 
 		//Now re-create our spawn rates
 		//Get our enemy index
-		int enemyIndex = UnityEngine.Random.Range (0, enemies.Length);
+		int enemyIndex = (int) Mathf.Floor(UnityEngine.Random.Range (0, enemies.Length - 1));
 
 		//Try catch for index out of range
 		try
 		{
-			Instantiate (enemies [enemyIndex], spawnPos, Quaternion.identity); 
+			//create a copy of our gameobject
+			Instantiate (enemies[enemyIndex], spawnPos, Quaternion.identity);
 		}
 		catch(IndexOutOfRangeException ex)
 		{
 			//Print our exception to the console
-			Debug.Log(ex);
+			print(ex);
 		}
 
 	}

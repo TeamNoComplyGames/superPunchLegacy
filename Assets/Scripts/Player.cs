@@ -111,11 +111,9 @@ public class Player : MonoBehaviour
 		//check if we are attacking
 		if (attacking) 
 		{
-			Debug.Log(collision.gameObject.GetType());
 			//Check if it is an enemy
 			if(collision.gameObject.tag == "Enemy")
 			{
-				Debug.Log("we made it!");
 				Enemy e = (Enemy) collision.gameObject.GetComponent("Enemy");
 				e.ehealth = e.ehealth - 1;
 			}

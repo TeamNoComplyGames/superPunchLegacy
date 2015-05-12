@@ -15,10 +15,17 @@ public class Enemy : MonoBehaviour
 
 	//Our target to fight
 	private Transform player;
+
+	private Animator animator;   //Used to store a reference to the Player's animator component.
 	
 	// Use this for initialization
 	void Start () 
 	{
+
+		//Get a component reference to the Player's animator component
+		animator = GetComponent<Animator>();
+
+
 		int playerLevel = Player.playerLevel;
 		//Create our enemy based off our the player's current level
 		elevel = playerLevel / 2;
