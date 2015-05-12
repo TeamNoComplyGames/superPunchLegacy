@@ -14,9 +14,14 @@ public class Player : MonoBehaviour
 	public static int playerLevel;
 	private int exp;
 
+	private Animator animator;   //Used to store a reference to the Player's animator component.
+
 	// Use this for initialization
 	void Start () 
 	{
+		//Get a component reference to the Player's animator component
+		animator = GetComponent<Animator>();
+
 		//Set our default values
 		health = 5;
 		playerLevel = 1;
@@ -30,6 +35,9 @@ public class Player : MonoBehaviour
 		Move();
 
 		//Attacks with our player (Check for a level up here as well)
+		//Set the attack trigger of the player's animation controller in order to play the player's attack animation.
+		animator.SetTrigger ("Attack");
+
 	}
 
 	//Function to move our player
@@ -38,6 +46,36 @@ public class Player : MonoBehaviour
 		//Get our input
 		float h = Input.GetAxis("Horizontal");
 		float v = Input.GetAxis("Vertical"); 
+
+		//animate to the direction we are going to move
+		//Find the greatest absolute value to get most promenint direction
+		/*
+		 * 		2
+		 * 3		1
+		 * 		0
+		 * */
+		if (Mathf.Abs (h * 100) > Mathf.Abs (v * 100)) 
+		{
+			if(h > 0)
+			{
+				animator.SetInteger("Direction", 1);
+			}
+			else
+			{
+				animator.SetInteger("Direction", 3);
+			}
+		} 
+		else 
+		{
+			if(v > 0)
+			{
+				animator.SetInteger("Direction", 2);
+			}
+			else
+			{
+				animator.SetInteger("Direction", 0);
+			}
+		}
 		//Create a vector to where we are moving
 		Vector2 movement = new Vector2(h, v); 
 		//Get our speed according to our current level
