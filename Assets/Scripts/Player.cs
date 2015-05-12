@@ -16,6 +16,9 @@ public class Player : MonoBehaviour
 
 	private Animator animator;   //Used to store a reference to the Player's animator component.
 
+	//Boolean to check if attacking
+	bool attacking;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -26,6 +29,7 @@ public class Player : MonoBehaviour
 		health = 5;
 		playerLevel = 1;
 		exp = 0;
+		attacking = false;
 	}
 
 	//Called every frame
@@ -35,7 +39,10 @@ public class Player : MonoBehaviour
 		Move();
 
 		//Attacks with our player (Check for a level up here as well)
-		Attack ();
+		if (Input.GetKeyDown ("space")) {
+			StopCoroutine ("Attack");    // Interrupt in case it's running
+			StartCoroutine ("Attack");
+		}
 
 	}
 
@@ -85,12 +92,31 @@ public class Player : MonoBehaviour
 	}
 
 	//Function to catch attack commands
-	void Attack()
+	IEnumerator Attack()
 	{
-		if (Input.GetKeyDown ("space")) 
-		{
+		//Set attacking to true
+		attacking = true;
 			//Set the attack trigger of the player's animation controller in order to play the player's attack animation.
 			animator.SetTrigger ("Attack");
+			yield return new WaitForSeconds (0.2f);
+			attacking = false;
+	}
+
+	//Catch when we collide with enemy
+	void OnCollisionEnter2D(Collision2D collision) 
+	{
+		//check if we are attacking
+		if (attacking) 
+		{
+			Debug.Log(collision.gameObject.GetType());
+			//Check if it is an enemy
+			if(collision.gameObject.GetType() == typeof(Enemy))
+			{
+				Debug.Log("we made it!");
+				Enemy e = (Enemy) collision.gameObject.GetComponent("Enemy");
+				e.ehealth = e.ehealth - 1;
+			}
 		}
+
 	}
 }

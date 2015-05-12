@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
 	public float emoveSpeed = 0f;
 	
 	//Our player stats
-	private int ehealth;
+	public int ehealth;
 	//Static makes it available to other classes
 	private int elevel;
 
@@ -40,6 +40,13 @@ public class Enemy : MonoBehaviour
 		Move();
 		
 		//Attacks with our player (Check for a level up here as well)
+
+		//Check if enemy is dead
+		if (ehealth <= 0) 
+		{
+			//Destroy this enemy, possible display some animation first
+			Destroy(gameObject);
+		}
 	}
 	
 	//Function to move our player
