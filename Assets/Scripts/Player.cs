@@ -35,8 +35,7 @@ public class Player : MonoBehaviour
 		Move();
 
 		//Attacks with our player (Check for a level up here as well)
-		//Set the attack trigger of the player's animation controller in order to play the player's attack animation.
-		animator.SetTrigger ("Attack");
+		Attack ();
 
 	}
 
@@ -83,5 +82,15 @@ public class Player : MonoBehaviour
 
 		//Move to that position
 		player.MovePosition(player.position + movement * superSpeed);
+	}
+
+	//Function to catch attack commands
+	void Attack()
+	{
+		if (Input.GetKeyDown ("space")) 
+		{
+			//Set the attack trigger of the player's animation controller in order to play the player's attack animation.
+			animator.SetTrigger ("Attack");
+		}
 	}
 }
