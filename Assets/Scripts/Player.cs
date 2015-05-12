@@ -40,8 +40,11 @@ public class Player : MonoBehaviour
 
 		//Attacks with our player (Check for a level up here as well)
 		if (Input.GetKeyDown ("space")) {
-			StopCoroutine ("Attack");    // Interrupt in case it's running
-			StartCoroutine ("Attack");
+			if(!attacking)
+			{
+				//Attacking working great
+				StartCoroutine ("Attack");
+			}
 		}
 
 	}
@@ -94,8 +97,8 @@ public class Player : MonoBehaviour
 	//Function to catch attack commands
 	IEnumerator Attack()
 	{
-		//Set attacking to true
-		attacking = true;
+			//Set attacking to true
+			attacking = true;
 			//Set the attack trigger of the player's animation controller in order to play the player's attack animation.
 			animator.SetTrigger ("Attack");
 			yield return new WaitForSeconds (0.2f);
@@ -103,14 +106,14 @@ public class Player : MonoBehaviour
 	}
 
 	//Catch when we collide with enemy
-	void OnCollisionEnter2D(Collision2D collision) 
+	void OnCollisionStay2D(Collision2D collision) 
 	{
 		//check if we are attacking
 		if (attacking) 
 		{
 			Debug.Log(collision.gameObject.GetType());
 			//Check if it is an enemy
-			if(collision.gameObject.GetType() == typeof(Enemy))
+			if(collision.gameObject.tag == "Enemy")
 			{
 				Debug.Log("we made it!");
 				Enemy e = (Enemy) collision.gameObject.GetComponent("Enemy");
