@@ -54,8 +54,10 @@ public class Player : MonoBehaviour
 		//Check for levelUp
 		if (exp >= playerLevel) 
 		{
+			//Reset/increase stats
 			exp = 0;
 			++playerLevel;
+			health = playerLevel * 3;
 			Debug.Log("LEVELUP!");
 			gameManager.invokeEnemies();
 		}
@@ -111,7 +113,7 @@ public class Player : MonoBehaviour
 		//Create a vector to where we are moving
 		Vector2 movement = new Vector2(h, v); 
 		//Get our speed according to our current level
-		float superSpeed = moveSpeed + (playerLevel / 10);
+		float superSpeed = playerLevel * moveSpeed;
 
 		//Move to that position
 		player.MovePosition(player.position + movement * superSpeed);
@@ -124,7 +126,7 @@ public class Player : MonoBehaviour
 			attacking = true;
 			//Set the attack trigger of the player's animation controller in order to play the player's attack animation.
 			animator.SetTrigger ("Attack");
-			yield return new WaitForSeconds (0.2f);
+			yield return new WaitForSeconds (0.1f);
 			attacking = false;
 	}
 
@@ -144,7 +146,7 @@ public class Player : MonoBehaviour
 					//Add our experience
 					++exp;
 				}
-				e.ehealth = e.ehealth - playerLevel;
+				//e.ehealth = e.ehealth - playerLevel;
 
 				//Now knockback
 				e.knockBack(animator.GetInteger("Direction"), playerLevel);

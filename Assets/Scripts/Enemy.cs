@@ -24,6 +24,8 @@ public class Enemy : MonoBehaviour
 
 	//Knockback value
 	public float knockWieght;
+	public int knockFrames;
+	private int totalKnockFrames;
 	
 	// Use this for initialization
 	void Start () 
@@ -45,6 +47,7 @@ public class Enemy : MonoBehaviour
 
 		//Save the total amount of frames before we attack 
 		totalFrames = attackFrames;
+		totalKnockFrames = knockFrames;
 
 		//Go after our player!
 		player = GameObject.Find("Person").transform;
@@ -64,13 +67,28 @@ public class Enemy : MonoBehaviour
 			//Destroy this enemy, possible display some animation first
 			Destroy(gameObject);
 		}
+
+		//If we are being knockbacked, knock back for so many frames
+		if (enemy.isKinematic) 
+		{
+			if(knockFrames > 0)
+			{
+				--knockFrames;
+			}
+			else
+			{
+				enemy.isKinematic = false;
+				//reset our knowckback frames
+				knockFrames = totalKnockFrames;
+			}
+		}
 	}
 	
 	//Function to move our player
 	void Move ()
 	{
 		//Get our speed according to our current level
-		float superSpeed = emoveSpeed + (elevel / 15);
+		float superSpeed = emoveSpeed + (elevel / 2);
 		
 		//Get the position we want to move to, and go to it using move towards
 		transform.position =  Vector2.MoveTowards(transform.position, player.position, superSpeed * Time.deltaTime);
@@ -79,6 +97,8 @@ public class Enemy : MonoBehaviour
 	//Knockback function for enemies
 	public void knockBack(int direction, int amount)
 	{
+		//Set kinematic to true so we can knockback
+		enemy.isKinematic = true;
 		//Knockback according to player direction
 		if (direction == 0) 
 		{
