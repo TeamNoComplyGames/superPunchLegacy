@@ -38,7 +38,7 @@ public class Enemy : MonoBehaviour
 		elevel = playerLevel / 2;
 		if (elevel <= 0)
 			elevel = 1;
-		ehealth = elevel * 3;
+		ehealth = elevel * 5;
 
 		//Set the mass of the rigid body to be really hgihg so they dont go flying
 		enemy.mass = 10000;
@@ -79,28 +79,26 @@ public class Enemy : MonoBehaviour
 	//Knockback function for enemies
 	public void knockBack(int direction, int amount)
 	{
-		print (direction);
-		print (amount);
 		//Knockback according to player direction
 		if (direction == 0) 
 		{
 			//Down
-			enemy.AddForce(new Vector2(0, -1.0f * (amount / knockWieght)));
+			enemy.AddForce(new Vector2(0, -1000.0f * (amount / knockWieght)));
 		} 
 		else if (direction == 1) 
 		{
 				//Right
-			enemy.AddForce(new Vector2( 1.0f * (amount / knockWieght), 0));
+			enemy.AddForce(new Vector2( 1000.0f * (amount / knockWieght), 0));
 		} 
 		else if (direction == 2) 
 		{
 				//Up
-			enemy.AddForce(new Vector2(0, 1.0f * (amount / knockWieght)));
+			enemy.AddForce(new Vector2(0, 1000.0f * (amount / knockWieght)));
 		} 
 		else 
 		{
 				//KLeft
-			enemy.AddForce(new Vector2( -1.0f * (amount / knockWieght), 0));
+			enemy.AddForce(new Vector2( -1000.0f * (amount / knockWieght), 0));
 		}
 	}
 

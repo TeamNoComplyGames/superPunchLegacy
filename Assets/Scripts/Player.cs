@@ -19,6 +19,9 @@ public class Player : MonoBehaviour
 	//Boolean to check if attacking
 	bool attacking;
 
+	//Our game manager
+	GameManager gameManager;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -30,13 +33,14 @@ public class Player : MonoBehaviour
 		playerLevel = 1;
 		exp = 0;
 		attacking = false;
+
+		//Get our gammaneger
+		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 	}
 
 	//Called every frame
 	void Update ()
 	{
-		//Move our player
-		Move();
 
 		//Attacks with our player (Check for a level up here as well)
 		if (Input.GetKeyDown ("space")) {
@@ -53,11 +57,17 @@ public class Player : MonoBehaviour
 			exp = 0;
 			++playerLevel;
 			Debug.Log("LEVELUP!");
+			gameManager.invokeEnemies();
 		}
 
-		//check if dead
+		//check if dead, allow movement if alive
 		if (health <= 0) {
-			Debug.Log("DED!");
+			Debug.Log ("DED!");
+		} 
+		else 
+		{
+			//Move our player
+			Move();
 		}
 
 	}
