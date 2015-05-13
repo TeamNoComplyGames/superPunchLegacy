@@ -17,6 +17,12 @@ public class Enemy : MonoBehaviour
 	private Transform player;
 
 	private Animator animator;   //Used to store a reference to the Player's animator component.
+
+	//Frames until the enemy will atack
+	public int attackFrames;
+
+	//Knockback value
+	public float knockWieght;
 	
 	// Use this for initialization
 	void Start () 
@@ -64,5 +70,54 @@ public class Enemy : MonoBehaviour
 		
 		//Get the position we want to move to, and go to it using move towards
 		transform.position =  Vector2.MoveTowards(transform.position, player.position, superSpeed * Time.deltaTime);
+	}
+
+	//Knockback function for enemies
+	public void knockBack(int direction, int amount)
+	{
+		//Knockback according to player direction
+		if (direction == 0) 
+		{
+			//Down
+			enemy.AddForce(new Vector2(0, -1.0f * (amount / knockWieght)));
+		} 
+		else if (direction == 1) 
+		{
+				//Right
+			enemy.AddForce(new Vector2( 1.0f * (amount / knockWieght), 0));
+		} 
+		else if (direction == 2) 
+		{
+				//Up
+			enemy.AddForce(new Vector2(0, 1.0f * (amount / knockWieght)));
+		} 
+		else 
+		{
+				//KLeft
+			enemy.AddForce(new Vector2( -1.0f * (amount / knockWieght), 0));
+		}
+	}
+
+	//Catch when we collide with enemy
+	void OnCollisionStay2D(Collision2D collision) 
+	{
+			//Check if it is the player
+			if(collision.gameObject.tag == "Player")
+			{
+			//Decrease the number of frames until we attack
+				if(attackFrames > 0)
+				{
+				--attackFrames;
+				}
+			//attack the player
+			else
+			{
+				//Set the attack trigger of the player's animation controller in order to play the player's attack animation.
+					animator.SetTrigger ("EAttack");
+				Player p = (Player) collision.gameObject.GetComponent("Person");
+				p.health = p.health - elevel;
+			}
+			}
+		
 	}
 }

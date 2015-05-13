@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
 	public float moveSpeed = 0f;
 
 	//Our player stats
-	private int health;
+	public int health;
 	//Static makes it available to other classes
 	public static int playerLevel;
 	private int exp;
@@ -45,6 +45,13 @@ public class Player : MonoBehaviour
 				//Attacking working great
 				StartCoroutine ("Attack");
 			}
+		}
+
+		//Check for levelUp
+		if (exp >= playerLevel) 
+		{
+			exp = 0;
+			++playerLevel;
 		}
 
 	}
@@ -114,8 +121,17 @@ public class Player : MonoBehaviour
 			//Check if it is an enemy
 			if(collision.gameObject.tag == "Enemy")
 			{
+				//Get the enemy and decrease it's health
 				Enemy e = (Enemy) collision.gameObject.GetComponent("Enemy");
-				e.ehealth = e.ehealth - 1;
+				if(e.ehealth - playerLevel < 0)
+				{
+					//Add our experience
+					++exp;
+				}
+				e.ehealth = e.ehealth - playerLevel;
+
+				//Now knockback
+				e.knockBack(animator.GetInteger("Direction"), playerLevel);
 			}
 		}
 
