@@ -20,6 +20,7 @@ public class Enemy : MonoBehaviour
 
 	//Frames until the enemy will atack
 	public int attackFrames;
+	private int totalFrames;
 
 	//Knockback value
 	public float knockWieght;
@@ -41,6 +42,9 @@ public class Enemy : MonoBehaviour
 
 		//Set the mass of the rigid body to be really hgihg so they dont go flying
 		enemy.mass = 10000;
+
+		//Save the total amount of frames before we attack 
+		totalFrames = attackFrames;
 
 		//Go after our player!
 		player = GameObject.Find("Person").transform;
@@ -115,7 +119,11 @@ public class Enemy : MonoBehaviour
 				//Set the attack trigger of the player's animation controller in order to play the player's attack animation.
 					animator.SetTrigger ("EAttack");
 				Player p = (Player) collision.gameObject.GetComponent("Person");
-				p.health = p.health - elevel;
+				int newHealth = p.getHealth() - elevel;
+				p.setHealth(newHealth);
+
+				//Reset attack frames
+				attackFrames = totalFrames;
 			}
 			}
 		

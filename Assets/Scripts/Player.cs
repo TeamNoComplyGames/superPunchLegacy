@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
 	public float moveSpeed = 0f;
 
 	//Our player stats
-	public int health;
+	private int health;
 	//Static makes it available to other classes
 	public static int playerLevel;
 	private int exp;
@@ -135,5 +135,17 @@ public class Player : MonoBehaviour
 			}
 		}
 
+	}
+
+	//Get/set funtion for health
+	public int getHealth()
+	{
+		return health;
+	}
+
+	//Get/set funtion for health
+	public void setHealth(int newHealth)
+	{
+		health = newHealth;
 	}
 }

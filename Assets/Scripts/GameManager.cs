@@ -45,7 +45,6 @@ public class GameManager : MonoBehaviour
 		//Spawn enemies every frame
 		if (started) 
 		{
-
 					
 		}
 	}
