@@ -57,7 +57,7 @@ public class Player : MonoBehaviour
 			//Reset/increase stats
 			exp = 0;
 			++playerLevel;
-			health = playerLevel * 3;
+			health = playerLevel * 6;
 			Debug.Log("LEVELUP!");
 			gameManager.invokeEnemies();
 		}
@@ -146,7 +146,8 @@ public class Player : MonoBehaviour
 					//Add our experience
 					++exp;
 				}
-				//e.ehealth = e.ehealth - playerLevel;
+				//Do damage
+				e.ehealth = e.ehealth - playerLevel;
 
 				//Now knockback
 				e.knockBack(animator.GetInteger("Direction"), playerLevel);

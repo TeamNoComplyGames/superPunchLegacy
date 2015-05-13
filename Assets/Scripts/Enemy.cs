@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour
 	private int totalFrames;
 
 	//Knockback value
-	public float knockWieght;
+	public float knockForce;
 	public int knockFrames;
 	private int totalKnockFrames;
 	
@@ -69,7 +69,7 @@ public class Enemy : MonoBehaviour
 		}
 
 		//If we are being knockbacked, knock back for so many frames
-		if (enemy.isKinematic) 
+		if (enemy.isKinematic == false) 
 		{
 			if(knockFrames > 0)
 			{
@@ -77,7 +77,6 @@ public class Enemy : MonoBehaviour
 			}
 			else
 			{
-				enemy.isKinematic = false;
 				//reset our knowckback frames
 				knockFrames = totalKnockFrames;
 			}
@@ -97,28 +96,26 @@ public class Enemy : MonoBehaviour
 	//Knockback function for enemies
 	public void knockBack(int direction, int amount)
 	{
-		//Set kinematic to true so we can knockback
-		enemy.isKinematic = true;
 		//Knockback according to player direction
 		if (direction == 0) 
 		{
 			//Down
-			enemy.AddForce(new Vector2(0, -1000.0f * (amount / knockWieght)));
+			enemy.AddForce(new Vector2(0, -1.0f * amount * knockForce));
 		} 
 		else if (direction == 1) 
 		{
 				//Right
-			enemy.AddForce(new Vector2( 1000.0f * (amount / knockWieght), 0));
+			enemy.AddForce(new Vector2( 1.0f * amount * knockForce, 0));
 		} 
 		else if (direction == 2) 
 		{
 				//Up
-			enemy.AddForce(new Vector2(0, 1000.0f * (amount / knockWieght)));
+			enemy.AddForce(new Vector2(0, 1.0f * amount * knockForce));
 		} 
 		else 
 		{
 				//KLeft
-			enemy.AddForce(new Vector2( -1000.0f * (amount / knockWieght), 0));
+			enemy.AddForce(new Vector2( -1.0f * amount * knockForce, 0));
 		}
 	}
 
