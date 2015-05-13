@@ -52,6 +52,12 @@ public class Player : MonoBehaviour
 		{
 			exp = 0;
 			++playerLevel;
+			Debug.Log("LEVELUP!");
+		}
+
+		//check if dead
+		if (health <= 0) {
+			Debug.Log("DED!");
 		}
 
 	}

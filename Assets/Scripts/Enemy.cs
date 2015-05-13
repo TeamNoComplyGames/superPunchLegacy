@@ -38,7 +38,7 @@ public class Enemy : MonoBehaviour
 		elevel = playerLevel / 2;
 		if (elevel <= 0)
 			elevel = 1;
-		ehealth = elevel * 2;
+		ehealth = elevel * 3;
 
 		//Set the mass of the rigid body to be really hgihg so they dont go flying
 		enemy.mass = 10000;
@@ -79,6 +79,8 @@ public class Enemy : MonoBehaviour
 	//Knockback function for enemies
 	public void knockBack(int direction, int amount)
 	{
+		print (direction);
+		print (amount);
 		//Knockback according to player direction
 		if (direction == 0) 
 		{
@@ -117,8 +119,8 @@ public class Enemy : MonoBehaviour
 			else
 			{
 				//Set the attack trigger of the player's animation controller in order to play the player's attack animation.
-					animator.SetTrigger ("EAttack");
-				Player p = (Player) collision.gameObject.GetComponent("Person");
+				animator.SetTrigger ("EAttack");
+				Player p = (Player) collision.gameObject.GetComponent("Player");
 				int newHealth = p.getHealth() - elevel;
 				p.setHealth(newHealth);
 
