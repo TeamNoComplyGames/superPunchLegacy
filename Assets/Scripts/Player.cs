@@ -62,7 +62,7 @@ public class Player : MonoBehaviour
 		}
 
 		//Check for levelUp
-		if (exp >= playerLevel) 
+		if (exp >= playerLevel * 2) 
 		{
 			//Reset/increase stats
 			exp = 0;
