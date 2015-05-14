@@ -43,8 +43,10 @@ public class Player : MonoBehaviour
 	{
 
 		//check if dead, allow movement if alive
-		if (health <= 0) {
-			Debug.Log ("DED!");
+		if (health <= 0) 
+		{
+			//Set our gameover text
+			gameManager.setGameOver(true);
 		} 
 		else 
 		{
