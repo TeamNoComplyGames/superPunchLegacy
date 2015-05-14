@@ -42,12 +42,22 @@ public class Player : MonoBehaviour
 	void Update ()
 	{
 
-		//Attacks with our player (Check for a level up here as well)
-		if (Input.GetKeyDown ("space")) {
-			if(!attacking)
-			{
-				//Attacking working great
-				StartCoroutine ("Attack");
+		//check if dead, allow movement if alive
+		if (health <= 0) {
+			Debug.Log ("DED!");
+		} 
+		else 
+		{
+			//Move our player
+			Move();
+			
+			//Attacks with our player (Check for a level up here as well)
+			if (Input.GetKeyDown ("space")) {
+				if(!attacking)
+				{
+					//Attacking working great
+					StartCoroutine ("Attack");
+				}
 			}
 		}
 
@@ -60,16 +70,6 @@ public class Player : MonoBehaviour
 			health = playerLevel * 6;
 			Debug.Log("LEVELUP!");
 			gameManager.invokeEnemies();
-		}
-
-		//check if dead, allow movement if alive
-		if (health <= 0) {
-			Debug.Log ("DED!");
-		} 
-		else 
-		{
-			//Move our player
-			Move();
 		}
 
 	}
@@ -166,5 +166,11 @@ public class Player : MonoBehaviour
 	public void setHealth(int newHealth)
 	{
 		health = newHealth;
+	}
+
+	//Get funtion for level
+	public int getLevel()
+	{
+		return playerLevel;
 	}
 }

@@ -2,6 +2,7 @@
 using System; //Allows us to catch exception
 using System.Collections;
 
+//This class controls all of the UI, and spawning and flow of the game
 public class GameManager : MonoBehaviour 
 {
 
@@ -18,10 +19,13 @@ public class GameManager : MonoBehaviour
 	private float previousTime;
 
 	//Our player object
-	private GameObject user;
+	private Player user;
 
 	//Our enemy prefab
 	public GameObject[] enemies;
+
+	//Our Hud
+	private UnityEngine.UI.Text hud;
 
 
 
@@ -32,7 +36,10 @@ public class GameManager : MonoBehaviour
 		gameOver = false;
 
 		//Get our player
-		user = GameObject.Find ("Person");
+		user = GameObject.Find ("Person").GetComponent<Player>();
+
+		//Get our Hud
+		hud = GameObject.FindGameObjectWithTag ("PlayerHUD").GetComponent<UnityEngine.UI.Text> ();
 
 
 		//Spawn an enemies
@@ -43,10 +50,19 @@ public class GameManager : MonoBehaviour
 	void Update () 
 	{
 		//Spawn enemies every frame
-		if (started) 
+		if (started) {
+			//Update our hud to player
+			hud.text = ("Health: " + user.getHealth () + "\nLevel: " + user.getLevel ());
+		} else if (gameOver) 
 		{
-					
+			hud.text = ("GAMEOVER!!!");
 		}
+	}
+
+	//Function to set gameover boolean
+	public void setGameOver(bool status)
+	{
+		gameOver = status;
 	}
 
 	//Functiont o do our invoke repeating functions
@@ -66,7 +82,7 @@ public class GameManager : MonoBehaviour
 	{
 		//We can spawn an enemy anywhere outside of the camera
 		//Get ouyr player's position
-		user = GameObject.Find("Person");
+		user = GameObject.Find ("Person").GetComponent<Player>();
 		Vector2 userPos = user.transform.position;
 		
 		//Now find an x and y coordinate that wouldnt be out of bounds the level, attaching this script to it's own object
