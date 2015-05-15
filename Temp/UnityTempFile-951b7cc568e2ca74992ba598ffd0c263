@@ -55,6 +55,7 @@
 -define:UNITY_EDITOR_64
 -define:UNITY_EDITOR_WIN
 Assets/Scripts/Enemy.cs
+Assets/Scripts/FightCamera.cs
 Assets/Scripts/GameManager.cs
 Assets/Scripts/Player.cs
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
