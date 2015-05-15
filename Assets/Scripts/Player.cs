@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
 		animator = GetComponent<Animator>();
 
 		//Set our default values
-		health = 4;
+		health = 5;
 		playerLevel = 1;
 		exp = 0;
 		attacking = false;
@@ -47,6 +47,9 @@ public class Player : MonoBehaviour
 		{
 			//Set our gameover text
 			gameManager.setGameOver(true);
+			//Delete our plyer object
+			//possible display some animation first
+			Destroy(gameObject);
 		} 
 		else 
 		{
@@ -64,13 +67,12 @@ public class Player : MonoBehaviour
 		}
 
 		//Check for levelUp
-		if (exp >= playerLevel * 2) 
+		if (exp >= playerLevel * playerLevel) 
 		{
 			//Reset/increase stats
 			exp = 0;
 			++playerLevel;
-			health = playerLevel * 4;
-			Debug.Log("LEVELUP!");
+			health = playerLevel * 5;
 			gameManager.invokeEnemies();
 		}
 
@@ -115,7 +117,14 @@ public class Player : MonoBehaviour
 		//Create a vector to where we are moving
 		Vector2 movement = new Vector2(h, v); 
 		//Get our speed according to our current level
-		float superSpeed = (playerLevel / 4) + moveSpeed;
+		float levelSpeed = (float) playerLevel / 10;
+		float superSpeed = levelSpeed + moveSpeed;
+
+		//Can't go above 1.5 though
+		if (superSpeed > 1.5f) 
+		{
+			superSpeed = 1.5f;
+		}
 
 		//Move to that position
 		player.MovePosition(player.position + movement * superSpeed);
