@@ -44,12 +44,12 @@ public class Enemy : MonoBehaviour
 		elevel = playerLevel / 2;
 		if (elevel <= 0)
 			elevel = 1;
-		ehealth = elevel * 7;
+		ehealth = elevel * 8;
 
-		//Set the mass of the rigid body to be really hgihg so they dont go flying
+		//Set the mass of the rigid body to be really high so they dont go flying
 		enemy.mass = 10000;
 		//Our knock force so we do go flying haha
-		knockForce = 900000;
+		knockForce = 800000;
 
 		//Save the total amount of frames before we attack 
 		totalFrames = attackFrames;
@@ -70,10 +70,12 @@ public class Enemy : MonoBehaviour
 		//If we are being knockbacked, knock back for so many frames
 		if (knockBool) 
 		{
-			if (knockFrames > 0) {
+			if (knockFrames > 0) 
+			{
 				--knockFrames;
-			} else {
-				Debug.Log("KnockBack Over!");
+			} 
+			else 
+			{
 				//reset our knowckback frames
 				knockFrames = totalKnockFrames;
 				//and make us kinematic again
@@ -135,7 +137,13 @@ public class Enemy : MonoBehaviour
 		}
 
 		//now set the knockframes to the amount
-		knockFrames = knockFrames * amount;
+		knockFrames = knockFrames * amount/2;
+		//Set our knock force to a high amount
+		knockForce = knockForce + (amount * 10000);
+		if (knockForce > 1500000) 
+		{
+			knockForce = 1500000;
+		}
 		//Set knockback to true
 		knockBool = true;
 	}
@@ -151,7 +159,13 @@ public class Enemy : MonoBehaviour
 
 
 			//And stop our knowback if we are in knockback
-
+			//reset our knowckback frames
+			knockFrames = totalKnockFrames;
+			//and make us kinematic again
+			knockBool = false;
+			//And remove the force we added
+			enemy.angularVelocity = 0f;
+			enemy.velocity = Vector2.zero;
 			}
 	}
 
