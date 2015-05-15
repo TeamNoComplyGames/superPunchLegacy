@@ -76,7 +76,6 @@ public class Player : MonoBehaviour
 			health = playerLevel * 5;
 			gameManager.invokeEnemies();
 		}
-
 	}
 
 	//Function to move our player
@@ -153,11 +152,6 @@ public class Player : MonoBehaviour
 			{
 				//Get the enemy and decrease it's health
 				Enemy e = (Enemy) collision.gameObject.GetComponent("Enemy");
-				if(e.ehealth - playerLevel < 0)
-				{
-					//Add our experience
-					exp = exp + e.elevel;
-				}
 				//Do damage
 				e.ehealth = e.ehealth - playerLevel;
 
@@ -184,5 +178,11 @@ public class Player : MonoBehaviour
 	public int getLevel()
 	{
 		return playerLevel;
+	}
+
+	//Function to Add exp to our player
+	public void addEXP(int add)
+	{
+		exp = exp + add;
 	}
 }

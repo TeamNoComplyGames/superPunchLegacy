@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
 	public int elevel;
 
 	//Our target to fight
-	private Transform player;
+	private Player player;
 
 	private Animator animator;   //Used to store a reference to the Player's animator component.
 
@@ -42,8 +42,9 @@ public class Enemy : MonoBehaviour
 		int playerLevel = Player.playerLevel;
 		//Create our enemy based off our the player's current level
 		elevel = playerLevel / 2;
-		if (elevel <= 0)
+		if (elevel <= 0) {
 			elevel = 1;
+		}
 		ehealth = elevel * 8;
 
 		//Set the mass of the rigid body to be really high so they dont go flying
@@ -61,7 +62,7 @@ public class Enemy : MonoBehaviour
 
 
 		//Go after our player!
-		player = GameObject.Find("Person").transform;
+		player = GameObject.Find("Person").GetComponent<Player>();
 	}
 	
 	//Called every frame
@@ -96,6 +97,8 @@ public class Enemy : MonoBehaviour
 		//Check if enemy is dead
 		if (ehealth <= 0) 
 		{
+			//Add experience to the player
+			player.addEXP(elevel);
 			//Destroy this enemy, possible display some animation first
 			Destroy(gameObject);
 		}
@@ -108,7 +111,7 @@ public class Enemy : MonoBehaviour
 		float superSpeed = emoveSpeed + (elevel / 2);
 		
 		//Get the position we want to move to, and go to it using move towards
-		transform.position =  Vector2.MoveTowards(transform.position, player.position, superSpeed * Time.deltaTime);
+		transform.position =  Vector2.MoveTowards(transform.position, player.transform.position, superSpeed * Time.deltaTime);
 	}
 
 	//Knockback function for enemies
