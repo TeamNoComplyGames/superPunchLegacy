@@ -23,9 +23,10 @@ public class Enemy : MonoBehaviour
 	private int totalFrames;
 
 	//Knockback value
-	public float knockForce;
+	private float knockForce;
 	public int knockFrames;
 	private int totalKnockFrames;
+	private bool knockBool;
 	
 	// Use this for initialization
 	void Start () 
@@ -44,10 +45,14 @@ public class Enemy : MonoBehaviour
 
 		//Set the mass of the rigid body to be really hgihg so they dont go flying
 		enemy.mass = 10000;
+		//Our knock force so we do go flying haha
+		knockForce = 10000;
 
 		//Save the total amount of frames before we attack 
 		totalFrames = attackFrames;
 		totalKnockFrames = knockFrames;
+		knockBool = false;
+
 
 		//Go after our player!
 		player = GameObject.Find("Person").transform;
@@ -56,8 +61,23 @@ public class Enemy : MonoBehaviour
 	//Called every frame
 	void Update ()
 	{
-		//Move our player
-		Move();
+		//If we are being knockbacked, knock back for so many frames
+		if (knockBool) 
+		{
+			if (knockFrames > 0) {
+				--knockFrames;
+			} else {
+				//reset our knowckback frames
+				knockFrames = totalKnockFrames;
+				//and make us kinematic again
+				knockBool = false;
+			}
+		} 
+		else 
+		{
+			//Move our player
+			Move ();
+		}
 		
 		//Attacks with our player (Check for a level up here as well)
 
@@ -66,20 +86,6 @@ public class Enemy : MonoBehaviour
 		{
 			//Destroy this enemy, possible display some animation first
 			Destroy(gameObject);
-		}
-
-		//If we are being knockbacked, knock back for so many frames
-		if (enemy.isKinematic == false) 
-		{
-			if(knockFrames > 0)
-			{
-				--knockFrames;
-			}
-			else
-			{
-				//reset our knowckback frames
-				knockFrames = totalKnockFrames;
-			}
 		}
 	}
 	
@@ -100,23 +106,43 @@ public class Enemy : MonoBehaviour
 		if (direction == 0) 
 		{
 			//Down
-			enemy.AddForce(new Vector2(0, -1.0f * amount * knockForce));
+			enemy.AddForce(new Vector2(0, -1.0f * knockForce));
 		} 
 		else if (direction == 1) 
 		{
 				//Right
-			enemy.AddForce(new Vector2( 1.0f * amount * knockForce, 0));
+			enemy.AddForce(new Vector2( 1.0f * knockForce, 0));
 		} 
 		else if (direction == 2) 
 		{
 				//Up
-			enemy.AddForce(new Vector2(0, 1.0f * amount * knockForce));
+			enemy.AddForce(new Vector2(0, 1.0f * knockForce));
 		} 
 		else 
 		{
 				//KLeft
-			enemy.AddForce(new Vector2( -1.0f * amount * knockForce, 0));
+			enemy.AddForce(new Vector2( -1.0f * knockForce, 0));
 		}
+
+		//now set the knockframes to the amount
+		knockFrames = knockFrames * amount;
+		//Set knockback to true
+		knockBool = true;
+	}
+
+	//Catch when we collide with something
+	void OnCollisionEnter2D(Collision2D collision) 
+	{
+			//Check if it is awall
+			if(collision.gameObject.tag == "Wall")
+			{
+				//Lose some health
+			--ehealth;
+
+
+			//And stop our knowback if we are in knockback
+
+			}
 	}
 
 	//Catch when we collide with enemy
