@@ -53,16 +53,18 @@ public class GameManager : MonoBehaviour
 		if (started) {
 			//Update our hud to player
 			hud.text = ("Health: " + user.getHealth () + "\nLevel: " + user.getLevel ());
-		} else if (gameOver) 
+		} 
+		else if (gameOver) 
 		{
 			hud.text = ("GAMEOVER!!!");
 		}
 	}
 
 	//Function to set gameover boolean
-	public void setGameOver(bool status)
+	public void setGameStatus(bool status)
 	{
-		gameOver = status;
+		gameOver = !status;
+		started = status;
 	}
 
 	//Functiont o do our invoke repeating functions

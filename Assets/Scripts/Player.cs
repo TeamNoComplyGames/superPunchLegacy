@@ -46,10 +46,11 @@ public class Player : MonoBehaviour
 		if (health <= 0) 
 		{
 			//Set our gameover text
-			gameManager.setGameOver(true);
-			//Delete our plyer object
+			gameManager.setGameStatus(false);
+			//make our player object invisible
 			//possible display some animation first
-			Destroy(gameObject);
+			Renderer r = (Renderer) gameObject.GetComponent("SpriteRenderer");
+			r.enabled = false;
 		} 
 		else 
 		{
