@@ -11,31 +11,58 @@ public class FightCamera : MonoBehaviour
 	public Rigidbody body;
 
 	//our postion
-	private Transform pos;
+	private Vector3 pos;
+	private Vector3 defaultPos;
 
 	//We are colliding
 	bool colliding;
+
+	//Our speed we want to fix camera
+	public float fixSpeed;
 
 
 	// Use this for initialization
 	void Start () 
 	{
-		//Get our player
-		user = GameObject.Find ("Person").GetComponent<Player>();
-
 		colliding = false;
+		defaultPos = new Vector3 (0, 0, -10);
 	
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		if (colliding) {
-			gameObject.transform.position = pos.position;
+		if (colliding) 
+		{
+			//Donr move the camera
+			gameObject.transform.position = pos;
+
+			//Check if our local postion is 0 or or greater on either axis for x
+			if (gameObject.transform.localPosition.x != 0) 
+			{
+				//Ttranslate back to the player
+				//Smoothly move the camera back over the player
+				gameObject.transform.Translate (-1 * gameObject.transform.localPosition.x * fixSpeed * Time.deltaTime, 0, 0, Space.Self);
+			}
+
+			//Check if our local postion is 0 or or greater on either axis for y
+			if (gameObject.transform.localPosition.y != 0) 
+			{
+				//Ttranslate back to the player
+				//Smoothly move the camera back over the player
+				gameObject.transform.Translate (0, -1 * gameObject.transform.localPosition.y * fixSpeed * Time.deltaTime, 0, Space.Self);
+			}
+			
+			//If both are done trnaslating, we are done exiting the collision
+			if(gameObject.transform.localPosition == defaultPos)
+			{
+				colliding = false;
+			}
 		} 
 		else 
 		{
-			transform.position = user.transform.position;
+			//translate back to ourself, 0,0, -10
+			gameObject.transform.localPosition = defaultPos;
 		}
 		
 	}
@@ -44,14 +71,8 @@ public class FightCamera : MonoBehaviour
 	void OnCollisionEnter(Collision collision) 
 	{
 		//Dont move the camera until we exit the collision
-		pos = body.transform;
+		pos = gameObject.transform.position;
 		colliding = true;
-	}
-
-	//After we exit bounds collision
-	void OnCollisionExit(Collision collisionInfo) 
-	{
-		colliding = false;
 	}
 
 
