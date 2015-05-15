@@ -27,6 +27,9 @@ public class GameManager : MonoBehaviour
 	//Our Hud
 	private UnityEngine.UI.Text hud;
 
+	//Array pf things to say once you die
+	String[] epitaph = {"Even the mighty fall", "Not even heroes live forever", "Legends are never forgotten"};
+
 
 
 	// Use this for initialization
@@ -56,7 +59,7 @@ public class GameManager : MonoBehaviour
 		} 
 		else if (gameOver) 
 		{
-			hud.text = ("GAMEOVER!!!");
+			hud.text = ("GAMEOVER!!!" + "\n" + epitaph[user.getLevel()/10] + "\nHighest Level:" + user.getLevel());
 		}
 	}
 
