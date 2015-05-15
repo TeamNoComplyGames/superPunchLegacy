@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
 	//Our player stats
 	public int ehealth;
 	//Static makes it available to other classes
-	private int elevel;
+	public int elevel;
 
 	//Our target to fight
 	private Transform player;
@@ -44,12 +44,12 @@ public class Enemy : MonoBehaviour
 		elevel = playerLevel / 2;
 		if (elevel <= 0)
 			elevel = 1;
-		ehealth = elevel * 5;
+		ehealth = elevel * 7;
 
 		//Set the mass of the rigid body to be really hgihg so they dont go flying
 		enemy.mass = 10000;
 		//Our knock force so we do go flying haha
-		knockForce = 1000000;
+		knockForce = 900000;
 
 		//Save the total amount of frames before we attack 
 		totalFrames = attackFrames;
@@ -73,10 +73,14 @@ public class Enemy : MonoBehaviour
 			if (knockFrames > 0) {
 				--knockFrames;
 			} else {
+				Debug.Log("KnockBack Over!");
 				//reset our knowckback frames
 				knockFrames = totalKnockFrames;
 				//and make us kinematic again
 				knockBool = false;
+				//And remove the force we added
+				enemy.angularVelocity = 0f;
+				enemy.velocity = Vector2.zero;
 			}
 		} 
 		else if(!gameManager.getGameStatus())
