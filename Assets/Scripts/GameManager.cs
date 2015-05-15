@@ -67,6 +67,12 @@ public class GameManager : MonoBehaviour
 		started = status;
 	}
 
+	//Function to get gameover boolean
+	public bool getGameStatus()
+	{
+		return gameOver;
+	}
+
 	//Functiont o do our invoke repeating functions
 	public void invokeEnemies ()
 	{

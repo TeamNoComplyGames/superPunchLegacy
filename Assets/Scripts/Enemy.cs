@@ -27,6 +27,9 @@ public class Enemy : MonoBehaviour
 	public int knockFrames;
 	private int totalKnockFrames;
 	private bool knockBool;
+
+	//Our game manager
+	GameManager gameManager;
 	
 	// Use this for initialization
 	void Start () 
@@ -46,12 +49,15 @@ public class Enemy : MonoBehaviour
 		//Set the mass of the rigid body to be really hgihg so they dont go flying
 		enemy.mass = 10000;
 		//Our knock force so we do go flying haha
-		knockForce = 10000;
+		knockForce = 1000000;
 
 		//Save the total amount of frames before we attack 
 		totalFrames = attackFrames;
 		totalKnockFrames = knockFrames;
 		knockBool = false;
+
+		//Get our gammaneger
+		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
 
 		//Go after our player!
@@ -73,7 +79,7 @@ public class Enemy : MonoBehaviour
 				knockBool = false;
 			}
 		} 
-		else 
+		else if(!gameManager.getGameStatus())
 		{
 			//Move our player
 			Move ();

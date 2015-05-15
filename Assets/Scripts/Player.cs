@@ -159,7 +159,7 @@ public class Player : MonoBehaviour
 					++exp;
 				}
 				//Do damage
-				e.ehealth = e.ehealth - playerLevel;
+				//e.ehealth = e.ehealth - playerLevel;
 
 				//Now knockback
 				e.knockBack(animator.GetInteger("Direction"), playerLevel);
