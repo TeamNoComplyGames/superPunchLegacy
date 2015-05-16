@@ -11,15 +11,13 @@ public class FightCamera : MonoBehaviour
 	public Rigidbody body;
 
 	//our postion
-	private Vector3 pos;
+	private float posX;
+	private float posY;
 	private Vector3 defaultPos;
 	private Vector3 wallSides;
 
 	//We are colliding
 	bool colliding;
-
-	//Our speed we want to fix camera
-	public float fixSpeed;
 
 
 	// Use this for initialization
@@ -35,40 +33,20 @@ public class FightCamera : MonoBehaviour
 	{
 		if (colliding) 
 		{
-			//Donr move the camera
-			gameObject.transform.position = pos;
-
-			//using wallsides we can figure out what side of the wll(s) we collided with
-			//Check if our local postion is 0 or or greater on either axis for x
-			if (wallSides.x == 1 && gameObject.transform.localPosition.x < 0) 
+			//Dont move the camera
+			if(wallSides.x != 0 && wallSides.y != 0)
 			{
-				//Ttranslate back to the player
-				//Smoothly move the camera back over the player
-				gameObject.transform.Translate (-1 * gameObject.transform.localPosition.x * fixSpeed * Time.deltaTime, 0, 0, Space.Self);
+				gameObject.transform.position = new Vector3(posX, posY, -10);
 			}
-			else if(wallSides.x == -1 && gameObject.transform.localPosition.x > 0)
+			else if(wallSides.x != 0 && wallSides.y == 0)
 			{
-				gameObject.transform.Translate (-1 * gameObject.transform.localPosition.x * fixSpeed * Time.deltaTime, 0, 0, Space.Self);
+				gameObject.transform.position = new Vector3(posX, gameObject.transform.position.y, -10);
+			}
+			else
+			{
+				gameObject.transform.position = new Vector3(gameObject.transform.position.x, posY, -10);
 			}
 
-			//Check if our local postion is 0 or or greater on either axis for y
-			if (wallSides.y == 1 && gameObject.transform.localPosition.y < 0) 
-			{
-				//Ttranslate back to the player
-				//Smoothly move the camera back over the player
-				gameObject.transform.Translate (0, -1 * gameObject.transform.localPosition.y * fixSpeed * Time.deltaTime, 0, Space.Self);
-			}
-			else if(wallSides.y == -1 && gameObject.transform.localPosition.y > 0)
-			{
-				gameObject.transform.Translate (-1 * gameObject.transform.localPosition.y * fixSpeed * Time.deltaTime, 0, 0, Space.Self);
-			}
-			
-			//If both are done trnaslating, we are done exiting the collision, when it is close to zero
-			if(gameObject.transform.localPosition.x < float.Epsilon && gameObject.transform.localPosition.y < float.Epsilon)
-			{
-				colliding = false;
-				wallSides == Vector3.zero;
-			}
 		} 
 		else 
 		{
@@ -81,21 +59,28 @@ public class FightCamera : MonoBehaviour
 	//When we enter bounds collison
 	void OnCollisionEnter(Collision collision) 
 	{
-		print ("colliding!");
 		//Dont move the camera until we exit the collision
-		pos = gameObject.transform.position;
 		colliding = true;
 
 		//Create a vector depending on if we hit the left or right side
-		if (collision.collider.transform.position.x > 49)
+		if (collision.collider.name.Contains ("CameraBounds1")) 
+		{
+			posX = gameObject.transform.position.x;
 			wallSides.x = 1;
-		else
+		} else if (collision.collider.name.Contains ("CameraBounds3")) 
+		{
+			posX = gameObject.transform.position.x;
 			wallSides.x = -1;
-
-		if (collision.collider.transform.position.y > 25)
+		} else if (collision.collider.name.Contains ("CameraBounds2")) 
+		{
+			posY = gameObject.transform.position.y;
 			wallSides.y = 1;
-		else
+		} 
+		else if (collision.collider.name.Contains ("CameraBounds0")) 
+		{
+			posY = gameObject.transform.position.y;
 			wallSides.y = -1;
+		}
 	}
 
 
