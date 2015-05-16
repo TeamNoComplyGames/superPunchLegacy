@@ -47,7 +47,6 @@ public class FightCamera : MonoBehaviour
 			//Now need to check if we are done colliding
 			if((wallSides.x == 1 && gameObject.transform.localPosition.x >= 0) || (wallSides.x == -1 && gameObject.transform.localPosition.x <= 0))
 			{
-				print ("we outta x");
 				wallSides = new Vector3(0, wallSides.y, 0);
 			}
 
