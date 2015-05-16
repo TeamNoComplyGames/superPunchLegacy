@@ -23,6 +23,9 @@ public class GameManager : MonoBehaviour
 
 	//Our enemy prefab
 	public GameObject[] enemies;
+	private int numEnemies;
+	//Suggest max enemies 50
+	public int maxEnemies;
 
 	//Our Hud
 	private UnityEngine.UI.Text hud;
@@ -76,6 +79,17 @@ public class GameManager : MonoBehaviour
 		return gameOver;
 	}
 
+	//Function to increase/decrease num enemies
+	public void plusEnemy()
+	{
+		++numEnemies;
+	}
+
+	public void minusEnemy()
+	{
+		--numEnemies;
+	}
+
 	//Functiont o do our invoke repeating functions
 	public void invokeEnemies ()
 	{
@@ -91,54 +105,52 @@ public class GameManager : MonoBehaviour
 	//Function to spawn enemies repeatedly
 	private void spawnEnemies()
 	{
-		//We can spawn an enemy anywhere outside of the camera
-		//Get ouyr player's position
-		user = GameObject.Find ("Person").GetComponent<Player>();
-		Vector2 userPos = user.transform.position;
+		print (numEnemies);
+		//Only do this if there aren't a max number of enemies
+		if (numEnemies < maxEnemies) {
+			//We can spawn an enemy anywhere outside of the camera
+			//Get ouyr player's position
+			user = GameObject.Find ("Person").GetComponent<Player> ();
+			Vector2 userPos = user.transform.position;
 		
-		//Now find an x and y coordinate that wouldnt be out of bounds the level, attaching this script to it's own object
-		//It's position is X: 52, Y: -20 X is left lower, right higher, Y is top higher, bottom lower
+			//Now find an x and y coordinate that wouldnt be out of bounds the level, attaching this script to it's own object
+			//It's position is X: 52, Y: -20 X is left lower, right higher, Y is top higher, bottom lower
 		
-		//Find an X And Y to spawn
-		float enemyX = 0;
-		float enemyY = 0;
-		if(userPos.x > this.transform.position.x)
-		{
-			enemyX = UnityEngine.Random.Range(2, 48);
-		}
+			//Find an X And Y to spawn
+			float enemyX = 0;
+			float enemyY = 0;
+			if (userPos.x > this.transform.position.x) {
+				enemyX = UnityEngine.Random.Range (2, 48);
+			}
 		//Less than or equal to
-		else
-		{
-			enemyX = UnityEngine.Random.Range(60, 98);
-		}
+		else {
+				enemyX = UnityEngine.Random.Range (60, 98);
+			}
 		
-		if(userPos.y > this.transform.position.y)
-		{
-			enemyY = UnityEngine.Random.Range(-24, -44);
-		}
+			if (userPos.y > this.transform.position.y) {
+				enemyY = UnityEngine.Random.Range (-24, -44);
+			}
 		//Less than or equal to
-		else
-		{
-			enemyY = UnityEngine.Random.Range(1, -17);
-		}
+		else {
+				enemyY = UnityEngine.Random.Range (1, -17);
+			}
 		
-		//Now create a vector with our x and y
-		Vector2 spawnPos = new Vector2(enemyX,enemyY);
+			//Now create a vector with our x and y
+			Vector2 spawnPos = new Vector2 (enemyX, enemyY);
 
-		//Now re-create our spawn rates
-		//Get our enemy index
-		int enemyIndex = (int) Mathf.Floor(UnityEngine.Random.Range (0, enemies.Length - 1));
+			//Now re-create our spawn rates
+			//Get our enemy index
+			int enemyIndex = (int)Mathf.Floor (UnityEngine.Random.Range (0, enemies.Length - 1));
 
-		//Try catch for index out of range
-		try
-		{
-			//create a copy of our gameobject
-			Instantiate (enemies[enemyIndex], spawnPos, Quaternion.identity);
-		}
-		catch(IndexOutOfRangeException ex)
-		{
-			//Print our exception to the console
-			print(ex);
+			//Try catch for index out of range
+			try {
+				//create a copy of our gameobject
+				Instantiate (enemies [enemyIndex], spawnPos, Quaternion.identity);
+			} catch (IndexOutOfRangeException ex) {
+				//Print our exception to the console
+				print (ex);
+			}
+
 		}
 
 	}

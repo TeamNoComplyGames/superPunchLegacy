@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
 
 	//Our game manager
 	GameManager gameManager;
-	
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -59,6 +59,9 @@ public class Enemy : MonoBehaviour
 
 		//Get our gammaneger
 		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+		//Increase our number of enemies
+		gameManager.plusEnemy();
 
 
 		//Go after our player!
@@ -99,6 +102,8 @@ public class Enemy : MonoBehaviour
 		{
 			//Add experience to the player
 			player.addEXP(elevel);
+			//Decrease the number of enemies we have
+			gameManager.minusEnemy();
 			//Destroy this enemy, possible display some animation first
 			Destroy(gameObject);
 		}

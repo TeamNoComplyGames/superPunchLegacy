@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FightCamera : MonoBehaviour 
+public class Bounded2DCamera : MonoBehaviour 
 {
 	//Our camera body
 	public Rigidbody body;
