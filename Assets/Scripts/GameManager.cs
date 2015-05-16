@@ -105,7 +105,6 @@ public class GameManager : MonoBehaviour
 	//Function to spawn enemies repeatedly
 	private void spawnEnemies()
 	{
-		print (numEnemies);
 		//Only do this if there aren't a max number of enemies
 		if (numEnemies < maxEnemies) {
 			//We can spawn an enemy anywhere outside of the camera

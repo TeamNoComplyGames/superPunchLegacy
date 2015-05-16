@@ -150,6 +150,15 @@ public class Player : MonoBehaviour
 			//Check if it is an enemy
 			if(collision.gameObject.tag == "Enemy")
 			{
+				//Check if the enemy is in the direction we are facing
+				int dir = animator.GetInteger("Direction");
+
+				//Deal damage if we are facing the right direction
+				if((dir == 1 && collision.gameObject.transform.position.x >= gameObject.transform.position.x) ||
+				   (dir == 3 && collision.gameObject.transform.position.x <= gameObject.transform.position.x) ||
+				   (dir == 2 && collision.gameObject.transform.position.y >= gameObject.transform.position.y) ||
+				   (dir == 0 && collision.gameObject.transform.position.y <= gameObject.transform.position.y))
+				{
 				//Get the enemy and decrease it's health
 				Enemy e = (Enemy) collision.gameObject.GetComponent("Enemy");
 				//Do damage
@@ -157,6 +166,7 @@ public class Player : MonoBehaviour
 
 				//Now knockback
 				e.knockBack(animator.GetInteger("Direction"), playerLevel);
+				}
 			}
 		}
 
