@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
 
 	//Our game manager
 	GameManager gameManager;
-
+	
 	// Use this for initialization
 	void Start () 
 	{

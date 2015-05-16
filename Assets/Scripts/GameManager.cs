@@ -30,6 +30,9 @@ public class GameManager : MonoBehaviour
 	//Our Hud
 	private UnityEngine.UI.Text hud;
 
+	//Our background music
+	private AudioSource bgFight;
+	
 	//Array pf things to say once you die
 	String[] epitaph = {"Even the mighty fall", "Not even heroes live forever", "Legends are never forgotten"};
 
@@ -47,6 +50,9 @@ public class GameManager : MonoBehaviour
 		//Get our Hud
 		hud = GameObject.FindGameObjectWithTag ("PlayerHUD").GetComponent<UnityEngine.UI.Text> ();
 
+		//get our bg music
+		bgFight = GameObject.Find ("GameSong").GetComponent<AudioSource> ();
+
 
 		//Spawn an enemies
 		invokeEnemies ();
@@ -59,10 +65,23 @@ public class GameManager : MonoBehaviour
 		if (started) {
 			//Update our hud to player
 			hud.text = ("Health: " + user.getHealth () + "\nLevel: " + user.getLevel ());
+
+			//start the music! if it is not playing
+			if(!bgFight.isPlaying)
+			{
+			bgFight.Play();
+			bgFight.loop = true;
+			}
 		} 
 		else if (gameOver) 
 		{
 			hud.text = ("GAMEOVER!!!" + "\n" + epitaph[user.getLevel()/10] + "\nHighest Level:" + user.getLevel());
+
+			//stop the music! if it is playing
+			if(bgFight.isPlaying)
+			{
+				bgFight.Stop();
+			}
 		}
 	}
 
