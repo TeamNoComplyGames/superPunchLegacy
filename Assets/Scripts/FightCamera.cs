@@ -3,10 +3,6 @@ using System.Collections;
 
 public class FightCamera : MonoBehaviour 
 {
-
-	//Our player object
-	private Player user;
-
 	//Our camera body
 	public Rigidbody body;
 
@@ -33,7 +29,7 @@ public class FightCamera : MonoBehaviour
 	{
 		if (colliding) 
 		{
-			//Dont move the camera
+			//Dont move the camera for the axes that are colliding
 			if(wallSides.x != 0 && wallSides.y != 0)
 			{
 				gameObject.transform.position = new Vector3(posX, posY, -10);
@@ -47,6 +43,27 @@ public class FightCamera : MonoBehaviour
 				gameObject.transform.position = new Vector3(gameObject.transform.position.x, posY, -10);
 			}
 
+
+			//Now need to check if we are done colliding
+			if((wallSides.x == 1 && gameObject.transform.localPosition.x >= 0) || (wallSides.x == -1 && gameObject.transform.localPosition.x <= 0))
+			{
+				print ("we outta x");
+				wallSides = new Vector3(0, wallSides.y, 0);
+			}
+
+			if((wallSides.y == 1 && gameObject.transform.localPosition.y >= 0) || (wallSides.y == -1 && gameObject.transform.localPosition.y <= 0))
+			{
+				wallSides = new Vector3(wallSides.x, 0, 0);
+			}
+
+
+			//If wallsides is zero, we are done colliding
+			if(wallSides == Vector3.zero)
+			{
+				colliding = false;
+			}
+
+
 		} 
 		else 
 		{
@@ -56,6 +73,14 @@ public class FightCamera : MonoBehaviour
 		
 	}
 
+
+
+	//Wall sides and camera bouns are as follows
+	/*
+	 * 			2
+	 * 3				1
+	 * 			0
+	 * */
 	//When we enter bounds collison
 	void OnCollisionEnter(Collision collision) 
 	{
