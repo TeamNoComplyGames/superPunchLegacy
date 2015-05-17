@@ -29,6 +29,10 @@ public class GameManager : MonoBehaviour
 
 	//Our Hud
 	private UnityEngine.UI.Text hud;
+	//Our Buttons
+	private UnityEngine.UI.Button restart;
+	private UnityEngine.UI.Button quit;
+
 
 	//Our background music
 	private AudioSource bgFight;
@@ -49,6 +53,13 @@ public class GameManager : MonoBehaviour
 
 		//Get our Hud
 		hud = GameObject.FindGameObjectWithTag ("PlayerHUD").GetComponent<UnityEngine.UI.Text> ();
+
+		//Get our buttons
+		restart = GameObject.FindGameObjectWithTag ("Restart").GetComponent<UnityEngine.UI.Button> ();
+		quit = GameObject.FindGameObjectWithTag ("Quit").GetComponent<UnityEngine.UI.Button> ();
+		//Hide our buttons
+		restart.gameObject.SetActive(false);
+		quit.gameObject.SetActive(false);
 
 		//get our bg music
 		bgFight = GameObject.Find ("GameSong").GetComponent<AudioSource> ();
@@ -75,7 +86,12 @@ public class GameManager : MonoBehaviour
 		} 
 		else if (gameOver) 
 		{
+			//Show our game over
 			hud.text = ("GAMEOVER!!!" + "\n" + epitaph[user.getLevel()/10] + "\nHighest Level:" + user.getLevel());
+
+			//Show a button in the middle of the screen to restart
+			restart.gameObject.SetActive(true);
+			quit.gameObject.SetActive(true);
 
 			//stop the music! if it is playing
 			if(bgFight.isPlaying)
@@ -171,5 +187,16 @@ public class GameManager : MonoBehaviour
 
 		}
 
+	}
+
+	public void restartGame()
+	{
+		//Restart the scene
+		Application.LoadLevel (0);
+	}
+
+	public void quitGame()
+	{
+		Application.Quit ();
 	}
 }
