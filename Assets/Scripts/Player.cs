@@ -45,12 +45,19 @@ public class Player : MonoBehaviour
 		//check if dead, allow movement if alive
 		if (health <= 0) 
 		{
-			//Set our gameover text
-			gameManager.setGameStatus(false);
 			//make our player object invisible
 			//possible display some animation first
-			Renderer r = (Renderer) gameObject.GetComponent("SpriteRenderer");
-			r.enabled = false;
+			//Renderer r = (Renderer) gameObject.GetComponent("SpriteRenderer");
+			//r.enabled = false;
+			//No longer turning invisible, just looping death animation
+			//play our death animation
+			if(!animator.GetBool("Death"))
+			{
+			animator.SetTrigger("DeathTrigger");
+			animator.SetBool("Death", true);
+			}
+			//Set our gameover text
+			gameManager.setGameStatus(false);
 		} 
 		else 
 		{
