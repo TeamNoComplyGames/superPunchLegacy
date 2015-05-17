@@ -18,6 +18,7 @@ public class PauseMenu : MonoBehaviour
 
 	void Update()
 	{
+		Debug.Log ("hi");
 		//If we are not paused
 		if (!paused) {
 			//Get our key input
@@ -25,6 +26,7 @@ public class PauseMenu : MonoBehaviour
 				//Pause the game
 				paused = true;
 				Time.timeScale = 0;
+				pauseMenu.SetActive (true);
 			}
 		} 
 		//if we are paused
@@ -34,6 +36,7 @@ public class PauseMenu : MonoBehaviour
 			{
 				//resume the game
 				paused = false;
+				pauseMenu.SetActive (false);
 				Time.timeScale = 1;
 			}
 			else if (Input.GetKey("escape"))
