@@ -164,11 +164,11 @@ public class GameManager : MonoBehaviour
 			float enemyX = 0;
 			float enemyY = 0;
 			if (userPos.x > this.transform.position.x) {
-				enemyX = UnityEngine.Random.Range (2, 48);
+				enemyX = UnityEngine.Random.Range (4.5f, 5.8f);
 			}
 		//Less than or equal to
 		else {
-				enemyX = UnityEngine.Random.Range (60, 98);
+				enemyX = UnityEngine.Random.Range (-4.5f, -5.8f);
 			}
 		
 			if (userPos.y > this.transform.position.y) {

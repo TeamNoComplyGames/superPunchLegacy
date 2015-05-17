@@ -130,7 +130,7 @@ public class Player : MonoBehaviour
 		//Can't go above 1.5 though
 		if (superSpeed > .95f) 
 		{
-			superSpeed = 1.5f;
+			superSpeed = .955f;
 		}
 
 		//Move to that position
