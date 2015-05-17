@@ -9,18 +9,22 @@ public class PauseMenu : MonoBehaviour
 	//our boolean so if we are paused
 	private bool paused;
 
+	//Our game manager
+	GameManager gameManager;
+
 	void Start()
 	{
 		//initialize our variables
 		pauseMenu.SetActive (false);
 		paused = false;
+		//Get our gammaneger
+		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 	}
 
 	void Update()
 	{
-		Debug.Log ("hi");
-		//If we are not paused
-		if (!paused) {
+		//If we are not paused, and game is not over
+		if (!paused && !gameManager.getGameStatus()) {
 			//Get our key input
 			if (Input.GetKeyDown (KeyCode.KeypadEnter) || Input.GetKeyDown ("return") || Input.GetKeyDown ("escape")) {
 				//Pause the game
@@ -29,8 +33,8 @@ public class PauseMenu : MonoBehaviour
 				pauseMenu.SetActive (true);
 			}
 		} 
-		//if we are paused
-		else 
+		//if we are paused and game is not over
+		else if(paused && !gameManager.getGameStatus())
 		{
 			if (Input.GetKeyDown (KeyCode.KeypadEnter) || Input.GetKeyDown ("return")) 
 			{
