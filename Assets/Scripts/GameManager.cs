@@ -98,6 +98,16 @@ public class GameManager : MonoBehaviour
 			{
 				bgFight.Stop();
 			}
+
+			//Get our key input
+			if (Input.GetKey("escape"))
+			{
+				quitGame();
+			}
+			else if(Input.GetKey(KeyCode.KeypadEnter) || Input.GetKey ("return"))
+			{
+				restartGame();
+			}
 		}
 	}
 
