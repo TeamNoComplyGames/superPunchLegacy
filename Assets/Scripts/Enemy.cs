@@ -50,7 +50,7 @@ public class Enemy : MonoBehaviour
 		//Set the mass of the rigid body to be really high so they dont go flying
 		enemy.mass = 10000;
 		//Our knock force so we do go flying haha
-		knockForce = 800000;
+		knockForce = 100000;
 
 		//Save the total amount of frames before we attack 
 		totalFrames = attackFrames;
@@ -113,7 +113,7 @@ public class Enemy : MonoBehaviour
 	void Move ()
 	{
 		//Get our speed according to our current level
-		float superSpeed = emoveSpeed + (elevel / 2);
+		float superSpeed = emoveSpeed + (elevel / 10);
 		
 		//Get the position we want to move to, and go to it using move towards
 		transform.position =  Vector2.MoveTowards(transform.position, player.transform.position, superSpeed * Time.deltaTime);

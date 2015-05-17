@@ -172,11 +172,11 @@ public class GameManager : MonoBehaviour
 			}
 		
 			if (userPos.y > this.transform.position.y) {
-				enemyY = UnityEngine.Random.Range (1.1f, 2.0f);
+				enemyY = UnityEngine.Random.Range (-1.1f, -2.0f);
 			}
 		//Less than or equal to
 		else {
-				enemyY = UnityEngine.Random.Range (-1.1f, -2.0f);
+				enemyY = UnityEngine.Random.Range (1.1f, 2.0f);
 			}
 		
 			//Now create a vector with our x and y
