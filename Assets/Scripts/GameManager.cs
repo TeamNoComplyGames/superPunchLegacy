@@ -164,19 +164,19 @@ public class GameManager : MonoBehaviour
 			float enemyX = 0;
 			float enemyY = 0;
 			if (userPos.x > this.transform.position.x) {
-				enemyX = UnityEngine.Random.Range (4.5f, 5.8f);
+				enemyX = UnityEngine.Random.Range (1.1f, 2.2f);
 			}
 		//Less than or equal to
 		else {
-				enemyX = UnityEngine.Random.Range (-4.5f, -5.8f);
+				enemyX = UnityEngine.Random.Range (-1.1f, -2.2f);
 			}
 		
 			if (userPos.y > this.transform.position.y) {
-				enemyY = UnityEngine.Random.Range (1.1, 2);
+				enemyY = UnityEngine.Random.Range (1.1f, 2.0f);
 			}
 		//Less than or equal to
 		else {
-				enemyY = UnityEngine.Random.Range (-1.1, -2);
+				enemyY = UnityEngine.Random.Range (-1.1f, -2.0f);
 			}
 		
 			//Now create a vector with our x and y
