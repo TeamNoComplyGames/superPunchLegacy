@@ -124,8 +124,8 @@ public class Player : MonoBehaviour
 		//Create a vector to where we are moving
 		Vector2 movement = new Vector2(h, v); 
 		//Get our speed according to our current level
-		float levelSpeed = (float) playerLevel / 20;
-		float superSpeed = levelSpeed + moveSpeed;
+		float levelSpeed = (float) playerLevel / 200;
+		float superSpeed = levelSpeed + (moveSpeed / 10);
 
 		//Can't go above 1.5 though
 		if (superSpeed > .95f) 
