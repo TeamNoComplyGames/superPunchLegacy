@@ -22,7 +22,7 @@ public class PauseMenu : MonoBehaviour
 		//If we are not paused
 		if (!paused) {
 			//Get our key input
-			if (Input.GetKey (KeyCode.KeypadEnter) || Input.GetKey ("return") || Input.GetKey ("escape")) {
+			if (Input.GetKeyDown (KeyCode.KeypadEnter) || Input.GetKeyDown ("return") || Input.GetKeyDown ("escape")) {
 				//Pause the game
 				paused = true;
 				Time.timeScale = 0;
@@ -32,14 +32,14 @@ public class PauseMenu : MonoBehaviour
 		//if we are paused
 		else 
 		{
-			if (Input.GetKey (KeyCode.KeypadEnter) || Input.GetKey ("return")) 
+			if (Input.GetKeyDown (KeyCode.KeypadEnter) || Input.GetKeyDown ("return")) 
 			{
 				//resume the game
 				paused = false;
 				pauseMenu.SetActive (false);
 				Time.timeScale = 1;
 			}
-			else if (Input.GetKey("escape"))
+			else if (Input.GetKeyDown("escape"))
 			{
 				//Quit the game
 				Application.Quit();
