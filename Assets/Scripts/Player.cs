@@ -14,6 +14,8 @@ public class Player : MonoBehaviour
 	public static int playerLevel;
 	private int exp;
 
+	private SpriteRenderer render; //Our sprite renderer to change our sprite color
+	private bool showFlash;
 	private Animator animator;   //Used to store a reference to the Player's animator component.
 
 	//Boolean to check if attacking
@@ -32,6 +34,8 @@ public class Player : MonoBehaviour
 	{
 		//Get a component reference to the Player's animator component
 		animator = GetComponent<Animator>();
+		render = GetComponent<SpriteRenderer>();
+		showFlash = false;
 
 		//Set our default values
 		health = 5;
@@ -64,12 +68,12 @@ public class Player : MonoBehaviour
 			//play our death animation
 			if(!animator.GetBool("Death"))
 			{
-			animator.SetTrigger("DeathTrigger");
-			animator.SetBool("Death", true);
+				animator.SetTrigger("DeathTrigger");
+				animator.SetBool("Death", true);
 				//play the death sound
 				if(!death.isPlaying)
 				{
-				death.Play();
+					death.Play();
 				}
 			}
 			//Set our gameover text
@@ -144,7 +148,6 @@ public class Player : MonoBehaviour
 		//Get our speed according to our current level
 		float levelSpeed = (float) playerLevel / 400;
 		float superSpeed = levelSpeed + (moveSpeed / 10);
-		Debug.Log (superSpeed);
 		//Can't go above .5 though
 		if (superSpeed > .032f) 
 		{
@@ -189,7 +192,7 @@ public class Player : MonoBehaviour
 				//Get the enemy and decrease it's health
 				Enemy e = (Enemy) collision.gameObject.GetComponent("Enemy");
 				//Do damage
-				e.ehealth = e.ehealth - playerLevel;
+					e.setEHealth(e.ehealth - playerLevel);
 
 				//Now knockback
 				e.knockBack(animator.GetInteger("Direction"), playerLevel);
@@ -209,6 +212,10 @@ public class Player : MonoBehaviour
 	public void setHealth(int newHealth)
 	{
 		health = newHealth;
+		if (!showFlash && health > 0) 
+		{
+			StartCoroutine("flashDamage");
+		}
 	}
 
 	//Get funtion for level
@@ -221,5 +228,16 @@ public class Player : MonoBehaviour
 	public void addEXP(int add)
 	{
 		exp = exp + add;
+	}
+
+	//Flash our sprite function
+	public IEnumerator flashDamage()
+	{
+		showFlash = true;
+		render.material.color = Color.red;
+		yield return new WaitForSeconds(.1f);
+		render.material.color = Color.white;
+		showFlash = false;
+
 	}
 }
