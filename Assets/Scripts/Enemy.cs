@@ -28,6 +28,9 @@ public class Enemy : MonoBehaviour
 	private int totalKnockFrames;
 	private bool knockBool;
 
+	//Our sounds
+	private AudioSource hurt;
+
 	//Our game manager
 	GameManager gameManager;
 	
@@ -56,6 +59,9 @@ public class Enemy : MonoBehaviour
 		totalFrames = attackFrames;
 		totalKnockFrames = knockFrames;
 		knockBool = false;
+
+		//Get our sounds
+		hurt = GameObject.Find ("Hurt").GetComponent<AudioSource> ();
 
 		//Get our gammaneger
 		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();

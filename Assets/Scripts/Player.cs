@@ -19,6 +19,11 @@ public class Player : MonoBehaviour
 	//Boolean to check if attacking
 	bool attacking;
 
+	//Our sounds 
+	private AudioSource punch;
+	private AudioSource levelUp;
+	private AudioSource death;
+
 	//Our game manager
 	GameManager gameManager;
 
@@ -33,6 +38,12 @@ public class Player : MonoBehaviour
 		playerLevel = 1;
 		exp = 0;
 		attacking = false;
+
+		//Get our sounds
+		punch = GameObject.Find ("Punch").GetComponent<AudioSource> ();
+		levelUp = GameObject.Find ("Punch").GetComponent<AudioSource> ();
+		death = GameObject.Find ("Punch").GetComponent<AudioSource> ();
+
 
 		//Get our gammaneger
 		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
@@ -82,6 +93,7 @@ public class Player : MonoBehaviour
 			++playerLevel;
 			health = playerLevel * 5;
 			gameManager.invokeEnemies();
+			//Play our sound
 		}
 	}
 
