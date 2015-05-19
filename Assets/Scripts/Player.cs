@@ -39,6 +39,9 @@ public class Player : MonoBehaviour
 		exp = 0;
 		attacking = false;
 
+		//Set our time to normal speed
+		Time.timeScale = 1;
+
 		//Get our sounds
 		punch = GameObject.Find ("Punch").GetComponent<AudioSource> ();
 		levelUp = GameObject.Find ("Punch").GetComponent<AudioSource> ();
@@ -69,6 +72,12 @@ public class Player : MonoBehaviour
 			}
 			//Set our gameover text
 			gameManager.setGameStatus(false);
+
+			//Slow down the game Time
+			Time.timeScale = 0.35f;
+
+			//play the death sound
+			death.Play();
 		} 
 		else 
 		{
@@ -94,6 +103,7 @@ public class Player : MonoBehaviour
 			health = playerLevel * 5;
 			gameManager.invokeEnemies();
 			//Play our sound
+			levelUp.Play();
 		}
 	}
 
@@ -156,6 +166,8 @@ public class Player : MonoBehaviour
 			attacking = true;
 			//Set the attack trigger of the player's animation controller in order to play the player's attack animation.
 			animator.SetTrigger ("Attack");
+		//Play the sounds
+		punch.Play ();
 			yield return new WaitForSeconds (0.1f);
 			attacking = false;
 	}

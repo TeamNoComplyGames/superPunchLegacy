@@ -203,6 +203,9 @@ public class Enemy : MonoBehaviour
 				int newHealth = p.getHealth() - elevel;
 				p.setHealth(newHealth);
 
+				//Play the sound of hurt
+				hurt.Play();
+
 				//Reset attack frames
 				attackFrames = totalFrames;
 			}
