@@ -202,7 +202,7 @@ public class GameManager : MonoBehaviour
 	public void restartGame()
 	{
 		//Restart the scene
-		Application.LoadLevel (0);
+		Application.LoadLevel ("Game");
 	}
 
 	public void quitGame()
