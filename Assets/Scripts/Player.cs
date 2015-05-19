@@ -39,9 +39,6 @@ public class Player : MonoBehaviour
 		exp = 0;
 		attacking = false;
 
-		//Set our time to normal speed
-		Time.timeScale = 1;
-
 		//Get our sounds
 		punch = GameObject.Find ("Punch").GetComponent<AudioSource> ();
 		levelUp = GameObject.Find ("LevelUp").GetComponent<AudioSource> ();
@@ -77,9 +74,6 @@ public class Player : MonoBehaviour
 			}
 			//Set our gameover text
 			gameManager.setGameStatus(false);
-
-			//Slow down the game Time
-			Time.timeScale = 0.25f;
 		} 
 		else 
 		{

@@ -48,6 +48,9 @@ public class GameManager : MonoBehaviour
 		started = true;
 		gameOver = false;
 
+		//Set our time to normal speed
+		Time.timeScale = 1;
+
 		//Get our player
 		user = GameObject.Find ("Person").GetComponent<Player>();
 
@@ -98,6 +101,9 @@ public class GameManager : MonoBehaviour
 			{
 				bgFight.Stop();
 			}
+
+			//Slow down the game Time
+			Time.timeScale = 0.25f;
 
 			//Get our key input
 			if (Input.GetKey("escape"))
