@@ -16,6 +16,8 @@ public class Enemy : MonoBehaviour
 	//Our target to fight
 	private Player player;
 
+	private SpriteRenderer render; //Our sprite renderer to change our sprite color
+	private bool showFlash;
 	private Animator animator;   //Used to store a reference to the Player's animator component.
 
 	//Frames until the enemy will atack
@@ -39,7 +41,9 @@ public class Enemy : MonoBehaviour
 	{
 
 		//Get a component reference to the Player's animator component
+		render = GetComponent<SpriteRenderer>();
 		animator = GetComponent<Animator>();
+		showFlash = false;
 
 
 		int playerLevel = Player.playerLevel;
@@ -210,6 +214,27 @@ public class Enemy : MonoBehaviour
 				attackFrames = totalFrames;
 			}
 			}
+		
+	}
+
+	//Set health for enemy
+	public void setEHealth(int newHealth)
+	{
+		ehealth = newHealth;
+		if (!showFlash) 
+		{
+			StartCoroutine("flashDamage");
+		}
+	}
+
+	//Flash our sprite function
+	public IEnumerator flashDamage()
+	{
+		showFlash = true;
+		render.material.color = Color.red;
+		yield return new WaitForSeconds(.1f);
+		render.material.color = Color.white;
+			showFlash = false;
 		
 	}
 }
