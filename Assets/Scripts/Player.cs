@@ -44,8 +44,8 @@ public class Player : MonoBehaviour
 
 		//Get our sounds
 		punch = GameObject.Find ("Punch").GetComponent<AudioSource> ();
-		levelUp = GameObject.Find ("Punch").GetComponent<AudioSource> ();
-		death = GameObject.Find ("Punch").GetComponent<AudioSource> ();
+		levelUp = GameObject.Find ("LevelUp").GetComponent<AudioSource> ();
+		death = GameObject.Find ("Death").GetComponent<AudioSource> ();
 
 
 		//Get our gammaneger
@@ -69,15 +69,17 @@ public class Player : MonoBehaviour
 			{
 			animator.SetTrigger("DeathTrigger");
 			animator.SetBool("Death", true);
+				//play the death sound
+				if(!death.isPlaying)
+				{
+				death.Play();
+				}
 			}
 			//Set our gameover text
 			gameManager.setGameStatus(false);
 
 			//Slow down the game Time
-			Time.timeScale = 0.35f;
-
-			//play the death sound
-			death.Play();
+			Time.timeScale = 0.25f;
 		} 
 		else 
 		{
@@ -166,8 +168,8 @@ public class Player : MonoBehaviour
 			attacking = true;
 			//Set the attack trigger of the player's animation controller in order to play the player's attack animation.
 			animator.SetTrigger ("Attack");
-		//Play the sounds
-		punch.Play ();
+			//Play the sounds
+			punch.Play ();
 			yield return new WaitForSeconds (0.1f);
 			attacking = false;
 	}
