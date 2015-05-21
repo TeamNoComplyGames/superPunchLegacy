@@ -65,9 +65,18 @@ C# using unity scripts, e.g
 		}
 	}
 
-## Motivation
+## Inspiration
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+I (Aaron Turner) was thinking of a good simple game to create as a side project in between school and work.
+That would help me learn how to use the beast we know as UNITY. I came across some old
+Legacy of Goku Let's plays and made me remember how fun those games were. I have been a big fan of Dragon Ball Z games growing up,
+and I am particualrly fond of the GBA era. So I decided to make a game like it, but add my own, arcade, fun, and ideas to it. Thus,
+Punch Legacy was born. Kevin and Emanual came ino the mix as they are close childhood friends of mine, and they have been wanting to
+make a game themselves, but just really didn't know where to start. And After I had half-completed a game myself, I kind of
+alrwady had a clue on the mysterious world of independent game development.
+
+However, Before this game is finished it will be known as super punch legacy, because that is exactly,
+what it shall be.
 
 ## Installation
 
