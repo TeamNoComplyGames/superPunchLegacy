@@ -1,6 +1,6 @@
-(WORK IN PROGRESS)
-
 ## Intro
+
+(Work in progess, Readme shall be update with game)
 
 ![alt tag](http://i.imgur.com/Zjy44T2.png)
 
@@ -102,4 +102,4 @@ All Assessts and rights of the games are reserved to No Comply Games
 
 However this code is open-source and may be used to help in your own projects
 
-P.s I don't know much about each liscences haha
+P.S I don't know much about each liscences haha
