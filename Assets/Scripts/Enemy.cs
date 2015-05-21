@@ -207,8 +207,11 @@ public class Enemy : MonoBehaviour
 				int newHealth = p.getHealth() - elevel;
 				p.setHealth(newHealth);
 
-				//Play the sound of hurt
-				hurt.Play();
+				//Play the sound of hurt, only if the game is still on
+				if(!gameManager.getGameStatus())
+				{
+					hurt.Play();
+				}
 
 				//Reset attack frames
 				attackFrames = totalFrames;
