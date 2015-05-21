@@ -54,7 +54,7 @@ public class Player : MonoBehaviour
 		//Get our text
 		levelText = GameObject.FindGameObjectWithTag ("LevelText").GetComponent<UnityEngine.UI.Text> ();
 		//Hide the text, and the script
-		levelText.GetComponent <FlashingText>().enabled = false;
+		levelText.GetComponent <FlashingText>().stopFlash();
 		levelText.enabled = false;
 
 
@@ -257,11 +257,11 @@ public class Player : MonoBehaviour
 	private IEnumerator levelFlash()
 	{
 		//show the text, and the script
-		levelText.GetComponent <FlashingText>().enabled = true;
+		levelText.GetComponent <FlashingText> ().startFlash ();;
 		levelText.enabled = true;
 		yield return new WaitForSeconds (2.0f);
 		//Hide the text, and the script
-		levelText.GetComponent <FlashingText>().enabled = true;
-		levelText.enabled = true;
+		levelText.GetComponent <FlashingText>().stopFlash();
+		levelText.enabled = false;
 	}
 }

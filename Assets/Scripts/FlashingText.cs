@@ -32,4 +32,18 @@ public class FlashingText : MonoBehaviour
 			text.enabled = true;
 		}
 	}
+
+	//Stop our repeating invoke
+	public void stopFlash()
+	{
+		//Cancel all of our invokes
+		CancelInvoke();
+	}
+
+	//Start flashing again
+	public void startFlash()
+	{
+		//Call our flash function multiple times
+		InvokeRepeating("flash", 0 , flashSpeed);
+	}
 }
