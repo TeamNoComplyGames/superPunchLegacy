@@ -26,6 +26,9 @@ public class Player : MonoBehaviour
 	private AudioSource levelUp;
 	private AudioSource death;
 
+	//Our Hud
+	private UnityEngine.UI.Text levelText;
+
 	//Our game manager
 	GameManager gameManager;
 
@@ -47,6 +50,12 @@ public class Player : MonoBehaviour
 		punch = GameObject.Find ("Punch").GetComponent<AudioSource> ();
 		levelUp = GameObject.Find ("LevelUp").GetComponent<AudioSource> ();
 		death = GameObject.Find ("Death").GetComponent<AudioSource> ();
+
+		//Get our text
+		levelText = GameObject.FindGameObjectWithTag ("LevelText").GetComponent<UnityEngine.UI.Text> ();
+		//Hide the text, and the script
+		levelText.GetComponent (FlashingText).enabled = false;
+		levelText.enabled = false;
 
 
 		//Get our gammaneger
@@ -104,6 +113,9 @@ public class Player : MonoBehaviour
 			gameManager.invokeEnemies();
 			//Play our sound
 			levelUp.Play();
+			//Show our text, stop if already showing
+			StopCoroutine("levelFlash");
+			StartCoroutine("levelFlash");
 		}
 	}
 
@@ -239,5 +251,15 @@ public class Player : MonoBehaviour
 		render.material.color = Color.white;
 		showFlash = false;
 
+	}
+
+	//Function to flash level up text
+	private IEnumerator levelFlash()
+	{
+		//show the text
+		levelText.enabled = true;
+		yield return new WaitForSeconds(2.0f);
+		//Hide the text
+		levelText.enabled = false;
 	}
 }
