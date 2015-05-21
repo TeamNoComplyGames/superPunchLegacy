@@ -6,11 +6,14 @@ public class FlashingText : MonoBehaviour
 	//Our text
 	public UnityEngine.UI.Text text;
 
+	//Our flashing speed
+	public float flashSpeed;
+
 	// Use this for initialization
 	void Start () 
 	{
 		//Call our flash function multiple times
-		InvokeRepeating("flash", 0 , 0.5f);
+		InvokeRepeating("flash", 0 , flashSpeed);
 	}
 	
 	// Update is called once per frame
