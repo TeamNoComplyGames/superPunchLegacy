@@ -1,10 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Enemy.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player.cs">
     <Files>
-      <File FileName="Assets\Scripts\Player.cs" Line="187" Column="26" />
+      <File FileName="Assets\Scripts\Player.cs" Line="108" Column="3" />
       <File FileName="Assets\Scripts\FlashingText.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Enemy.cs" Line="213" Column="6" />
+      <File FileName="Assets\Scripts\Enemy.cs" Line="120" Column="3" />
       <File FileName="Assets\Scripts\PauseMenu.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GameManager.cs" Line="1" Column="1" />
     </Files>
