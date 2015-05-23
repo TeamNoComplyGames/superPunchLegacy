@@ -169,20 +169,20 @@ public class GameManager : MonoBehaviour
 			//Find an X And Y to spawn
 			float enemyX = 0;
 			float enemyY = 0;
-			if (userPos.x > this.transform.position.x) {
-				enemyX = UnityEngine.Random.Range (1.1f, 2.2f);
+			if (1.1f + userPos.x > 1.9f) {
+				enemyX = UnityEngine.Random.Range (1.1f + userPos.x, 1.9f);
 			}
 		//Less than or equal to
 		else {
-				enemyX = UnityEngine.Random.Range (-1.1f, -2.2f);
+				enemyX = UnityEngine.Random.Range (-1.1f + userPos.x, -1.9f);
 			}
 		
-			if (userPos.y > this.transform.position.y) {
-				enemyY = UnityEngine.Random.Range (-1.1f, -2.0f);
+			if (userPos.y > -2.0f) {
+				enemyY = UnityEngine.Random.Range (-1.1f + userPos.y, -1.8f);
 			}
-		//Less than or equal to
-		else {
-				enemyY = UnityEngine.Random.Range (1.1f, 2.0f);
+			//Less than or equal to
+			else {
+				enemyY = UnityEngine.Random.Range (1.1f + userPos.x, 1.8f);
 			}
 		
 			//Now create a vector with our x and y
