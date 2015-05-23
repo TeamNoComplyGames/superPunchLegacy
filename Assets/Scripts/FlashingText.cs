@@ -56,10 +56,4 @@ public class FlashingText : MonoBehaviour
 		flashOnStart = true;
 	}
 
-	//move out text positon
-	public void moveText(Vector3 vector)
-	{
-		text.rectTransform.localPosition = vector;
-	}
-	
 }

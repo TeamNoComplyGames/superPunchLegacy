@@ -26,9 +26,6 @@ public class Player : MonoBehaviour
 	private AudioSource levelUp;
 	private AudioSource death;
 
-	//Our Hud
-	private FlashingText levelText;
-
 	//Our game manager
 	GameManager gameManager;
 
@@ -51,8 +48,6 @@ public class Player : MonoBehaviour
 		levelUp = GameObject.Find ("LevelUp").GetComponent<AudioSource> ();
 		death = GameObject.Find ("Death").GetComponent<AudioSource> ();
 
-		//Get our text
-		levelText = GameObject.FindGameObjectWithTag ("LevelText").GetComponent<FlashingText> ();
 
 
 		//Get our gammaneger
@@ -250,15 +245,25 @@ public class Player : MonoBehaviour
 
 	}
 
-	//Function to flash level up text
+	//Function to flash level up color
 	private IEnumerator levelFlash()
 	{
-		//show the text, and the script, and set its position
-		levelText.moveText(Camera.main.gameObject.transform.localPosition);
-		levelText.startFlash ();
-		yield return new WaitForSeconds (2.0f);
-		//Hide the text, and the script
-		levelText.stopFlash();
-		levelText.moveText(Vector3.zero);
+		showFlash = true;
+		render.material.color = Color.green;
+		yield return new WaitForSeconds(.2f);
+		render.material.color = Color.white;
+		yield return new WaitForSeconds (.2f);
+		render.material.color = Color.green;
+		yield return new WaitForSeconds(.2f);
+		render.material.color = Color.white;
+		yield return new WaitForSeconds(.2f);
+		render.material.color = Color.green;
+		yield return new WaitForSeconds(.2f);
+		render.material.color = Color.white;
+		yield return new WaitForSeconds(.2f);
+		render.material.color = Color.green;
+		yield return new WaitForSeconds(.2f);
+		render.material.color = Color.white;
+		showFlash = false;
 	}
 }
