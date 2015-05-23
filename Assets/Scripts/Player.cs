@@ -253,10 +253,12 @@ public class Player : MonoBehaviour
 	//Function to flash level up text
 	private IEnumerator levelFlash()
 	{
-		//show the text, and the script
+		//show the text, and the script, and set its position
+		levelText.moveText(Camera.main.gameObject.transform.localPosition);
 		levelText.startFlash ();
 		yield return new WaitForSeconds (2.0f);
 		//Hide the text, and the script
 		levelText.stopFlash();
+		levelText.moveText(Vector3.zero);
 	}
 }

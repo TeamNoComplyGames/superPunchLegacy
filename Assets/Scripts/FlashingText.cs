@@ -55,5 +55,11 @@ public class FlashingText : MonoBehaviour
 		//Call our flash function multiple times
 		flashOnStart = true;
 	}
+
+	//move out text positon
+	public void moveText(Vector3 vector)
+	{
+		text.rectTransform.localPosition = vector;
+	}
 	
 }
