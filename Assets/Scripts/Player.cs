@@ -48,6 +48,9 @@ public class Player : MonoBehaviour
 		levelUp = GameObject.Find ("LevelUp").GetComponent<AudioSource> ();
 		death = GameObject.Find ("Death").GetComponent<AudioSource> ();
 
+		//Default looking down
+		animator.SetInteger("Direction", 0);
+
 
 
 		//Get our gammaneger
@@ -118,9 +121,13 @@ public class Player : MonoBehaviour
 		float h = Input.GetAxis("Horizontal");
 		float v = Input.GetAxis("Vertical"); 
 
-		//animate to the direction we are going to move
-		//Find the greatest absolute value to get most promenint direction
-		/*
+		//Also check to make sure we stay that direction when not moving, so check that we are
+		if(h != 0 || v != 0)
+		{
+		
+			//animate to the direction we are going to move
+			//Find the greatest absolute value to get most promenint direction
+			/*
 		 * 		2
 		 * 3		1
 		 * 		0
@@ -136,7 +143,7 @@ public class Player : MonoBehaviour
 				animator.SetInteger("Direction", 3);
 			}
 		} 
-		else 
+		else
 		{
 			if(v > 0)
 			{
@@ -160,6 +167,7 @@ public class Player : MonoBehaviour
 
 		//Move to that position
 		player.MovePosition(player.position + movement * superSpeed);
+		}
 	}
 
 	//Function to catch attack commands
