@@ -9,11 +9,14 @@ public class FlashingText : MonoBehaviour
 	//Our flashing speed
 	public float flashSpeed;
 
+	//Our flashing boolean
+	public bool flashOnStart;
+
 	// Use this for initialization
 	void Start () 
 	{
 		//Call our flash function multiple times
-		InvokeRepeating("flash", 0 , flashSpeed);
+		InvokeRepeating ("flash", 0, flashSpeed);
 	}
 	
 	// Update is called once per frame
@@ -26,24 +29,31 @@ public class FlashingText : MonoBehaviour
 	private void flash()
 	{
 		//If the text is eneabled disable it, else renable
-		if (text.enabled) {
+		if (flashOnStart) {
+			if (text.enabled) {
+				text.enabled = false;
+			} else {
+				text.enabled = true;
+			}
+		} 
+		else 
+		{
 			text.enabled = false;
-		} else {
-			text.enabled = true;
 		}
 	}
 
 	//Stop our repeating invoke
 	public void stopFlash()
 	{
-		//Cancel all of our invokes
-		CancelInvoke();
+		//set our booleans to false
+		flashOnStart = false;
 	}
 
 	//Start flashing again
 	public void startFlash()
 	{
 		//Call our flash function multiple times
-		InvokeRepeating("flash", 0 , flashSpeed);
+		flashOnStart = true;
 	}
+	
 }

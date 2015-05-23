@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
 	private AudioSource death;
 
 	//Our Hud
-	private UnityEngine.UI.Text levelText;
+	private FlashingText levelText;
 
 	//Our game manager
 	GameManager gameManager;
@@ -52,10 +52,7 @@ public class Player : MonoBehaviour
 		death = GameObject.Find ("Death").GetComponent<AudioSource> ();
 
 		//Get our text
-		levelText = GameObject.FindGameObjectWithTag ("LevelText").GetComponent<UnityEngine.UI.Text> ();
-		//Hide the text, and the script
-		levelText.GetComponent <FlashingText>().stopFlash();
-		levelText.enabled = false;
+		levelText = GameObject.FindGameObjectWithTag ("LevelText").GetComponent<FlashingText> ();
 
 
 		//Get our gammaneger
@@ -257,11 +254,9 @@ public class Player : MonoBehaviour
 	private IEnumerator levelFlash()
 	{
 		//show the text, and the script
-		levelText.GetComponent <FlashingText> ().startFlash ();;
-		levelText.enabled = true;
+		levelText.startFlash ();
 		yield return new WaitForSeconds (2.0f);
 		//Hide the text, and the script
-		levelText.GetComponent <FlashingText>().stopFlash();
-		levelText.enabled = false;
+		levelText.stopFlash();
 	}
 }
