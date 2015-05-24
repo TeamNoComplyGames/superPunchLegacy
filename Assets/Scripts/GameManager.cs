@@ -169,24 +169,64 @@ public class GameManager : MonoBehaviour
 			//Find an X And Y to spawn
 			float enemyX = 0;
 			float enemyY = 0;
-			if (1.1f + userPos.x > 1.9f) {
-				enemyX = UnityEngine.Random.Range (1.1f + userPos.x, 1.9f);
+
+			//Get a random boolean
+			bool ran;
+			if(UnityEngine.Random.Range(0, 1.0f) > .5f)
+			{
+				ran = true;
 			}
-		//Less than or equal to
-		else {
-				enemyX = UnityEngine.Random.Range (-1.1f + userPos.x, -1.9f);
+			else
+			{
+				ran = false;
 			}
-		
-			if (userPos.y > -2.0f) {
-				enemyY = UnityEngine.Random.Range (-1.1f + userPos.y, -1.8f);
+
+			//Get our X, check if it is too great for surrounding the character, then surround them
+			if(userPos.x > 1.0f)
+			{
+				enemyX = UnityEngine.Random.Range (userPos.x - .9f, -1.9f);
 			}
-			//Less than or equal to
-			else {
-				enemyY = UnityEngine.Random.Range (1.1f + userPos.x, 1.8f);
+			else if(userPos.x < -1.0f)
+			{
+				enemyX = UnityEngine.Random.Range (.9f + userPos.x, 1.9f);
+			}
+			else
+			{
+				if(ran)
+				{
+					enemyX = UnityEngine.Random.Range (.9f + userPos.x, 1.9f);
+				}
+				else
+				{
+					enemyX = UnityEngine.Random.Range (userPos.x - .9f, -1.9f);
+				}
+			}
+
+			//Get our y the same way
+			if(userPos.y > .9f)
+			{
+				enemyY = UnityEngine.Random.Range (userPos.y - .8f, -1.8f);
+			}
+			else if(userPos.y < -.9f)
+			{
+				enemyY = UnityEngine.Random.Range (.8f + userPos.y, 1.8f);
+			}
+			else
+			{
+				if(!ran)
+				{
+					enemyY = UnityEngine.Random.Range (.8f + userPos.y, 1.8f);
+				}
+				else
+				{
+					enemyY = UnityEngine.Random.Range (userPos.y - .8f, -1.8f);
+				}
 			}
 		
 			//Now create a vector with our x and y
 			Vector2 spawnPos = new Vector2 (enemyX, enemyY);
+
+			Debug.Log(spawnPos);
 
 			//Now re-create our spawn rates
 			//Get our enemy index
