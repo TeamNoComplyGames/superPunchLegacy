@@ -173,7 +173,8 @@ public class GameManager : MonoBehaviour
 			//get a random direction
 			float eDir = -1;
 			//Our enemy spawn offset
-			float sOff = .9f;
+			float sOffY = .9f;
+			float sOffX = 1.2f;
 			//loop until we get a direction that works
 			while(eDir == -1)
 			{
@@ -184,49 +185,49 @@ public class GameManager : MonoBehaviour
 				if(eDir == 0)
 				{
 					//Then confirm we can use that direction
-					if(userPos.y < -.9f)
+					if(userPos.y < -sOffY)
 					{
 						eDir = -1;
 					}
 					else
 					{
 						enemyX = userPos.x;
-						enemyY = userPos.y - sOff;
+						enemyY = userPos.y - sOffY;
 					}
 				}
 				else if(eDir == 1)
 				{
-					if(userPos.x > .9f)
+					if(userPos.x > sOffX)
 					{
 						eDir = -1;
 					}
 					else
 					{
-						enemyX = userPos.x - sOff;
+						enemyX = userPos.x - sOffX;
 						enemyY = userPos.y;
 					}
 				}
 				else if(eDir == 2)
 				{
-					if(userPos.y > .9f)
+					if(userPos.y > sOffY)
 					{
 						eDir = -1;
 					}
 					else
 					{
 						enemyX = userPos.x;
-						enemyY = userPos.y + sOff;
+						enemyY = userPos.y + sOffY;
 					}
 				}
 				else if(eDir == 3)
 				{
-					if(userPos.x < -.9f)
+					if(userPos.x < -sOffX)
 					{
 						eDir = -1;
 					}
 					else
 					{
-						enemyX = userPos.x + sOff;
+						enemyX = userPos.x + sOffX;
 						enemyY = userPos.y;
 					}
 				}
