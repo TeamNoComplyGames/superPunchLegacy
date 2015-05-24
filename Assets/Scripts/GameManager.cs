@@ -170,6 +170,70 @@ public class GameManager : MonoBehaviour
 			float enemyX = 0;
 			float enemyY = 0;
 
+			//get a random direction
+			float eDir = -1;
+			//Our enemy spawn offset
+			float sOff = .9f;
+			//loop until we get a direction that works
+			while(eDir == -1)
+			{
+				//Get our direction 0,1,2,3
+				eDir = Mathf.Floor(UnityEngine.Random.Range(0, 3.99f));
+
+				//Check what direction we got
+				if(eDir == 0)
+				{
+					//Then confirm we can use that direction
+					if(userPos.y < -.9f)
+					{
+						eDir = -1;
+					}
+					else
+					{
+						enemyX = userPos.x;
+						enemyY = userPos.y - sOff;
+					}
+				}
+				else if(eDir == 1)
+				{
+					if(userPos.x > .9f)
+					{
+						eDir = -1;
+					}
+					else
+					{
+						enemyX = userPos.x - sOff;
+						enemyY = userPos.y;
+					}
+				}
+				else if(eDir == 2)
+				{
+					if(userPos.y > .9f)
+					{
+						eDir = -1;
+					}
+					else
+					{
+						enemyX = userPos.x;
+						enemyY = userPos.y + sOff;
+					}
+				}
+				else if(eDir == 3)
+				{
+					if(userPos.x < -.9f)
+					{
+						eDir = -1;
+					}
+					else
+					{
+						enemyX = userPos.x + sOff;
+						enemyY = userPos.y;
+					}
+				}
+			}
+
+
+			/* OLD SPAWNING METHOD
 			//Get a random boolean
 			bool ran;
 			if(UnityEngine.Random.Range(0, 1.0f) > .5f)
@@ -222,6 +286,7 @@ public class GameManager : MonoBehaviour
 					enemyY = UnityEngine.Random.Range (userPos.y - .8f, -1.8f);
 				}
 			}
+			*/
 		
 			//Now create a vector with our x and y
 			Vector2 spawnPos = new Vector2 (enemyX, enemyY);
