@@ -175,6 +175,8 @@ public class GameManager : MonoBehaviour
 			//Our enemy spawn offset
 			float sOffY = .9f;
 			float sOffX = 1.4f;
+			float boundsY = .7f;
+			float boundsX = .4f;
 			//Get a random number to slightly influence our off set
 			float slight = UnityEngine.Random.Range(0.0f, 0.7f);
 			//loop until we get a direction that works
@@ -187,7 +189,7 @@ public class GameManager : MonoBehaviour
 				if(eDir == 0)
 				{
 					//Then confirm we can use that direction
-					if(userPos.y < -.7)
+					if(userPos.y < -boundsY)
 					{
 						eDir = -1;
 					}
@@ -207,7 +209,7 @@ public class GameManager : MonoBehaviour
 				}
 				else if(eDir == 1)
 				{
-					if(userPos.x > .4f)
+					if(userPos.x > boundsX)
 					{
 						eDir = -1;
 					}
@@ -227,7 +229,7 @@ public class GameManager : MonoBehaviour
 				}
 				else if(eDir == 2)
 				{
-					if(userPos.y > .7)
+					if(userPos.y > boundsY)
 					{
 						eDir = -1;
 					}
@@ -247,7 +249,7 @@ public class GameManager : MonoBehaviour
 				}
 				else if(eDir == 3)
 				{
-					if(userPos.x < -.4f)
+					if(userPos.x < -boundsX)
 					{
 						eDir = -1;
 					}
