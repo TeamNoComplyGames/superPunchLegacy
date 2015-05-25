@@ -209,10 +209,8 @@ public class Player : MonoBehaviour
 				//Do damage
 					e.setEHealth(e.ehealth - playerLevel);
 
-					Debug.Log("KJDSHDHSKJDH");
-
-				//Now knockback
-				e.knockBack(animator.GetInteger("Direction"), playerLevel);
+					//Now knockback
+					e.knockBack(animator.GetInteger("Direction"), playerLevel);
 				}
 			}
 		}
