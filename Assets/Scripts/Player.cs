@@ -179,8 +179,11 @@ public class Player : MonoBehaviour
 			animator.SetTrigger ("Attack");
 			//Play the sounds
 			punch.Play ();
-			yield return new WaitForSeconds (0.1f);
-			attacking = false;
+			//Let the frame finish
+		yield return null;
+		//set attacking to false
+		attacking = false;
+
 	}
 
 	//Catch when we collide with enemy
@@ -205,6 +208,8 @@ public class Player : MonoBehaviour
 				Enemy e = (Enemy) collision.gameObject.GetComponent("Enemy");
 				//Do damage
 					e.setEHealth(e.ehealth - playerLevel);
+
+				Debug.Log("KJDSHDHSKJDH"):
 
 				//Now knockback
 				e.knockBack(animator.GetInteger("Direction"), playerLevel);
