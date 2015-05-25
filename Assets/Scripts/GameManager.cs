@@ -174,7 +174,9 @@ public class GameManager : MonoBehaviour
 			float eDir = -1;
 			//Our enemy spawn offset
 			float sOffY = .9f;
-			float sOffX = 1.2f;
+			float sOffX = 1.4f;
+			//Get a random number to slightly influence our off set
+			float slight = UnityEngine.Random.Range(0.0f, 0.7f);
 			//loop until we get a direction that works
 			while(eDir == -1)
 			{
@@ -185,50 +187,82 @@ public class GameManager : MonoBehaviour
 				if(eDir == 0)
 				{
 					//Then confirm we can use that direction
-					if(userPos.y < -sOffY)
+					if(userPos.y < -.7)
 					{
 						eDir = -1;
 					}
 					else
 					{
-						enemyX = userPos.x;
+						//Use the direction, and add a slight change to our other coordinate
+						if(userPos.x > 0)
+						{
+							enemyX = userPos.x - slight;
+						}
+						else
+						{
+							enemyX = userPos.x + slight;
+						}
 						enemyY = userPos.y - sOffY;
 					}
 				}
 				else if(eDir == 1)
 				{
-					if(userPos.x > sOffX)
+					if(userPos.x > .4f)
 					{
 						eDir = -1;
 					}
 					else
 					{
 						enemyX = userPos.x - sOffX;
-						enemyY = userPos.y;
+						//Use the direction, and add a slight change to our other coordinate
+						if(userPos.y > 0)
+						{
+							enemyY = userPos.x - slight;
+						}
+						else
+						{
+							enemyY = userPos.x + slight;
+						}
 					}
 				}
 				else if(eDir == 2)
 				{
-					if(userPos.y > sOffY)
+					if(userPos.y > .7)
 					{
 						eDir = -1;
 					}
 					else
 					{
-						enemyX = userPos.x;
+						//Use the direction, and add a slight change to our other coordinate
+						if(userPos.x > 0)
+						{
+							enemyX = userPos.x - slight;
+						}
+						else
+						{
+							enemyX = userPos.x + slight;
+						}
 						enemyY = userPos.y + sOffY;
 					}
 				}
 				else if(eDir == 3)
 				{
-					if(userPos.x < -sOffX)
+					if(userPos.x < -.4f)
 					{
 						eDir = -1;
 					}
 					else
 					{
 						enemyX = userPos.x + sOffX;
-						enemyY = userPos.y;
+						//Use the direction, and add a slight change to our other coordinate
+						if(userPos.y > 0)
+						{
+							enemyY = userPos.x - slight;
+						}
+						else
+						{
+							enemyY = userPos.x + slight;
+						}
 					}
 				}
 			}
