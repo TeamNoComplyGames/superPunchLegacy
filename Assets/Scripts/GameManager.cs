@@ -183,7 +183,7 @@ public class GameManager : MonoBehaviour
 			while(eDir == -1)
 			{
 				//Get our direction 0,1,2,3
-				eDir = Mathf.Floor(UnityEngine.Random.Range(0, 3.99f));
+				eDir = Mathf.Floor(UnityEngine.Random.Range(0, 4.0f));
 
 				//Check what direction we got
 				if(eDir == 0)
@@ -195,6 +195,7 @@ public class GameManager : MonoBehaviour
 					}
 					else
 					{
+						Debug.Log("DIR 0");
 						//Use the direction, and add a slight change to our other coordinate
 						if(userPos.x > 0)
 						{
@@ -215,15 +216,16 @@ public class GameManager : MonoBehaviour
 					}
 					else
 					{
-						enemyX = userPos.x - sOffX;
+						Debug.Log("DIR 1");
+						enemyX = userPos.x + sOffX;
 						//Use the direction, and add a slight change to our other coordinate
 						if(userPos.y > 0)
 						{
-							enemyY = userPos.x - slight;
+							enemyY = userPos.y - slight;
 						}
 						else
 						{
-							enemyY = userPos.x + slight;
+							enemyY = userPos.y + slight;
 						}
 					}
 				}
@@ -235,6 +237,7 @@ public class GameManager : MonoBehaviour
 					}
 					else
 					{
+						Debug.Log("DIR 2");
 						//Use the direction, and add a slight change to our other coordinate
 						if(userPos.x > 0)
 						{
@@ -255,17 +258,23 @@ public class GameManager : MonoBehaviour
 					}
 					else
 					{
-						enemyX = userPos.x + sOffX;
+						Debug.Log("DIR 3");
+						enemyX = userPos.x - sOffX;
 						//Use the direction, and add a slight change to our other coordinate
 						if(userPos.y > 0)
 						{
-							enemyY = userPos.x - slight;
+							enemyY = userPos.y - slight;
 						}
 						else
 						{
-							enemyY = userPos.x + slight;
+							enemyY = userPos.y + slight;
 						}
 					}
+				}
+				else
+				{
+					//Keep looping 
+					eDir = -1;
 				}
 			}
 
@@ -328,6 +337,7 @@ public class GameManager : MonoBehaviour
 			//Now create a vector with our x and y
 			Vector2 spawnPos = new Vector2 (enemyX, enemyY);
 
+			Debug.Log(userPos);
 			Debug.Log(spawnPos);
 
 			//Now re-create our spawn rates
