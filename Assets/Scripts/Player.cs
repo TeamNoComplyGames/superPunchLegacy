@@ -198,11 +198,17 @@ public class Player : MonoBehaviour
 				//Check if the enemy is in the direction we are facing
 				int dir = animator.GetInteger("Direction");
 
-				//Deal damage if we are facing the right direction
-				if((dir == 1 && collision.gameObject.transform.position.x >= gameObject.transform.position.x) ||
-				   (dir == 3 && collision.gameObject.transform.position.x <= gameObject.transform.position.x) ||
-				   (dir == 2 && collision.gameObject.transform.position.y >= gameObject.transform.position.y) ||
-				   (dir == 0 && collision.gameObject.transform.position.y <= gameObject.transform.position.y))
+				//Get our x and y
+				float playerX = gameObject.transform.position.x;
+				float playerY = gameObject.transform.position.y;
+				float enemyX = collision.gameObject.transform.position.x;
+				float enemyY = collision.gameObject.transform.position.y;
+
+				//Deal damage if we are facing the right direction, and they are not too above or around us
+				if((dir == 1 && enemyX >= playerX && enemyY <= (playerY + .05f) && enemyY >= (playerY - .05f)) ||
+				   (dir == 3 && enemyX <= playerX && enemyY <= (playerY + .05f) && enemyY >= (playerY - .05f)) ||
+				   (dir == 2 && enemyY >= playerY && enemyX <= (playerX + .05f) && enemyX >= (playerX - .05f)) ||
+				   (dir == 0 && enemyY <= playerY & enemyX <= (playerX + .05f) && enemyX >= (playerX - .05f)))
 				{
 				//Get the enemy and decrease it's health
 				Enemy e = (Enemy) collision.gameObject.GetComponent("Enemy");
