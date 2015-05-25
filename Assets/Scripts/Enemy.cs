@@ -52,7 +52,7 @@ public class Enemy : MonoBehaviour
 		if (elevel <= 0) {
 			elevel = 1;
 		}
-		ehealth = elevel * 8;
+		ehealth = elevel * 2;
 
 		//Set the mass of the rigid body to be really high so they dont go flying
 		enemy.mass = 10000;
