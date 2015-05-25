@@ -195,7 +195,6 @@ public class GameManager : MonoBehaviour
 					}
 					else
 					{
-						Debug.Log("DIR 0");
 						//Use the direction, and add a slight change to our other coordinate
 						if(userPos.x > 0)
 						{
@@ -216,7 +215,6 @@ public class GameManager : MonoBehaviour
 					}
 					else
 					{
-						Debug.Log("DIR 1");
 						enemyX = userPos.x + sOffX;
 						//Use the direction, and add a slight change to our other coordinate
 						if(userPos.y > 0)
@@ -237,7 +235,6 @@ public class GameManager : MonoBehaviour
 					}
 					else
 					{
-						Debug.Log("DIR 2");
 						//Use the direction, and add a slight change to our other coordinate
 						if(userPos.x > 0)
 						{
@@ -258,7 +255,6 @@ public class GameManager : MonoBehaviour
 					}
 					else
 					{
-						Debug.Log("DIR 3");
 						enemyX = userPos.x - sOffX;
 						//Use the direction, and add a slight change to our other coordinate
 						if(userPos.y > 0)
@@ -336,9 +332,6 @@ public class GameManager : MonoBehaviour
 		
 			//Now create a vector with our x and y
 			Vector2 spawnPos = new Vector2 (enemyX, enemyY);
-
-			Debug.Log(userPos);
-			Debug.Log(spawnPos);
 
 			//Now re-create our spawn rates
 			//Get our enemy index
