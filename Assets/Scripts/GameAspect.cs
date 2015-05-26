@@ -5,6 +5,9 @@ using System.Collections;
 public class GameAspect : MonoBehaviour 
 {
 
+	//our canvas scaler
+	UnityEngine.UI.CanvasScaler uiScale;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -12,7 +15,21 @@ public class GameAspect : MonoBehaviour
 		//Set up our camera
 		//Get our aspect ratio
 		float aspectRatio = Camera.main.aspect;
-	
+
+		//Get our scaler
+		uiScale = GameObject.Find ("UI").GetComponent<UnityEngine.UI.CanvasScaler>();
+
+		//Now run through if statement to set canvas size and camera size
+		//5:4
+		if (aspectRatio >= 1.25) 
+		{
+			//Change camera.orthagraphic size and ui scale values here
+		}
+		//4:3
+		else if (aspectRatio >= 1.33) 
+		{
+
+		}
 	}
 	
 	// Update is called once per frame
