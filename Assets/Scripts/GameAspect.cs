@@ -23,39 +23,38 @@ public class GameAspect : MonoBehaviour
 
 		//Now run through if statement to set canvas size and camera size
 		//5:4
-		if (aspectRatio <= 1.26) 
-		{
+		if (aspectRatio <= 1.26) {
 			//Change camera.orthagraphic size and ui scale values here
 			Camera.main.orthographicSize = 0.85f;
 			uiScale.scaleFactor = .75f;
 		}
 		//4:3
-		else if (aspectRatio <= 1.34) 
-		{
+		else if (aspectRatio <= 1.34) {
 			//Change camera.orthagraphic size and ui scale values here
 			Camera.main.orthographicSize = 0.8f;
 			uiScale.scaleFactor = .8f;
 		}
 		//3:2
-		else if (aspectRatio <= 1.51) 
-		{
+		else if (aspectRatio <= 1.51) {
 			//Change camera.orthagraphic size and ui scale values here
 			Camera.main.orthographicSize = 0.725f;
 			uiScale.scaleFactor = .9f;
 		}
 		//16:10
-		else if (aspectRatio <= 1.61) 
-		{
+		else if (aspectRatio <= 1.61) {
 			//Change camera.orthagraphic size and ui scale values here
 			Camera.main.orthographicSize = 0.665f;
 			uiScale.scaleFactor = .95f;
 		}
 		//16:9
-		else if (aspectRatio <= 1.78) 
-		{
+		else if (aspectRatio <= 1.78) {
 			//Change camera.orthagraphic size and ui scale values here
 			Camera.main.orthographicSize = 0.6f;
 			uiScale.scaleFactor = 1.0f;
+		} 
+		else 
+		{
+			//Default to nothing
 		}
 	}
 	

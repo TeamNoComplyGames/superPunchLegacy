@@ -1,13 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameAspect.cs">
     <Files>
-      <File FileName="Assets\Scripts\Player.cs" Line="201" Column="22" />
-      <File FileName="Assets\Scripts\GameManager.cs" Line="56" Column="60" />
+      <File FileName="Assets\Scripts\GameAspect.cs" Line="57" Column="24" />
+      <File FileName="Assets\Scripts\Player.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\FlashingText.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Enemy.cs" Line="173" Column="20" />
+      <File FileName="Assets\Scripts\Enemy.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PauseMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GameAspect.cs" Line="26" Column="62" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
