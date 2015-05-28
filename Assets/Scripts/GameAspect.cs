@@ -24,11 +24,27 @@ public class GameAspect : MonoBehaviour
 		if (aspectRatio >= 1.25) 
 		{
 			//Change camera.orthagraphic size and ui scale values here
+			Camera.main.orthographicSize = 
 		}
 		//4:3
 		else if (aspectRatio >= 1.33) 
 		{
 
+		}
+		//3:2
+		else if (aspectRatio >= 1.5) 
+		{
+			
+		}
+		//16:10
+		else if (aspectRatio >= 1.6) 
+		{
+			
+		}
+		//16:9
+		else if (aspectRatio >= 1.77) 
+		{
+			
 		}
 	}
 	
