@@ -21,7 +21,7 @@ public static class SaveManager
 	}
 
 	//save our file
-	public static void Save() {
+	public static void saveSave() {
 		BinaryFormatter bf = new BinaryFormatter();
 		FileStream file = File.Create (Application.persistentDataPath + "/punch.legacy");
 		bf.Serialize(file, save);
@@ -29,9 +29,12 @@ public static class SaveManager
 	}
 
 	//Set and get methods
-	public static void setSaveLevel(int lvl)
+	public static void setHighLevel(int lvl)
 	{
-		save.setLevel(lvl);
+		if(lvl > getSaveLevel())
+		{
+			save.setLevel(lvl);
+		}
 	}
 	
 	public static int getSaveLevel()

@@ -106,6 +106,12 @@ public class GameManager : MonoBehaviour
 			//Slow down the game Time
 			Time.timeScale = 0.25f;
 
+			//Try to save our highestlevel
+			SaveManager.setHighLevel(user.getLevel());
+
+			//Now save
+			SaveManager.saveSave();
+
 			//Get our key input
 			if (Input.GetKey("escape"))
 			{
