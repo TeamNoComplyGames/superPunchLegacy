@@ -1,30 +1,27 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic; 
-using System.Runtime.Serialization.Formatters.Binary; 
-using System.IO;
 
+[System.Serializable]
 public class PlayerSave
 {
-	//Our highest level
+	//our level
 	int level;
 
-	//Our highest score
-	long score;
-
-	//Our constructor
+	//our constructor
 	public PlayerSave()
 	{
-		//set level and score to zero
 		level = 0;
-		score = 0;
-
-		//Load the save
-		loadSave();
 	}
 
-	public void loadSave()
+	//Set and get methods
+	public void setLevel(int lvl)
 	{
-
+		level = lvl;
 	}
+	
+	public int getLevel()
+	{
+		return level;
+	}
+
 }
