@@ -204,7 +204,13 @@ public class Enemy : MonoBehaviour
 				//Set the attack trigger of the player's animation controller in order to play the player's attack animation.
 				animator.SetTrigger ("EAttack");
 				Player p = (Player) collision.gameObject.GetComponent("Player");
-				int newHealth = p.getHealth() - elevel;
+				//Now using an int to calulate our damage before we apply to health
+				int damage = elevel / 2;
+				if(damage < 1)
+				{
+					damage = 1;
+				}
+				int newHealth = p.getHealth() - damage;
 				p.setHealth(newHealth);
 
 				//Play the sound of hurt, only if the game is still on
