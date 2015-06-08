@@ -13,6 +13,9 @@ public class Bounded2DCamera : MonoBehaviour
 	public float totalShake;
 	private bool shaking;
 
+	//The speed the camera wwill lerp, e.g. 1.5f
+	public float lerpSpeed;
+
 	//our postion
 	private float posX;
 	private float posY;
@@ -35,20 +38,21 @@ public class Bounded2DCamera : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+		//Use Vector3 lerp to lerp our camera to all ofit's positions
 		if (colliding) 
 		{
 			//Dont move the camera for the axes that are colliding
 			if(wallSides.x != 0 && wallSides.y != 0)
 			{
-				gameObject.transform.position = new Vector3(posX, posY, -10);
+				gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, new Vector3(posX, posY, -10), lerpSpeed * Time.deltaTime);
 			}
 			else if(wallSides.x != 0 && wallSides.y == 0)
 			{
-				gameObject.transform.position = new Vector3(posX, gameObject.transform.position.y, -10);
+				gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, new Vector3(posX, gameObject.transform.position.y, -10), lerpSpeed * Time.deltaTime);
 			}
 			else
 			{
-				gameObject.transform.position = new Vector3(gameObject.transform.position.x, posY, -10);
+				gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, new Vector3(gameObject.transform.position.x, posY, -10), lerpSpeed * Time.deltaTime);
 			}
 
 
@@ -74,8 +78,8 @@ public class Bounded2DCamera : MonoBehaviour
 		} 
 		else 
 		{
-			//translate back to ourself, 0,0, -10
-			gameObject.transform.localPosition = defaultPos;
+			//translate back to ourself, 0,0, -10, with lerp
+			gameObject.transform.localPosition = Vector3.Lerp(gameObject.transform.localPosition, defaultPos, lerpSpeed * Time.deltaTime);
 		}
 
 		//Now check if we need to shake the camera
