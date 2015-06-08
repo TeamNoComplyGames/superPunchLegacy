@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
 
 	//Game jucin'
 	private int moveDec;
+	private bool impacting;
 
 	private SpriteRenderer render; //Our sprite renderer to change our sprite color
 	private bool showFlash;
@@ -50,6 +51,7 @@ public class Player : MonoBehaviour
 		exp = 0;
 		attacking = false;
 		moveDec = 1;
+		impacting = false;
 
 		//Get our sounds
 		punch = GameObject.Find ("Punch").GetComponent<AudioSource> ();
@@ -317,6 +319,24 @@ public class Player : MonoBehaviour
 	public void addEXP(int add)
 	{
 		exp = exp + add;
+	}
+
+	//Function to call for impact pause
+	public void startImpact()
+	{
+		StartCoroutine("impactPause");
+	}
+	//Pause our game for some slight seconds
+	public IEnumerator impactPause()
+	{
+		if(!impacting)
+		{
+			impacting = true;
+			Time.timeScale = 0.1f;
+			yield return new WaitForSeconds(.002f);
+			Time.timeScale = 1;
+			impacting = false;
+		}
 	}
 
 	//Flash our sprite function
