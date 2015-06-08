@@ -10,6 +10,7 @@ public class Bounded2DCamera : MonoBehaviour
 	public float shakeAmount;
 	private float currentShake;
 	public float decreaseAmount;
+	public float totalShake;
 	private bool shaking;
 
 	//our postion
@@ -136,5 +137,14 @@ public class Bounded2DCamera : MonoBehaviour
 		//reset current shake and shake!
 		currentShake = shakeAmount;
 		shaking = true;
+	}
+
+	//Function to increase screen shake
+	public void incShake(float amount)
+	{
+		if(shakeAmount + amount < totalShake)
+		{
+			shakeAmount = shakeAmount + amount;
+		}
 	}
 }
