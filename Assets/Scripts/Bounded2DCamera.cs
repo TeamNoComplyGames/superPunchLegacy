@@ -13,7 +13,7 @@ public class Bounded2DCamera : MonoBehaviour
 	public float totalShake;
 	private bool shaking;
 
-	//The speed the camera wwill lerp, e.g. 1.5f
+	//The speed the camera will lerp, e.g. 1.5f
 	public float lerpSpeed;
 
 	//our postion
@@ -33,6 +33,9 @@ public class Bounded2DCamera : MonoBehaviour
 		shaking = false;
 		defaultPos = new Vector3 (0, 0, -10);
 		wallSides = Vector3.zero;
+
+		//off set the camera by just a little bit to add some lerp when we start
+		gameObject.transform.localPosition = new Vector3 (-.03f, -.03f, -10);
 	}
 	
 	// Update is called once per frame
@@ -149,6 +152,15 @@ public class Bounded2DCamera : MonoBehaviour
 		if(shakeAmount + amount < totalShake)
 		{
 			shakeAmount = shakeAmount + amount;
+		}
+	}
+
+	//function to decrease lerp speed
+	public void declerp(float amount)
+	{
+		if(lerpSpeed - amount > .1)
+		{
+			lerpSpeed = lerpSpeed - amount;
 		}
 	}
 }

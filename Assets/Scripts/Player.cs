@@ -129,6 +129,7 @@ public class Player : MonoBehaviour
 			if(playerLevel % 2 == 0)
 			{
 				cameraShake.incShake(.002f);
+				cameraShake.declerp(.2f);
 			}
 
 			//Show our text, stop if already showing
