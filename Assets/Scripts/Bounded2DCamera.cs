@@ -93,7 +93,7 @@ public class Bounded2DCamera : MonoBehaviour
 				//If we still have some shake value, make the current camera position that much more amount
 				//Also need to lerp our screen shake
 				gameObject.transform.localPosition =  gameObject.transform.localPosition + 
-					new Vector3(Random.insideUnitCircle.x * currentShake, Random.insideUnitCircle.y * currentShake, -10);
+					new Vector3(Random.insideUnitCircle.x * currentShake, Random.insideUnitCircle.y * currentShake, 0);
 
 
 				currentShake = currentShake - Time.deltaTime * decreaseAmount;
