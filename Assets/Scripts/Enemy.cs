@@ -227,6 +227,9 @@ public class Enemy : MonoBehaviour
 				//Shake the screen
 				cameraShake.startShake();
 
+				//impact pause from the player
+				p.startImpact();
+
 				//Reset attack frames
 				attackFrames = totalFrames;
 			}
