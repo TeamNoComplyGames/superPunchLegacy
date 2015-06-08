@@ -124,6 +124,13 @@ public class Player : MonoBehaviour
 			gameManager.invokeEnemies();
 			//Play our sound
 			levelUp.Play();
+
+			//Increase our camera shake if multiple of 2
+			if(playerLevel % 2 == 0)
+			{
+				cameraShake.incShake(.002f);
+			}
+
 			//Show our text, stop if already showing
 			StopCoroutine("levelFlash");
 			StartCoroutine("levelFlash");
