@@ -225,7 +225,7 @@ public class Player : MonoBehaviour
 
 		//Check what direction we are moving, and slight move that way when attacking
 		int dir = animator.GetInteger("Direction");
-		float moveAmount = .005f;
+		float moveAmount = .01f;
 		if(dir == 0)
 		{
 			gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - moveAmount, 0);
