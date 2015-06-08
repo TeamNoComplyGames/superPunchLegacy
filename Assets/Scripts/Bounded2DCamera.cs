@@ -47,15 +47,15 @@ public class Bounded2DCamera : MonoBehaviour
 			//Dont move the camera for the axes that are colliding
 			if(wallSides.x != 0 && wallSides.y != 0)
 			{
-				gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, new Vector3(posX, posY, -10), lerpSpeed * Time.deltaTime);
+				gameObject.transform.position = new Vector3(posX, posY, -10);
 			}
 			else if(wallSides.x != 0 && wallSides.y == 0)
 			{
-				gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, new Vector3(posX, gameObject.transform.position.y, -10), lerpSpeed * Time.deltaTime);
+				gameObject.transform.position = new Vector3(posX, gameObject.transform.position.y, -10);
 			}
 			else
 			{
-				gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, new Vector3(gameObject.transform.position.x, posY, -10), lerpSpeed * Time.deltaTime);
+				gameObject.transform.position = new Vector3(gameObject.transform.position.x, posY, -10);
 			}
 
 
