@@ -16,6 +16,9 @@ public class Player : MonoBehaviour
 	public static int playerLevel;
 	private int exp;
 
+	//Game jucin'
+	private int moveDec;
+
 	private SpriteRenderer render; //Our sprite renderer to change our sprite color
 	private bool showFlash;
 	private Animator animator;   //Used to store a reference to the Player's animator component.
@@ -44,6 +47,7 @@ public class Player : MonoBehaviour
 		health = playerLevel * healthRate;
 		exp = 0;
 		attacking = false;
+		moveDec = 1;
 
 		//Get our sounds
 		punch = GameObject.Find ("Punch").GetComponent<AudioSource> ();
@@ -164,16 +168,19 @@ public class Player : MonoBehaviour
 		}
 		//Create a vector to where we are moving
 		Vector2 movement = new Vector2(h, v); 
-		//Get our speed according to our current level
-		float levelSpeed = (float) playerLevel / 400;
-		float superSpeed = levelSpeed + (moveSpeed / 10);
+
 		//When attacking start a slow movemnt coroutine
 		if(attacking)
 		{
-				//Attacking working great
-				StopCoroutine("Attack");
-				StartCoroutine ("Attack");
+			//Attacking working great
+			StopCoroutine("slowMoving");
+			StartCoroutine ("slowMoving");
 		}
+
+
+		//Get our speed according to our current level
+		float levelSpeed = (float) playerLevel / 400;
+		float superSpeed = levelSpeed + (moveSpeed / 10) / moveDec;
 		//Can't go above .5 though
 		if (superSpeed > .032f) 
 		{
@@ -188,7 +195,10 @@ public class Player : MonoBehaviour
 	//Function to slow movement for a certain amount of time
 	IEnumerator slowMoving()
 	{
-
+		//Double move decrement, wait for half of a second, and then set back to normal
+		moveDec = playerLevel * playerLevel + 1;
+		yield return new WaitForSeconds(.5f);
+		moveDec = 1;
 	}
 
 	//Function to catch attack commands
