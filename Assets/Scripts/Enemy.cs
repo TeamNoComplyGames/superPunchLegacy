@@ -52,7 +52,7 @@ public class Enemy : MonoBehaviour
 		if (elevel <= 0) {
 			elevel = 1;
 		}
-		ehealth = elevel * 3;
+		ehealth = (int) (elevel * 2.5f);
 
 		//Set the mass of the rigid body to be really high so they dont go flying
 		enemy.mass = 10000;
@@ -205,7 +205,7 @@ public class Enemy : MonoBehaviour
 				animator.SetTrigger ("EAttack");
 				Player p = (Player) collision.gameObject.GetComponent("Player");
 				//Now using an int to calulate our damage before we apply to health
-				int damage = elevel / 2;
+				int damage = (int)(elevel / 1.5);
 				if(damage < 1)
 				{
 					damage = 1;
