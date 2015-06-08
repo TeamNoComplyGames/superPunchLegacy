@@ -16,8 +16,6 @@ public class GameAspect : MonoBehaviour
 		//Get our aspect ratio
 		float aspectRatio = Camera.main.aspect;
 
-		Debug.Log (aspectRatio);
-
 		//Get our scaler
 		uiScale = GameObject.Find ("UI").GetComponent<UnityEngine.UI.CanvasScaler>();
 
