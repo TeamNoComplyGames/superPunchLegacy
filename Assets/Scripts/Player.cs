@@ -222,6 +222,26 @@ public class Player : MonoBehaviour
 			animator.SetTrigger ("Attack");
 			//Play the sounds
 			punch.Play ();
+
+		//Check what direction we are moving, and slight move that way when attacking
+		int dir = animator.GetInteger("Direction");
+		float moveAmount = .005f;
+		if(dir == 0)
+		{
+			gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - moveAmount, 0);
+		}
+		else if(dir == 1)
+		{
+			gameObject.transform.position = new Vector3(gameObject.transform.position.x + moveAmount, gameObject.transform.position.y, 0);
+		}
+		else if(dir == 2)
+		{
+			gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + moveAmount, 0);
+		}
+		else
+		{
+			gameObject.transform.position = new Vector3(gameObject.transform.position.x - moveAmount, gameObject.transform.position.y, 0);
+		}
 			//Let the frame finish
 		yield return null;
 		//set attacking to false
