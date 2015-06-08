@@ -10,7 +10,7 @@ public class Bounded2DCamera : MonoBehaviour
 	public float shakeAmount;
 	private float currentShake;
 	public float decreaseAmount;
-	public bool shaking;
+	private bool shaking;
 
 	//our postion
 	private float posX;

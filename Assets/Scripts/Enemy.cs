@@ -35,6 +35,9 @@ public class Enemy : MonoBehaviour
 
 	//Our game manager
 	GameManager gameManager;
+
+	//our camera Script
+	Bounded2DCamera cameraShake;
 	
 	// Use this for initialization
 	void Start () 
@@ -69,6 +72,8 @@ public class Enemy : MonoBehaviour
 
 		//Get our gammaneger
 		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+		//Get our camera script
+		cameraShake = Camera.main.GetComponent<Bounded2DCamera>();
 
 		//Increase our number of enemies
 		gameManager.plusEnemy();
@@ -218,6 +223,9 @@ public class Enemy : MonoBehaviour
 				{
 					hurt.Play();
 				}
+
+				//Shake the screen
+				cameraShake.startShake();
 
 				//Reset attack frames
 				attackFrames = totalFrames;
