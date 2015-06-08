@@ -80,7 +80,6 @@ public class Bounded2DCamera : MonoBehaviour
 		//Now check if we need to shake the camera
 		if(shaking)
 		{
-			Debug.Log("hi");
 			if(currentShake > 0)
 			{
 				//If we still have some shake value, make the current camera position that much more amount
@@ -136,6 +135,6 @@ public class Bounded2DCamera : MonoBehaviour
 	{
 		//reset current shake and shake!
 		currentShake = shakeAmount;
-		shaking = false;
+		shaking = true;
 	}
 }
