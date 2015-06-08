@@ -6,6 +6,12 @@ public class Bounded2DCamera : MonoBehaviour
 	//Our camera body
 	public Rigidbody body;
 
+	//Shake amount for screenshake
+	public float shakeAmount;
+	private float currentShake;
+	public float decreaseAmount;
+	public bool shaking;
+
 	//our postion
 	private float posX;
 	private float posY;
@@ -20,6 +26,7 @@ public class Bounded2DCamera : MonoBehaviour
 	void Start () 
 	{
 		colliding = false;
+		shaking = false;
 		defaultPos = new Vector3 (0, 0, -10);
 		wallSides = Vector3.zero;
 	}
@@ -69,7 +76,23 @@ public class Bounded2DCamera : MonoBehaviour
 			//translate back to ourself, 0,0, -10
 			gameObject.transform.localPosition = defaultPos;
 		}
-		
+
+		//Now check if we need to shake the camera
+		if(shaking)
+		{
+			if(currentShake > 0)
+			{
+				//If we still have some shake value, make the current camera position that much more amount
+				gameObject.transform.localPosition =  gameObject.transform.localPosition + new 
+					Vector3(Random.insideUnitCircle.x * currentShake, Random.insideUnitCircle.y * currentShake, -10);
+				currentShake = currentShake - Time.deltaTime * decreaseAmount;
+			}
+			else
+			{
+				shaking = false;
+				currentShake = shakeAmount;
+			}
+		}
 	}
 
 
@@ -107,5 +130,11 @@ public class Bounded2DCamera : MonoBehaviour
 		}
 	}
 
-
+	//Function tto start shaking
+	public void startShake()
+	{
+		//reset current shake and shake!
+		currentShake = shakeAmount;
+		shaking = false;
+	}
 }
