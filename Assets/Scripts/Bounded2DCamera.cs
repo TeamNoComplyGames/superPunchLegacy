@@ -90,10 +90,53 @@ public class Bounded2DCamera : MonoBehaviour
 		{
 			if(currentShake > 0)
 			{
+				//First check if we are colliding
+				float xShake = 0;
+				float yShake = 0;
+				if(colliding)
+				{
+					//first check if we need to fix our x
+					if(wallSides.x != 0)
+					{
+						//now check if we are negative or positive
+						if(wallSides.x > 0)
+						{
+							//Then x shake must be the other direction
+							xShake = Random.Range(0, .99f);
+						}
+						else
+						{
+							//Then x shake must be the other direction
+							xShake = Random.Range(0, .99f);
+						}
+					}
+
+					//copy/paste to fix y
+					if(wallSides.y != 0)
+					{
+						//now check if we are negative or positive
+						if(wallSides.y > 0)
+						{
+							//Then x shake must be the other direction
+							yShake = -1;
+						}
+						else
+						{
+							//Then x shake must be the other direction
+							yShake = 1;
+						}
+					}
+				}
+				else
+				{
+					xShake = Random.insideUnitCircle.x;
+					yShake = Random.insideUnitCircle.y;
+				}
+
 				//If we still have some shake value, make the current camera position that much more amount
 				//Also need to lerp our screen shake
 				gameObject.transform.localPosition =  gameObject.transform.localPosition + 
-					new Vector3(Random.insideUnitCircle.x * currentShake, Random.insideUnitCircle.y * currentShake, 0);
+					new Vector3(xShake * currentShake, yShake * currentShake, 0);
 
 
 				currentShake = currentShake - Time.deltaTime * decreaseAmount;
