@@ -102,12 +102,12 @@ public class Bounded2DCamera : MonoBehaviour
 						if(wallSides.x > 0)
 						{
 							//Then x shake must be the other direction
-							xShake = Random.Range(0, .25f);
+							xShake = Random.Range(0, .5f);
 						}
 						else
 						{
 							//Then x shake must be the other direction
-							xShake = Random.Range(0, .25f);
+							xShake = Random.Range(0, .5f);
 						}
 					}
 
@@ -134,9 +134,14 @@ public class Bounded2DCamera : MonoBehaviour
 				}
 
 				//If we still have some shake value, make the current camera position that much more amount
-				//Also need to lerp our screen shake
+				//Also need to lerp our screen shake, and because of this make sure the camera cant go out of a certain distnace
+				if(Vector3.Distance(defaultPos, gameObject.transform.localPosition) > 0)
+				{
 				gameObject.transform.localPosition =  gameObject.transform.localPosition + 
 					new Vector3(xShake * currentShake, yShake * currentShake, 0);
+				}
+
+				Debug.Log(Vector3.Distance(defaultPos, gameObject.transform.localPosition));
 
 
 				currentShake = currentShake - Time.deltaTime * decreaseAmount;
