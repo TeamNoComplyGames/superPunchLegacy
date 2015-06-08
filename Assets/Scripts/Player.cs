@@ -95,6 +95,7 @@ public class Player : MonoBehaviour
 				if(!attacking)
 				{
 					//Attacking working great
+					StopCoroutine("Attack");
 					StartCoroutine ("Attack");
 				}
 			}
@@ -166,6 +167,13 @@ public class Player : MonoBehaviour
 		//Get our speed according to our current level
 		float levelSpeed = (float) playerLevel / 400;
 		float superSpeed = levelSpeed + (moveSpeed / 10);
+		//When attacking start a slow movemnt coroutine
+		if(attacking)
+		{
+				//Attacking working great
+				StopCoroutine("Attack");
+				StartCoroutine ("Attack");
+		}
 		//Can't go above .5 though
 		if (superSpeed > .032f) 
 		{
@@ -175,6 +183,12 @@ public class Player : MonoBehaviour
 		//Move to that position
 		player.MovePosition(player.position + movement * superSpeed);
 		}
+	}
+
+	//Function to slow movement for a certain amount of time
+	IEnumerator slowMoving()
+	{
+
 	}
 
 	//Function to catch attack commands
