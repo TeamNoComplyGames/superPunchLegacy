@@ -102,12 +102,12 @@ public class Bounded2DCamera : MonoBehaviour
 						if(wallSides.x > 0)
 						{
 							//Then x shake must be the other direction
-							xShake = Random.Range(0, .99f);
+							xShake = Random.Range(0, .25f);
 						}
 						else
 						{
 							//Then x shake must be the other direction
-							xShake = Random.Range(0, .99f);
+							xShake = Random.Range(0, .25f);
 						}
 					}
 
