@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
 	public Rigidbody2D player;
 	//Our player movepseed
 	public float moveSpeed = 0f;
+	//Player health rate
+	public int healthRate;
 
 	//Our player stats
 	private int health;
@@ -39,7 +41,7 @@ public class Player : MonoBehaviour
 
 		//Set our default values
 		playerLevel = 1;
-		health = playerLevel * 10;
+		health = playerLevel * healthRate;
 		exp = 0;
 		attacking = false;
 
@@ -104,7 +106,7 @@ public class Player : MonoBehaviour
 			//Reset/increase stats
 			exp = 0;
 			++playerLevel;
-			health = playerLevel * 8;
+			health = playerLevel * healthRate;
 			gameManager.invokeEnemies();
 			//Play our sound
 			levelUp.Play();
@@ -204,7 +206,7 @@ public class Player : MonoBehaviour
 				float enemyX = collision.gameObject.transform.position.x;
 				float enemyY = collision.gameObject.transform.position.y;
 				//Our window for our punch range
-				float window = .115f;
+				float window = .15f;
 
 				//Deal damage if we are facing the right direction, and they are not too above or around us
 				if((dir == 1 && enemyX >= playerX && enemyY <= (playerY + window) && enemyY >= (playerY - window)) ||
