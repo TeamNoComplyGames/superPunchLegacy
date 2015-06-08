@@ -33,6 +33,8 @@ public class Player : MonoBehaviour
 
 	//Our game manager
 	GameManager gameManager;
+	//our camera Script
+	Bounded2DCamera cameraShake;
 
 	// Use this for initialization
 	void Start () 
@@ -61,6 +63,8 @@ public class Player : MonoBehaviour
 
 		//Get our gammaneger
 		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+		//Get our camera script
+		cameraShake = Camera.main.GetComponent<Bounded2DCamera>();
 	}
 
 	//Called every frame
@@ -250,6 +254,9 @@ public class Player : MonoBehaviour
 
 					//Now knockback
 					e.knockBack(animator.GetInteger("Direction"), playerLevel);
+
+					//Shake the screen
+					cameraShake.startShake();
 				}
 			}
 		}
