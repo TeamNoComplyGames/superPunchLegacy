@@ -38,8 +38,8 @@ public class Player : MonoBehaviour
 		showFlash = false;
 
 		//Set our default values
-		health = 5;
 		playerLevel = 1;
+		health = playerLevel * 10;
 		exp = 0;
 		attacking = false;
 
@@ -104,7 +104,7 @@ public class Player : MonoBehaviour
 			//Reset/increase stats
 			exp = 0;
 			++playerLevel;
-			health = playerLevel * 5;
+			health = playerLevel * 10;
 			gameManager.invokeEnemies();
 			//Play our sound
 			levelUp.Play();
