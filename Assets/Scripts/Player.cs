@@ -135,9 +135,9 @@ public class Player : MonoBehaviour
 			}
 
 			//Increase our player scale
-			if(gameObject.transform.localScale.x < .65f)
+			if(transform.localScale.x < .75f)
 			{
-				gameObject.transform.localScale.Set(gameObject.transform.localScale.x + .01f, gameObject.transform.localScale.y + .01f, gameObject.transform.localScale.z);
+				transform.localScale += new Vector3(0.01F, 0.01F, 0);
 			}
 
 			//Show our text, stop if already showing
