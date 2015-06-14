@@ -208,7 +208,8 @@ public class Enemy : MonoBehaviour
 			enemy.angularVelocity = 0f;
 			enemy.velocity = Vector2.zero;
 			}
-		//Check if it is another enemy
+		//Check if it is another enemy, enemy on enemy knockback does not work well
+		/*
 		else if(collision.gameObject.tag == "Enemy" && knockBool)
 		{
 			//Lose some health
@@ -233,6 +234,7 @@ public class Enemy : MonoBehaviour
 			Debug.Log("Enemy collide");
 
 		}
+		*/
 	}
 
 	//Catch when we collide with enemy
