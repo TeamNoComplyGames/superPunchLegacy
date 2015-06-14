@@ -162,7 +162,7 @@ public class Enemy : MonoBehaviour
 		//now set the knockframes to the amount
 		knockFrames = knockFrames * amount/2;
 		//Set our knock force to a high amount
-		knockForce = knockForce + (amount * 15000);
+		knockForce = knockForce + (amount * 2000);
 		if (knockForce > 1750000) 
 		{
 			knockForce = 1750000;
