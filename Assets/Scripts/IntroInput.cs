@@ -13,6 +13,8 @@ public class IntroInput : MonoBehaviour
 	public float fadeSpeed;
 	//Our end time
 	private float endTime;
+	//Boolean to check if we are fading out already
+	private bool fadingOut;
 	// Use this for initialization
 	void Start () 
 	{
@@ -20,13 +22,15 @@ public class IntroInput : MonoBehaviour
 		alphaControl.alpha = 0.0f;
 
 		//Start fading in
-		StartCoroutine("FadeIn");
+		InvokeRepeating("FadeIn", 0 ,.2f);
 
 		//Start our intro sound
 		intro.Play();
 
 		//Get our endtime
-		endTime = Time.time + 10;
+		endTime = Time.time + 32.47f;
+
+		fadingOut = false;
 
 
 	}
@@ -38,7 +42,7 @@ public class IntroInput : MonoBehaviour
 		if (Input.GetKeyDown (KeyCode.KeypadEnter) || Input.GetKeyDown ("return")) 
 		{
 			//Play the select sounds and then start the game
-			StopAllCoroutines();
+			CancelInvoke();
 			intro.Stop();
 			select.Play();
 			Application.LoadLevel("Start");
@@ -49,51 +53,55 @@ public class IntroInput : MonoBehaviour
 			//Quit the game
 			Application.Quit();
 		}
+
+
 		//Check if are 3 seconds before our end time
-		else if(Time.time + 5 > endTime)
+		if(Time.time + 5.5 > endTime && !fadingOut)
 		{
 			//Fade out
-			StopCoroutine("FadeIn");
-			StartCoroutine("FadeOut");
+			fadingOut = true;
+			CancelInvoke("FadeIn");
+			InvokeRepeating("FadeOut" , 0 ,.2f);
 		}
+
+
 		//Check if it is time to go to intro
-		else if(Time.time >= endTime)
+		if(Time.time >= endTime)
 		{
 			//Play the select sounds and then start the game
-			Debug.Log("hi");
-			StopAllCoroutines();
+			CancelInvoke();
 			intro.Stop();
 			select.Play();
 			Application.LoadLevel("Start");
 		}
 	}
 
-	public IEnumerator FadeIn()
+	public void FadeIn()
 	{
 		//fade in our alpha
-		alphaControl.alpha = 0.0f;
-		while(alphaControl.alpha < 1.0f)
+		if(alphaControl.alpha + fadeSpeed < 1.0f)
 		{
 			alphaControl.alpha = alphaControl.alpha + fadeSpeed;
-			yield return new WaitForSeconds(.3f);
 		}
-
-		alphaControl.alpha = 1.0f;
-
+		else
+		{
+			alphaControl.alpha = 1.0f;
+			CancelInvoke("FadeIn");
+		}
 	}
 
-	public IEnumerator FadeOut()
+	public void FadeOut()
 	{
-		//fade in our alpha
-		alphaControl.alpha = 1.0f;
-
-		while(alphaControl.alpha > 0.0f)
+		//fade out our alpha
+		if(alphaControl.alpha - fadeSpeed > 0.0f)
 		{
 			alphaControl.alpha = alphaControl.alpha - fadeSpeed;
-			yield return new WaitForSeconds(.3f);
 		}
-
-		alphaControl.alpha = 0.0f;
+		else
+		{
+			alphaControl.alpha = 0.0f;
+			CancelInvoke("FadeOut");
+		}
 		
 	}
 }
