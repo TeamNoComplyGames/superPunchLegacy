@@ -43,7 +43,10 @@ public class IntroInput : MonoBehaviour
 		{
 			//Play the select sounds and then start the game
 			CancelInvoke();
-			intro.Stop();
+			if(intro.isPlaying)
+			{
+				intro.Stop();
+			}
 			select.Play();
 			Application.LoadLevel("Start");
 		}
@@ -70,7 +73,10 @@ public class IntroInput : MonoBehaviour
 		{
 			//Play the select sounds and then start the game
 			CancelInvoke();
-			intro.Stop();
+			if(intro.isPlaying)
+			{
+				intro.Stop();
+			}
 			select.Play();
 			Application.LoadLevel("Start");
 		}
