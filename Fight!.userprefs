@@ -1,14 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Enemy.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\StartInput.cs">
     <Files>
-      <File FileName="Assets\Scripts\Enemy.cs" Line="223" Column="14" />
+      <File FileName="Assets\Scripts\Enemy.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PlayerSave.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\SaveManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\StartInput.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\StartInput.cs" Line="20" Column="16" />
       <File FileName="Assets\Scripts\FlashingText.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GameManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player.cs" Line="284" Column="1" />
+      <File FileName="Assets\Scripts\Player.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Bounded2DCamera.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GameAspect.cs" Line="1" Column="1" />
     </Files>
