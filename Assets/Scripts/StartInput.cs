@@ -5,6 +5,8 @@ public class StartInput : MonoBehaviour
 {
 	//Our text
 	public UnityEngine.UI.Text score;
+	//Our select Sounds
+	public AudioSource select;
 	// Use this for initialization
 	void Start () 
 	{
@@ -24,6 +26,8 @@ public class StartInput : MonoBehaviour
 		//If enter, start the game!
 		if (Input.GetKeyDown (KeyCode.KeypadEnter) || Input.GetKeyDown ("return")) 
 		{
+			//Play the select sounds and then start the game
+			select.Play();
 			Application.LoadLevel("Game");
 		}
 		//if escape, quit
