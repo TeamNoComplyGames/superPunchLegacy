@@ -9,7 +9,8 @@ public class IntroInput : MonoBehaviour
 	public AudioSource intro;
 	//Our Ui canvas group
 	public CanvasGroup alphaControl;
-
+	//Our fade speed
+	public float fadeSpeed;
 	//Our end time
 	private float endTime;
 	// Use this for initialization
@@ -25,7 +26,7 @@ public class IntroInput : MonoBehaviour
 		intro.Play();
 
 		//Get our endtime
-		endTime = Time.time + 35;
+		endTime = Time.time + 10;
 
 
 	}
@@ -37,6 +38,8 @@ public class IntroInput : MonoBehaviour
 		if (Input.GetKeyDown (KeyCode.KeypadEnter) || Input.GetKeyDown ("return")) 
 		{
 			//Play the select sounds and then start the game
+			StopAllCoroutines();
+			intro.Stop();
 			select.Play();
 			Application.LoadLevel("Start");
 		}
@@ -47,15 +50,19 @@ public class IntroInput : MonoBehaviour
 			Application.Quit();
 		}
 		//Check if are 3 seconds before our end time
-		else if(Time.time + 4 > endTime)
+		else if(Time.time + 5 > endTime)
 		{
 			//Fade out
+			StopCoroutine("FadeIn");
 			StartCoroutine("FadeOut");
 		}
 		//Check if it is time to go to intro
 		else if(Time.time >= endTime)
 		{
 			//Play the select sounds and then start the game
+			Debug.Log("hi");
+			StopAllCoroutines();
+			intro.Stop();
 			select.Play();
 			Application.LoadLevel("Start");
 		}
@@ -64,22 +71,29 @@ public class IntroInput : MonoBehaviour
 	public IEnumerator FadeIn()
 	{
 		//fade in our alpha
+		alphaControl.alpha = 0.0f;
 		while(alphaControl.alpha < 1.0f)
 		{
-			alphaControl.alpha = alphaControl.alpha + .1f;
+			alphaControl.alpha = alphaControl.alpha + fadeSpeed;
 			yield return new WaitForSeconds(.3f);
 		}
+
+		alphaControl.alpha = 1.0f;
 
 	}
 
 	public IEnumerator FadeOut()
 	{
 		//fade in our alpha
+		alphaControl.alpha = 1.0f;
+
 		while(alphaControl.alpha > 0.0f)
 		{
-			alphaControl.alpha = alphaControl.alpha - .1f;
+			alphaControl.alpha = alphaControl.alpha - fadeSpeed;
 			yield return new WaitForSeconds(.3f);
 		}
+
+		alphaControl.alpha = 0.0f;
 		
 	}
 }
