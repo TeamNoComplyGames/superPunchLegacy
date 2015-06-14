@@ -134,6 +134,12 @@ public class Player : MonoBehaviour
 				cameraShake.declerp(.2f);
 			}
 
+			//Increase our player scale
+			if(gameObject.transform.localScale.x < .65f)
+			{
+				gameObject.transform.localScale.Set(gameObject.transform.localScale.x + .01f, gameObject.transform.localScale.y + .01f, gameObject.transform.localScale.z);
+			}
+
 			//Show our text, stop if already showing
 			StopCoroutine("levelFlash");
 			StartCoroutine("levelFlash");
