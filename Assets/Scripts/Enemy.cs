@@ -216,11 +216,10 @@ public class Enemy : MonoBehaviour
 			enemy.angularVelocity = 0f;
 			enemy.velocity = Vector2.zero;
 			}
-		//Check if it is another enemy, enemy on enemy knockback does not work well
-		/*
+		//Check if it is another enemy, mass will lower for pushing one another
 		else if(collision.gameObject.tag == "Enemy" && knockBool)
 		{
-			//Lose some health
+			//Lose some health, this is only called if they were being knock backed
 			--ehealth;
 
 			//Knockback the enemy
@@ -228,21 +227,11 @@ public class Enemy : MonoBehaviour
 			//Get the enemy
 			Enemy e = (Enemy) collision.gameObject.GetComponent("Enemy");
 
-			//Now by enemy level, and it's current velocity
-
-			//knockback by velocity
-			e.knockBack(enemy.velocity, elevel);
-			
-			//Shake the screen
-			cameraShake.startShake();
-
-			//No impact pause, cause it could potentially pause the game
-
-			//Test it is working
-			Debug.Log("Enemy collide");
+			//lower enemy mass
+			e.enemy.mass = defaultMass / 3;
 
 		}
-		*/
+
 	}
 
 	//Catch when we collide with enemy
@@ -288,6 +277,21 @@ public class Enemy : MonoBehaviour
 			}
 			}
 		
+	}
+
+	//Catch when we collide with something
+	void OnCollisionExit2D(Collision2D collision) 
+	{
+		//Reset enemy mass on exit
+		if(collision.gameObject.tag == "Enemy")
+		{
+			//Get the enemy
+			Enemy e = (Enemy) collision.gameObject.GetComponent("Enemy");
+			
+			//reset enemy mass
+			e.enemy.mass = defaultMass;
+			
+		}
 	}
 
 	//Set health for enemy
