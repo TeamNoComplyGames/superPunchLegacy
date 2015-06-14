@@ -25,6 +25,9 @@ public class Bounded2DCamera : MonoBehaviour
 	//We are colliding
 	bool colliding;
 
+	//Our game manager
+	GameManager gameManager;
+
 
 	// Use this for initialization
 	void Start () 
@@ -36,6 +39,9 @@ public class Bounded2DCamera : MonoBehaviour
 
 		//off set the camera by just a little bit to add some lerp when we start
 		gameObject.transform.localPosition = new Vector3 (-.03f, -.03f, -10);
+
+		//Get our gammaneger
+		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 	}
 	
 	// Update is called once per frame
@@ -197,9 +203,13 @@ public class Bounded2DCamera : MonoBehaviour
 	//Function tto start shaking
 	public void startShake()
 	{
-		//reset current shake and shake!
-		currentShake = shakeAmount;
-		shaking = true;
+		//First check if the game is still going, gamestatus returns gameover
+		if(!gameManager.getGameStatus())
+		{
+			//reset current shake and shake!
+			currentShake = shakeAmount;
+			shaking = true;
+		}
 	}
 
 	//Function to increase screen shake
