@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour
 	public Rigidbody2D enemy;
 	//Our enemy movepseed
 	public float emoveSpeed = 0f;
+	//Our enemy mass(Done in inspector)
+	private float defaultMass;
 	
 	//Our player stats
 	public int ehealth;
@@ -58,7 +60,7 @@ public class Enemy : MonoBehaviour
 		ehealth = (int) (elevel * 2.5f);
 
 		//Set the mass of the rigid body to be really high so they dont go flying
-		enemy.mass = 10000;
+		defaultMass = enemy.mass;
 		//Our knock force so we do go flying haha
 		knockForce = 100000;
 
@@ -102,6 +104,9 @@ public class Enemy : MonoBehaviour
 				//And remove the force we added
 				enemy.angularVelocity = 0f;
 				enemy.velocity = Vector2.zero;
+
+				//set mass back to default value
+				enemy.mass = defaultMass;
 			}
 		} 
 		else if(!gameManager.getGameStatus())
@@ -169,9 +174,12 @@ public class Enemy : MonoBehaviour
 		}
 		//Set knockback to true
 		knockBool = true;
+
+		//increase enemy mass so it'll runthrough other enemies
+		enemy.mass = defaultMass/2;
 	}
 
-	//Knockback function for enemies, with direction
+	//Knockback function for enemies, with velocity, not currently used
 	public void knockBack(Vector2 velocity, int amount)
 	{
 		//Knockback according to velocity
