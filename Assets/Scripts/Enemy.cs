@@ -134,7 +134,7 @@ public class Enemy : MonoBehaviour
 		transform.position =  Vector2.MoveTowards(transform.position, player.transform.position, superSpeed * Time.deltaTime);
 	}
 
-	//Knockback function for enemies
+	//Knockback function for enemies, with direction
 	public void knockBack(int direction, int amount)
 	{
 		//Knockback according to player direction
@@ -171,6 +171,24 @@ public class Enemy : MonoBehaviour
 		knockBool = true;
 	}
 
+	//Knockback function for enemies, with direction
+	public void knockBack(Vector2 velocity, int amount)
+	{
+		//Knockback according to velocity
+		enemy.AddForce(velocity);
+		
+		//now set the knockframes to the amount
+		knockFrames = knockFrames * amount/2;
+		//Set our knock force to a high amount
+		knockForce = knockForce + (amount * 2000);
+		if (knockForce > 1750000) 
+		{
+			knockForce = 1750000;
+		}
+		//Set knockback to true
+		knockBool = true;
+	}
+
 	//Catch when we collide with something
 	void OnCollisionEnter2D(Collision2D collision) 
 	{
@@ -190,6 +208,31 @@ public class Enemy : MonoBehaviour
 			enemy.angularVelocity = 0f;
 			enemy.velocity = Vector2.zero;
 			}
+		//Check if it is another enemy
+		else if(collision.gameObject.tag == "Enemy" && knockBool)
+		{
+			//Lose some health
+			--ehealth;
+
+			//Knockback the enemy
+
+			//Get the enemy
+			Enemy e = (Enemy) collision.gameObject.GetComponent("Enemy");
+
+			//Now by enemy level, and it's current velocity
+
+			//knockback by velocity
+			e.knockBack(enemy.velocity, elevel);
+			
+			//Shake the screen
+			cameraShake.startShake();
+
+			//No impact pause, cause it could potentially pause the game
+
+			//Test it is working
+			Debug.Log("Enemy collide");
+
+		}
 	}
 
 	//Catch when we collide with enemy

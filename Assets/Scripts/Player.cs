@@ -288,7 +288,7 @@ public class Player : MonoBehaviour
 					//Shake the screen
 					cameraShake.startShake();
 
-					//Add slight impact puase
+					//Add slight impact pause
 					startImpact();
 				}
 			}
