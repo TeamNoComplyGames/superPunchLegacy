@@ -7,12 +7,17 @@ public class StartInput : MonoBehaviour
 	public UnityEngine.UI.Text score;
 	//Our select Sounds
 	public AudioSource select;
+	//Our select intro sound
+	public AudioSource intro;
 	// Use this for initialization
 	void Start () 
 	{
 		//set up the highscore infor stuff
 		//now get our save file
 		SaveManager.loadSave();
+
+		//Start our itro sound
+		intro.Play();
 
 
 		//now set the text of the score, placed in inspector, \t for tab
