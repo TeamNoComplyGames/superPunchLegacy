@@ -56,7 +56,7 @@ public class IntroInput : MonoBehaviour
 
 
 		//Check if are 3 seconds before our end time
-		if(Time.time + 5.5 > endTime && !fadingOut)
+		if(Time.time + 7.5 > endTime && !fadingOut)
 		{
 			//Fade out
 			fadingOut = true;
