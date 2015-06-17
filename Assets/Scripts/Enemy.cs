@@ -134,9 +134,52 @@ public class Enemy : MonoBehaviour
 	{
 		//Get our speed according to our current level
 		float superSpeed = emoveSpeed + (elevel / 10);
+
+		//Get our movement vector
+		Vector2 move = Vector2.MoveTowards(transform.position, player.transform.position, superSpeed * Time.deltaTime);
+
+		//Get our horizontal and Vertical
+		float h = move.x;
+		float v = move.y;
+
+		//Set enemy Direction
+		//Also check to make sure we stay that direction when not moving, so check that we are
+		if(h != 0 || v != 0)
+		{
+			
+			//animate to the direction we are going to move
+			//Find the greatest absolute value to get most promenint direction
+			/*
+		 * 		2
+		 * 3		1
+		 * 		0
+		 * */
+			if (Mathf.Abs (h * 100) > Mathf.Abs (v * 100)) 
+			{
+				if(h > 0)
+				{
+					animator.SetInteger("Direction", 1);
+				}
+				else
+				{
+					animator.SetInteger("Direction", 3);
+				}
+			} 
+			else
+			{
+				if(v > 0)
+				{
+					animator.SetInteger("Direction", 2);
+				}
+				else
+				{
+					animator.SetInteger("Direction", 0);
+				}
+			}
+		}
 		
 		//Get the position we want to move to, and go to it using move towards
-		transform.position =  Vector2.MoveTowards(transform.position, player.transform.position, superSpeed * Time.deltaTime);
+		transform.position =  move;
 	}
 
 	//Knockback function for enemies, with direction
@@ -249,7 +292,7 @@ public class Enemy : MonoBehaviour
 			else
 			{
 				//Set the attack trigger of the player's animation controller in order to play the player's attack animation.
-				animator.SetTrigger ("EAttack");
+				animator.SetTrigger ("Attack");
 				Player p = (Player) collision.gameObject.GetComponent("Player");
 				//Now using an int to calulate our damage before we apply to health
 				int damage = (int)(elevel / 1.5);
