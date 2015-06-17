@@ -1,9 +1,28 @@
 fileFormatVersion: 2
 guid: e77d869b7f58fb44a8ebf43fc1e9be32
-timeCreated: 1434564722
+timeCreated: 1434564921
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: PhatMaster_0
+    21300002: PhatMaster_1
+    21300004: PhatMaster_2
+    21300006: PhatMaster_3
+    21300008: PhatMaster_4
+    21300010: PhatMaster_5
+    21300012: PhatMaster_6
+    21300014: PhatMaster_7
+    21300016: PhatMaster_8
+    21300018: PhatMaster_9
+    21300020: PhatMaster_10
+    21300022: PhatMaster_11
+    21300024: PhatMaster_12
+    21300026: PhatMaster_13
+    21300028: PhatMaster_14
+    21300030: PhatMaster_15
+    21300032: PhatMaster_16
+    21300034: PhatMaster_17
+    21300036: PhatMaster_18
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -29,15 +48,15 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +67,197 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: PhatMaster_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 299
+        width: 37
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PhatMaster_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 304
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PhatMaster_2
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 304
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PhatMaster_3
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 304
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PhatMaster_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 234
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PhatMaster_5
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 234
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PhatMaster_6
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 234
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PhatMaster_7
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 234
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PhatMaster_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 164
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PhatMaster_9
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 164
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PhatMaster_10
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 164
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PhatMaster_11
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 164
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PhatMaster_12
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 95
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PhatMaster_13
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 95
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PhatMaster_14
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 93
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PhatMaster_15
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 94
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PhatMaster_16
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 24
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PhatMaster_17
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 23
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PhatMaster_18
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 24
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

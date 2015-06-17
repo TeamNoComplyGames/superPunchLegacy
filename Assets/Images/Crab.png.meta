@@ -1,9 +1,61 @@
 fileFormatVersion: 2
 guid: 891e32565cbf86f4f857908def22cae9
-timeCreated: 1434564721
+timeCreated: 1434565417
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Crab_0
+    21300002: Crab_1
+    21300004: Crab_2
+    21300006: Crab_3
+    21300008: Crab_4
+    21300010: Crab_5
+    21300012: Crab_6
+    21300014: Crab_7
+    21300016: Crab_8
+    21300018: Crab_9
+    21300020: Crab_10
+    21300022: Crab_11
+    21300024: Crab_12
+    21300026: Crab_13
+    21300028: Crab_14
+    21300030: Crab_15
+    21300032: Crab_16
+    21300034: Crab_17
+    21300036: Crab_18
+    21300038: Crab_19
+    21300040: Crab_20
+    21300042: Crab_21
+    21300044: Crab_22
+    21300046: Crab_23
+    21300048: Crab_24
+    21300050: Crab_25
+    21300052: Crab_26
+    21300054: Crab_27
+    21300056: Crab_28
+    21300058: Crab_29
+    21300060: Crab_31
+    21300062: Crab_33
+    21300064: Crab_34
+    21300066: Crab_35
+    21300068: Crab_36
+    21300070: Crab_37
+    21300072: Crab_38
+    21300074: Crab_39
+    21300076: Crab_40
+    21300078: Crab_41
+    21300080: Crab_42
+    21300082: Crab_43
+    21300084: Crab_44
+    21300086: Crab_45
+    21300088: Crab_46
+    21300090: Crab_47
+    21300092: Crab_48
+    21300094: Crab_49
+    21300096: Crab_50
+    21300098: Crab_51
+    21300100: Crab_52
+    21300102: Crab_53
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -29,15 +81,15 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +100,527 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Crab_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 709
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 709
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_2
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 709
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_3
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 707
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 657
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_5
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 658
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_6
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 659
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_7
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 659
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 609
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_9
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 609
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_10
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 609
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_11
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 609
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 559
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_13
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 559
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_14
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 559
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_15
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 559
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_16
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 509
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_17
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 509
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_18
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 509
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_19
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 509
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_20
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 459
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_21
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 459
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_22
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 459
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_23
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 459
+        width: 46
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_24
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 409
+        width: 52
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_25
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 409
+        width: 53
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_26
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 409
+        width: 53
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_27
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 409
+        width: 58
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_28
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 357
+        width: 62
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_29
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 358
+        width: 62
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_31
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 359
+        width: 61
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_33
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 359
+        width: 62
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_34
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 308
+        width: 63
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_35
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 309
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_36
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 309
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_37
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 309
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_38
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 259
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_39
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 259
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_40
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 259
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_41
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 209
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_42
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 209
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_43
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 159
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_44
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 159
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_45
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 109
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_46
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 109
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_47
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 109
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_48
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 109
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_49
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 59
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_50
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 59
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_51
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 59
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_52
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 59
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crab_53
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 9
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
