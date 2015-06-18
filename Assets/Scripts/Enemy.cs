@@ -14,6 +14,8 @@ public class Enemy : MonoBehaviour
 	public int ehealth;
 	//Static makes it available to other classes
 	public int elevel;
+	//Boolean if our enemy is dead
+	private bool dead;
 
 	//Our target to fight
 	private Player player;
@@ -49,6 +51,9 @@ public class Enemy : MonoBehaviour
 		render = GetComponent<SpriteRenderer>();
 		animator = GetComponent<Animator>();
 		showFlash = false;
+
+		//Enemy is not dead
+		dead = false;
 
 
 		int playerLevel = Player.playerLevel;
@@ -109,7 +114,7 @@ public class Enemy : MonoBehaviour
 				enemy.mass = defaultMass;
 			}
 		} 
-		else if(!gameManager.getGameStatus())
+		else if(!gameManager.getGameStatus() && !dead)
 		{
 			//Move our player
 			Move ();
@@ -118,14 +123,24 @@ public class Enemy : MonoBehaviour
 		//Attacks with our player (Check for a level up here as well)
 
 		//Check if enemy is dead
-		if (ehealth <= 0) 
+		if (ehealth <= 0 && !dead) 
 		{
 			//Add experience to the player
 			player.addEXP(elevel);
 			//Decrease the number of enemies we have
 			gameManager.minusEnemy();
+
 			//Destroy this enemy, possible display some animation first
-			Destroy(gameObject);
+			//Destroy(gameObject);
+
+			//Move our enemy out of the way and play the death animation
+			animator.SetBool("Death", true);
+			//and remove box collider
+			GetComponent<BoxCollider2D>().enabled = false;
+
+			//Set death boolean to true
+			dead = true;
+
 		}
 	}
 	
@@ -290,6 +305,10 @@ public class Enemy : MonoBehaviour
 				{
 				--attackFrames;
 				}
+			else if(dead)
+			{
+				//Do nothing ig dead
+			}
 			//attack the player
 			else
 			{
