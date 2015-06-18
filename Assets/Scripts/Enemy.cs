@@ -138,9 +138,12 @@ public class Enemy : MonoBehaviour
 		//Get our movement vector
 		Vector2 move = Vector2.MoveTowards(transform.position, player.transform.position, superSpeed * Time.deltaTime);
 
-		//Get our horizontal and Vertical
-		float h = move.x;
-		float v = move.y;
+		//Get our angle stuff
+		float h = transform.position.x - player.transform.position.x;
+		float v = transform.position.y - player.transform.position.y;
+
+		//Log our values
+		Debug.Log(h + ", " + v);
 
 		//Set enemy Direction
 		//Also check to make sure we stay that direction when not moving, so check that we are
@@ -153,10 +156,12 @@ public class Enemy : MonoBehaviour
 		 * 		2
 		 * 3		1
 		 * 		0
+		 * 
+		 * Greater than less than flipped for enemyw
 		 * */
 			if (Mathf.Abs (h * 100) > Mathf.Abs (v * 100)) 
 			{
-				if(h > 0)
+				if(h < 0)
 				{
 					animator.SetInteger("Direction", 1);
 				}
@@ -167,7 +172,7 @@ public class Enemy : MonoBehaviour
 			} 
 			else
 			{
-				if(v > 0)
+				if(v < 0)
 				{
 					animator.SetInteger("Direction", 2);
 				}
