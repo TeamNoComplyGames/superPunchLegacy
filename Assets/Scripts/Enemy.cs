@@ -142,9 +142,6 @@ public class Enemy : MonoBehaviour
 		float h = transform.position.x - player.transform.position.x;
 		float v = transform.position.y - player.transform.position.y;
 
-		//Log our values
-		Debug.Log(h + ", " + v);
-
 		//Set enemy Direction
 		//Also check to make sure we stay that direction when not moving, so check that we are
 		if(h != 0 || v != 0)
