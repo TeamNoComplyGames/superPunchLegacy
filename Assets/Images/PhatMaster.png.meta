@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e77d869b7f58fb44a8ebf43fc1e9be32
-timeCreated: 1434564921
+timeCreated: 1434617286
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -23,6 +23,7 @@ TextureImporter:
     21300032: PhatMaster_16
     21300034: PhatMaster_17
     21300036: PhatMaster_18
+    21300038: PhatMaster_19
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -76,7 +77,7 @@ TextureImporter:
         width: 37
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PhatMaster_1
       rect:
@@ -86,7 +87,7 @@ TextureImporter:
         width: 50
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PhatMaster_2
       rect:
@@ -96,7 +97,7 @@ TextureImporter:
         width: 45
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PhatMaster_3
       rect:
@@ -106,7 +107,7 @@ TextureImporter:
         width: 45
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PhatMaster_4
       rect:
@@ -116,7 +117,7 @@ TextureImporter:
         width: 50
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PhatMaster_5
       rect:
@@ -126,7 +127,7 @@ TextureImporter:
         width: 50
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PhatMaster_6
       rect:
@@ -136,7 +137,7 @@ TextureImporter:
         width: 50
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PhatMaster_7
       rect:
@@ -146,7 +147,7 @@ TextureImporter:
         width: 50
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PhatMaster_8
       rect:
@@ -156,7 +157,7 @@ TextureImporter:
         width: 50
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PhatMaster_9
       rect:
@@ -166,7 +167,7 @@ TextureImporter:
         width: 50
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PhatMaster_10
       rect:
@@ -176,7 +177,7 @@ TextureImporter:
         width: 50
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PhatMaster_11
       rect:
@@ -186,7 +187,7 @@ TextureImporter:
         width: 20
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PhatMaster_12
       rect:
@@ -196,7 +197,7 @@ TextureImporter:
         width: 20
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PhatMaster_13
       rect:
@@ -206,7 +207,7 @@ TextureImporter:
         width: 20
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PhatMaster_14
       rect:
@@ -216,7 +217,7 @@ TextureImporter:
         width: 27
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PhatMaster_15
       rect:
@@ -226,7 +227,7 @@ TextureImporter:
         width: 31
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PhatMaster_16
       rect:
@@ -236,7 +237,7 @@ TextureImporter:
         width: 20
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PhatMaster_17
       rect:
@@ -246,7 +247,7 @@ TextureImporter:
         width: 27
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PhatMaster_18
       rect:
@@ -256,7 +257,17 @@ TextureImporter:
         width: 31
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PhatMaster_19
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 299
+        width: 37
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
