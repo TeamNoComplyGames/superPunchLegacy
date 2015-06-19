@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
 	//Suggest max enemies 50
 	public int maxEnemies;
 	//number of enemies spawned
-	private int totalEnemies;
+	private int defeatedEnemies;
 
 	//Our Hud
 	private UnityEngine.UI.Text hud;
@@ -70,8 +70,8 @@ public class GameManager : MonoBehaviour
 		//get our bg music
 		bgFight = GameObject.Find ("GameSong").GetComponent<AudioSource> ();
 
-		//Total enemies is once since we start with one
-		totalEnemies = 1;
+		//Defeated enemies is one for score calculation at start
+		defeatedEnemies = 1;
 
 		//Spawn an enemies
 		invokeEnemies ();
@@ -84,7 +84,7 @@ public class GameManager : MonoBehaviour
 		if (started) {
 			//Get the score for the player
 			//Going to calculate by enemies defeated, level, and minutes passed
-			float score = user.getLevel () * (Time.time % 60) + (totalEnemies - numEnemies);
+			int score = (int) (user.getLevel () * (defeatedEnemies) * 100);
 
 
 			//Update our hud to player
@@ -156,6 +156,9 @@ public class GameManager : MonoBehaviour
 	public void minusEnemy()
 	{
 		--numEnemies;
+
+		//Since enemy is gone add to defeated enemies
+		++defeatedEnemies;
 	}
 
 	//Functiont o do our invoke repeating functions
@@ -183,9 +186,6 @@ public class GameManager : MonoBehaviour
 			//Now find an x and y coordinate that wouldnt be out of bounds the level, attaching this script to it's own object
 			//It's position is X: 52, Y: -20 X is left lower, right higher, Y is top higher, bottom lower
 
-
-			//Add one to total enemies
-			++totalEnemies;
 
 			//Find an X And Y to spawn
 			float enemyX = 0;
