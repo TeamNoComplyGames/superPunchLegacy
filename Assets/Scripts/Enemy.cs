@@ -102,15 +102,14 @@ public class Enemy : MonoBehaviour
 	void Update ()
 	{
 		//If we are being knockbacked, knock back for so many frames
-		if (knockBool) 
+		if (knockBool && !exploding) 
 		{
-			if (knockFrames > 0 && !exploding) 
+			if (knockFrames > 0) 
 			{
 				--knockFrames;
 			} 
 			else 
 			{
-				Debug.Log("HIIIII");
 				//reset our knowckback frames
 				knockFrames = totalKnockFrames;
 				//and make us kinematic again
@@ -130,7 +129,20 @@ public class Enemy : MonoBehaviour
 			Move ();
 		}
 		
-		//Attacks with our player (Check for a level up here as well)
+		//check if exploding
+		if (exploding) 
+		{
+			//reset our knowckback frames
+			knockFrames = totalKnockFrames;
+			//and make us kinematic again
+			knockBool = false;
+			//And remove the force we added
+			enemy.angularVelocity = 0f;
+			enemy.velocity = Vector2.zero;
+			
+			//set mass back to default value
+			enemy.mass = defaultMass;
+		}
 
 		//Check if enemy is dead
 		if (ehealth <= 0 && !dead) 
@@ -295,6 +307,9 @@ public class Enemy : MonoBehaviour
 		
 		//Add slight impact pause
 		actionCamera.startImpact();
+
+		//Expand our scale by two!
+		transform.localScale += new Vector3(transform.localScale.x * 2, transform.localScale.y * 2, 0);
 
 		//Stay exploding for a while
 		yield return new WaitForSeconds (1.0f);
