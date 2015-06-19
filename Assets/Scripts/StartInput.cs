@@ -22,7 +22,8 @@ public class StartInput : MonoBehaviour
 
 		//now set the text of the score, placed in inspector, \t for tab
 		//throw our values in a function to return a string with our desired zeroes
-		score.text = "\t" + System.String.Format("{0:000}", SaveManager.getSaveLevel()) + "\t\t\t" + "10000000000";
+		score.text = "\t" + System.String.Format("{0:000}", SaveManager.getSaveLevel()) + 
+			"\t\t\t" + System.String.Format("{0:000000000}", SaveManager.getSaveScore());
 	}
 	
 	// Update is called once per frame
