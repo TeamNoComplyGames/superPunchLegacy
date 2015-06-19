@@ -46,7 +46,6 @@ public static class SaveManager
 	{
 		if(s > getSaveScore())
 		{
-			Debug.Log("sup");
 			save.setScore(s);
 		}
 	}
