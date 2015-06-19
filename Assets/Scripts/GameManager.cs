@@ -35,6 +35,9 @@ public class GameManager : MonoBehaviour
 	private UnityEngine.UI.Button restart;
 	private UnityEngine.UI.Button quit;
 
+	//Our score
+	private int score;
+
 
 	//Our background music
 	private AudioSource bgFight;
@@ -72,6 +75,9 @@ public class GameManager : MonoBehaviour
 
 		//Defeated enemies is one for score calculation at start
 		defeatedEnemies = 1;
+
+		//Set score to zero
+		score = 0;
 
 		//Spawn an enemies
 		invokeEnemies ();
@@ -118,6 +124,9 @@ public class GameManager : MonoBehaviour
 
 			//Try to save our highestlevel
 			SaveManager.setHighLevel(user.getLevel());
+
+			//Try to set our high score
+			SaveManager.setHighScore(score);
 
 			//Now save
 			SaveManager.saveSave();
