@@ -1,0 +1,319 @@
+fileFormatVersion: 2
+guid: a330ecab761641d478381c30e79ccd38
+timeCreated: 1434708812
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: GoldenTiger_0
+    21300002: GoldenTiger_1
+    21300004: GoldenTiger_2
+    21300006: GoldenTiger_3
+    21300008: GoldenTiger_4
+    21300010: GoldenTiger_5
+    21300012: GoldenTiger_6
+    21300014: GoldenTiger_7
+    21300016: GoldenTiger_8
+    21300018: GoldenTiger_9
+    21300020: GoldenTiger_10
+    21300022: GoldenTiger_11
+    21300024: GoldenTiger_12
+    21300026: GoldenTiger_13
+    21300028: GoldenTiger_14
+    21300030: GoldenTiger_15
+    21300032: GoldenTiger_16
+    21300034: GoldenTiger_17
+    21300036: GoldenTiger_18
+    21300038: GoldenTiger_19
+    21300040: GoldenTiger_20
+    21300042: GoldenTiger_21
+    21300044: GoldenTiger_22
+    21300046: GoldenTiger_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: GoldenTiger_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 564
+        width: 55
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_1
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 564
+        width: 55
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_2
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 564
+        width: 55
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_3
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 564
+        width: 55
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_4
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 454
+        width: 55
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_5
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 454
+        width: 55
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_6
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 454
+        width: 55
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_7
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 454
+        width: 55
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_8
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 344
+        width: 55
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_9
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 344
+        width: 55
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_10
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 343
+        width: 27
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_11
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 343
+        width: 27
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_12
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 233
+        width: 27
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_13
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 239
+        width: 59
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_14
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 233
+        width: 27
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_15
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 233
+        width: 62
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_16
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 121
+        width: 27
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_17
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 121
+        width: 27
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_18
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 121
+        width: 27
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_19
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 129
+        width: 59
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_20
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 13
+        width: 27
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_21
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 13
+        width: 62
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_22
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 6
+        width: 89
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTiger_23
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 6
+        width: 92
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
