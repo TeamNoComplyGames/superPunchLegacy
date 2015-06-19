@@ -6,11 +6,14 @@ public class PlayerSave
 {
 	//our level
 	int level;
+	//our score
+	int score;
 
 	//our constructor
 	public PlayerSave()
 	{
 		level = 0;
+		score = 0;
 	}
 
 	//Set and get methods
@@ -23,5 +26,16 @@ public class PlayerSave
 	{
 		return level;
 	}
+
+	public void setScore(int s)
+	{
+		score = s;
+	}
+
+	public int getScore()
+	{
+		return score;
+	}
+
 
 }

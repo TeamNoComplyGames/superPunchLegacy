@@ -41,4 +41,17 @@ public static class SaveManager
 	{
 		return save.getLevel();
 	}
+
+	public static void setHighScore(int s)
+	{
+		if(s > getSaveScore())
+		{
+			save.setScore(s);
+		}
+	}
+
+	public static int getSaveScore()
+	{
+		return save.getScore();
+	}
 }
