@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
 	//Our game manager
 	GameManager gameManager;
 	//our camera Script
-	Bounded2DCamera cameraShake;
+	Bounded2DCamera actionCamera;
 
 	// Use this for initialization
 	void Start () 
@@ -66,7 +66,7 @@ public class Player : MonoBehaviour
 		//Get our gammaneger
 		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 		//Get our camera script
-		cameraShake = Camera.main.GetComponent<Bounded2DCamera>();
+		actionCamera = Camera.main.GetComponent<Bounded2DCamera>();
 	}
 
 	//Called every frame
@@ -130,8 +130,8 @@ public class Player : MonoBehaviour
 			//Increase our camera shake if multiple of 2
 			if(playerLevel % 2 == 0)
 			{
-				cameraShake.incShake(.002f);
-				cameraShake.declerp(.2f);
+				actionCamera.incShake(.002f);
+				actionCamera.declerp(.2f);
 			}
 
 			//Increase our player scale
@@ -292,10 +292,10 @@ public class Player : MonoBehaviour
 					e.knockBack(animator.GetInteger("Direction"), playerLevel);
 
 					//Shake the screen
-					cameraShake.startShake();
+					actionCamera.startShake();
 
 					//Add slight impact pause
-					startImpact();
+					actionCamera.startImpact();
 				}
 			}
 		}
@@ -328,24 +328,6 @@ public class Player : MonoBehaviour
 	public void addEXP(int add)
 	{
 		exp = exp + add;
-	}
-
-	//Function to call for impact pause
-	public void startImpact()
-	{
-		StartCoroutine("impactPause");
-	}
-	//Pause our game for some slight seconds
-	public IEnumerator impactPause()
-	{
-		if(!impacting)
-		{
-			impacting = true;
-			Time.timeScale = 0.1f;
-			yield return new WaitForSeconds(.002f);
-			Time.timeScale = 1;
-			impacting = false;
-		}
 	}
 
 	//Flash our sprite function

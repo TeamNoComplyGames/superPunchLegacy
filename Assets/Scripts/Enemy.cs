@@ -16,6 +16,8 @@ public class Enemy : MonoBehaviour
 	public int elevel;
 	//Boolean if our enemy is dead
 	private bool dead;
+	//Boolean if we are exploding
+	private bool exploding;
 
 	//Our target to fight
 	private Player player;
@@ -132,6 +134,8 @@ public class Enemy : MonoBehaviour
 		//Check if enemy is dead
 		if (ehealth <= 0 && !dead) 
 		{
+			//Get an explosion chance
+			int exChance = Random.Range(0, 20);
 			//Add experience to the player
 			player.addEXP(elevel);
 			//Decrease the number of enemies we have
@@ -140,10 +144,22 @@ public class Enemy : MonoBehaviour
 			//Destroy this enemy, possible display some animation first
 			//Destroy(gameObject);
 
-			//Move our enemy out of the way and play the death animation
-			animator.SetBool("Death", true);
-			//and remove box collider
-			GetComponent<BoxCollider2D>().enabled = false;
+
+			//Now check explosion chance
+			if(exChance > 19)
+			{
+				//EXPLODEEEE
+
+				//Call our explosion coroutine
+				StartCoroutine("explode");
+			}
+			else
+			{
+				//Move our enemy out of the way and play the death animation
+				animator.SetBool("Death", true);
+				//and remove box collider
+				GetComponent<BoxCollider2D>().enabled = false;
+			}
 
 			//Set death boolean to true
 			dead = true;
@@ -264,6 +280,13 @@ public class Enemy : MonoBehaviour
 		knockBool = true;
 	}
 
+	//Our explosion coroutine
+	IEnumerator explode()
+	{
+		//First set exploding to true
+		exploding = true;
+	}
+
 	//Catch when we collide with something
 	void OnCollisionEnter2D(Collision2D collision) 
 	{
@@ -284,8 +307,11 @@ public class Enemy : MonoBehaviour
 			enemy.velocity = Vector2.zero;
 			}
 		//Check if it is another enemy, mass will lower for pushing one another
-		else if(collision.gameObject.tag == "Enemy" && knockBool)
+		else if(collision.gameObject.tag == "Enemy")
 		{
+			//Check if we were in knockback
+			if(knockBool)
+			{
 			//Lose some health, this is only called if they were being knock backed
 			--ehealth;
 
@@ -296,6 +322,13 @@ public class Enemy : MonoBehaviour
 
 			//lower enemy mass
 			e.enemy.mass = defaultMass / 3;
+			}
+			//Check if they were exploding
+			if(collision.gameObject.GetComponent<Enemy>().exploding)
+			{
+				//Lose some health
+				ehealth = (ehealth / 2) - 1;
+			}
 
 		}
 

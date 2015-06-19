@@ -229,4 +229,23 @@ public class Bounded2DCamera : MonoBehaviour
 			lerpSpeed = lerpSpeed - amount;
 		}
 	}
+
+	//Function for impact pause
+	//Function to call for impact pause
+	public void startImpact()
+	{
+		StartCoroutine("impactPause");
+	}
+	//Pause our game for some slight seconds
+	public IEnumerator impactPause()
+	{
+		if(!impacting)
+		{
+			impacting = true;
+			Time.timeScale = 0.1f;
+			yield return new WaitForSeconds(.002f);
+			Time.timeScale = 1;
+			impacting = false;
+		}
+	}
 }
