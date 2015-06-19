@@ -28,6 +28,9 @@ public class Enemy : MonoBehaviour
 	public int attackFrames;
 	private int totalFrames;
 
+	//boolean if colliding with player
+	private bool playerCollide;
+
 	//Knockback value
 	private float knockForce;
 	public int knockFrames;
@@ -54,6 +57,9 @@ public class Enemy : MonoBehaviour
 
 		//Enemy is not dead
 		dead = false;
+
+		//Enemy is not colliding with player
+		playerCollide = false;
 
 
 		int playerLevel = Player.playerLevel;
@@ -114,7 +120,8 @@ public class Enemy : MonoBehaviour
 				enemy.mass = defaultMass;
 			}
 		} 
-		else if(!gameManager.getGameStatus() && !dead)
+		//MOve only if game is not over, enemy is not dead, and they are not collidign with the player
+		else if(!gameManager.getGameStatus() && !dead && !playerCollide)
 		{
 			//Move our player
 			Move ();
@@ -300,6 +307,10 @@ public class Enemy : MonoBehaviour
 			//Check if it is the player
 			if(collision.gameObject.tag == "Player")
 			{
+			//Set player collide to true
+			playerCollide = true;
+
+
 			//Decrease the number of frames until we attack
 				if(attackFrames > 0)
 				{
@@ -355,6 +366,12 @@ public class Enemy : MonoBehaviour
 			//reset enemy mass
 			e.enemy.mass = defaultMass;
 			
+		}
+
+		//Check if it is the player
+		else if (collision.gameObject.tag == "Player") {
+			//Set player collide to false
+			playerCollide = false;
 		}
 	}
 
