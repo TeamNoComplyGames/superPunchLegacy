@@ -72,7 +72,7 @@ public class Enemy : MonoBehaviour
 		if (elevel <= 0) {
 			elevel = 1;
 		}
-		ehealth = (int) (elevel * 2.5f);
+		ehealth = (int) (elevel * 2.75f);
 
 		//Set the mass of the rigid body to be really high so they dont go flying
 		defaultMass = enemy.mass;
@@ -162,10 +162,10 @@ public class Enemy : MonoBehaviour
 			//Destroy(gameObject);
 
 			//Get an explosion chance
-			int exChance = Random.Range(0, 10);
+			int exChance = Random.Range(0, 20);
 
 			//Now check explosion chance
-			if(exChance > 7)
+			if(exChance > 17)
 			{
 				//EXPLODEEEE
 
@@ -321,7 +321,7 @@ public class Enemy : MonoBehaviour
 		transform.localScale += new Vector3(transform.localScale.x * 2, transform.localScale.y * 2, 0);
 
 		//Stay exploding for a while
-		yield return new WaitForSeconds (1.0f);
+		yield return new WaitForSeconds (0.5f);
 
 		//Set explosing to false
 		exploding = false;
