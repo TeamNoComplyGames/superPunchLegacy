@@ -90,7 +90,7 @@ public class GameManager : MonoBehaviour
 		if (started) {
 			//Get the score for the player
 			//Going to calculate by enemies defeated, level, and minutes passed
-			int score = (int) (user.getLevel () * (defeatedEnemies) * 100);
+			score = (int) (user.getLevel () * (defeatedEnemies) * 100);
 
 
 			//Update our hud to player
