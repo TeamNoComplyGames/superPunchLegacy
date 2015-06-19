@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour
 	private bool dead;
 	//Boolean if we are exploding
 	private bool exploding;
+	//Our explode position
+	private Vector3 explodePos;
 
 	//Our target to fight
 	private Player player;
@@ -82,6 +84,9 @@ public class Enemy : MonoBehaviour
 		totalKnockFrames = knockFrames;
 		knockBool = false;
 
+		//INit explosion
+		explodePos = Vector3.zero;
+
 		//Get our sounds
 		hurt = GameObject.Find ("Hurt").GetComponent<AudioSource> ();
 
@@ -101,8 +106,24 @@ public class Enemy : MonoBehaviour
 	//Called every frame
 	void Update ()
 	{
+		//check if exploding
+		if (exploding) 
+		{
+			//reset our knowckback frames
+			knockFrames = totalKnockFrames;
+			//and make us kinematic again
+			knockBool = false;
+			//And remove the force we added
+			enemy.angularVelocity = 0f;
+			enemy.velocity = Vector2.zero;
+
+			transform.localPosition = explodePos;
+			
+			//set mass back to default value
+			enemy.mass = defaultMass;
+		}
 		//If we are being knockbacked, knock back for so many frames
-		if (knockBool && !exploding) 
+		else if (knockBool) 
 		{
 			if (knockFrames > 0) 
 			{
@@ -127,21 +148,6 @@ public class Enemy : MonoBehaviour
 		{
 			//Move our player
 			Move ();
-		}
-		
-		//check if exploding
-		if (exploding) 
-		{
-			//reset our knowckback frames
-			knockFrames = totalKnockFrames;
-			//and make us kinematic again
-			knockBool = false;
-			//And remove the force we added
-			enemy.angularVelocity = 0f;
-			enemy.velocity = Vector2.zero;
-			
-			//set mass back to default value
-			enemy.mass = defaultMass;
 		}
 
 		//Check if enemy is dead
@@ -298,6 +304,9 @@ public class Enemy : MonoBehaviour
 	{
 		//First set exploding to true
 		exploding = true;
+
+		//Set our explosion posisiton to our position
+		explodePos = transform.localPosition;
 
 		//Set the explosion trigger
 		animator.SetBool ("Explode", true);
