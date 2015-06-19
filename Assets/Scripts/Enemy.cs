@@ -46,7 +46,7 @@ public class Enemy : MonoBehaviour
 	GameManager gameManager;
 
 	//our camera Script
-	Bounded2DCamera cameraShake;
+	Bounded2DCamera actionCamera;
 	
 	// Use this for initialization
 	void Start () 
@@ -88,7 +88,7 @@ public class Enemy : MonoBehaviour
 		//Get our gammaneger
 		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 		//Get our camera script
-		cameraShake = Camera.main.GetComponent<Bounded2DCamera>();
+		actionCamera = Camera.main.GetComponent<Bounded2DCamera>();
 
 		//Increase our number of enemies
 		gameManager.plusEnemy();
@@ -285,6 +285,18 @@ public class Enemy : MonoBehaviour
 	{
 		//First set exploding to true
 		exploding = true;
+
+		//Shake the screen
+		actionCamera.startShake();
+		
+		//Add slight impact pause
+		actionCamera.startImpact();
+
+		//Stay exploding for a while
+
+
+		//Delete the enemy
+		Destroy(gameObject);
 	}
 
 	//Catch when we collide with something
@@ -307,11 +319,8 @@ public class Enemy : MonoBehaviour
 			enemy.velocity = Vector2.zero;
 			}
 		//Check if it is another enemy, mass will lower for pushing one another
-		else if(collision.gameObject.tag == "Enemy")
+		else if(collision.gameObject.tag == "Enemy" && knockBool)
 		{
-			//Check if we were in knockback
-			if(knockBool)
-			{
 			//Lose some health, this is only called if they were being knock backed
 			--ehealth;
 
@@ -330,60 +339,77 @@ public class Enemy : MonoBehaviour
 				ehealth = (ehealth / 2) - 1;
 			}
 
-		}
-
 	}
 
 	//Catch when we collide with enemy
 	void OnCollisionStay2D(Collision2D collision) 
 	{
 			//Check if it is the player
-			if(collision.gameObject.tag == "Player")
-			{
+			if (collision.gameObject.tag == "Player") {
 			//Set player collide to true
 			playerCollide = true;
 
 
 			//Decrease the number of frames until we attack
-				if(attackFrames > 0)
-				{
+			if (attackFrames > 0) {
 				--attackFrames;
-				}
-			else if(dead)
-			{
+			} else if (dead) {
 				//Do nothing ig dead
 			}
 			//attack the player
-			else
-			{
+			else {
 				//Set the attack trigger of the player's animation controller in order to play the player's attack animation.
 				animator.SetTrigger ("Attack");
-				Player p = (Player) collision.gameObject.GetComponent("Player");
+				Player p = (Player)collision.gameObject.GetComponent ("Player");
 				//Now using an int to calulate our damage before we apply to health
 				int damage = (int)(elevel / 1.5);
-				if(damage < 1)
-				{
+				if (damage < 1) {
 					damage = 1;
 				}
-				int newHealth = p.getHealth() - damage;
-				p.setHealth(newHealth);
+				int newHealth = p.getHealth () - damage;
+				p.setHealth (newHealth);
 
 				//Play the sound of hurt, only if the game is still on
-				if(!gameManager.getGameStatus())
-				{
-					hurt.Play();
+				if (!gameManager.getGameStatus ()) {
+					hurt.Play ();
 				}
 
 				//Shake the screen
-				cameraShake.startShake();
+				actionCamera.startShake ();
 
 				//impact pause from the player
-				p.startImpact();
+				actionCamera.startImpact ();
 
 				//Reset attack frames
 				attackFrames = totalFrames;
 			}
+		}
+		//also check if we were by exploding enemy
+		else if (collision.gameObject.tag == "Enemy" && exploding) 
+		{
+			//Lose health and knockback
+			ehealth = (ehealth / 2) - 1;
+
+			//Get our opposite facing direction
+			int oppDir = 0;
+			int curDir = animator.GetInteger("Direction");
+
+			if(curDir == 0)
+			{
+				oppDir = 2;
 			}
+			else if(curDir == 1)
+			{
+				oppDir = 3;
+			}
+			else if(curDir == 3)
+			{
+				oppDir = 1;
+			}
+
+			//Now knockback ourselves in the oppostie direction we were facing
+			knockBack(oppDir, (collision.gameObject.GetComponent<Enemy>().elevel * 2));
+		}
 		
 	}
 
