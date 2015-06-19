@@ -366,7 +366,7 @@ public class GameManager : MonoBehaviour
 
 			//Now re-create our spawn rates
 			//Get our enemy index
-			int enemyIndex = (int)Mathf.Floor (UnityEngine.Random.Range (0, enemies.Length - 1));
+			int enemyIndex = (int)Mathf.Floor (UnityEngine.Random.Range (0, enemies.Length));
 
 			//Try catch for index out of range
 			try {
