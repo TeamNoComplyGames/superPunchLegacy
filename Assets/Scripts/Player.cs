@@ -18,7 +18,6 @@ public class Player : MonoBehaviour
 
 	//Game jucin'
 	private int moveDec;
-	private bool impacting;
 
 	private SpriteRenderer render; //Our sprite renderer to change our sprite color
 	private bool showFlash;
@@ -51,7 +50,6 @@ public class Player : MonoBehaviour
 		exp = 0;
 		attacking = false;
 		moveDec = 1;
-		impacting = false;
 
 		//Get our sounds
 		punch = GameObject.Find ("Punch").GetComponent<AudioSource> ();

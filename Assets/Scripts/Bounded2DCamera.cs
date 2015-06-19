@@ -15,6 +15,7 @@ public class Bounded2DCamera : MonoBehaviour
 
 	//The speed the camera will lerp, e.g. 1.5f
 	public float lerpSpeed;
+	private bool impacting;
 
 	//our postion
 	private float posX;
@@ -36,6 +37,7 @@ public class Bounded2DCamera : MonoBehaviour
 		shaking = false;
 		defaultPos = new Vector3 (0, 0, -10);
 		wallSides = Vector3.zero;
+		impacting = false;
 
 		//off set the camera by just a little bit to add some lerp when we start
 		gameObject.transform.localPosition = new Vector3 (-.03f, -.03f, -10);

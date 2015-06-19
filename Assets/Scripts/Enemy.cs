@@ -104,12 +104,13 @@ public class Enemy : MonoBehaviour
 		//If we are being knockbacked, knock back for so many frames
 		if (knockBool) 
 		{
-			if (knockFrames > 0) 
+			if (knockFrames > 0 && !exploding) 
 			{
 				--knockFrames;
 			} 
 			else 
 			{
+				Debug.Log("HIIIII");
 				//reset our knowckback frames
 				knockFrames = totalKnockFrames;
 				//and make us kinematic again
@@ -134,8 +135,6 @@ public class Enemy : MonoBehaviour
 		//Check if enemy is dead
 		if (ehealth <= 0 && !dead) 
 		{
-			//Get an explosion chance
-			int exChance = Random.Range(0, 20);
 			//Add experience to the player
 			player.addEXP(elevel);
 			//Decrease the number of enemies we have
@@ -144,9 +143,11 @@ public class Enemy : MonoBehaviour
 			//Destroy this enemy, possible display some animation first
 			//Destroy(gameObject);
 
+			//Get an explosion chance
+			int exChance = Random.Range(0, 10);
 
 			//Now check explosion chance
-			if(exChance > 19)
+			if(exChance > 7)
 			{
 				//EXPLODEEEE
 
@@ -286,6 +287,9 @@ public class Enemy : MonoBehaviour
 		//First set exploding to true
 		exploding = true;
 
+		//Set the explosion trigger
+		animator.SetBool ("Explode", true);
+
 		//Shake the screen
 		actionCamera.startShake();
 		
@@ -293,7 +297,10 @@ public class Enemy : MonoBehaviour
 		actionCamera.startImpact();
 
 		//Stay exploding for a while
+		yield return new WaitForSeconds (1.0f);
 
+		//Set explosing to false
+		exploding = false;
 
 		//Delete the enemy
 		Destroy(gameObject);
@@ -331,13 +338,7 @@ public class Enemy : MonoBehaviour
 
 			//lower enemy mass
 			e.enemy.mass = defaultMass / 3;
-			}
-			//Check if they were exploding
-			if(collision.gameObject.GetComponent<Enemy>().exploding)
-			{
-				//Lose some health
-				ehealth = (ehealth / 2) - 1;
-			}
+		}
 
 	}
 
@@ -385,10 +386,11 @@ public class Enemy : MonoBehaviour
 			}
 		}
 		//also check if we were by exploding enemy
-		else if (collision.gameObject.tag == "Enemy" && exploding) 
+		else if (collision.gameObject.tag == "Enemy" && 
+		         collision.gameObject.GetComponent<Enemy>().exploding) 
 		{
 			//Lose health and knockback
-			ehealth = (ehealth / 2) - 1;
+			ehealth = ehealth - collision.gameObject.GetComponent<Enemy>().elevel;
 
 			//Get our opposite facing direction
 			int oppDir = 0;
