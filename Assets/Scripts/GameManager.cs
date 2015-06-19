@@ -107,7 +107,8 @@ public class GameManager : MonoBehaviour
 		else if (gameOver) 
 		{
 			//Show our game over
-			hud.text = ("GAMEOVER!!!" + "\n" + epitaph[user.getLevel()/10] + "\nHighest Level:" + user.getLevel());
+			hud.text = ("GAMEOVER!!!" + "\n" + epitaph[user.getLevel()/10] + "\nHighest Level:" + user.getLevel()
+			            + "\nHighest Score:" + score);
 
 			//Show a button in the middle of the screen to restart
 			restart.gameObject.SetActive(true);
