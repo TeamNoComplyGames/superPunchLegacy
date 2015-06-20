@@ -194,6 +194,20 @@ public class GameManager : MonoBehaviour
 		InvokeRepeating("spawnEnemies", 0 , superRate);
 	}
 
+	//Function to generate our objects
+	public void genObjects ()
+	{
+		//Array list to get our objects positions
+		ArrayList spawnPositions = new ArrayList();
+
+		//in a loop generate our objects a specified amount of time
+		for (int i = 0; i < numObjects; ++i) 
+		{
+			spawnPositions.Add(spawnObjects(spawnPositions));
+		}
+
+	}
+
 
 	//Function to spawn enemies repeatedly
 	private void spawnEnemies()
@@ -394,15 +408,25 @@ public class GameManager : MonoBehaviour
 	}
 
 	//Function to spawn objects, simply copy pasta from spawn enemy
-	private void spawnObjects()
+	private Vector2 spawnObjects(ArrayList positions)
 	{
 			//We can spawn an enemy anywhere outside of the camera
 			//Get ouyr player's position
 			user = GameObject.Find ("Person").GetComponent<Player> ();
 			Vector2 userPos = user.transform.position;
+
+		//Position we are going to spawn to
+		Vector2 spawnPos = Vector2.zero;
+
+
+			//Boolean if the position is valid
+		bool validPos = false;
 			
 			//Now find an x and y coordinate that wouldnt be out of bounds the level, attaching this script to it's own object
 			//It's position is X: 52, Y: -20 X is left lower, right higher, Y is top higher, bottom lower
+
+		//Loop until position is valide
+		while (!validPos) {
 			
 			
 			//Find an X And Y to spawn
@@ -417,117 +441,110 @@ public class GameManager : MonoBehaviour
 			float boundsY = .7f;
 			float boundsX = .4f;
 			//Get a random number to slightly influence our off set
-			float slight = UnityEngine.Random.Range(0.0f, 0.7f);
+			float slight = UnityEngine.Random.Range (0.0f, 0.7f);
 			//loop until we get a direction that works
-			while(eDir == -1)
-			{
+			while (eDir == -1) {
 				//Get our direction 0,1,2,3
-				eDir = Mathf.Floor(UnityEngine.Random.Range(0, 4.0f));
+				eDir = Mathf.Floor (UnityEngine.Random.Range (0, 4.0f));
 				
 				//Check what direction we got
-				if(eDir == 0)
-				{
+				if (eDir == 0) {
 					//Then confirm we can use that direction
-					if(userPos.y < -boundsY)
-					{
+					if (userPos.y < -boundsY) {
 						eDir = -1;
-					}
-					else
-					{
+					} else {
 						//Use the direction, and add a slight change to our other coordinate
-						if(userPos.x > 0)
-						{
+						if (userPos.x > 0) {
 							enemyX = userPos.x - slight;
-						}
-						else
-						{
+						} else {
 							enemyX = userPos.x + slight;
 						}
 						enemyY = userPos.y - sOffY;
 					}
-				}
-				else if(eDir == 1)
-				{
-					if(userPos.x > boundsX)
-					{
+				} else if (eDir == 1) {
+					if (userPos.x > boundsX) {
 						eDir = -1;
-					}
-					else
-					{
+					} else {
 						enemyX = userPos.x + sOffX;
 						//Use the direction, and add a slight change to our other coordinate
-						if(userPos.y > 0)
-						{
+						if (userPos.y > 0) {
 							enemyY = userPos.y - slight;
-						}
-						else
-						{
+						} else {
 							enemyY = userPos.y + slight;
 						}
 					}
-				}
-				else if(eDir == 2)
-				{
-					if(userPos.y > boundsY)
-					{
+				} else if (eDir == 2) {
+					if (userPos.y > boundsY) {
 						eDir = -1;
-					}
-					else
-					{
+					} else {
 						//Use the direction, and add a slight change to our other coordinate
-						if(userPos.x > 0)
-						{
+						if (userPos.x > 0) {
 							enemyX = userPos.x - slight;
-						}
-						else
-						{
+						} else {
 							enemyX = userPos.x + slight;
 						}
 						enemyY = userPos.y + sOffY;
 					}
-				}
-				else if(eDir == 3)
-				{
-					if(userPos.x < -boundsX)
-					{
+				} else if (eDir == 3) {
+					if (userPos.x < -boundsX) {
 						eDir = -1;
-					}
-					else
-					{
+					} else {
 						enemyX = userPos.x - sOffX;
 						//Use the direction, and add a slight change to our other coordinate
-						if(userPos.y > 0)
-						{
+						if (userPos.y > 0) {
 							enemyY = userPos.y - slight;
-						}
-						else
-						{
+						} else {
 							enemyY = userPos.y + slight;
 						}
 					}
-				}
-				else
-				{
+				} else {
 					//Keep looping 
 					eDir = -1;
 				}
 			}
 			
 			//Now create a vector with our x and y
-			Vector2 spawnPos = new Vector2 (enemyX, enemyY);
+			spawnPos = new Vector2 (enemyX, enemyY);
+
+			//Loop and check if position is valid to our other objects
+			for(int i = 0; i < positions.Capacity; ++i)
+			{
+				//Check the distance from our current position and old ones
+				if(Vector2.Distance(spawnPos, (Vector2) (positions[i])) > 1.0f)
+				{
+					//check if this is the last index of i
+					if(i == positions.Capacity - 1)
+					{
+						//THen we have found a valid position
+						validPos = true;
+					}
+				}
+				else
+				{
+					//Break and start over
+					validPos = false;
+					i = positions.Capacity;
+				}
+			}
+
+
+		}
 			
 			//Now re-create our spawn rates
 			//Get our enemy index
-			int enemyIndex = (int)Mathf.Floor (UnityEngine.Random.Range (0, enemies.Length));
+			int enemyIndex = (int)Mathf.Floor (UnityEngine.Random.Range (0, objects.Length));
 			
 			//Try catch for index out of range
 			try {
 				//create a copy of our gameobject
-				Instantiate (enemies [enemyIndex], spawnPos, Quaternion.identity);
+				Instantiate (objects [enemyIndex], spawnPos, Quaternion.identity);
 			} catch (IndexOutOfRangeException ex) {
 				//Print our exception to the console
 				print (ex);
 			}
+
+		//Return spawn position
+		return spawnPos;
 		
 	}
 
