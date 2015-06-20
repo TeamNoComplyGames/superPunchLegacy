@@ -199,7 +199,6 @@ public class GameManager : MonoBehaviour
 		//in a loop generate our objects a specified amount of time
 		for (int i = 0; i < maxObjects; ++i) 
 		{
-			Debug.Log ("hi");
 			spawnPositions.Add(spawnObjects(spawnPositions));
 		}
 
@@ -507,7 +506,7 @@ public class GameManager : MonoBehaviour
 			for(int i = 0; i < positions.Capacity; ++i)
 			{
 				//Check the distance from our current position and old ones
-				if(Vector2.Distance(spawnPos, (Vector2) (positions[i])) > 1.0f)
+				if(Vector2.Distance(spawnPos, (Vector2) (positions[i])) > 0.5f)
 				{
 					//check if this is the last index of i
 					if(i == positions.Capacity - 1)
