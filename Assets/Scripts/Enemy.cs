@@ -183,7 +183,7 @@ public class Enemy : MonoBehaviour
 				//Move our enemy out of the way and play the death animation
 				animator.SetBool("Death", true);
 				//and remove box collider
-				GetComponent<BoxCollider2D>().enabled = false;
+				GetComponent<BoxCollider2D>().isTrigger = true;
 			}
 
 			//Set death boolean to true
@@ -466,6 +466,22 @@ public class Enemy : MonoBehaviour
 		else if (collision.gameObject.tag == "Player") {
 			//Set player collide to false
 			playerCollide = false;
+		}
+	}
+
+	//After corpse has died, and we are an is trigger
+	void OnTriggerEnter(Collider collision) 
+	{
+		if(collision.gameObject.tag == "Wall")
+		{
+			//And stop our knowback if we are in knockback
+			//reset our knowckback frames
+			knockFrames = totalKnockFrames;
+			//and make us kinematic again
+			knockBool = false;
+			//And remove the force we added
+			enemy.angularVelocity = 0f;
+			enemy.velocity = Vector2.zero;
 		}
 	}
 
