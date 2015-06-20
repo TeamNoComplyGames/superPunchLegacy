@@ -502,14 +502,24 @@ public class GameManager : MonoBehaviour
 			//Now create a vector with our x and y
 			spawnPos = new Vector2 (enemyX, enemyY);
 
+			//Check beofore looping
+			if(positions.Count == 0)
+			{
+				//Nothing to compare to, therefore it is valid
+				validPos = true;
+			}
+			//Then we need to check it's vadility
+			else
+			{
+
 			//Loop and check if position is valid to our other objects
-			for(int i = 0; i < positions.Capacity; ++i)
+			for(int i = 0; i < positions.Count; ++i)
 			{
 				//Check the distance from our current position and old ones
 				if(Vector2.Distance(spawnPos, (Vector2) (positions[i])) > 0.5f)
 				{
 					//check if this is the last index of i
-					if(i == positions.Capacity - 1)
+					if(i == positions.Count - 1)
 					{
 						//THen we have found a valid position
 						validPos = true;
@@ -519,8 +529,9 @@ public class GameManager : MonoBehaviour
 				{
 					//Break and start over
 					validPos = false;
-					i = positions.Capacity;
+					i = positions.Count;
 				}
+			}
 			}
 
 
