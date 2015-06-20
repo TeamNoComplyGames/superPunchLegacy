@@ -31,7 +31,6 @@ public class GameManager : MonoBehaviour
 
 	//Our object prefabs
 		public GameObject[] objects;
-	private int numObjects;
 	//Suggest max objects as 7
 	public int maxObjects;
 
@@ -81,9 +80,6 @@ public class GameManager : MonoBehaviour
 
 		//Defeated enemies is one for score calculation at start
 		defeatedEnemies = 1;
-
-		//Set num objects to 0
-		numObjects = 0;
 
 		//Set score to zero
 		score = 0;
@@ -201,8 +197,9 @@ public class GameManager : MonoBehaviour
 		ArrayList spawnPositions = new ArrayList();
 
 		//in a loop generate our objects a specified amount of time
-		for (int i = 0; i < numObjects; ++i) 
+		for (int i = 0; i < maxObjects; ++i) 
 		{
+			Debug.Log ("hi");
 			spawnPositions.Add(spawnObjects(spawnPositions));
 		}
 
@@ -542,7 +539,6 @@ public class GameManager : MonoBehaviour
 				//Print our exception to the console
 				print (ex);
 			}
-
 		//Return spawn position
 		return spawnPos;
 		
