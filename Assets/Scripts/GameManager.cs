@@ -29,6 +29,12 @@ public class GameManager : MonoBehaviour
 	//number of enemies spawned
 	private int defeatedEnemies;
 
+	//Our object prefabs
+		public GameObject[] objects;
+	private int numObjects;
+	//Suggest max objects as 7
+	public int maxObjects;
+
 	//Our Hud
 	private UnityEngine.UI.Text hud;
 	//Our Buttons
@@ -76,8 +82,14 @@ public class GameManager : MonoBehaviour
 		//Defeated enemies is one for score calculation at start
 		defeatedEnemies = 1;
 
+		//Set num objects to 0
+		numObjects = 0;
+
 		//Set score to zero
 		score = 0;
+
+		//Spawn our objects
+		genObjects ();
 
 		//Spawn an enemies
 		invokeEnemies ();
@@ -379,6 +391,144 @@ public class GameManager : MonoBehaviour
 
 		}
 
+	}
+
+	//Function to spawn objects, simply copy pasta from spawn enemy
+	private void spawnObjects()
+	{
+			//We can spawn an enemy anywhere outside of the camera
+			//Get ouyr player's position
+			user = GameObject.Find ("Person").GetComponent<Player> ();
+			Vector2 userPos = user.transform.position;
+			
+			//Now find an x and y coordinate that wouldnt be out of bounds the level, attaching this script to it's own object
+			//It's position is X: 52, Y: -20 X is left lower, right higher, Y is top higher, bottom lower
+			
+			
+			//Find an X And Y to spawn
+			float enemyX = 0;
+			float enemyY = 0;
+			
+			//get a random direction
+			float eDir = -1;
+			//Our enemy spawn offset
+			float sOffY = .9f;
+			float sOffX = 1.4f;
+			float boundsY = .7f;
+			float boundsX = .4f;
+			//Get a random number to slightly influence our off set
+			float slight = UnityEngine.Random.Range(0.0f, 0.7f);
+			//loop until we get a direction that works
+			while(eDir == -1)
+			{
+				//Get our direction 0,1,2,3
+				eDir = Mathf.Floor(UnityEngine.Random.Range(0, 4.0f));
+				
+				//Check what direction we got
+				if(eDir == 0)
+				{
+					//Then confirm we can use that direction
+					if(userPos.y < -boundsY)
+					{
+						eDir = -1;
+					}
+					else
+					{
+						//Use the direction, and add a slight change to our other coordinate
+						if(userPos.x > 0)
+						{
+							enemyX = userPos.x - slight;
+						}
+						else
+						{
+							enemyX = userPos.x + slight;
+						}
+						enemyY = userPos.y - sOffY;
+					}
+				}
+				else if(eDir == 1)
+				{
+					if(userPos.x > boundsX)
+					{
+						eDir = -1;
+					}
+					else
+					{
+						enemyX = userPos.x + sOffX;
+						//Use the direction, and add a slight change to our other coordinate
+						if(userPos.y > 0)
+						{
+							enemyY = userPos.y - slight;
+						}
+						else
+						{
+							enemyY = userPos.y + slight;
+						}
+					}
+				}
+				else if(eDir == 2)
+				{
+					if(userPos.y > boundsY)
+					{
+						eDir = -1;
+					}
+					else
+					{
+						//Use the direction, and add a slight change to our other coordinate
+						if(userPos.x > 0)
+						{
+							enemyX = userPos.x - slight;
+						}
+						else
+						{
+							enemyX = userPos.x + slight;
+						}
+						enemyY = userPos.y + sOffY;
+					}
+				}
+				else if(eDir == 3)
+				{
+					if(userPos.x < -boundsX)
+					{
+						eDir = -1;
+					}
+					else
+					{
+						enemyX = userPos.x - sOffX;
+						//Use the direction, and add a slight change to our other coordinate
+						if(userPos.y > 0)
+						{
+							enemyY = userPos.y - slight;
+						}
+						else
+						{
+							enemyY = userPos.y + slight;
+						}
+					}
+				}
+				else
+				{
+					//Keep looping 
+					eDir = -1;
+				}
+			}
+			
+			//Now create a vector with our x and y
+			Vector2 spawnPos = new Vector2 (enemyX, enemyY);
+			
+			//Now re-create our spawn rates
+			//Get our enemy index
+			int enemyIndex = (int)Mathf.Floor (UnityEngine.Random.Range (0, enemies.Length));
+			
+			//Try catch for index out of range
+			try {
+				//create a copy of our gameobject
+				Instantiate (enemies [enemyIndex], spawnPos, Quaternion.identity);
+			} catch (IndexOutOfRangeException ex) {
+				//Print our exception to the console
+				print (ex);
+			}
+		
 	}
 
 	public void restartGame()
