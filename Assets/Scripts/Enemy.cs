@@ -470,10 +470,11 @@ public class Enemy : MonoBehaviour
 	}
 
 	//After corpse has died, and we are an is trigger
-	void OnTriggerEnter(Collider collision) 
+	void OnTriggerEnter2D(Collider collision) 
 	{
 		if(collision.gameObject.tag == "Wall")
 		{
+			Debug.Log("hi");
 			//And stop our knowback if we are in knockback
 			//reset our knowckback frames
 			knockFrames = totalKnockFrames;
