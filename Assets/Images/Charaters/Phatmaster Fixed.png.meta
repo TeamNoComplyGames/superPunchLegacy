@@ -1,0 +1,297 @@
+fileFormatVersion: 2
+guid: 0f232997ac31c754d8a7822364fe2d8d
+timeCreated: 1434764955
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Phatmaster Fixed_0
+    21300002: Phatmaster Fixed_1
+    21300004: Phatmaster Fixed_2
+    21300006: Phatmaster Fixed_3
+    21300008: Phatmaster Fixed_4
+    21300010: Phatmaster Fixed_5
+    21300012: Phatmaster Fixed_6
+    21300014: Phatmaster Fixed_7
+    21300016: Phatmaster Fixed_8
+    21300018: Phatmaster Fixed_9
+    21300020: Phatmaster Fixed_10
+    21300022: Phatmaster Fixed_11
+    21300024: Phatmaster Fixed_12
+    21300026: Phatmaster Fixed_13
+    21300028: Phatmaster Fixed_14
+    21300030: Phatmaster Fixed_15
+    21300032: Phatmaster Fixed_16
+    21300034: Phatmaster Fixed_17
+    21300036: Phatmaster Fixed_18
+    21300038: Phatmaster Fixed_19
+    21300040: Phatmaster Fixed_20
+    21300042: Phatmaster Fixed_21
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Phatmaster Fixed_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 369
+        width: 37
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Phatmaster Fixed_1
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 374
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Phatmaster Fixed_2
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 374
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Phatmaster Fixed_3
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 374
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Phatmaster Fixed_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 304
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Phatmaster Fixed_5
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 304
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Phatmaster Fixed_6
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 304
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Phatmaster Fixed_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 304
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Phatmaster Fixed_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 234
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Phatmaster Fixed_9
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 234
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Phatmaster Fixed_10
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 234
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Phatmaster Fixed_11
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 234
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Phatmaster Fixed_12
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 164
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Phatmaster Fixed_13
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 165
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Phatmaster Fixed_14
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 165
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Phatmaster Fixed_15
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 165
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Phatmaster Fixed_16
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 95
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Phatmaster Fixed_17
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 93
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Phatmaster Fixed_18
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 94
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Phatmaster Fixed_19
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 94
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Phatmaster Fixed_20
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 23
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Phatmaster Fixed_21
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 24
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

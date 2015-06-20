@@ -1,0 +1,726 @@
+fileFormatVersion: 2
+guid: 5c2106178f2789e48a7f84712a1bf198
+timeCreated: 1434764916
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ART Fixed_0
+    21300002: ART Fixed_1
+    21300004: ART Fixed_2
+    21300006: ART Fixed_3
+    21300008: ART Fixed_4
+    21300010: ART Fixed_5
+    21300012: ART Fixed_6
+    21300014: ART Fixed_7
+    21300016: ART Fixed_8
+    21300018: ART Fixed_9
+    21300020: ART Fixed_10
+    21300022: ART Fixed_11
+    21300024: ART Fixed_12
+    21300026: ART Fixed_13
+    21300028: ART Fixed_14
+    21300030: ART Fixed_15
+    21300032: ART Fixed_16
+    21300034: ART Fixed_17
+    21300036: ART Fixed_18
+    21300038: ART Fixed_19
+    21300040: ART Fixed_20
+    21300042: ART Fixed_21
+    21300044: ART Fixed_22
+    21300046: ART Fixed_23
+    21300048: ART Fixed_24
+    21300050: ART Fixed_25
+    21300052: ART Fixed_26
+    21300054: ART Fixed_27
+    21300056: ART Fixed_28
+    21300058: ART Fixed_29
+    21300060: ART Fixed_30
+    21300062: ART Fixed_31
+    21300064: ART Fixed_32
+    21300066: ART Fixed_33
+    21300068: ART Fixed_34
+    21300070: ART Fixed_35
+    21300072: ART Fixed_36
+    21300074: ART Fixed_37
+    21300076: ART Fixed_38
+    21300078: ART Fixed_39
+    21300080: ART Fixed_40
+    21300082: ART Fixed_41
+    21300084: ART Fixed_42
+    21300086: ART Fixed_43
+    21300088: ART Fixed_44
+    21300090: ART Fixed_45
+    21300092: ART Fixed_46
+    21300094: ART Fixed_47
+    21300096: ART Fixed_48
+    21300098: ART Fixed_49
+    21300100: ART Fixed_50
+    21300102: ART Fixed_51
+    21300104: ART Fixed_52
+    21300106: ART Fixed_53
+    21300108: ART Fixed_54
+    21300110: ART Fixed_55
+    21300112: ART Fixed_56
+    21300114: ART Fixed_57
+    21300116: ART Fixed_58
+    21300118: ART Fixed_59
+    21300120: ART Fixed_60
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ART Fixed_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 989
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 989
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_2
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 989
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 987
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 917
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_5
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 918
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_6
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 919
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_7
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 919
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_8
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 849
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_9
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 849
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_10
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 849
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_11
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 849
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_12
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 779
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_13
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 779
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_14
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 779
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_15
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 779
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_16
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 709
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_17
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 709
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_18
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 709
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_19
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 709
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_20
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 639
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_21
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 639
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_22
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 639
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_23
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 639
+        width: 46
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_24
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 569
+        width: 52
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_25
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 569
+        width: 53
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_26
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 569
+        width: 53
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_27
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 569
+        width: 58
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_28
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 499
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_29
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 506
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_30
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 499
+        width: 45
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_31
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 505
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_32
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 499
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_33
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 508
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_34
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 499
+        width: 45
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_35
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 516
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_36
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 507
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_37
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 506
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_38
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 429
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_39
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 433
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_40
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 429
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_41
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 429
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_42
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 429
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_43
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 359
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_44
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 359
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_45
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 359
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_46
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 359
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_47
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 289
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_48
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 289
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_49
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 219
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_50
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 219
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_51
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 149
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_52
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 149
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_53
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 149
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_54
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 79
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_55
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 79
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_56
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 79
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_57
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 79
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_58
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 9
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_59
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 9
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ART Fixed_60
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 9
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
