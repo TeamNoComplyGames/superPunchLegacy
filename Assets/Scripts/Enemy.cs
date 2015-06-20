@@ -9,6 +9,11 @@ public class Enemy : MonoBehaviour
 	public float emoveSpeed = 0f;
 	//Our enemy mass(Done in inspector)
 	private float defaultMass;
+
+	//Our enemy skills
+	public float speed;
+	public float healthMultiplier;
+	public float attack;
 	
 	//Our player stats
 	public int ehealth;
@@ -49,7 +54,7 @@ public class Enemy : MonoBehaviour
 
 	//our camera Script
 	Bounded2DCamera actionCamera;
-	
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -72,7 +77,8 @@ public class Enemy : MonoBehaviour
 		if (elevel <= 0) {
 			elevel = 1;
 		}
-		ehealth = (int) (elevel * 2.75f);
+		//Get health using enemy skill
+		ehealth = (int) (elevel * 2.75f * healthMultiplier);
 
 		//Set the mass of the rigid body to be really high so they dont go flying
 		defaultMass = enemy.mass;
@@ -190,7 +196,8 @@ public class Enemy : MonoBehaviour
 	void Move ()
 	{
 		//Get our speed according to our current level
-		float superSpeed = emoveSpeed + (elevel / 10);
+		//Using enemy skill
+		float superSpeed = emoveSpeed + (elevel * speed / 15);
 
 		//Get our movement vector
 		Vector2 move = Vector2.MoveTowards(transform.position, player.transform.position, superSpeed * Time.deltaTime);
@@ -386,8 +393,10 @@ public class Enemy : MonoBehaviour
 				//Set the attack trigger of the player's animation controller in order to play the player's attack animation.
 				animator.SetTrigger ("Attack");
 				Player p = (Player)collision.gameObject.GetComponent ("Player");
+
 				//Now using an int to calulate our damage before we apply to health
-				int damage = (int)(elevel / 1.5);
+				//Using enemy skill
+				int damage = (int)(elevel * attack / 1.5);
 				if (damage < 1) {
 					damage = 1;
 				}
