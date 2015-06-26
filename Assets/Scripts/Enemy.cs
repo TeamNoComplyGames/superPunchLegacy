@@ -182,6 +182,10 @@ public class Enemy : MonoBehaviour
 			{
 				//Move our enemy out of the way and play the death animation
 				animator.SetBool("Death", true);
+
+				//Set our sorting layer as a corpse so we step on top of it
+				render.sortingLayerName = "Permenance";
+
 				//and remove box collider
 				GetComponent<BoxCollider2D>().isTrigger = true;
 			}
@@ -314,6 +318,9 @@ public class Enemy : MonoBehaviour
 
 		//Set our explosion posisiton to our position
 		explodePos = transform.localPosition;
+
+		//Set our sorting layer
+		render.sortingLayerName = "Explosions";
 
 		//Set the explosion trigger
 		animator.SetBool ("Explode", true);
