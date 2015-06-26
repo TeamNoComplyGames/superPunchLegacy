@@ -430,15 +430,15 @@ public class GameManager : MonoBehaviour
 			//get a random direction
 			float eDir = -1;
 			//Our objects spawn offset
-			float sOffY = .85f;
-			float sOffX = 1.2f;
+			float sOffY = .75f;
+			float sOffX = 1.15f;
 
 			//No longe rneed bounds since slight can not go larger than this
 			//float boundsY = .7f;
 			//float boundsX = .4f;
 
 			//Get a random number to slightly influence our off set
-			float slightY = UnityEngine.Random.Range (0.0f, 0.7f);
+			float slightY = UnityEngine.Random.Range (0.0f, 0.6f);
 			float slightX = UnityEngine.Random.Range (0.0f, 0.7f);
 
 			//Get a random number to subtract or add our slight
@@ -462,7 +462,8 @@ public class GameManager : MonoBehaviour
 						enemyX = slightX + sOffX;
 					}
 
-					enemyY = slightY - sOffY;
+					//extra cause it tends to hug the top
+					enemyY = slightY - sOffY - .6f;
 				} 
 				else if (eDir == 1) {
 					//Use the direction, and add a slight change to our other coordinate
@@ -528,7 +529,7 @@ public class GameManager : MonoBehaviour
 				for(int i = 0; i < positions.Count; ++i)
 				{
 					//Check the distance from our current position and old ones
-					if(Vector2.Distance(spawnPos, (Vector2) (positions[i])) > 0.25f)
+					if(Vector2.Distance(spawnPos, (Vector2) (positions[i])) > 0.45f)
 					{
 						//check if this is the last index of i
 						if(i == positions.Count - 1)
