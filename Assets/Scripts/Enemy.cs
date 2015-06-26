@@ -341,7 +341,7 @@ public class Enemy : MonoBehaviour
 	void OnCollisionEnter2D(Collision2D collision) 
 	{
 			//Check if it is awall
-			if(collision.gameObject.tag == "Wall")
+		if(collision.gameObject.tag == "Wall" && knockBool)
 			{
 				//Lose some health
 			--ehealth;
