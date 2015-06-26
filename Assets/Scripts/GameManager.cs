@@ -430,8 +430,8 @@ public class GameManager : MonoBehaviour
 			//get a random direction
 			float eDir = -1;
 			//Our objects spawn offset
-			float sOffY = .9f;
-			float sOffX = 1.4f;
+			float sOffY = .85f;
+			float sOffX = 1.2f;
 
 			//No longe rneed bounds since slight can not go larger than this
 			//float boundsY = .7f;
@@ -455,54 +455,54 @@ public class GameManager : MonoBehaviour
 					//Use the direction, and add a slight change to our other coordinate
 					if (ranBool > 0.5f) 
 					{
-						enemyX = sOffX - slightX;
+						enemyX = slightX - sOffX;
 					} 
 					else 
 					{
-						enemyX = sOffX + slightX;
+						enemyX = slightX + sOffX;
 					}
 
-					enemyY = sOffY - slightY;
+					enemyY = slightY - sOffY;
 				} 
 				else if (eDir == 1) {
 					//Use the direction, and add a slight change to our other coordinate
 					if (ranBool > 0.5f) 
 					{
-						enemyY = sOffY - slightY;
+						enemyY = slightY - sOffY;
 					} 
 					else 
 					{
-						enemyY = sOffY + slightY;
+						enemyY = slightY + sOffY;
 					}
 
-					enemyX = sOffX + slightX;
+					enemyX = slightX + sOffX;
 				} 
 				else if (eDir == 2) {
 					//Use the direction, and add a slight change to our other coordinate
 					if (ranBool > 0.5f) 
 					{
-						enemyX = sOffX - slightX;
+						enemyX = slightX - sOffX;
 					} 
 					else 
 					{
-						enemyX = sOffX + slightX;
+						enemyX = slightX + sOffX;
 					}
 
-					enemyY = sOffY + slightY;
+					enemyY = slightY + sOffY;
 				} 
 				else if (eDir == 3) 
 				{
 					//Use the direction, and add a slight change to our other coordinate
 					if (ranBool > 0.5f) 
 					{
-						enemyY = sOffY - slightY;
+						enemyY = slightY - sOffY;
 					} 
 					else 
 					{
-						enemyY = sOffY + slightY;
+						enemyY = slightY + sOffY;
 					}
 
-					enemyX = sOffX - slightX;
+					enemyX = slightX - sOffX;
 				} 
 				else 
 				{
