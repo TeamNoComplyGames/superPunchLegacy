@@ -406,12 +406,11 @@ public class GameManager : MonoBehaviour
 	//Function to spawn objects, simply copy pasta from spawn enemy
 	private Vector2 spawnObjects(ArrayList positions)
 	{
-		//We can spawn an enemy anywhere outside of the camera
-		//Get ouyr player's position
-		user = GameObject.Find ("Person").GetComponent<Player> ();
-		Vector2 userPos = user.transform.position;
+		//We can spawn an object anywhere outside of the camera
 
-		//Position we are going to spawn to
+		//THe players starting posisiton is Vector3.zero
+
+		//Position we are going to spawn objects to
 		Vector2 spawnPos = Vector2.zero;
 
 
@@ -419,7 +418,7 @@ public class GameManager : MonoBehaviour
 		bool validPos = false;
 			
 		//Now find an x and y coordinate that wouldnt be out of bounds the level, attaching this script to it's own object
-		//It's position is X: 52, Y: -20 X is left lower, right higher, Y is top higher, bottom lower
+		//It's position is X: 52, Y: -20 X is laeft lower, right higher, Y is top higher, bottom lower
 
 		//Loop until position is valid
 		while (!validPos) 
@@ -430,15 +429,20 @@ public class GameManager : MonoBehaviour
 			
 			//get a random direction
 			float eDir = -1;
-			//Our enemy spawn offset
+			//Our objects spawn offset
 			float sOffY = .9f;
 			float sOffX = 1.4f;
-			float boundsY = .7f;
-			float boundsX = .4f;
-			//Get a random number to slightly influence our off set
-			float slight = UnityEngine.Random.Range (0.0f, 0.7f);
 
-			Debug.Log("entering eDir!");
+			//No longe rneed bounds since slight can not go larger than this
+			//float boundsY = .7f;
+			//float boundsX = .4f;
+
+			//Get a random number to slightly influence our off set
+			float slightY = UnityEngine.Random.Range (0.0f, 0.7f);
+			float slightX = UnityEngine.Random.Range (0.0f, 0.7f);
+
+			//Get a random number to subtract or add our slight
+			float ranBool = UnityEngine.Random.Range (0.0f, 1.01f);
 			//loop until we get a direction that works
 			while (eDir == -1) 
 			{
@@ -448,86 +452,57 @@ public class GameManager : MonoBehaviour
 				//Check what direction we got
 				if (eDir == 0) 
 				{
-					//Then confirm we can use that direction
-					if (userPos.y < -boundsY) 
+					//Use the direction, and add a slight change to our other coordinate
+					if (ranBool > 0.5f) 
 					{
-						eDir = -1;
+						enemyX = sOffX - slightX;
 					} 
 					else 
 					{
-						//Use the direction, and add a slight change to our other coordinate
-						if (userPos.x > 0) 
-						{
-							enemyX = userPos.x - slight;
-						} 
-						else 
-						{
-							enemyX = userPos.x + slight;
-						}
-
-						enemyY = userPos.y - sOffY;
+						enemyX = sOffX + slightX;
 					}
+
+					enemyY = sOffY - slightY;
 				} 
 				else if (eDir == 1) {
-					if (userPos.x > boundsX) 
+					//Use the direction, and add a slight change to our other coordinate
+					if (ranBool > 0.5f) 
 					{
-						eDir = -1;
+						enemyY = sOffY - slightY;
 					} 
 					else 
 					{
-						//Use the direction, and add a slight change to our other coordinate
-						if (userPos.y > 0) 
-						{
-							enemyY = userPos.y - slight;
-						} 
-						else 
-						{
-							enemyY = userPos.y + slight;
-						}
-
-						enemyX = userPos.x + sOffX;
+						enemyY = sOffY + slightY;
 					}
+
+					enemyX = sOffX + slightX;
 				} 
 				else if (eDir == 2) {
-					if (userPos.y > boundsY) 
+					//Use the direction, and add a slight change to our other coordinate
+					if (ranBool > 0.5f) 
 					{
-						eDir = -1;
+						enemyX = sOffX - slightX;
 					} 
 					else 
 					{
-						//Use the direction, and add a slight change to our other coordinate
-						if (userPos.x > 0) 
-						{
-							enemyX = userPos.x - slight;
-						} 
-						else 
-						{
-							enemyX = userPos.x + slight;
-						}
-
-						enemyY = userPos.y + sOffY;
+						enemyX = sOffX + slightX;
 					}
+
+					enemyY = sOffY + slightY;
 				} 
 				else if (eDir == 3) 
 				{
-					if (userPos.x < -boundsX) 
+					//Use the direction, and add a slight change to our other coordinate
+					if (ranBool > 0.5f) 
 					{
-						eDir = -1;
+						enemyY = sOffY - slightY;
 					} 
 					else 
 					{
-						//Use the direction, and add a slight change to our other coordinate
-						if (userPos.y > 0) 
-						{
-							enemyY = userPos.y - slight;
-						} 
-						else 
-						{
-							enemyY = userPos.y + slight;
-						}
-
-						enemyX = userPos.x - sOffX;
+						enemyY = sOffY + slightY;
 					}
+
+					enemyX = sOffX - slightX;
 				} 
 				else 
 				{
@@ -535,8 +510,6 @@ public class GameManager : MonoBehaviour
 					eDir = -1;
 				}
 			}
-
-			Debug.Log("entering eDir!");
 			
 			//Now create a vector with our x and y
 			spawnPos = new Vector2 (enemyX, enemyY);
@@ -572,22 +545,22 @@ public class GameManager : MonoBehaviour
 					}
 				}
 			}
-
-
+			//THis will go back and check if we got a valid position, if we did, we break and
+			//make the object!
 		}
 			
-			//Now re-create our spawn rates
-			//Get our enemy index
-			int enemyIndex = (int)Mathf.Floor (UnityEngine.Random.Range (0, objects.Length));
-			
-			//Try catch for index out of range
-			try {
-				//create a copy of our gameobject
-				Instantiate (objects [enemyIndex], spawnPos, Quaternion.identity);
-			} catch (IndexOutOfRangeException ex) {
-				//Print our exception to the console
-				print (ex);
-			}
+		//Now re-create our spawn rates
+		//Get our enemy index
+		int objectsIndex = (int)Mathf.Floor (UnityEngine.Random.Range (0, objects.Length));
+		
+		//Try catch for index out of range
+		try {
+			//create a copy of our gameobject
+			Instantiate (objects [objectsIndex], spawnPos, Quaternion.identity);
+		} catch (IndexOutOfRangeException ex) {
+			//Print our exception to the console
+			print (ex);
+		}
 		//Return spawn position
 		return spawnPos;
 		
