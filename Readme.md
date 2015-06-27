@@ -95,7 +95,7 @@ To Install and Play: testers should contact me via E-mail, but this will eventua
 
 ## Gameplay GIF (Alpha 4.0, pre Alpha 5.0)
 
-![alt tag](http://gfycat.com/LastGlumIrukandjijellyfish)
+![alt tag](http://i.imgur.com/3ZK0L66.gif)
 
 ## Team
 
