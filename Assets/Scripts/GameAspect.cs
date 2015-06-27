@@ -38,7 +38,7 @@ public class GameAspect : MonoBehaviour
 			//Change box collider if it exists
 			if(theBox != null)
 			{
-				theBox.size = new Vector3(4.575f, 3.75f, 1.0f);
+				theBox.size = new Vector3(2.85f, 2.25f, 1.0f);
 			}
 		}
 		//4:3
@@ -50,7 +50,7 @@ public class GameAspect : MonoBehaviour
 			//Change box collider if it exists
 			if(theBox != null)
 			{
-				theBox.size = new Vector3(4.0f, 2.95f, 1.0f);
+				theBox.size = new Vector3(2.85f, 2.15f, 1.0f);
 			}
 		}
 		//3:2
@@ -58,18 +58,38 @@ public class GameAspect : MonoBehaviour
 			//Change camera.orthagraphic size and ui scale values here
 			Camera.main.orthographicSize = 0.725f;
 			uiScale.scaleFactor = .9f;
+
+			//Change box collider if it exists
+			if(theBox != null)
+			{
+				theBox.size = new Vector3(2.835f, 1.95f, 1.0f);
+			}
 		}
 		//16:10
-		else if (aspectRatio <= 1.61) {
+		else if (aspectRatio <= 1.61) 
+		{
 			//Change camera.orthagraphic size and ui scale values here
 			Camera.main.orthographicSize = 0.665f;
 			uiScale.scaleFactor = .95f;
+
+			//Change box collider if it exists
+			if(theBox != null)
+			{
+				theBox.size = new Vector3(2.8f, 1.75f, 1.0f);
+			}
 		}
 		//16:9
-		else if (aspectRatio <= 1.78) {
+		else if (aspectRatio <= 1.78) 
+		{
 			//Change camera.orthagraphic size and ui scale values here
 			Camera.main.orthographicSize = 0.6f;
 			uiScale.scaleFactor = 1.0f;
+
+			//Change box collider if it exists
+			if(theBox != null)
+			{
+				theBox.size = new Vector3(2.8f, 1.75f, 1.0f);
+			}
 		} 
 		else 
 		{
@@ -80,7 +100,6 @@ public class GameAspect : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		Debug.Log (theBox.size);
 	}
 
 	//function to return our our aspect ratio
