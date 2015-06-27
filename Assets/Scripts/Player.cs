@@ -133,7 +133,7 @@ public class Player : MonoBehaviour
 			}
 
 			//Increase our player scale
-			if(transform.localScale.x < .75f)
+			if(transform.localScale.x < .9f)
 			{
 				transform.localScale += new Vector3(0.01F, 0.01F, 0);
 			}
