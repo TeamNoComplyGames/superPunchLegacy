@@ -50,7 +50,7 @@ public class GameAspect : MonoBehaviour
 			//Change box collider if it exists
 			if(theBox != null)
 			{
-				theBox.size = new Vector3(4.6f, 3.6f, 1.0f);
+				theBox.size = new Vector3(4.0f, 2.95f, 1.0f);
 			}
 		}
 		//3:2
@@ -80,6 +80,7 @@ public class GameAspect : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+		Debug.Log (theBox.size);
 	}
 
 	//function to return our our aspect ratio

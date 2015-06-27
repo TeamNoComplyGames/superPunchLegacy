@@ -133,10 +133,14 @@ public class Player : MonoBehaviour
 			}
 
 			//Increase our player scale
+			//Removing this because it will mess up 
+			//our camera aspect ratio
+			/*
 			if(transform.localScale.x < .9f)
 			{
-				transform.localScale += new Vector3(0.01F, 0.01F, 0);
+				//transform.localScale += new Vector3(0.01F, 0.01F, 0);
 			}
+			*/
 
 			//Show our text, stop if already showing
 			StopCoroutine("levelFlash");
