@@ -95,7 +95,7 @@ To Install and Play: testers should contact me via E-mail, but this will eventua
 
 ## Gameplay GIF (Alpha 4.0, pre Alpha 5.0)
 
-![alt tag](http://giant.gfycat.com/UltimateSleepyCobra.gif)
+![alt tag](http://giant.gfycat.com/LastGlumIrukandjijellyfish.gif)
 
 ## Team
 
