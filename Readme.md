@@ -12,7 +12,7 @@ Draws inspiration from the Legacy of Goku series released on the GBA.
 
 ## Gameplay GIF (Alpha 4.0, pre Alpha 5.0)
 
-![alt tag](http://i.imgur.com/3ZK0L66.gif)
+![alt tag](http://i.imgur.com/OqzJX4v.gif)
 
 ## Screenshots (Alpha 4.0, pre Alpha 5.0)
 
