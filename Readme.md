@@ -1,8 +1,8 @@
-## Intro
+## Intro, SUPER PUNCH LEGACY
 
-(Work in progess, Readme shall be update with game)
+(Work in progress, Readme shall be update with game)
 
-Last Update: 6/26/15, between Alpha 4.0 and 5.0
+Last Update: 6/27/15, between Alpha 4.0 and 5.0
 
 ![alt tag](http://i.imgur.com/4nPtt1D.png)
 ![alt tag](http://i.imgur.com/jsC4yL8.png)
@@ -73,7 +73,7 @@ C# using unity scripts, e.g
 I (Aaron Turner) was thinking of a good simple game to create as a side project in between school and work.
 That would help me learn how to use the beast we know as UNITY. I came across some old
 Legacy of Goku Let's plays and made me remember how fun those games were. I have been a big fan of Dragon Ball Z games growing up,
-and I am particualrly fond of the GBA era. So I decided to make a game like it, but add my own, arcade, fun, and ideas to it. Thus,
+and I am particularly fond of the GBA era. So I decided to make a game like it, but add my own, arcade, fun, and ideas to it. Thus,
 Punch Legacy was born. Kevin and Emanuel came into the mix as they are close childhood friends of mine, and they have been wanting to
 make a game themselves, but just really didn't know where to start. And After I had half-completed a game myself, I kind of
 already had a clue on the mysterious world of independent game development.
@@ -87,19 +87,13 @@ To Edit in Unity: Simple download the zip and extract, and everything should wor
 
 To Install and Play: testers should contact me via E-mail, but this will eventually be released on mobile and desktop
 
-## Screenshots (Older Alpha Build)
-
-![alt tag](http://i.imgur.com/6MXe2r9.png)
-![alt tag](http://i.imgur.com/UAvM6RG.png)
-![alt tag](http://i.imgur.com/ATa05Um.png)
-
-## Screenshots (Newest Alpha Build)
+## Screenshots (Alpha 4.0, pre Alpha 5.0)
 
 ![alt tag](http://i.imgur.com/abN5mJ0.png)
 ![alt tag](http://i.imgur.com/Nw2DxpA.png)
 ![alt tag](http://i.imgur.com/TXYEokf.png)
 
-## Gameplay GIF (Newest Alpha Build)
+## Gameplay GIF (Alpha 4.0, pre Alpha 5.0)
 
 ![alt tag](http://i.giflike.com/n9Z0H5K.gif)
 
