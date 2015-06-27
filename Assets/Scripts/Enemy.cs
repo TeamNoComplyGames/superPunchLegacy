@@ -23,6 +23,8 @@ public class Enemy : MonoBehaviour
 	private bool dead;
 	//Boolean if we are exploding
 	private bool exploding;
+	//Explosion Sound
+	private AudioSource explosionSound;
 	//Our explode position
 	private Vector3 explodePos;
 
@@ -69,6 +71,9 @@ public class Enemy : MonoBehaviour
 
 		//Enemy is not colliding with player
 		playerCollide = false;
+
+		//Get our sounds
+		explosionSound = GameObject.Find ("Explosion").GetComponent<AudioSource> ();
 
 
 		int playerLevel = Player.playerLevel;
@@ -324,6 +329,13 @@ public class Enemy : MonoBehaviour
 
 		//Set the explosion trigger
 		animator.SetBool ("Explode", true);
+
+		//Play the sound, stop if already playing
+		if (explosionSound.isPlaying) 
+		{
+			explosionSound.Stop();
+		}
+		explosionSound.Play ();
 
 		//Shake the screen
 		actionCamera.startShake();
