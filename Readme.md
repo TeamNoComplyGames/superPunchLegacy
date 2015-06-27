@@ -2,7 +2,10 @@
 
 (Work in progess, Readme shall be update with game)
 
-![alt tag](http://i.imgur.com/Zjy44T2.png)
+Last Update: 6/26/15, between Alpha 4.0 and 5.0
+
+![alt tag](http://i.imgur.com/4nPtt1D.png)
+![alt tag](http://i.imgur.com/jsC4yL8.png)
 
 This is an arcade top-down action fighting game (With some "RPG" elements) being created in unity.
 Draws inspiration from the Legacy of Goku series released on the GBA.
@@ -71,34 +74,44 @@ I (Aaron Turner) was thinking of a good simple game to create as a side project 
 That would help me learn how to use the beast we know as UNITY. I came across some old
 Legacy of Goku Let's plays and made me remember how fun those games were. I have been a big fan of Dragon Ball Z games growing up,
 and I am particualrly fond of the GBA era. So I decided to make a game like it, but add my own, arcade, fun, and ideas to it. Thus,
-Punch Legacy was born. Kevin and Emanual came ino the mix as they are close childhood friends of mine, and they have been wanting to
+Punch Legacy was born. Kevin and Emanuel came into the mix as they are close childhood friends of mine, and they have been wanting to
 make a game themselves, but just really didn't know where to start. And After I had half-completed a game myself, I kind of
-alrwady had a clue on the mysterious world of independent game development.
+already had a clue on the mysterious world of independent game development.
 
-However, Before this game is finished it will be known as super punch legacy, because that is exactly,
+However, Before this game is finished it will be known as Super Punch Legacy, because that is exactly,
 what it shall be.
 
 ## Installation
 
 To Edit in Unity: Simple download the zip and extract, and everything should work
 
-To install and Play: testers should contact me via E-mail, but this will eventually be released on mobile and desktop
+To Install and Play: testers should contact me via E-mail, but this will eventually be released on mobile and desktop
 
-## Screenshots (Alpha Build)
+## Screenshots (Older Alpha Build)
 
 ![alt tag](http://i.imgur.com/6MXe2r9.png)
 ![alt tag](http://i.imgur.com/UAvM6RG.png)
 ![alt tag](http://i.imgur.com/ATa05Um.png)
 
+## Screenshots (Newest Alpha Build)
+
+![alt tag](http://i.imgur.com/abN5mJ0.png)
+![alt tag](http://i.imgur.com/Nw2DxpA.png)
+![alt tag](http://i.imgur.com/TXYEokf.png)
+
+## Gameplay GIF (Newest Alpha Build)
+
+![alt tag](http://i.giflike.com/n9Z0H5K.gif)
+
 ## Team
 
 Founder/Programming/Unity Dev/Design/Sound - Aaron Turner (Torch2424)
 Art/Story/Design - Kevin Vigil (Heebe)
-Art - Emanual Partida
+Art - Emanuel Partida
 
 ## License
 
-All Assessts and rights of the games are reserved to No Comply Games
+All Assets and rights of the games are reserved to No Comply Games
 
 However this code is open-source and may be used to help in your own projects
 
