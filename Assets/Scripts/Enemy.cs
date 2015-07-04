@@ -186,6 +186,7 @@ public class Enemy : MonoBehaviour
 			else
 			{
 				//Move our enemy out of the way and play the death animation
+				animator.SetTrigger("DeathTrigger");
 				animator.SetBool("Death", true);
 
 				//Set our sorting layer as a corpse so we step on top of it
