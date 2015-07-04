@@ -1,9 +1,54 @@
 fileFormatVersion: 2
 guid: 1e97b3c112fee6549bc30eb116388e59
-timeCreated: 1436025460
+timeCreated: 1436026470
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: MightyKobra_0
+    21300002: MightyKobra_1
+    21300004: MightyKobra_2
+    21300006: MightyKobra_3
+    21300008: MightyKobra_4
+    21300010: MightyKobra_5
+    21300012: MightyKobra_6
+    21300014: MightyKobra_7
+    21300016: MightyKobra_8
+    21300018: MightyKobra_9
+    21300020: MightyKobra_10
+    21300022: MightyKobra_11
+    21300024: MightyKobra_12
+    21300026: MightyKobra_13
+    21300028: MightyKobra_14
+    21300030: MightyKobra_15
+    21300032: MightyKobra_16
+    21300034: MightyKobra_17
+    21300036: MightyKobra_18
+    21300038: MightyKobra_19
+    21300040: MightyKobra_20
+    21300042: MightyKobra_21
+    21300044: MightyKobra_22
+    21300046: MightyKobra_23
+    21300048: MightyKobra_24
+    21300050: MightyKobra_25
+    21300052: MightyKobra_26
+    21300054: MightyKobra_27
+    21300056: MightyKobra_28
+    21300058: MightyKobra_29
+    21300060: MightyKobra_30
+    21300062: MightyKobra_31
+    21300064: MightyKobra_32
+    21300066: MightyKobra_33
+    21300068: MightyKobra_34
+    21300070: MightyKobra_35
+    21300072: MightyKobra_36
+    21300074: MightyKobra_37
+    21300076: MightyKobra_38
+    21300078: MightyKobra_39
+    21300080: MightyKobra_40
+    21300082: MightyKobra_41
+    21300084: MightyKobra_42
+    21300086: MightyKobra_43
+    21300088: MightyKobra_44
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +75,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +93,457 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: MightyKobra_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1068
+        width: 58
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1068
+        width: 53
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_2
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1068
+        width: 58
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_3
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1068
+        width: 53
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_4
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 903
+        width: 53
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_5
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 903
+        width: 53
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_6
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 903
+        width: 53
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_7
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 829
+        width: 53
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_8
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 872
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_9
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 860
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_10
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 849
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_11
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 664
+        width: 53
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_12
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 664
+        width: 53
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_13
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 742
+        width: 96
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_14
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 745
+        width: 96
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_15
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 577
+        width: 101
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_16
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 580
+        width: 96
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_17
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 580
+        width: 96
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_18
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 580
+        width: 96
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_19
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 412
+        width: 101
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_20
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 415
+        width: 96
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_21
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 377
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_22
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 365
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_23
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 365
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_24
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 377
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_25
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 354
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_26
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 354
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_27
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 210
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 212
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_29
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 214
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_30
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 212
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_31
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 210
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_32
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 214
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_33
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 200
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_34
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 204
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_35
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 202
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_36
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 200
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_37
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 202
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_38
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 204
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_39
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 126
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_40
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 115
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_41
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 115
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_42
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 126
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_43
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 103
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MightyKobra_44
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 103
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
