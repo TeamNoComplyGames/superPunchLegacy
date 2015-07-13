@@ -129,8 +129,8 @@ public class Player : MonoBehaviour
 				holdPunch = 0;
 			}
 
-			//Increase health Regen if we are not attacking
-			if(!attacking)
+			//Increase health Regen if we are not attacking, or being hit/levling up (Check if we are flashing!)
+			if(!attacking && !showFlash)
 			{
 				healthRegen++;
 			}
@@ -146,11 +146,20 @@ public class Player : MonoBehaviour
 				//Set health regen to zero
 				healthRegen = 0;
 
-				//increase health by 10%
-				int hpUp = (int)(health * .10);
+				//get the level's max health
+				int levelHealth = playerLevel * healthRate;
+
+				//increase health by .5%
+				int hpUp = (int)(levelHealth * .05);
+
+				//Check if it is less than one
+				if(hpUp < 1)
+				{
+					hpUp = 1;
+				}
 
 				//We don't want to exceed our maximum health
-				if(hpUp + health > playerLevel * healthRate)
+				if(hpUp + health > levelHealth)
 				{
 					//health is equal to full health
 					health = playerLevel * healthRate;
