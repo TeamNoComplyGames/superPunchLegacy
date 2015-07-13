@@ -27,6 +27,8 @@ public class Player : MonoBehaviour
 	bool attacking;
 	//Counter for holding space to punch
 	int holdPunch;
+	//How long do they have to hold before punching
+	public int holdDuration;
 
 	//Our sounds 
 	private AudioSource punch;
@@ -104,7 +106,7 @@ public class Player : MonoBehaviour
 			//Attacks with our player (Check for a level up here as well)
 			if (Input.GetKey ("space")) {
 				//Now since we are allowing holding space to punch we gotta count for it
-				if(!attacking && holdPunch % 35 == 0)
+				if(!attacking && holdPunch % holdDuration == 0)
 				{
 					//Set hold punch to zero
 					holdPunch = 0;
