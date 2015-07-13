@@ -147,7 +147,7 @@ public class Player : MonoBehaviour
 				healthRegen = 0;
 
 				//increase health by 10%
-				int hpUp = health * .10;
+				int hpUp = (int)(health * .10);
 
 				//We don't want to exceed our maximum health
 				if(hpUp + health > playerLevel * healthRate)
