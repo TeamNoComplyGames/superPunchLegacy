@@ -25,6 +25,8 @@ public class Player : MonoBehaviour
 
 	//Boolean to check if attacking
 	bool attacking;
+	//Counter for holding space to punch
+	int holdPunch;
 
 	//Our sounds 
 	private AudioSource punch;
@@ -50,6 +52,7 @@ public class Player : MonoBehaviour
 		exp = 0;
 		attacking = false;
 		moveDec = 1;
+		holdPunch = 0;
 
 		//Get our sounds
 		punch = GameObject.Find ("Punch").GetComponent<AudioSource> ();
@@ -99,14 +102,27 @@ public class Player : MonoBehaviour
 			Move();
 			
 			//Attacks with our player (Check for a level up here as well)
-			if (Input.GetKeyDown ("space")) {
-				if(!attacking)
+			if (Input.GetKey ("space")) {
+				//Now since we are allowing holding space to punch we gotta count for it
+				if(!attacking && holdPunch % 35 == 0)
 				{
+					//Set hold punch to zero
+					holdPunch = 0;
 					//Attacking working great
 					StopCoroutine("Attack");
 					StartCoroutine ("Attack");
 				}
+
+				//Increase hold punch
+				holdPunch++;
 			}
+
+			//If they stop holding space, set holdpunch back to zero
+			if (Input.GetKeyUp ("space")) {
+				//Set hold punch to zero
+				holdPunch = 0;
+			}
+
 		}
 
 		//Check for levelUp
