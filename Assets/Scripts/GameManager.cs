@@ -84,6 +84,9 @@ public class GameManager : MonoBehaviour
 		//Set score to zero
 		score = 0;
 
+		//Show our controls
+		StartCoroutine("controlsFlash");
+
 		//Spawn our objects
 		genObjects ();
 
@@ -202,6 +205,30 @@ public class GameManager : MonoBehaviour
 			spawnPositions.Add(spawnObjects(spawnPositions));
 		}
 
+	}
+
+	//Corotine to flash the controls
+	//Function to flash level up color
+	private IEnumerator controlsFlash()
+	{
+		//Our rate of flashing
+		float flashRate = .75f;
+
+		//Get our text
+		UnityEngine.UI.Text controls = GameObject.FindGameObjectWithTag ("Controls").GetComponent<UnityEngine.UI.Text> ();
+
+		//Flash our text, the time it is off is half the time
+		controls.enabled = true;
+		yield return new WaitForSeconds(flashRate);
+		controls.enabled = false;
+		yield return new WaitForSeconds (flashRate / 2);
+		controls.enabled = true;
+		yield return new WaitForSeconds (flashRate);
+		controls.enabled = false;
+		yield return new WaitForSeconds (flashRate / 2);
+		controls.enabled = true;
+		yield return new WaitForSeconds (flashRate);
+		controls.enabled = false;
 	}
 
 
