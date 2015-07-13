@@ -9,6 +9,9 @@ public class Player : MonoBehaviour
 	public float moveSpeed = 0f;
 	//Player health rate
 	public int healthRate;
+	//Player health regen rate
+	public int healthRegenRate;
+	int healthRegen;
 
 	//Our player stats
 	private int health;
@@ -55,6 +58,7 @@ public class Player : MonoBehaviour
 		attacking = false;
 		moveDec = 1;
 		holdPunch = 0;
+		healthRegen = 0;
 
 		//Get our sounds
 		punch = GameObject.Find ("Punch").GetComponent<AudioSource> ();
@@ -123,6 +127,39 @@ public class Player : MonoBehaviour
 			if (Input.GetKeyUp ("space")) {
 				//Set hold punch to zero
 				holdPunch = 0;
+			}
+
+			//Increase health Regen if we are not attacking
+			if(!attacking)
+			{
+				healthRegen++;
+			}
+			//And if we do, reset it to zero
+			else
+			{
+				healthRegen = 0;
+			}
+
+			//Now check if we are attacking for health regen
+			if(healthRegen >= healthRegenRate)
+			{
+				//Set health regen to zero
+				healthRegen = 0;
+
+				//increase health by 10%
+				int hpUp = health * .10;
+
+				//We don't want to exceed our maximum health
+				if(hpUp + health > playerLevel * healthRate)
+				{
+					//health is equal to full health
+					health = playerLevel * healthRate;
+				}
+				else
+				{
+					//INcrease the health!
+					health = health + hpUp;
+				}
 			}
 
 		}
