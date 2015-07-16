@@ -268,13 +268,6 @@ public class GameManager : MonoBehaviour
 		//Only do this if there aren't a max number of enemies
 		if (numEnemies < maxEnemies && !bossMode) {
 
-			//Check if we are about to spawn a boss
-			if(totalSpawnedEnemies % bossRate == 0)
-			{
-				//set boss mode to true
-				bossMode = true;
-			}
-
 
 			//We can spawn an enemy anywhere outside of the camera
 			//Get ouyr player's position
@@ -393,61 +386,6 @@ public class GameManager : MonoBehaviour
 				}
 			}
 
-
-			/* OLD SPAWNING METHOD
-			//Get a random boolean
-			bool ran;
-			if(UnityEngine.Random.Range(0, 1.0f) > .5f)
-			{
-				ran = true;
-			}
-			else
-			{
-				ran = false;
-			}
-
-			//Get our X, check if it is too great for surrounding the character, then surround them
-			if(userPos.x > 1.0f)
-			{
-				enemyX = UnityEngine.Random.Range (userPos.x - .9f, -1.9f);
-			}
-			else if(userPos.x < -1.0f)
-			{
-				enemyX = UnityEngine.Random.Range (.9f + userPos.x, 1.9f);
-			}
-			else
-			{
-				if(ran)
-				{
-					enemyX = UnityEngine.Random.Range (.9f + userPos.x, 1.9f);
-				}
-				else
-				{
-					enemyX = UnityEngine.Random.Range (userPos.x - .9f, -1.9f);
-				}
-			}
-
-			//Get our y the same way
-			if(userPos.y > .9f)
-			{
-				enemyY = UnityEngine.Random.Range (userPos.y - .8f, -1.8f);
-			}
-			else if(userPos.y < -.9f)
-			{
-				enemyY = UnityEngine.Random.Range (.8f + userPos.y, 1.8f);
-			}
-			else
-			{
-				if(!ran)
-				{
-					enemyY = UnityEngine.Random.Range (.8f + userPos.y, 1.8f);
-				}
-				else
-				{
-					enemyY = UnityEngine.Random.Range (userPos.y - .8f, -1.8f);
-				}
-			}
-			*/
 		
 			//Now create a vector with our x and y
 			Vector2 spawnPos = new Vector2 (enemyX, enemyY);
@@ -458,8 +396,24 @@ public class GameManager : MonoBehaviour
 
 			//Try catch for index out of range
 			try {
-				//create a copy of our gameobject
-				Instantiate (enemies [enemyIndex], spawnPos, Quaternion.identity);
+
+				//Check if we are about to spawn a boss
+				if(totalSpawnedEnemies % bossRate == 0)
+				{
+					//now check if there aren't anymore enemies
+					if(numEnemies < 1)
+					{
+						//set boss mode to true
+						bossMode = true;
+						//create a copy of our gameobject
+						Instantiate (enemies [enemyIndex], spawnPos, Quaternion.identity);
+					}
+				}
+				else
+				{
+					//create a copy of our gameobject
+					Instantiate (enemies [enemyIndex], spawnPos, Quaternion.identity);
+				}
 			} catch (IndexOutOfRangeException ex) {
 				//Print our exception to the console
 				print (ex);

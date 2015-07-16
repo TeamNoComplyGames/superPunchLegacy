@@ -91,7 +91,9 @@ public class Enemy : MonoBehaviour
 		//gET IF OUR ENEMY IS A BOSS OR NOT, bosses will always explode
 		if (gameManager.getBossMode()) {
 			//Since it is a boss, increase it's scale thier stats
-			elevel = elevel * 1.5;
+			//I really gotta clean up this code, divide by two, than multiply by 2 :p
+			//Oh well, I'm trying to push this out so we can get people playin! :D
+			elevel = elevel * 2;
 			healthMultiplier = healthMultiplier * 2;
 			speed = speed / 2;
 			attack = attack * 2;
