@@ -88,17 +88,16 @@ public class Enemy : MonoBehaviour
 			elevel = 1;
 		}
 
-		Debug.Log (gameManager.getTotalSpawned ());
 		//gET IF OUR ENEMY IS A BOSS OR NOT, bosses will always explode
 		if (gameManager.getBossMode()) {
 			//Since it is a boss, increase it's scale thier stats
-			elevel = elevel * 3;
+			elevel = elevel * 1.5;
 			healthMultiplier = healthMultiplier * 2;
 			speed = speed / 2;
 			attack = attack * 2;
 
 			//Also make this enemy larger
-			transform.localScale = new Vector3(transform.localScale.x * 1.5f , transform.localScale.y * 1.5f, 0);
+			transform.localScale = new Vector3(transform.localScale.x * 2.0f , transform.localScale.y * 2.0f, 0);
 			//set that this enemy is boss
 			isBoss = true;
 		} 
