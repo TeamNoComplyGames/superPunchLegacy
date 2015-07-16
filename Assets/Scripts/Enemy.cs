@@ -27,6 +27,8 @@ public class Enemy : MonoBehaviour
 	private AudioSource explosionSound;
 	//Our explode position
 	private Vector3 explodePos;
+	//is our enemy a boss?
+	private bool isBoss;
 
 	//Our target to fight
 	private Player player;
@@ -66,6 +68,9 @@ public class Enemy : MonoBehaviour
 		animator = GetComponent<Animator>();
 		showFlash = false;
 
+		//Get our gammaneger
+		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
 		//Enemy is not dead
 		dead = false;
 
@@ -82,6 +87,23 @@ public class Enemy : MonoBehaviour
 		if (elevel <= 0) {
 			elevel = 1;
 		}
+
+		Debug.Log (gameManager.getTotalSpawned ());
+		//gET IF OUR ENEMY IS A BOSS OR NOT, bosses will always explode
+		if (gameManager.getBossMode()) {
+			//Since it is a boss, increase it's scale thier stats
+			elevel = elevel * 3;
+			healthMultiplier = healthMultiplier * 2;
+			speed = speed / 2;
+			attack = attack * 2;
+
+			//Also make this enemy larger
+			transform.localScale = new Vector3(transform.localScale.x * 1.5f , transform.localScale.y * 1.5f, 0);
+			//set that this enemy is boss
+			isBoss = true;
+		} 
+
+
 		//Get health using enemy skill
 		ehealth = (int) (elevel * 2.75f * healthMultiplier);
 
@@ -101,8 +123,6 @@ public class Enemy : MonoBehaviour
 		//Get our sounds
 		hurt = GameObject.Find ("Hurt").GetComponent<AudioSource> ();
 
-		//Get our gammaneger
-		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 		//Get our camera script
 		actionCamera = Camera.main.GetComponent<Bounded2DCamera>();
 
@@ -175,8 +195,8 @@ public class Enemy : MonoBehaviour
 			//Get an explosion chance
 			int exChance = Random.Range(0, 20);
 
-			//Now check explosion chance
-			if(exChance > 17)
+			//Now check explosion chance, or bosses always explode
+			if(exChance > 17 || isBoss)
 			{
 				//EXPLODEEEE
 
@@ -352,6 +372,11 @@ public class Enemy : MonoBehaviour
 
 		//Set explosing to false
 		exploding = false;
+
+		//Check if it was a boss, if it was, set boss mode to false
+		if (isBoss) {
+			gameManager.setBossMode (false);
+		}
 
 		//Delete the enemy
 		Destroy(gameObject);

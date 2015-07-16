@@ -28,6 +28,11 @@ public class GameManager : MonoBehaviour
 	public int maxEnemies;
 	//number of enemies spawned
 	private int defeatedEnemies;
+	//Total number of enemies spawned
+	private int totalSpawnedEnemies;
+	//umber of enemies before spawning a boss
+	public int bossRate;
+	private bool bossMode;
 
 	//Our object prefabs
 		public GameObject[] objects;
@@ -80,6 +85,8 @@ public class GameManager : MonoBehaviour
 
 		//Defeated enemies is one for score calculation at start
 		defeatedEnemies = 1;
+		//Total spawned enemies is one because we check for it to spawn enemies, and zero would get it stuck
+		totalSpawnedEnemies = 1;
 
 		//Set score to zero
 		score = 0;
@@ -172,6 +179,7 @@ public class GameManager : MonoBehaviour
 	public void plusEnemy()
 	{
 		++numEnemies;
+		++totalSpawnedEnemies;
 	}
 
 	public void minusEnemy()
@@ -180,6 +188,28 @@ public class GameManager : MonoBehaviour
 
 		//Since enemy is gone add to defeated enemies
 		++defeatedEnemies;
+	}
+
+	//fucntion to get our total number of spawned enemies
+	public int getTotalSpawned()
+	{
+		// never return zero, only 1 or the actual amount
+		if (totalSpawnedEnemies > 0) {
+			return totalSpawnedEnemies;
+		} else {
+			return 1;
+		}
+	}
+
+	//Get and set boss mode
+	public void setBossMode(bool mode)
+	{
+		bossMode = mode;
+	}
+
+	public bool getBossMode()
+	{
+		return bossMode;
 	}
 
 	//Functiont o do our invoke repeating functions
@@ -236,7 +266,16 @@ public class GameManager : MonoBehaviour
 	private void spawnEnemies()
 	{
 		//Only do this if there aren't a max number of enemies
-		if (numEnemies < maxEnemies) {
+		if (numEnemies < maxEnemies && !bossMode) {
+
+			//Check if we are about to spawn a boss
+			if(totalSpawnedEnemies % bossRate == 0)
+			{
+				//set boss mode to true
+				bossMode = true;
+			}
+
+
 			//We can spawn an enemy anywhere outside of the camera
 			//Get ouyr player's position
 			user = GameObject.Find ("Person").GetComponent<Player> ();
