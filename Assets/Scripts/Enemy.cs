@@ -93,10 +93,10 @@ public class Enemy : MonoBehaviour
 			//Since it is a boss, increase it's scale thier stats
 			//I really gotta clean up this code, divide by two, than multiply by 2 :p
 			//Oh well, I'm trying to push this out so we can get people playin! :D
-			elevel = elevel * 2;
-			healthMultiplier = healthMultiplier * 2;
+			elevel = elevel * 3;
+			healthMultiplier = healthMultiplier * 4;
 			speed = speed / 2;
-			attack = attack * 2;
+			attack = attack / 2;
 
 			//Also make this enemy larger
 			transform.localScale = new Vector3(transform.localScale.x * 2.0f , transform.localScale.y * 2.0f, 0);
