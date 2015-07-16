@@ -266,6 +266,9 @@ public class Player : MonoBehaviour
 
 		//Get our speed according to our current level
 		float levelSpeed = (float) playerLevel / 400;
+		
+
+		//Get our actual speed
 		float superSpeed = levelSpeed + (moveSpeed / 10) / moveDec;
 		//Can't go above .5 though
 		if (superSpeed > .032f) 
@@ -274,7 +277,7 @@ public class Player : MonoBehaviour
 		}
 
 		//Move to that position
-		player.MovePosition(player.position + movement * superSpeed);
+			player.MovePosition(player.position + movement * superSpeed);
 		}
 	}
 
@@ -282,7 +285,7 @@ public class Player : MonoBehaviour
 	IEnumerator slowMoving()
 	{
 		//Double move decrement, wait for half of a second, and then set back to normal
-		moveDec = playerLevel * playerLevel + 1;
+		moveDec = playerLevel * playerLevel * 2;
 		yield return new WaitForSeconds(.5f);
 		moveDec = 1;
 	}
