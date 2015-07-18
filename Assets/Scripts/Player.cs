@@ -129,8 +129,8 @@ public class Player : MonoBehaviour
 				holdPunch = 0;
 			}
 
-			//Increase health Regen if we are not attacking, or being hit/levling up (Check if we are flashing!)
-			if(!attacking && !showFlash)
+			//Increase health Regen if we are not attacking (doing it halo style, so attacking wont stop you), or being hit/levling up (Check if we are flashing!)
+			if(!showFlash)
 			{
 				healthRegen++;
 			}
