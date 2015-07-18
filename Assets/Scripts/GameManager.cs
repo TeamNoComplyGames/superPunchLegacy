@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
 
 	//Our enemy prefab
 	public GameObject[] enemies;
+	public GameObject[] bosses;
+	private int bossesSpawned;
 	private int numEnemies;
 	//Suggest max enemies 50
 	public int maxEnemies;
@@ -35,7 +37,7 @@ public class GameManager : MonoBehaviour
 	private bool bossMode;
 
 	//Our object prefabs
-		public GameObject[] objects;
+	public GameObject[] objects;
 	//Suggest max objects as 7
 	public int maxObjects;
 
@@ -90,6 +92,7 @@ public class GameManager : MonoBehaviour
 
 		//Set score to zero
 		score = 0;
+		bossesSpawned = 0;
 
 		//Show our controls
 		StartCoroutine("controlsFlash");
@@ -212,6 +215,11 @@ public class GameManager : MonoBehaviour
 		return bossMode;
 	}
 
+	//Get and set bosses spawned
+	public int getBossesSpawned()
+	{
+		return bossesSpawned;
+	}
 	//Functiont o do our invoke repeating functions
 	public void invokeEnemies ()
 	{
@@ -406,7 +414,10 @@ public class GameManager : MonoBehaviour
 						//set boss mode to true
 						bossMode = true;
 						//create a copy of our gameobject
-						Instantiate (enemies [enemyIndex], spawnPos, Quaternion.identity);
+						Instantiate (bosses [bossesSpawned], spawnPos, Quaternion.identity);
+
+						//increase bosses spawned, and make sure it does not go over
+						bossesSpawned++;
 					}
 				}
 				else

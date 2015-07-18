@@ -35,6 +35,7 @@ public class Enemy : MonoBehaviour
 
 	private SpriteRenderer render; //Our sprite renderer to change our sprite color
 	private bool showFlash;
+	private Color defaultColor;
 	private Animator animator;   //Used to store a reference to the Player's animator component.
 
 	//Frames until the enemy will atack
@@ -67,6 +68,7 @@ public class Enemy : MonoBehaviour
 		render = GetComponent<SpriteRenderer>();
 		animator = GetComponent<Animator>();
 		showFlash = false;
+		defaultColor = Color.white;
 
 		//Get our gammaneger
 		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
@@ -99,7 +101,13 @@ public class Enemy : MonoBehaviour
 			attack = attack / 2;
 
 			//Also make this enemy larger
-			transform.localScale = new Vector3(transform.localScale.x * 2.0f , transform.localScale.y * 2.0f, 0);
+			transform.localScale = new Vector3(transform.localScale.x * 2.25f , transform.localScale.y * 2.25f, 0);
+
+			//Also, set the bosses color
+			Color[] bossColors = {Color.white, Color.magenta, Color.yellow,Color.green,Color.blue,Color.cyan,Color.grey};
+			defaultColor = bossColors[gameManager.getBossesSpawned() / gameManager.bosses.Length];
+			render.material.color = defaultColor;
+
 			//set that this enemy is boss
 			isBoss = true;
 		} 
@@ -112,6 +120,10 @@ public class Enemy : MonoBehaviour
 		defaultMass = enemy.mass;
 		//Our knock force so we do go flying haha
 		knockForce = 100000;
+		if (isBoss) {
+			//If we are a boss, dont go flying as much
+			knockForce = knockForce / 2;
+		}
 
 		//Save the total amount of frames before we attack 
 		totalFrames = attackFrames;
@@ -547,7 +559,7 @@ public class Enemy : MonoBehaviour
 		showFlash = true;
 		render.material.color = Color.red;
 		yield return new WaitForSeconds(.1f);
-		render.material.color = Color.white;
+		render.material.color = defaultColor;
 			showFlash = false;
 		
 	}
