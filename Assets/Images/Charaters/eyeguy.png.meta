@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 042d971fae3a81b4ea9c8621127386a4
-timeCreated: 1436071313
+timeCreated: 1437192689
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -69,17 +69,17 @@ TextureImporter:
         width: 30
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: eyeguy_1
       rect:
         serializedVersion: 2
         x: 94
-        y: 242
+        y: 236
         width: 30
-        height: 29
+        height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: eyeguy_2
       rect:
@@ -89,7 +89,7 @@ TextureImporter:
         width: 30
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: eyeguy_3
       rect:
@@ -99,17 +99,17 @@ TextureImporter:
         width: 30
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: eyeguy_4
       rect:
         serializedVersion: 2
         x: 14
-        y: 141
+        y: 133
         width: 30
-        height: 29
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: eyeguy_5
       rect:
@@ -119,7 +119,7 @@ TextureImporter:
         width: 30
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: eyeguy_6
       rect:
@@ -129,17 +129,17 @@ TextureImporter:
         width: 31
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: eyeguy_7
       rect:
         serializedVersion: 2
         x: 275
-        y: 141
+        y: 132
         width: 31
-        height: 29
+        height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: eyeguy_8
       rect:
@@ -149,7 +149,7 @@ TextureImporter:
         width: 43
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: eyeguy_9
       rect:
@@ -159,17 +159,17 @@ TextureImporter:
         width: 31
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: eyeguy_10
       rect:
         serializedVersion: 2
         x: 194
-        y: 40
+        y: 32
         width: 31
-        height: 29
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: eyeguy_11
       rect:
@@ -179,7 +179,7 @@ TextureImporter:
         width: 43
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
