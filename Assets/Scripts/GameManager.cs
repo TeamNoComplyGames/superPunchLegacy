@@ -414,7 +414,7 @@ public class GameManager : MonoBehaviour
 						//set boss mode to true
 						bossMode = true;
 						//create a copy of our gameobject
-						Instantiate (bosses [bossesSpawned], spawnPos, Quaternion.identity);
+						Instantiate (bosses [(bossesSpawned % enemies.Length)], spawnPos, Quaternion.identity);
 
 						//increase bosses spawned, and make sure it does not go over
 						bossesSpawned++;

@@ -105,7 +105,7 @@ public class Enemy : MonoBehaviour
 
 			//Also, set the bosses color
 			Color[] bossColors = {Color.white, Color.magenta, Color.yellow,Color.green,Color.blue,Color.cyan,Color.grey};
-			defaultColor = bossColors[gameManager.getBossesSpawned() / gameManager.bosses.Length];
+			defaultColor = bossColors[(gameManager.getBossesSpawned() - 1) / gameManager.bosses.Length];
 			render.material.color = defaultColor;
 
 			//set that this enemy is boss
