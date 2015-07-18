@@ -411,13 +411,14 @@ public class GameManager : MonoBehaviour
 					//now check if there aren't anymore enemies
 					if(numEnemies < 1)
 					{
-						//set boss mode to true
-						bossMode = true;
-						//create a copy of our gameobject
-						Instantiate (bosses [(bossesSpawned % enemies.Length)], spawnPos, Quaternion.identity);
-
 						//increase bosses spawned, and make sure it does not go over
 						bossesSpawned++;
+
+						//set boss mode to true
+						bossMode = true;
+
+						//create a copy of our gameobject
+						Instantiate (bosses [(bossesSpawned % bosses.Length)], spawnPos, Quaternion.identity);
 					}
 				}
 				else
