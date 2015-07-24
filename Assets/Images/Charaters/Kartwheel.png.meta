@@ -1,0 +1,275 @@
+fileFormatVersion: 2
+guid: b94281ecde2ff29419460287bac84b8c
+timeCreated: 1437776119
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Kartwheel_0
+    21300002: Kartwheel_1
+    21300004: Kartwheel_2
+    21300006: Kartwheel_3
+    21300008: Kartwheel_4
+    21300010: Kartwheel_5
+    21300012: Kartwheel_6
+    21300014: Kartwheel_7
+    21300016: Kartwheel_8
+    21300018: Kartwheel_9
+    21300020: Kartwheel_10
+    21300022: Kartwheel_11
+    21300024: Kartwheel_12
+    21300026: Kartwheel_13
+    21300028: Kartwheel_14
+    21300030: Kartwheel_15
+    21300032: Kartwheel_16
+    21300034: Kartwheel_17
+    21300036: Kartwheel_18
+    21300038: Kartwheel_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Kartwheel_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 248
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kartwheel_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 250
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kartwheel_2
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 258
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kartwheel_3
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 250
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kartwheel_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 190
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kartwheel_5
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 190
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kartwheel_6
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 191
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kartwheel_7
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 191
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kartwheel_8
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 130
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kartwheel_9
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 128
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kartwheel_10
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 130
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kartwheel_11
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 131
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kartwheel_12
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 68
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kartwheel_13
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 68
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kartwheel_14
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 70
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kartwheel_15
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 78
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kartwheel_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 10
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kartwheel_17
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 10
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kartwheel_18
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 10
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kartwheel_19
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 11
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
