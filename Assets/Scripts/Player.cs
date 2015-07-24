@@ -134,8 +134,8 @@ public class Player : MonoBehaviour
 
 			//Dodging, cant dodge if attacking
 			if((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift) || 
-			    Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))
-			   && !attacking)
+			    Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl) 
+			    || Input.GetKeyDown(KeyCode.R)) && !attacking)
 			{
 				//Start the dodging coroutine
 				StopCoroutine("Dodge");
@@ -445,6 +445,12 @@ public class Player : MonoBehaviour
 	public int getLevel()
 	{
 		return playerLevel;
+	}
+
+	//Function for if dodging
+	public bool isDodging()
+	{
+		return dodging;
 	}
 
 	//Function to Add exp to our player

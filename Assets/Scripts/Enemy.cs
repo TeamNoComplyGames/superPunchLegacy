@@ -450,27 +450,37 @@ public class Enemy : MonoBehaviour
 			else {
 				//Set the attack trigger of the player's animation controller in order to play the player's attack animation.
 				animator.SetTrigger ("Attack");
-				Player p = (Player)collision.gameObject.GetComponent ("Player");
 
-				//Now using an int to calulate our damage before we apply to health
-				//Using enemy skill
-				int damage = (int)(elevel * attack / 1.5);
-				if (damage < 1) {
-					damage = 1;
+				//Only do damage if they are not dodging
+				if(!player.isDodging())
+				{
+					//Get the player
+					Player p = (Player)collision.gameObject.GetComponent ("Player");
+
+					//Now using an int to calulate our damage before we apply to health
+					//Using enemy skill
+					int damage = (int)(elevel * attack / 1.5);
+					if (damage < 1) {
+						damage = 1;
+					}
+					int newHealth = p.getHealth () - damage;
+					p.setHealth (newHealth);
+
+					//Play the sound of hurt, only if the game is still on
+					if (!gameManager.getGameStatus ()) {
+						hurt.Play ();
+					}
+
+					//Shake the screen
+					actionCamera.startShake ();
+
+					//impact pause from the player
+					actionCamera.startImpact ();
 				}
-				int newHealth = p.getHealth () - damage;
-				p.setHealth (newHealth);
-
-				//Play the sound of hurt, only if the game is still on
-				if (!gameManager.getGameStatus ()) {
-					hurt.Play ();
+				else
+				{
+					Debug.Log("ajdlkasjld");
 				}
-
-				//Shake the screen
-				actionCamera.startShake ();
-
-				//impact pause from the player
-				actionCamera.startImpact ();
 
 				//Reset attack frames
 				attackFrames = totalFrames;
