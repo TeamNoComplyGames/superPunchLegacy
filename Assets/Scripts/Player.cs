@@ -28,6 +28,8 @@ public class Player : MonoBehaviour
 
 	//Boolean to check if attacking
 	bool attacking;
+	//Boolean to check if we are dodging
+	bool dodging;
 	//Counter for holding space to punch
 	int holdPunch;
 	//How long do they have to hold before punching
@@ -56,6 +58,7 @@ public class Player : MonoBehaviour
 		health = playerLevel * healthRate;
 		exp = 0;
 		attacking = false;
+		dodging = false;
 		moveDec = 1;
 		holdPunch = 0;
 		healthRegen = 0;
@@ -107,8 +110,8 @@ public class Player : MonoBehaviour
 			//Move our player
 			Move();
 			
-			//Attacks with our player (Check for a level up here as well)
-			if (Input.GetKey ("space")) {
+			//Attacks with our player (Check for a level up here as well), only attack if not dodging
+			if (Input.GetKey ("space") && !dodging) {
 				//Now since we are allowing holding space to punch we gotta count for it
 				if(!attacking && holdPunch % holdDuration == 0)
 				{
@@ -127,6 +130,16 @@ public class Player : MonoBehaviour
 			if (Input.GetKeyUp ("space")) {
 				//Set hold punch to zero
 				holdPunch = 0;
+			}
+
+			//Dodging, cant dodge if attacking
+			if((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift) || 
+			    Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))
+			   && !attacking)
+			{
+				//Start the dodging coroutine
+				StopCoroutine("Dodge");
+				StartCoroutine ("Dodge");
 			}
 
 			//Increase health Regen if we are not attacking (doing it halo style, so attacking wont stop you), or being hit/levling up (Check if we are flashing!)
@@ -324,6 +337,47 @@ public class Player : MonoBehaviour
 		//set attacking to false
 		attacking = false;
 
+	}
+
+	//Function to catch dodge commands
+	IEnumerator Dodge()
+	{
+		//Set dodging to true
+		dodging = true;
+		//Set the attack trigger of the player's animation controller in order to play the player's attack animation.
+		animator.SetTrigger ("Dodge");
+		//Play the sounds
+		//punch.Play ();
+		
+		//Check what direction we are moving, and slightly move that way when dodging
+		int dir = animator.GetInteger("Direction");
+		float moveAmount = .02f;
+		if(dir == 0)
+		{
+			gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - moveAmount, 0);
+		}
+		else if(dir == 1)
+		{
+			gameObject.transform.position = new Vector3(gameObject.transform.position.x + moveAmount, gameObject.transform.position.y, 0);
+		}
+		else if(dir == 2)
+		{
+			gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + moveAmount, 0);
+		}
+		else
+		{
+			gameObject.transform.position = new Vector3(gameObject.transform.position.x - moveAmount, gameObject.transform.position.y, 0);
+		}
+		//Let a couple of frames finish
+		yield return null;
+		yield return null;
+		yield return null;
+		yield return null;
+		yield return null;
+		yield return null;
+		//set attacking to false
+		dodging = false;
+		
 	}
 
 	//Catch when we collide with enemy
