@@ -9,6 +9,9 @@ public class IntroInput : MonoBehaviour
 	public AudioSource intro;
 	//Our Ui canvas group
 	public CanvasGroup alphaControl;
+	//Our Sprite
+	public GameObject sprite;
+	//Our main sprite
 	//Our fade speed
 	public float fadeSpeed;
 	//Our end time
@@ -88,10 +91,12 @@ public class IntroInput : MonoBehaviour
 		if(alphaControl.alpha + fadeSpeed < 1.0f)
 		{
 			alphaControl.alpha = alphaControl.alpha + fadeSpeed;
+			sprite.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, alphaControl.alpha);
 		}
 		else
 		{
 			alphaControl.alpha = 1.0f;
+			sprite.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, alphaControl.alpha);
 			CancelInvoke("FadeIn");
 		}
 	}
@@ -102,10 +107,12 @@ public class IntroInput : MonoBehaviour
 		if(alphaControl.alpha - fadeSpeed > 0.0f)
 		{
 			alphaControl.alpha = alphaControl.alpha - fadeSpeed;
+			sprite.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, alphaControl.alpha);
 		}
 		else
 		{
 			alphaControl.alpha = 0.0f;
+			sprite.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, alphaControl.alpha);
 			CancelInvoke("FadeOut");
 		}
 		
