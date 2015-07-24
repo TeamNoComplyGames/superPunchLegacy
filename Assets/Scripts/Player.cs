@@ -348,6 +348,9 @@ public class Player : MonoBehaviour
 		animator.SetTrigger ("Dodge");
 		//Play the sounds
 		//punch.Play ();
+
+		//Set the player to the dodging layer
+		gameObject.layer = 9;
 		
 		//Check what direction we are moving, and slightly move that way when dodging
 		int dir = animator.GetInteger("Direction");
@@ -369,13 +372,13 @@ public class Player : MonoBehaviour
 			gameObject.transform.position = new Vector3(gameObject.transform.position.x - moveAmount, gameObject.transform.position.y, 0);
 		}
 		//Let a couple of frames finish
-		yield return null;
-		yield return null;
-		yield return null;
-		yield return null;
-		yield return null;
-		yield return null;
-		//set attacking to false
+		for (int i = 0; i < 4; ++i) {
+			yield return null;
+		}
+
+		//Set the player to the colliding layer
+		gameObject.layer = 8;
+		//set dodging to false
 		dodging = false;
 		
 	}
