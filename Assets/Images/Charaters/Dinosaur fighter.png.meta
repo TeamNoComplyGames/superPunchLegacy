@@ -1,9 +1,33 @@
 fileFormatVersion: 2
 guid: 1d43cfd2d024bcb45b362e54205d378f
-timeCreated: 1437780888
+timeCreated: 1437782804
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Dinosaur fighter_0
+    21300002: Dinosaur fighter_1
+    21300004: Dinosaur fighter_2
+    21300006: Dinosaur fighter_3
+    21300008: Dinosaur fighter_4
+    21300010: Dinosaur fighter_5
+    21300012: Dinosaur fighter_6
+    21300014: Dinosaur fighter_7
+    21300016: Dinosaur fighter_8
+    21300018: Dinosaur fighter_9
+    21300020: Dinosaur fighter_10
+    21300022: Dinosaur fighter_11
+    21300024: Dinosaur fighter_12
+    21300026: Dinosaur fighter_13
+    21300028: Dinosaur fighter_14
+    21300030: Dinosaur fighter_15
+    21300032: Dinosaur fighter_16
+    21300034: Dinosaur fighter_17
+    21300036: Dinosaur fighter_18
+    21300038: Dinosaur fighter_19
+    21300040: Dinosaur fighter_20
+    21300042: Dinosaur fighter_21
+    21300044: Dinosaur fighter_22
+    21300046: Dinosaur fighter_23
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -29,15 +53,15 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +72,247 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Dinosaur fighter_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 669
+        width: 42
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 669
+        width: 42
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_2
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 670
+        width: 42
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_3
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 669
+        width: 42
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_4
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 545
+        width: 42
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_5
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 545
+        width: 42
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_6
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 545
+        width: 42
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_7
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 545
+        width: 42
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_8
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 415
+        width: 42
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_9
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 415
+        width: 42
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_10
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 415
+        width: 42
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_11
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 409
+        width: 42
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_12
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 279
+        width: 42
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 279
+        width: 42
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_14
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 278
+        width: 42
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_15
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 280
+        width: 51
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_16
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 148
+        width: 49
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_17
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 150
+        width: 51
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_18
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 148
+        width: 42
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_19
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 150
+        width: 51
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_20
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 18
+        width: 49
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_21
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 20
+        width: 51
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_22
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 38
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dinosaur fighter_23
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 38
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
