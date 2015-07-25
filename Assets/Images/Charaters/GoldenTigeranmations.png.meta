@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: 87fe85b794c0b554981dbac71af036eb
+timeCreated: 1437782319
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: GoldenTigeranmations_0
+    21300002: GoldenTigeranmations_1
+    21300004: GoldenTigeranmations_2
+    21300006: GoldenTigeranmations_3
+    21300008: GoldenTigeranmations_4
+    21300010: GoldenTigeranmations_5
+    21300012: GoldenTigeranmations_6
+    21300014: GoldenTigeranmations_7
+    21300016: GoldenTigeranmations_8
+    21300018: GoldenTigeranmations_9
+    21300020: GoldenTigeranmations_10
+    21300022: GoldenTigeranmations_11
+    21300024: GoldenTigeranmations_12
+    21300026: GoldenTigeranmations_13
+    21300028: GoldenTigeranmations_14
+    21300030: GoldenTigeranmations_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: GoldenTigeranmations_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 375
+        width: 33
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTigeranmations_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 375
+        width: 27
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTigeranmations_2
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 375
+        width: 32
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTigeranmations_3
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 379
+        width: 27
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTigeranmations_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 264
+        width: 92
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTigeranmations_5
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 264
+        width: 59
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTigeranmations_6
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 264
+        width: 92
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTigeranmations_7
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 259
+        width: 62
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTigeranmations_8
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 135
+        width: 33
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTigeranmations_9
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 135
+        width: 27
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTigeranmations_10
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 135
+        width: 32
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTigeranmations_11
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 139
+        width: 27
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTigeranmations_12
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 24
+        width: 92
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTigeranmations_13
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 24
+        width: 59
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTigeranmations_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 24
+        width: 92
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldenTigeranmations_15
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 19
+        width: 62
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
