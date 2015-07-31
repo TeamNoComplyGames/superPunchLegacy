@@ -37,6 +37,7 @@ public class Player : MonoBehaviour
 
 	//Our sounds 
 	private AudioSource punch;
+	private AudioSource dodge;
 	private AudioSource levelUp;
 	private AudioSource death;
 
@@ -65,6 +66,7 @@ public class Player : MonoBehaviour
 
 		//Get our sounds
 		punch = GameObject.Find ("Punch").GetComponent<AudioSource> ();
+		dodge = GameObject.Find ("Dodge").GetComponent<AudioSource> ();
 		levelUp = GameObject.Find ("LevelUp").GetComponent<AudioSource> ();
 		death = GameObject.Find ("Death").GetComponent<AudioSource> ();
 
@@ -352,7 +354,7 @@ public class Player : MonoBehaviour
 		//Set the attack trigger of the player's animation controller in order to play the player's attack animation.
 		animator.SetTrigger ("Dodge");
 		//Play the sounds
-		//punch.Play ();
+		dodge.Play ();
 
 		//Set the player to the dodging layer
 		gameObject.layer = 9;
