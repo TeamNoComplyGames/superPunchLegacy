@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5fe0a7fc0efb75d40bddcaa8c57f72ea
-timeCreated: 1438363950
+timeCreated: 1438372299
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -67,6 +67,9 @@ TextureImporter:
     21300120: Main Character_60
     21300122: Main Character_61
     21300124: Main Character_62
+    21300126: Main Character_63
+    21300128: Main Character_64
+    21300130: Main Character_65
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -739,6 +742,36 @@ TextureImporter:
         y: 578
         width: 16
         height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main Character_63
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 578
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main Character_64
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 170
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main Character_65
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 102
+        width: 15
+        height: 32
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
