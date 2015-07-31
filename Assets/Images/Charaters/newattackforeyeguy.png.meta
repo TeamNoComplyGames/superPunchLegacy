@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a548e06fdbe71ee4fa39d85552740b8d
-timeCreated: 1438379545
+timeCreated: 1438385733
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -72,8 +72,8 @@ TextureImporter:
         y: 465
         width: 39
         height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .55145371, y: .756062508}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newattackforeyeguy_1
       rect:
@@ -82,8 +82,8 @@ TextureImporter:
         y: 465
         width: 36
         height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .416388184, y: .761288643}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newattackforeyeguy_2
       rect:
@@ -92,8 +92,8 @@ TextureImporter:
         y: 453
         width: 35
         height: 76
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .557333827, y: .790442228}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newattackforeyeguy_3
       rect:
@@ -102,8 +102,8 @@ TextureImporter:
         y: 453
         width: 35
         height: 76
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .452222556, y: .7829566}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newattackforeyeguy_4
       rect:
@@ -112,8 +112,8 @@ TextureImporter:
         y: 358
         width: 68
         height: 29
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .209816769, y: .465402544}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newattackforeyeguy_5
       rect:
@@ -122,8 +122,8 @@ TextureImporter:
         y: 358
         width: 68
         height: 29
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .214431539, y: .476936072}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newattackforeyeguy_6
       rect:
@@ -132,8 +132,8 @@ TextureImporter:
         y: 358
         width: 64
         height: 29
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .25816837, y: .511533558}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newattackforeyeguy_7
       rect:
@@ -142,8 +142,8 @@ TextureImporter:
         y: 358
         width: 64
         height: 29
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .243937969, y: .48846963}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newattackforeyeguy_8
       rect:
@@ -152,8 +152,8 @@ TextureImporter:
         y: 248
         width: 68
         height: 29
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .785264969, y: .523066044}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newattackforeyeguy_9
       rect:
@@ -162,8 +162,8 @@ TextureImporter:
         y: 248
         width: 68
         height: 29
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .780346572, y: .476935029}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newattackforeyeguy_10
       rect:
@@ -172,8 +172,8 @@ TextureImporter:
         y: 248
         width: 64
         height: 29
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .770693302, y: .481897801}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newattackforeyeguy_11
       rect:
@@ -182,8 +182,8 @@ TextureImporter:
         y: 248
         width: 64
         height: 29
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .779437065, y: .490053385}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newattackforeyeguy_12
       rect:
@@ -192,8 +192,8 @@ TextureImporter:
         y: 129
         width: 37
         height: 72
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .468815982, y: .207542419}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newattackforeyeguy_13
       rect:
@@ -202,8 +202,8 @@ TextureImporter:
         y: 129
         width: 37
         height: 72
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5311836, y: .227573812}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newattackforeyeguy_14
       rect:
@@ -212,8 +212,8 @@ TextureImporter:
         y: 129
         width: 36
         height: 72
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .548074484, y: .199530065}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newattackforeyeguy_15
       rect:
@@ -222,8 +222,8 @@ TextureImporter:
         y: 129
         width: 35
         height: 72
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .516483009, y: .235586375}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
