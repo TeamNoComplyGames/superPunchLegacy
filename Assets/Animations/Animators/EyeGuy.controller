@@ -695,7 +695,7 @@ AnimatorStateTransition:
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
+  m_CanTransitionToSelf: 0
 --- !u!1101 &110183028
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -922,7 +922,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Explosion
-  m_Speed: 5
+  m_Speed: .800000012
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -933,7 +933,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: bad8ff8515d726c41824a519ffa2a717, type: 2}
+  m_Motion: {fileID: 7400000, guid: a2b7f34dc3e836a408c2815741e0267d, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -968,7 +968,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: ForwardAttack
-  m_Speed: .899999976
+  m_Speed: .699999988
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 110184910}
@@ -983,7 +983,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 99206dc08a59e274caa3f1e2414e0267, type: 2}
+  m_Motion: {fileID: 7400000, guid: 41a114ba8e6cfd44883e7dd56181d51e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1022,7 +1022,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: BackAttack
-  m_Speed: .899999976
+  m_Speed: .699999988
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 110137096}
@@ -1037,7 +1037,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 35df6fe3cb979d640b3ab7941feba65f, type: 2}
+  m_Motion: {fileID: 7400000, guid: fc80dac6aa95bcf40b0fdb0d0a3de9ad, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1130,7 +1130,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: RightAttack
-  m_Speed: 2
+  m_Speed: .699999988
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 110191190}
@@ -1145,7 +1145,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 50bbb5d44aa4aae47a7202f996a829f4, type: 2}
+  m_Motion: {fileID: 7400000, guid: f6326fc761632dd4282567a9472b1e4f, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1172,7 +1172,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 4e7f1d19aeefd424789f0b08d372983c, type: 2}
+  m_Motion: {fileID: 7400000, guid: 9b8769f6932b24c4482560d1eaab6061, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

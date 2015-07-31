@@ -377,8 +377,8 @@ public class Enemy : MonoBehaviour
 		//Add slight impact pause
 		actionCamera.startImpact();
 
-		//Expand our scale by two!
-		transform.localScale += new Vector3(transform.localScale.x * 2, transform.localScale.y * 2, 0);
+		//Expand our scale by 25%!
+		transform.localScale += new Vector3(transform.localScale.x * 1.25f, transform.localScale.y * 1.25f, 0);
 
 		//Stay exploding for a while
 		yield return new WaitForSeconds (0.5f);
