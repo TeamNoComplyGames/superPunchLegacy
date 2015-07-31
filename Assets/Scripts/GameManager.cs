@@ -115,8 +115,7 @@ public class GameManager : MonoBehaviour
 
 
 			//Update our hud to player
-			hud.text = ("Health: " + user.getHealth () + "\nLevel: " + user.getLevel ()
-				            + "\nScore: " + score);
+			hud.text = ("Health: " + user.getHealth () + "\tLevel: " + user.getLevel () + "\tScore: " + score);
 
 			//start the music! if it is not playing
 			if(!bgFight.isPlaying)
