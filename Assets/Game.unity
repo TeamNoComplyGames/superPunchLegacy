@@ -1506,7 +1506,7 @@ MonoBehaviour:
 
     SPACE TO PUNCH!!!
 
-    R/CTRL TO DODGE!!!'
+    B TO DODGE!!!'
 --- !u!222 &1065708093
 CanvasRenderer:
   m_ObjectHideFlags: 0

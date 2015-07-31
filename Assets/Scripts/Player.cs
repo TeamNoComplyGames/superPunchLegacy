@@ -135,7 +135,7 @@ public class Player : MonoBehaviour
 			//Dodging, cant dodge if attacking
 			if((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift) || 
 			    Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl) 
-			    || Input.GetKeyDown(KeyCode.R)) && !attacking)
+			    || Input.GetKeyDown(KeyCode.B)) && !attacking)
 			{
 				//Start the dodging coroutine
 				StopCoroutine("Dodge");
