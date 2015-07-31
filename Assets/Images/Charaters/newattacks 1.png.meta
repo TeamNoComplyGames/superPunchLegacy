@@ -1,9 +1,37 @@
 fileFormatVersion: 2
 guid: b738322324492ab4f8182b6fab5d979b
-timeCreated: 1438375662
+timeCreated: 1438376438
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: newattacks 1_0
+    21300002: newattacks 1_1
+    21300004: newattacks 1_2
+    21300006: newattacks 1_3
+    21300008: newattacks 1_4
+    21300010: newattacks 1_5
+    21300012: newattacks 1_6
+    21300014: newattacks 1_7
+    21300016: newattacks 1_8
+    21300018: newattacks 1_9
+    21300020: newattacks 1_10
+    21300022: newattacks 1_11
+    21300024: newattacks 1_12
+    21300026: newattacks 1_13
+    21300028: newattacks 1_14
+    21300030: newattacks 1_15
+    21300032: newattacks 1_16
+    21300034: newattacks 1_17
+    21300036: newattacks 1_18
+    21300038: newattacks 1_19
+    21300040: newattacks 1_20
+    21300042: newattacks 1_21
+    21300044: newattacks 1_22
+    21300046: newattacks 1_23
+    21300048: newattacks 1_24
+    21300050: newattacks 1_25
+    21300052: newattacks 1_26
+    21300054: newattacks 1_27
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -29,15 +57,15 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +76,287 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: newattacks 1_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 374
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 374
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_2
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 374
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 374
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 314
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_5
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 314
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_6
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 314
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_7
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 314
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_8
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 254
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_9
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 254
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_10
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 254
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_11
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 254
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_12
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 194
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_13
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 194
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_14
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 194
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_15
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 194
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_16
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 134
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_17
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 133
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_18
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 134
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_19
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 134
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_20
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 74
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_21
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 73
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_22
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 74
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_23
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 74
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_24
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 14
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_25
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 14
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_26
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 14
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newattacks 1_27
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 14
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

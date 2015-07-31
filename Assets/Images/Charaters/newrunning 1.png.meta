@@ -1,9 +1,22 @@
 fileFormatVersion: 2
 guid: 2137b0c896a32a44eae7dec1e2b6aeb0
-timeCreated: 1438375662
+timeCreated: 1438376878
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: newrunning 1_0
+    21300002: newrunning 1_1
+    21300004: newrunning 1_2
+    21300006: newrunning 1_3
+    21300008: newrunning 1_4
+    21300010: newrunning 1_5
+    21300012: newrunning 1_6
+    21300014: newrunning 1_7
+    21300016: newrunning 1_8
+    21300018: newrunning 1_9
+    21300020: newrunning 1_10
+    21300022: newrunning 1_11
+    21300024: newrunning 1_12
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -29,15 +42,15 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +61,137 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: newrunning 1_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 200
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newrunning 1_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 200
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newrunning 1_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 187
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newrunning 1_3
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 187
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newrunning 1_4
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 127
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newrunning 1_5
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 137
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newrunning 1_6
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 137
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newrunning 1_7
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 140
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newrunning 1_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 77
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newrunning 1_9
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 77
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newrunning 1_10
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 77
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newrunning 1_11
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 77
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newrunning 1_12
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 20
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
