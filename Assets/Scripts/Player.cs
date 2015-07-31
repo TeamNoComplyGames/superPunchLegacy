@@ -354,8 +354,9 @@ public class Player : MonoBehaviour
 		//Set the attack trigger of the player's animation controller in order to play the player's attack animation.
 		animator.SetTrigger ("Dodge");
 		//Play the sounds
-		dodge.Play ();
-
+		if (!dodge.isPlaying) {
+			dodge.Play ();
+		}
 		//Set the player to the dodging layer
 		gameObject.layer = 9;
 		
