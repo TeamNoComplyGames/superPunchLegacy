@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 2137b0c896a32a44eae7dec1e2b6aeb0
-timeCreated: 1438376878
+guid: d7c67895cc542ee49935e1a16e5d6748
+timeCreated: 1438377723
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: newrunning 1_0
-    21300002: newrunning 1_1
-    21300004: newrunning 1_2
-    21300006: newrunning 1_3
-    21300008: newrunning 1_4
-    21300010: newrunning 1_5
-    21300012: newrunning 1_6
-    21300014: newrunning 1_7
-    21300016: newrunning 1_8
-    21300018: newrunning 1_9
-    21300020: newrunning 1_10
-    21300022: newrunning 1_11
-    21300024: newrunning 1_12
+    21300000: newrunning_0
+    21300002: newrunning_1
+    21300004: newrunning_2
+    21300006: newrunning_3
+    21300008: newrunning_4
+    21300010: newrunning_5
+    21300012: newrunning_6
+    21300014: newrunning_7
+    21300016: newrunning_8
+    21300018: newrunning_9
+    21300020: newrunning_10
+    21300022: newrunning_11
+    21300024: newrunning_12
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -62,7 +62,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: newrunning 1_0
+    - name: newrunning_0
       rect:
         serializedVersion: 2
         x: 28
@@ -72,7 +72,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newrunning 1_1
+    - name: newrunning_1
       rect:
         serializedVersion: 2
         x: 88
@@ -82,7 +82,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newrunning 1_2
+    - name: newrunning_2
       rect:
         serializedVersion: 2
         x: 133
@@ -92,7 +92,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newrunning 1_3
+    - name: newrunning_3
       rect:
         serializedVersion: 2
         x: 193
@@ -102,7 +102,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newrunning 1_4
+    - name: newrunning_4
       rect:
         serializedVersion: 2
         x: 14
@@ -112,7 +112,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newrunning 1_5
+    - name: newrunning_5
       rect:
         serializedVersion: 2
         x: 76
@@ -122,7 +122,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newrunning 1_6
+    - name: newrunning_6
       rect:
         serializedVersion: 2
         x: 136
@@ -132,7 +132,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newrunning 1_7
+    - name: newrunning_7
       rect:
         serializedVersion: 2
         x: 196
@@ -142,7 +142,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newrunning 1_8
+    - name: newrunning_8
       rect:
         serializedVersion: 2
         x: 16
@@ -152,7 +152,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newrunning 1_9
+    - name: newrunning_9
       rect:
         serializedVersion: 2
         x: 76
@@ -162,7 +162,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newrunning 1_10
+    - name: newrunning_10
       rect:
         serializedVersion: 2
         x: 142
@@ -172,7 +172,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newrunning 1_11
+    - name: newrunning_11
       rect:
         serializedVersion: 2
         x: 202
@@ -182,7 +182,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newrunning 1_12
+    - name: newrunning_12
       rect:
         serializedVersion: 2
         x: 25

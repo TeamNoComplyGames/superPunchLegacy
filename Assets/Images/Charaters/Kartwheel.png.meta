@@ -1,29 +1,29 @@
 fileFormatVersion: 2
-guid: a2f2cff9d3813ef4bb360f99a647a14d
-timeCreated: 1438376269
+guid: 7b4d1089d77ae7945923f7c1c30a3a07
+timeCreated: 1438377746
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Kartwheel 1_0
-    21300002: Kartwheel 1_1
-    21300004: Kartwheel 1_2
-    21300006: Kartwheel 1_3
-    21300008: Kartwheel 1_4
-    21300010: Kartwheel 1_5
-    21300012: Kartwheel 1_6
-    21300014: Kartwheel 1_7
-    21300016: Kartwheel 1_8
-    21300018: Kartwheel 1_9
-    21300020: Kartwheel 1_10
-    21300022: Kartwheel 1_11
-    21300024: Kartwheel 1_12
-    21300026: Kartwheel 1_13
-    21300028: Kartwheel 1_14
-    21300030: Kartwheel 1_15
-    21300032: Kartwheel 1_16
-    21300034: Kartwheel 1_17
-    21300036: Kartwheel 1_18
-    21300038: Kartwheel 1_19
+    21300000: Kartwheel_0
+    21300002: Kartwheel_1
+    21300004: Kartwheel_2
+    21300006: Kartwheel_3
+    21300008: Kartwheel_4
+    21300010: Kartwheel_5
+    21300012: Kartwheel_6
+    21300014: Kartwheel_7
+    21300016: Kartwheel_8
+    21300018: Kartwheel_9
+    21300020: Kartwheel_10
+    21300022: Kartwheel_11
+    21300024: Kartwheel_12
+    21300026: Kartwheel_13
+    21300028: Kartwheel_14
+    21300030: Kartwheel_15
+    21300032: Kartwheel_16
+    21300034: Kartwheel_17
+    21300036: Kartwheel_18
+    21300038: Kartwheel_19
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -69,7 +69,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Kartwheel 1_0
+    - name: Kartwheel_0
       rect:
         serializedVersion: 2
         x: 15
@@ -79,7 +79,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Kartwheel 1_1
+    - name: Kartwheel_1
       rect:
         serializedVersion: 2
         x: 85
@@ -89,7 +89,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Kartwheel 1_2
+    - name: Kartwheel_2
       rect:
         serializedVersion: 2
         x: 141
@@ -99,7 +99,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Kartwheel 1_3
+    - name: Kartwheel_3
       rect:
         serializedVersion: 2
         x: 194
@@ -109,7 +109,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Kartwheel 1_4
+    - name: Kartwheel_4
       rect:
         serializedVersion: 2
         x: 16
@@ -119,7 +119,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Kartwheel 1_5
+    - name: Kartwheel_5
       rect:
         serializedVersion: 2
         x: 81
@@ -129,7 +129,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Kartwheel 1_6
+    - name: Kartwheel_6
       rect:
         serializedVersion: 2
         x: 153
@@ -139,7 +139,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Kartwheel 1_7
+    - name: Kartwheel_7
       rect:
         serializedVersion: 2
         x: 210
@@ -149,7 +149,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Kartwheel 1_8
+    - name: Kartwheel_8
       rect:
         serializedVersion: 2
         x: 28
@@ -159,7 +159,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Kartwheel 1_9
+    - name: Kartwheel_9
       rect:
         serializedVersion: 2
         x: 90
@@ -169,7 +169,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Kartwheel 1_10
+    - name: Kartwheel_10
       rect:
         serializedVersion: 2
         x: 148
@@ -179,7 +179,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Kartwheel 1_11
+    - name: Kartwheel_11
       rect:
         serializedVersion: 2
         x: 210
@@ -189,7 +189,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Kartwheel 1_12
+    - name: Kartwheel_12
       rect:
         serializedVersion: 2
         x: 30
@@ -199,7 +199,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Kartwheel 1_13
+    - name: Kartwheel_13
       rect:
         serializedVersion: 2
         x: 91
@@ -209,7 +209,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Kartwheel 1_14
+    - name: Kartwheel_14
       rect:
         serializedVersion: 2
         x: 153
@@ -219,7 +219,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Kartwheel 1_15
+    - name: Kartwheel_15
       rect:
         serializedVersion: 2
         x: 201
@@ -229,7 +229,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Kartwheel 1_16
+    - name: Kartwheel_16
       rect:
         serializedVersion: 2
         x: 15
@@ -239,7 +239,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Kartwheel 1_17
+    - name: Kartwheel_17
       rect:
         serializedVersion: 2
         x: 73
@@ -249,7 +249,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Kartwheel 1_18
+    - name: Kartwheel_18
       rect:
         serializedVersion: 2
         x: 141
@@ -259,7 +259,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Kartwheel 1_19
+    - name: Kartwheel_19
       rect:
         serializedVersion: 2
         x: 213

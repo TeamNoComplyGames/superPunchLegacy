@@ -1,37 +1,37 @@
 fileFormatVersion: 2
-guid: b738322324492ab4f8182b6fab5d979b
-timeCreated: 1438376438
+guid: c0d7d77f1a375cd48904c9e5601584a0
+timeCreated: 1438377735
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: newattacks 1_0
-    21300002: newattacks 1_1
-    21300004: newattacks 1_2
-    21300006: newattacks 1_3
-    21300008: newattacks 1_4
-    21300010: newattacks 1_5
-    21300012: newattacks 1_6
-    21300014: newattacks 1_7
-    21300016: newattacks 1_8
-    21300018: newattacks 1_9
-    21300020: newattacks 1_10
-    21300022: newattacks 1_11
-    21300024: newattacks 1_12
-    21300026: newattacks 1_13
-    21300028: newattacks 1_14
-    21300030: newattacks 1_15
-    21300032: newattacks 1_16
-    21300034: newattacks 1_17
-    21300036: newattacks 1_18
-    21300038: newattacks 1_19
-    21300040: newattacks 1_20
-    21300042: newattacks 1_21
-    21300044: newattacks 1_22
-    21300046: newattacks 1_23
-    21300048: newattacks 1_24
-    21300050: newattacks 1_25
-    21300052: newattacks 1_26
-    21300054: newattacks 1_27
+    21300000: newattacks_0
+    21300002: newattacks_1
+    21300004: newattacks_2
+    21300006: newattacks_3
+    21300008: newattacks_4
+    21300010: newattacks_5
+    21300012: newattacks_6
+    21300014: newattacks_7
+    21300016: newattacks_8
+    21300018: newattacks_9
+    21300020: newattacks_10
+    21300022: newattacks_11
+    21300024: newattacks_12
+    21300026: newattacks_13
+    21300028: newattacks_14
+    21300030: newattacks_15
+    21300032: newattacks_16
+    21300034: newattacks_17
+    21300036: newattacks_18
+    21300038: newattacks_19
+    21300040: newattacks_20
+    21300042: newattacks_21
+    21300044: newattacks_22
+    21300046: newattacks_23
+    21300048: newattacks_24
+    21300050: newattacks_25
+    21300052: newattacks_26
+    21300054: newattacks_27
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -77,7 +77,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: newattacks 1_0
+    - name: newattacks_0
       rect:
         serializedVersion: 2
         x: 23
@@ -87,7 +87,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_1
+    - name: newattacks_1
       rect:
         serializedVersion: 2
         x: 85
@@ -97,7 +97,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_2
+    - name: newattacks_2
       rect:
         serializedVersion: 2
         x: 141
@@ -107,7 +107,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_3
+    - name: newattacks_3
       rect:
         serializedVersion: 2
         x: 194
@@ -117,7 +117,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_4
+    - name: newattacks_4
       rect:
         serializedVersion: 2
         x: 23
@@ -127,7 +127,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_5
+    - name: newattacks_5
       rect:
         serializedVersion: 2
         x: 75
@@ -137,7 +137,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_6
+    - name: newattacks_6
       rect:
         serializedVersion: 2
         x: 148
@@ -147,7 +147,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_7
+    - name: newattacks_7
       rect:
         serializedVersion: 2
         x: 209
@@ -157,7 +157,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_8
+    - name: newattacks_8
       rect:
         serializedVersion: 2
         x: 29
@@ -167,7 +167,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_9
+    - name: newattacks_9
       rect:
         serializedVersion: 2
         x: 92
@@ -177,7 +177,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_10
+    - name: newattacks_10
       rect:
         serializedVersion: 2
         x: 148
@@ -187,7 +187,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_11
+    - name: newattacks_11
       rect:
         serializedVersion: 2
         x: 212
@@ -197,7 +197,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_12
+    - name: newattacks_12
       rect:
         serializedVersion: 2
         x: 24
@@ -207,7 +207,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_13
+    - name: newattacks_13
       rect:
         serializedVersion: 2
         x: 85
@@ -217,7 +217,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_14
+    - name: newattacks_14
       rect:
         serializedVersion: 2
         x: 141
@@ -227,7 +227,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_15
+    - name: newattacks_15
       rect:
         serializedVersion: 2
         x: 201
@@ -237,7 +237,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_16
+    - name: newattacks_16
       rect:
         serializedVersion: 2
         x: 24
@@ -247,7 +247,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_17
+    - name: newattacks_17
       rect:
         serializedVersion: 2
         x: 81
@@ -257,7 +257,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_18
+    - name: newattacks_18
       rect:
         serializedVersion: 2
         x: 137
@@ -267,7 +267,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_19
+    - name: newattacks_19
       rect:
         serializedVersion: 2
         x: 197
@@ -277,7 +277,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_20
+    - name: newattacks_20
       rect:
         serializedVersion: 2
         x: 21
@@ -287,7 +287,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_21
+    - name: newattacks_21
       rect:
         serializedVersion: 2
         x: 81
@@ -297,7 +297,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_22
+    - name: newattacks_22
       rect:
         serializedVersion: 2
         x: 144
@@ -307,7 +307,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_23
+    - name: newattacks_23
       rect:
         serializedVersion: 2
         x: 202
@@ -317,7 +317,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_24
+    - name: newattacks_24
       rect:
         serializedVersion: 2
         x: 21
@@ -327,7 +327,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_25
+    - name: newattacks_25
       rect:
         serializedVersion: 2
         x: 80
@@ -337,7 +337,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_26
+    - name: newattacks_26
       rect:
         serializedVersion: 2
         x: 144
@@ -347,7 +347,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newattacks 1_27
+    - name: newattacks_27
       rect:
         serializedVersion: 2
         x: 205

@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 7809ad65094f0af4e9fd8ce462fa3d84
-timeCreated: 1438376340
+guid: caddda0ccffbc2a4cbadb0ae219d33ef
+timeCreated: 1438377755
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Backflip 1_0
-    21300002: Backflip 1_1
-    21300004: Backflip 1_2
-    21300006: Backflip 1_3
+    21300000: Backflip_0
+    21300002: Backflip_1
+    21300004: Backflip_2
+    21300006: Backflip_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -53,7 +53,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Backflip 1_0
+    - name: Backflip_0
       rect:
         serializedVersion: 2
         x: 10
@@ -63,7 +63,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Backflip 1_1
+    - name: Backflip_1
       rect:
         serializedVersion: 2
         x: 48
@@ -73,7 +73,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Backflip 1_2
+    - name: Backflip_2
       rect:
         serializedVersion: 2
         x: 90
@@ -83,7 +83,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Backflip 1_3
+    - name: Backflip_3
       rect:
         serializedVersion: 2
         x: 130
