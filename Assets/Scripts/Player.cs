@@ -233,8 +233,9 @@ public class Player : MonoBehaviour
 		float v = Input.GetAxis("Vertical"); 
 
 		//Also check to make sure we stay that direction when not moving, so check that we are
-		if(h != 0 || v != 0)
-		{
+		if (h != 0 || v != 0) {
+			//tell the animator to stop idling
+			animator.SetBool("Moving", true);
 		
 			//animate to the direction we are going to move
 			//Find the greatest absolute value to get most promenint direction
@@ -243,54 +244,50 @@ public class Player : MonoBehaviour
 		 * 3		1
 		 * 		0
 		 * */
-		if (Mathf.Abs (h * 100) > Mathf.Abs (v * 100)) 
-		{
-			if(h > 0)
-			{
-				animator.SetInteger("Direction", 1);
+			if (Mathf.Abs (h * 100) > Mathf.Abs (v * 100)) {
+				if (h > 0) {
+					animator.SetInteger ("Direction", 1);
+				} else {
+					animator.SetInteger ("Direction", 3);
+				}
+			} else {
+				if (v > 0) {
+					animator.SetInteger ("Direction", 2);
+				} else {
+					animator.SetInteger ("Direction", 0);
+				}
 			}
-			else
-			{
-				animator.SetInteger("Direction", 3);
-			}
-		} 
-		else
-		{
-			if(v > 0)
-			{
-				animator.SetInteger("Direction", 2);
-			}
-			else
-			{
-				animator.SetInteger("Direction", 0);
-			}
-		}
-		//Create a vector to where we are moving
-		Vector2 movement = new Vector2(h, v); 
+			//Create a vector to where we are moving
+			Vector2 movement = new Vector2 (h, v); 
 
-		//When attacking start a slow movemnt coroutine
-		if(attacking)
-		{
-			//Attacking working great
-			StopCoroutine("slowMoving");
-			StartCoroutine ("slowMoving");
-		}
+			//When attacking start a slow movemnt coroutine
+			if (attacking) {
+				//Attacking working great
+				StopCoroutine ("slowMoving");
+				StartCoroutine ("slowMoving");
+			}
 
 
-		//Get our speed according to our current level
-		float levelSpeed = (float) playerLevel / 400;
+			//Get our speed according to our current level
+			float levelSpeed = (float)playerLevel / 400;
 		
 
-		//Get our actual speed
-		float superSpeed = levelSpeed + (moveSpeed / 10) / moveDec;
-		//Can't go above .5 though
-		if (superSpeed > .032f) 
-		{
-			superSpeed = .032f;
-		}
+			//Get our actual speed
+			float superSpeed = levelSpeed + (moveSpeed / 10) / moveDec;
+			//Can't go above .5 though
+			if (superSpeed > .032f) {
+				superSpeed = .032f;
+			}
 
-		//Move to that position
-			player.MovePosition(player.position + movement * superSpeed);
+			//Move to that position
+			player.MovePosition (player.position + movement * superSpeed);
+		}
+		//then we are not moving
+		else {
+			//Set our position to our current position, so we dont drift away
+			player.MovePosition (player.position);
+			//tell the animator we are no longer moving
+			animator.SetBool("Moving", false);
 		}
 	}
 
