@@ -111,7 +111,12 @@ public class Player : MonoBehaviour
 			Move();
 			
 			//Attacks with our player (Check for a level up here as well), only attack if not dodging
-			if (Input.GetKey ("space") && !dodging) {
+			if (Input.GetKey ("space") && 
+			    !dodging &&
+			    !animator.GetCurrentAnimatorStateInfo(0).IsName("Forward Dodge") &&
+			    !animator.GetCurrentAnimatorStateInfo(0).IsName("Right Dodge") &&
+			    !animator.GetCurrentAnimatorStateInfo(0).IsName("Back Dodge") &&
+			    !animator.GetCurrentAnimatorStateInfo(0).IsName("Left Dodge")) {
 				//Now since we are allowing holding space to punch we gotta count for it
 				if(!attacking && holdPunch % holdDuration == 0)
 				{
@@ -135,8 +140,11 @@ public class Player : MonoBehaviour
 			//Dodging, cant dodge if attacking
 			if((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift) || 
 			    Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl) 
-			    || Input.GetKeyDown(KeyCode.B)) && !attacking)
-			{
+			    || Input.GetKeyDown(KeyCode.B)) && !attacking &&
+				!animator.GetCurrentAnimatorStateInfo(0).IsName("ForwardAttack") &&
+				!animator.GetCurrentAnimatorStateInfo(0).IsName("RightAttack") &&
+				!animator.GetCurrentAnimatorStateInfo(0).IsName("BackAttack") &&
+				!animator.GetCurrentAnimatorStateInfo(0).IsName("LeftAttack")) {
 				//Start the dodging coroutine
 				StopCoroutine("Dodge");
 				StartCoroutine ("Dodge");
