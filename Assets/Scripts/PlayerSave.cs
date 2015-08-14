@@ -8,6 +8,10 @@ public class PlayerSave
 	int level;
 	//our score
 	int score;
+	//Our map index
+	int mapIndex;
+	//our character index
+	int charIndex;
 
 	//our constructor
 	public PlayerSave()
@@ -35,6 +39,26 @@ public class PlayerSave
 	public int getScore()
 	{
 		return score;
+	}
+
+	public void setMapIndex(int i)
+	{
+		mapIndex = i;
+	}
+
+	public void getMapIndex()
+	{
+		return mapIndex;
+	}
+
+	public void setCharIndex(int i)
+	{
+		charIndex = i;
+	}
+
+	public void getCharIndex()
+	{
+		return charIndex;
 	}
 
 

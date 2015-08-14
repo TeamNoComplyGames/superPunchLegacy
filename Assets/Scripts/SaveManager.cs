@@ -54,4 +54,24 @@ public static class SaveManager
 	{
 		return save.getScore();
 	}
+
+	public static void setMap(int m)
+	{
+		save.setMapIndex (m);
+	}
+
+	public static int getMap()
+	{
+		return save.getMapIndex ();
+	}
+
+	public static void setChar(int c)
+	{
+		save.setCharIndex (c);
+	}
+
+	public static int getChar()
+	{
+		return save.getCharIndex ();
+	}
 }
