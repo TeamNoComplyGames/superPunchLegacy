@@ -197,7 +197,7 @@ GameObject:
   - 114: {fileID: 277267128}
   - 114: {fileID: 277267127}
   m_Layer: 5
-  m_Name: Map Name
+  m_Name: Char Name
   m_TagString: PlayerHUD
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -377,6 +377,106 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!1 &674757150
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 674757151}
+  - 222: {fileID: 674757155}
+  - 114: {fileID: 674757154}
+  - 114: {fileID: 674757153}
+  - 114: {fileID: 674757152}
+  m_Layer: 5
+  m_Name: Stats
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &674757151
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 674757150}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 729959292}
+  m_RootOrder: 5
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: 200, y: 0}
+  m_SizeDelta: {x: 1000, y: 1000}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &674757152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 674757150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: .5}
+  m_EffectDistance: {x: 3, y: -3}
+  m_UseGraphicAlpha: 1
+--- !u!114 &674757153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 674757150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: .5}
+  m_EffectDistance: {x: 3, y: -3}
+  m_UseGraphicAlpha: 1
+--- !u!114 &674757154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 674757150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4610c9d780df32f43987f3c91dc4d85a, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Health: 5
+
+    Attack: 5
+
+    Speed: 5'
+--- !u!222 &674757155
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 674757150}
 --- !u!1 &712033242
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,7 +488,7 @@ GameObject:
   - 222: {fileID: 712033245}
   - 114: {fileID: 712033244}
   m_Layer: 5
-  m_Name: Map
+  m_Name: Char
   m_TagString: HUDImage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -408,8 +508,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 500}
+  m_AnchoredPosition: {x: -200, y: 0}
+  m_SizeDelta: {x: 250, y: 500}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &712033244
 MonoBehaviour:
@@ -424,7 +524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: ce73f11717a644448b29e0a4c3633c59, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5fe0a7fc0efb75d40bddcaa8c57f72ea, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -472,7 +572,7 @@ RectTransform:
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
   m_AnchoredPosition: {x: 0, y: -100}
-  m_SizeDelta: {x: 1000, y: 123}
+  m_SizeDelta: {x: 2000, y: 123}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &719260997
 MonoBehaviour:
@@ -499,7 +599,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Choose A Map
+  m_Text: Choose Your Character
 --- !u!222 &719260998
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -621,6 +721,7 @@ RectTransform:
   - {fileID: 277267131}
   - {fileID: 1686415076}
   - {fileID: 1549348344}
+  - {fileID: 674757151}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
@@ -636,10 +737,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1074133496}
-  - 114: {fileID: 1074133495}
   - 114: {fileID: 1074133497}
+  - 114: {fileID: 1074133495}
   m_Layer: 0
-  m_Name: MapManager
+  m_Name: CharManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -653,15 +754,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1074133494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4833c545ef8ce7146912e0b7d4122d5a, type: 3}
+  m_Script: {fileID: 11500000, guid: b37614da06965994b9755f21b8598260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maps:
-  - {fileID: 21300000, guid: ce73f11717a644448b29e0a4c3633c59, type: 3}
-  - {fileID: 21300000, guid: 5af43eb87109b1f419ba5ec1d7b60bb0, type: 3}
-  mapNames:
-  - Grass Plains
-  - Volcano Desert
+  chars:
+  - {fileID: 21300000, guid: 5fe0a7fc0efb75d40bddcaa8c57f72ea, type: 3}
+  charNames:
+  - Punch Man
+  charStats:
+  - 'Health: 5/Attack: 5/Speed: 5'
   select: {fileID: 1626257285}
   hurt: {fileID: 399957075}
   punch: {fileID: 242515967}

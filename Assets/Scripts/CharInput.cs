@@ -1,19 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MapInput : MonoBehaviour{
+public class CharInput : MonoBehaviour {
 
-	//Our array of map images
-	public Sprite[] maps;
+	//Our array of char images
+	public Sprite[] chars;
 
-	//Array of maps names, should correspond with maps
-	public string[] mapNames;
+	//Array of chars names, should correspond with chars, and stats
+	public string[] charNames;
+	public string[] charStats;
 
-	//Our map image
-	private UnityEngine.UI.Image mapImage;
+	//Our char image
+	private UnityEngine.UI.Image charImage;
 
-	//Our map name
-	private UnityEngine.UI.Text mapText;
+	//Our char name
+	private UnityEngine.UI.Text charText;
+
+	//our char stats
+	private UnityEngine.UI.Text charStat;
 
 	//Our arrows
 	private UnityEngine.UI.Text rightArrow;
@@ -30,11 +34,14 @@ public class MapInput : MonoBehaviour{
 	// Use this for initialization
 	void Start () {
 
-		//Set our map image
-		mapImage = GameObject.FindGameObjectWithTag ("HUDImage").GetComponent<UnityEngine.UI.Image> ();
+		//Set our char image
+		charImage = GameObject.FindGameObjectWithTag ("HUDImage").GetComponent<UnityEngine.UI.Image> ();
 
-		//Set our mapText
-		mapText = GameObject.FindGameObjectWithTag ("PlayerHUD").GetComponent<UnityEngine.UI.Text> ();
+		//Set our charText
+		charText = GameObject.FindGameObjectWithTag ("PlayerHUD").GetComponent<UnityEngine.UI.Text> ();
+
+		//Set our charstats
+		charStat = GameObject.Find ("Stats").GetComponent<UnityEngine.UI.Text> ();
 
 		//Set our arrows
 		rightArrow = GameObject.Find ("Right").GetComponent<UnityEngine.UI.Text> ();
@@ -42,9 +49,10 @@ public class MapInput : MonoBehaviour{
 
 		currentIndex = 0;
 
-		//Set the map to the current index
-		mapImage.sprite = maps [currentIndex];
-		mapText.text = mapNames [currentIndex];
+		//Set the char to the current index
+		charImage.sprite = chars [currentIndex];
+		charText.text = charNames [currentIndex];
+		charStat.text = charStats [currentIndex].Replace("/", "\n");
 
 		arrowCheck ();
 	}
@@ -59,7 +67,7 @@ public class MapInput : MonoBehaviour{
 			Application.LoadLevel ("Start");
 		} else if (Input.GetKey (KeyCode.KeypadEnter) || Input.GetKey ("return")) {
 			//save the current Index
-			SaveManager.setMap (currentIndex);
+			SaveManager.setChar (currentIndex);
 			SaveManager.saveSave ();
 
 			//Go back ot the start screen
@@ -69,7 +77,7 @@ public class MapInput : MonoBehaviour{
 		else if (Input.GetKeyUp (KeyCode.RightArrow) || Input.GetKeyUp (KeyCode.D)) 
 		{
 			//check if we can increase the current index
-			if(currentIndex + 1 >= maps.Length)
+			if(currentIndex + 1 >= chars.Length)
 			{
 				//Play the hurt sound, as we cannot increase the index
 				hurt.Play ();
@@ -79,9 +87,10 @@ public class MapInput : MonoBehaviour{
 				//Increase the index, and play the punch sound
 				currentIndex++;
 
-				//Set the map to the current index
-				mapImage.sprite = maps [currentIndex];
-				mapText.text = mapNames [currentIndex];
+				//Set the char to the current index
+				charImage.sprite = chars [currentIndex];
+				charText.text = charNames [currentIndex];
+				charStat.text = charStats [currentIndex].Replace("/", "\n");
 
 				punch.Play();
 
@@ -102,9 +111,10 @@ public class MapInput : MonoBehaviour{
 				//Decrease the index, and play the punch sound
 				currentIndex--;
 				
-				//Set the map to the current index
-				mapImage.sprite = maps [currentIndex];
-				mapText.text = mapNames [currentIndex];
+				//Set the char to the current index
+				charImage.sprite = chars [currentIndex];
+				charText.text = charNames[currentIndex];
+				charStat.text = charStats [currentIndex].Replace("/", "\n");
 				
 				punch.Play();
 
@@ -118,16 +128,17 @@ public class MapInput : MonoBehaviour{
 	//Function to check if we should remove any of the arrows
 	private void arrowCheck()
 	{
-		if (currentIndex <= 0) {
-			leftArrow.enabled = false;
-			rightArrow.enabled = true;
-		} else if (currentIndex >= maps.Length - 1) {
-			rightArrow.enabled = false;
-			leftArrow.enabled = true;
-		} else if (maps.Length == 1) {
+		if (chars.Length == 1) {
 			leftArrow.enabled = false;
 			rightArrow.enabled = false;
 		}
+		else if (currentIndex >= chars.Length - 1) {
+			rightArrow.enabled = false;
+			leftArrow.enabled = true;
+		} else if (currentIndex <= 0) {
+			leftArrow.enabled = false;
+			rightArrow.enabled = true;
+		} 
 		else {
 			leftArrow.enabled = true;
 			rightArrow.enabled = true;
