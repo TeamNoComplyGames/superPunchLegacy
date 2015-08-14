@@ -36,6 +36,23 @@ public class StartInput : MonoBehaviour
 			select.Play();
 			Application.LoadLevel("Game");
 		}
+
+		//M to choose map!
+		if (Input.GetKeyDown (KeyCode.M)) 
+		{
+			//Play the select sounds and then start the game
+			select.Play();
+			Application.LoadLevel("Map Selection");
+		}
+
+		//C to choose character!
+		if (Input.GetKeyDown (KeyCode.C)) 
+		{
+			//Play the select sounds and then start the game
+			select.Play();
+			Application.LoadLevel("Character Selection");
+		}
+
 		//if escape, quit
 		else if (Input.GetKeyDown("escape"))
 		{
