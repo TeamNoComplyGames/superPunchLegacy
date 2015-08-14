@@ -52,7 +52,7 @@
      <Compile Include="Assets\Scripts\GameAspect.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\IntroInput.cs" />
-     <Compile Include="Assets\Scripts\Map Input.cs" />
+     <Compile Include="Assets\Scripts\MapInput.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\PlayerSave.cs" />
