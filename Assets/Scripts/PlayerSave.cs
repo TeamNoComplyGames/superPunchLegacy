@@ -46,7 +46,7 @@ public class PlayerSave
 		mapIndex = i;
 	}
 
-	public void getMapIndex()
+	public int getMapIndex()
 	{
 		return mapIndex;
 	}
@@ -56,7 +56,7 @@ public class PlayerSave
 		charIndex = i;
 	}
 
-	public void getCharIndex()
+	public int getCharIndex()
 	{
 		return charIndex;
 	}
