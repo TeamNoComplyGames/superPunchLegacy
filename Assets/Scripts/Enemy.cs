@@ -45,6 +45,10 @@ public class Enemy : MonoBehaviour
 	//boolean if colliding with player
 	private bool playerCollide;
 
+	//Boolean if colliding with a walll/object
+	private bool wallCollide;
+	private float wallCollideTime;
+
 	//Knockback value
 	private float knockForce;
 	public int knockFrames;
@@ -121,7 +125,7 @@ public class Enemy : MonoBehaviour
 		//Set the mass of the rigid body to be really high so they dont go flying
 		defaultMass = enemy.mass;
 		//Our knock force so we do go flying haha, and knock time for how long we can be in knockback
-		knockTime = 1.5f;
+		knockTime = 0.75f;
 		knockForce = 100000;
 		if (isBoss) {
 			//If we are a boss, dont go flying as much
@@ -420,6 +424,9 @@ public class Enemy : MonoBehaviour
 			//And remove the force we added
 			enemy.angularVelocity = 0f;
 			enemy.velocity = Vector2.zero;
+
+			//set our wallCollision time
+			wallCollideTime = Time.realtimeSinceStartup;
 			}
 		//Check if it is another enemy, mass will lower for pushing one another
 		else if(collision.gameObject.tag == "Enemy" && knockBool)
@@ -516,6 +523,17 @@ public class Enemy : MonoBehaviour
 			//Now knockback ourselves in the oppostie direction we were facing
 			knockBack(oppDir, (collision.gameObject.GetComponent<Enemy>().elevel * 2));
 		}
+
+		//Lastly check if we are stuck to a wall
+		else if (collision.gameObject.tag == "Wall") 
+		{
+			//Check how far in time we are since we collided
+			if((wallCollideTime + 1.5 < Time.realtimeSinceStartup) && !wallCollide)
+			{
+				//set wallCollide to true
+				wallCollide = true;
+			}
+		}
 		
 	}
 
@@ -538,6 +556,9 @@ public class Enemy : MonoBehaviour
 			//Set player collide to false
 			playerCollide = false;
 		}
+
+		//Always set wall collide to false
+		wallCollide = false;
 	}
 
 	//After corpse has died, and we are an is trigger
