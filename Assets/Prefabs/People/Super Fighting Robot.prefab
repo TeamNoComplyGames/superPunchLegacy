@@ -91,7 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 5096820}
   emoveSpeed: .5
-  speed: 2
+  speed: .800000012
   healthMultiplier: 1
   attack: 3
   ehealth: 0
@@ -137,7 +137,7 @@ Prefab:
       objectReference: {fileID: 9100000, guid: 8e0dd5ba5bf920440ac043620435e6e6, type: 2}
     - target: {fileID: 0}
       propertyPath: speed
-      value: 2
+      value: .800000012
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: healthMultiplier
