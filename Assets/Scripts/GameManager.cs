@@ -419,8 +419,8 @@ public class GameManager : MonoBehaviour
 				//Check if we are about to spawn a boss
 				if(totalSpawnedEnemies % bossRate == 0)
 				{
-					//now check if there aren't anymore enemies
-					if(numEnemies < 1)
+					//now check if there aren't anymore enemies, at east less than 6
+					if(numEnemies < 5)
 					{
 						//increase bosses spawned, and make sure it does not go over
 						bossesSpawned++;
