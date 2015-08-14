@@ -126,8 +126,20 @@ public class GameManager : MonoBehaviour
 		} 
 		else if (gameOver) 
 		{
+			//First get our epitaph index
+			int epitaphIndex = 0;
+			if(user.getLevel() / 10 <= epitaph.Length - 1)
+			{
+				epitaphIndex = user.getLevel() / 10;
+			}
+			else
+			{
+				epitaphIndex = epitaph.Length - 1;
+			}
+
+
 			//Show our game over
-			hud.text = ("GAMEOVER!!!" + "\n" + epitaph[user.getLevel()/10] + "\nHighest Level:" + user.getLevel()
+			hud.text = ("GAMEOVER!!!" + "\n" + epitaph[epitaphIndex] + "\nHighest Level:" + user.getLevel()
 			            + "\nHighest Score:" + score);
 
 			//Show a button in the middle of the screen to restart
