@@ -98,6 +98,7 @@ MonoBehaviour:
   elevel: 0
   attackFrames: 15
   knockFrames: 10
+  knockTime: 1.5
 --- !u!212 &21222656
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -162,6 +163,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: attack
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: knockTime
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

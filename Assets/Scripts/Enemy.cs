@@ -48,6 +48,8 @@ public class Enemy : MonoBehaviour
 	//Knockback value
 	private float knockForce;
 	public int knockFrames;
+	private float knockTime;
+	private float knockStart;
 	private int totalKnockFrames;
 	private bool knockBool;
 
@@ -118,7 +120,8 @@ public class Enemy : MonoBehaviour
 
 		//Set the mass of the rigid body to be really high so they dont go flying
 		defaultMass = enemy.mass;
-		//Our knock force so we do go flying haha
+		//Our knock force so we do go flying haha, and knock time for how long we can be in knockback
+		knockTime = 1.5f;
 		knockForce = 100000;
 		if (isBoss) {
 			//If we are a boss, dont go flying as much
@@ -172,6 +175,25 @@ public class Enemy : MonoBehaviour
 			if (knockFrames > 0) 
 			{
 				--knockFrames;
+
+				Debug.Log(knockFrames);
+
+				//Also check to make sure we havent been in knockback for too long
+				if(knockStart + knockTime < Time.realtimeSinceStartup)
+				{
+					//End the knock back
+
+					//reset our knowckback frames
+					knockFrames = totalKnockFrames;
+					//and make us kinematic again
+					knockBool = false;
+					//And remove the force we added
+					enemy.angularVelocity = 0f;
+					enemy.velocity = Vector2.zero;
+					
+					//set mass back to default value
+					enemy.mass = defaultMass;
+				}
 			} 
 			else 
 			{
@@ -327,26 +349,11 @@ public class Enemy : MonoBehaviour
 		//Set knockback to true
 		knockBool = true;
 
+		//Set a time for knockback, so they cant be in knockback after a certain amount of time
+		knockStart = Time.realtimeSinceStartup;
+
 		//increase enemy mass so it'll runthrough other enemies
 		enemy.mass = defaultMass/2;
-	}
-
-	//Knockback function for enemies, with velocity, not currently used
-	public void knockBack(Vector2 velocity, int amount)
-	{
-		//Knockback according to velocity
-		enemy.AddForce(velocity);
-		
-		//now set the knockframes to the amount
-		knockFrames = knockFrames * amount/2;
-		//Set our knock force to a high amount
-		knockForce = knockForce + (amount * 2000);
-		if (knockForce > 1750000) 
-		{
-			knockForce = 1750000;
-		}
-		//Set knockback to true
-		knockBool = true;
 	}
 
 	//Our explosion coroutine
@@ -476,10 +483,6 @@ public class Enemy : MonoBehaviour
 
 					//impact pause from the player
 					actionCamera.startImpact ();
-				}
-				else
-				{
-					Debug.Log("ajdlkasjld");
 				}
 
 				//Reset attack frames
