@@ -18,6 +18,8 @@ public class PlayerSave
 	{
 		level = 0;
 		score = 0;
+		mapIndex = 0;
+		charIndex = 0;
 	}
 
 	//Set and get methods
