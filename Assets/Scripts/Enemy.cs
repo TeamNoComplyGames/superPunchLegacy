@@ -180,8 +180,6 @@ public class Enemy : MonoBehaviour
 			{
 				--knockFrames;
 
-				Debug.Log(knockFrames);
-
 				//Also check to make sure we havent been in knockback for too long
 				if(knockStart + knockTime < Time.realtimeSinceStartup)
 				{
@@ -264,13 +262,6 @@ public class Enemy : MonoBehaviour
 	//Function to move our player
 	void Move ()
 	{
-		//Get our speed according to our current level
-		//Using enemy skill
-		float superSpeed = emoveSpeed + (elevel * speed / 15);
-
-		//Get our movement vector
-		Vector2 move = Vector2.MoveTowards(transform.position, player.transform.position, superSpeed * Time.deltaTime);
-
 		//Get our angle stuff
 		float h = transform.position.x - player.transform.position.x;
 		float v = transform.position.y - player.transform.position.y;
@@ -312,9 +303,60 @@ public class Enemy : MonoBehaviour
 				}
 			}
 		}
+
+
+		//Get our speed according to our current level
+		//Using enemy skill
+		float superSpeed = emoveSpeed + (elevel * speed / 8);
+		
+		//movement vector
+		Vector2 move;
+		
+		//Now check if we are colliding with a wall, Failsafe to stop enemies from getting stuck on objects!
+		if (wallCollide) {
+			
+			//Amount we want to move out of the way
+			float moveAmount = 75.0f;
+			
+			//Our move towards vector
+			Vector2 towards;
+			
+			//Check which is greater
+			if (Mathf.Abs (h * 100) > Mathf.Abs (v * 100)) {
+				//Then increase its X, and make y zero
+				if (player.transform.position.y < 0) {
+					//Then increase its Y, and make x zero
+					towards = new Vector2 (0, player.transform.position.y - moveAmount);
+				} else {
+					//Then increase its Y, and make x zero
+					towards = new Vector2 (0, player.transform.position.y + moveAmount);
+				}
+				
+				move = Vector2.MoveTowards (transform.position, towards, superSpeed * Time.deltaTime);
+				
+			} 
+			else 
+			{
+				//Then increase its X, and make y zero
+				if (player.transform.position.x < 0) {
+					towards = new Vector2 (player.transform.position.x + moveAmount, 0);
+				} else {
+					towards = new Vector2 (player.transform.position.x - moveAmount, 0);
+				}
+				
+				move = Vector2.MoveTowards (transform.position, towards, superSpeed * Time.deltaTime);
+			}
+		} 
+		else 
+		{
+			//Get our movement vector
+			move = Vector2.MoveTowards(transform.position, player.transform.position, superSpeed * Time.deltaTime);
+		}
+
+
 		
 		//Get the position we want to move to, and go to it using move towards
-		transform.position =  move;
+		enemy.MovePosition(move);
 	}
 
 	//Knockback function for enemies, with direction
@@ -528,7 +570,7 @@ public class Enemy : MonoBehaviour
 		else if (collision.gameObject.tag == "Wall") 
 		{
 			//Check how far in time we are since we collided
-			if((wallCollideTime + 1.5 < Time.realtimeSinceStartup) && !wallCollide)
+			if((wallCollideTime + 2.0f < Time.realtimeSinceStartup) && !wallCollide)
 			{
 				//set wallCollide to true
 				wallCollide = true;
