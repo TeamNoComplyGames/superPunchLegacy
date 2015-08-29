@@ -36,8 +36,14 @@ public class GameManager : MonoBehaviour
 	public int bossRate;
 	private bool bossMode;
 
+	//Our Maps
+	public Sprite[] maps;
+	private SpriteRenderer gameMap;
+
 	//Our object prefabs
-	public GameObject[] objects;
+	private GameObject[][] mapObjects;
+	public GameObject[] mapOneObjects;
+	public GameObject[] mapTwoObjects;
 	//Suggest max objects as 7
 	public int maxObjects;
 
@@ -96,6 +102,16 @@ public class GameManager : MonoBehaviour
 
 		//Show our controls
 		StartCoroutine("controlsFlash");
+
+		//Get our map
+		gameMap = GameObject.Find ("Map").GetComponent<SpriteRenderer>();
+		//set it to the saved map
+		gameMap.sprite = maps[SaveManager.getMap()];
+
+		//Now set up our map objects
+		mapObjects = new GameObject[2][];
+		mapObjects [0] = mapOneObjects;
+		mapObjects [1] = mapTwoObjects;
 
 		//Spawn our objects
 		genObjects ();
@@ -595,12 +611,12 @@ public class GameManager : MonoBehaviour
 			
 		//Now re-create our spawn rates
 		//Get our enemy index
-		int objectsIndex = (int)Mathf.Floor (UnityEngine.Random.Range (0, objects.Length));
+		int objectsIndex = (int)Mathf.Floor (UnityEngine.Random.Range (0, mapObjects[SaveManager.getMap()].Length));
 		
 		//Try catch for index out of range
 		try {
 			//create a copy of our gameobject
-			Instantiate (objects [objectsIndex], spawnPos, Quaternion.identity);
+			Instantiate (mapObjects[SaveManager.getMap()][objectsIndex], spawnPos, Quaternion.identity);
 		} catch (IndexOutOfRangeException ex) {
 			//Print our exception to the console
 			print (ex);

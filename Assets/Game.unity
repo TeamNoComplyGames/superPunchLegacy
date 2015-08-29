@@ -1536,10 +1536,17 @@ MonoBehaviour:
   - {fileID: 160784, guid: c8e56cf4b8e06e74f81c2f58ef96ed9f, type: 2}
   maxEnemies: 50
   bossRate: 75
-  objects:
+  maps:
+  - {fileID: 21300000, guid: ce73f11717a644448b29e0a4c3633c59, type: 3}
+  - {fileID: 21300000, guid: 5af43eb87109b1f419ba5ec1d7b60bb0, type: 3}
+  mapOneObjects:
+  - {fileID: 168190, guid: 1afdde9cc25a7c9409eb6681097e8cfa, type: 2}
+  - {fileID: 168190, guid: 7228aae2a9c0f4f44a2ea326fcb20336, type: 2}
+  - {fileID: 168190, guid: d8e3b8e2185db014187fabb518b50c30, type: 2}
+  mapTwoObjects:
+  - {fileID: 168190, guid: 7228aae2a9c0f4f44a2ea326fcb20336, type: 2}
   - {fileID: 168190, guid: 1afdde9cc25a7c9409eb6681097e8cfa, type: 2}
   - {fileID: 168190, guid: d8e3b8e2185db014187fabb518b50c30, type: 2}
-  - {fileID: 168190, guid: 7228aae2a9c0f4f44a2ea326fcb20336, type: 2}
   maxObjects: 10
 --- !u!1 &1146799253
 GameObject:
