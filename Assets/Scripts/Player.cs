@@ -106,6 +106,9 @@ public class Player : MonoBehaviour
 			}
 			//Set our gameover text
 			gameManager.setGameStatus(false);
+
+			//set health to zero
+			health = 0;
 		} 
 		else 
 		{
@@ -164,7 +167,7 @@ public class Player : MonoBehaviour
 			}
 
 			//Now check if we are attacking for health regen
-			if(healthRegen >= healthRegenRate)
+			if(healthRegen >= healthRegenRate && !gameManager.getGameStatus() && !PauseMenu.paused)
 			{
 				//Set health regen to zero
 				healthRegen = 0;

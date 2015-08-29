@@ -7,7 +7,7 @@ public class PauseMenu : MonoBehaviour
 	public GameObject pauseMenu;
 
 	//our boolean so if we are paused
-	private bool paused;
+	public static bool paused;
 
 	//Our game manager
 	GameManager gameManager;
