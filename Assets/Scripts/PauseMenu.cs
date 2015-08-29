@@ -38,10 +38,7 @@ public class PauseMenu : MonoBehaviour
 		{
 			if (Input.GetKeyDown (KeyCode.KeypadEnter) || Input.GetKeyDown ("return")) 
 			{
-				//resume the game
-				paused = false;
-				pauseMenu.SetActive (false);
-				Time.timeScale = 1;
+				resumeGame();
 			}
 			else if (Input.GetKeyDown("escape"))
 			{
@@ -49,5 +46,13 @@ public class PauseMenu : MonoBehaviour
 				Application.Quit();
 			}
 		}
+	}
+
+	public void resumeGame()
+	{
+		//resume the game
+		paused = false;
+		pauseMenu.SetActive (false);
+		Time.timeScale = 1;
 	}
 }
