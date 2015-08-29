@@ -1544,9 +1544,9 @@ MonoBehaviour:
   - {fileID: 168190, guid: 7228aae2a9c0f4f44a2ea326fcb20336, type: 2}
   - {fileID: 168190, guid: d8e3b8e2185db014187fabb518b50c30, type: 2}
   mapTwoObjects:
-  - {fileID: 168190, guid: 7228aae2a9c0f4f44a2ea326fcb20336, type: 2}
-  - {fileID: 168190, guid: 1afdde9cc25a7c9409eb6681097e8cfa, type: 2}
-  - {fileID: 168190, guid: d8e3b8e2185db014187fabb518b50c30, type: 2}
+  - {fileID: 168190, guid: e65969c0e56ac2a41a018929a526af22, type: 2}
+  - {fileID: 168190, guid: ff17568aeb6da274b8c1d8e2e56dae47, type: 2}
+  - {fileID: 168190, guid: a360bad2ad5d4a5418255c3203243226, type: 2}
   maxObjects: 10
 --- !u!1 &1146799253
 GameObject:
