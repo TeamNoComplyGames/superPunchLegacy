@@ -105,10 +105,6 @@ To Edit in Unity: Simple download the zip and extract, and everything should wor
 
 To Install and Play: testers should contact me via E-mail, but this will eventually be released on mobile and desktop
 
-## License
+# LICENSE
 
-All Assets and rights of the games are reserved to No Comply Games
-
-However this code is open-source and may be used to help in your own projects
-
-P.S I don't know much about each liscences haha
+Licensed under the [Apache License 2.0](http://choosealicense.com/licenses/apache-2.0/)
