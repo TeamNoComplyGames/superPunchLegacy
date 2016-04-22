@@ -412,7 +412,7 @@ public class Player : MonoBehaviour
 				float enemyX = collision.gameObject.transform.position.x;
 				float enemyY = collision.gameObject.transform.position.y;
 				//Our window for our punch range
-				float window = .15f;
+				float window = .55f;
 
 				//Deal damage if we are facing the right direction, and they are not too above or around us
 				if((dir == 1 && enemyX >= playerX && enemyY <= (playerY + window) && enemyY >= (playerY - window)) ||
