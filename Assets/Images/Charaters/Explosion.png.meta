@@ -23,7 +23,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -43,16 +43,22 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: WebGL
+    maxTextureSize: 1024
+    textureFormat: -5
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
     sprites:
     - name: Explosion_0
@@ -65,6 +71,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 20}
+        - {x: -19, y: 18}
+        - {x: -19, y: -17}
+        - {x: -12, y: -20}
+        - {x: 13, y: -20}
+        - {x: 19, y: -11}
+        - {x: 19, y: 14}
+        - {x: 17, y: 20}
     - name: Explosion_1
       rect:
         serializedVersion: 2
@@ -75,6 +90,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: 27}
+        - {x: -30.5, y: 19}
+        - {x: -30.5, y: -22}
+        - {x: -27.5, y: -27}
+        - {x: 17.5, y: -27}
+        - {x: 30.5, y: -20}
+        - {x: 30.5, y: 10}
+        - {x: 24.5, y: 27}
     - name: Explosion_2
       rect:
         serializedVersion: 2
@@ -85,6 +109,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 33.5}
+        - {x: -36, y: 14.5}
+        - {x: -36, y: -33.5}
+        - {x: 36, y: -33.5}
+        - {x: 36, y: 14.5}
+        - {x: 23, y: 33.5}
     - name: Explosion_3
       rect:
         serializedVersion: 2
@@ -95,6 +126,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: 27}
+        - {x: -30.5, y: 19}
+        - {x: -30.5, y: -22}
+        - {x: -27.5, y: -27}
+        - {x: 17.5, y: -27}
+        - {x: 30.5, y: -20}
+        - {x: 30.5, y: 10}
+        - {x: 24.5, y: 27}
     - name: Explosion_4
       rect:
         serializedVersion: 2
@@ -105,6 +145,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Explosion_5
       rect:
         serializedVersion: 2
@@ -115,6 +156,8 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

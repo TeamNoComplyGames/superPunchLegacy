@@ -33,7 +33,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -53,16 +53,22 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: WebGL
+    maxTextureSize: 1024
+    textureFormat: -5
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
     sprites:
     - name: GoldenTigeranmations_0
@@ -75,6 +81,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.5, y: 40.5}
+        - {x: -14.5, y: 40.5}
+        - {x: -16.5, y: 36.5}
+        - {x: -16.5, y: -35.5}
+        - {x: -13.5, y: -40.5}
+        - {x: 10.5, y: -40.5}
+        - {x: 16.5, y: -24.5}
+        - {x: 16.5, y: 7.5}
+        - {x: 14.5, y: 28.5}
     - name: GoldenTigeranmations_1
       rect:
         serializedVersion: 2
@@ -85,6 +101,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: GoldenTigeranmations_2
       rect:
         serializedVersion: 2
@@ -95,6 +112,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 40.5}
+        - {x: -16, y: -39.5}
+        - {x: -15, y: -40.5}
+        - {x: 16, y: -40.5}
+        - {x: 16, y: 37.5}
+        - {x: 12, y: 40.5}
     - name: GoldenTigeranmations_3
       rect:
         serializedVersion: 2
@@ -105,6 +129,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: GoldenTigeranmations_4
       rect:
         serializedVersion: 2
@@ -115,6 +140,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 39.5}
+        - {x: -46, y: 13.5}
+        - {x: -46, y: -18.5}
+        - {x: 5, y: -39.5}
+        - {x: 31, y: -39.5}
+        - {x: 46, y: -31.5}
+        - {x: 46, y: 39.5}
     - name: GoldenTigeranmations_5
       rect:
         serializedVersion: 2
@@ -125,6 +158,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29.5, y: -4}
+        - {x: -26.5, y: -8}
+        - {x: 0.5, y: -38}
+        - {x: 18.5, y: -38}
+        - {x: 29.5, y: -8}
+        - {x: 29.5, y: 38}
+        - {x: -22.5, y: 38}
+        - {x: -29.5, y: 36}
     - name: GoldenTigeranmations_6
       rect:
         serializedVersion: 2
@@ -135,6 +177,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 39.5}
+        - {x: -46, y: 15.5}
+        - {x: -46, y: -3.5}
+        - {x: -45, y: -5.5}
+        - {x: -42, y: -6.5}
+        - {x: 6, y: -39.5}
+        - {x: 30, y: -39.5}
+        - {x: 46, y: -18.5}
+        - {x: 46, y: 14.5}
+        - {x: 29, y: 39.5}
     - name: GoldenTigeranmations_7
       rect:
         serializedVersion: 2
@@ -145,6 +198,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 40.5}
+        - {x: -31, y: 16.5}
+        - {x: -31, y: -0.5}
+        - {x: 11, y: -40.5}
+        - {x: 31, y: -40.5}
+        - {x: 31, y: 40.5}
     - name: GoldenTigeranmations_8
       rect:
         serializedVersion: 2
@@ -155,6 +215,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 40.5}
+        - {x: -16.5, y: 24.5}
+        - {x: -16.5, y: -32.5}
+        - {x: -13.5, y: -39.5}
+        - {x: -10.5, y: -40.5}
+        - {x: 16.5, y: -40.5}
+        - {x: 16.5, y: 40.5}
     - name: GoldenTigeranmations_9
       rect:
         serializedVersion: 2
@@ -165,6 +233,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: GoldenTigeranmations_10
       rect:
         serializedVersion: 2
@@ -175,6 +244,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 40.5}
+        - {x: -16, y: 31.5}
+        - {x: -16, y: -40.5}
+        - {x: 16, y: -40.5}
+        - {x: 16, y: 40.5}
     - name: GoldenTigeranmations_11
       rect:
         serializedVersion: 2
@@ -185,6 +260,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: GoldenTigeranmations_12
       rect:
         serializedVersion: 2
@@ -195,6 +271,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 39.5}
+        - {x: -29, y: 36.5}
+        - {x: -46, y: 19.5}
+        - {x: -46, y: -19.5}
+        - {x: -31, y: -39.5}
+        - {x: -5, y: -39.5}
+        - {x: 46, y: -26.5}
+        - {x: 46, y: 22.5}
+        - {x: 31, y: 39.5}
     - name: GoldenTigeranmations_13
       rect:
         serializedVersion: 2
@@ -205,6 +291,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.5, y: 38}
+        - {x: -29.5, y: 35}
+        - {x: -29.5, y: -6}
+        - {x: -18.5, y: -38}
+        - {x: -2.5, y: -38}
+        - {x: 29.5, y: -5}
+        - {x: 29.5, y: 15}
+        - {x: -1.5, y: 38}
     - name: GoldenTigeranmations_14
       rect:
         serializedVersion: 2
@@ -215,6 +310,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34, y: 39.5}
+        - {x: -46, y: 39.5}
+        - {x: -46, y: -26.5}
+        - {x: -42, y: -39.5}
+        - {x: -6, y: -39.5}
+        - {x: 46, y: -9.5}
+        - {x: 46, y: 15.5}
+        - {x: 38, y: 38.5}
     - name: GoldenTigeranmations_15
       rect:
         serializedVersion: 2
@@ -225,6 +329,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 40.5}
+        - {x: -31, y: -40.5}
+        - {x: 4, y: -40.5}
+        - {x: 31, y: -23.5}
+        - {x: 31, y: 28.5}
+        - {x: 23, y: 40.5}
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

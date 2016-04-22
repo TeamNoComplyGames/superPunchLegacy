@@ -41,7 +41,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -61,16 +61,22 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: WebGL
+    maxTextureSize: 1024
+    textureFormat: -5
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
     sprites:
     - name: spooky_0
@@ -81,8 +87,18 @@ TextureImporter:
         width: 47
         height: 46
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 23}
+        - {x: -13.5, y: 22}
+        - {x: -23.5, y: 7}
+        - {x: -23.5, y: -13}
+        - {x: -17.5, y: -23}
+        - {x: 20.5, y: -23}
+        - {x: 23.5, y: -15}
+        - {x: 23.5, y: 15}
+        - {x: 13.5, y: 23}
     - name: spooky_1
       rect:
         serializedVersion: 2
@@ -91,8 +107,18 @@ TextureImporter:
         width: 47
         height: 53
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.5, y: 26.5}
+        - {x: -19.5, y: 26.5}
+        - {x: -23.5, y: 11.5}
+        - {x: -23.5, y: -15.5}
+        - {x: -14.5, y: -21.5}
+        - {x: 13.5, y: -21.5}
+        - {x: 22.5, y: -11.5}
+        - {x: 23.5, y: -9.5}
+        - {x: 23.5, y: 12.5}
     - name: spooky_2
       rect:
         serializedVersion: 2
@@ -101,8 +127,17 @@ TextureImporter:
         width: 40
         height: 46
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 23}
+        - {x: -19, y: 23}
+        - {x: -20, y: 18}
+        - {x: -20, y: -23}
+        - {x: 12, y: -23}
+        - {x: 20, y: -18}
+        - {x: 20, y: 8}
+        - {x: 16, y: 22}
     - name: spooky_3
       rect:
         serializedVersion: 2
@@ -111,8 +146,16 @@ TextureImporter:
         width: 40
         height: 56
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 28}
+        - {x: -20, y: 17}
+        - {x: -20, y: -10}
+        - {x: -10, y: -20}
+        - {x: 20, y: -20}
+        - {x: 20, y: 26}
+        - {x: 17, y: 28}
     - name: spooky_4
       rect:
         serializedVersion: 2
@@ -121,8 +164,18 @@ TextureImporter:
         width: 47
         height: 52
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 26}
+        - {x: -13.5, y: 25}
+        - {x: -23.5, y: 10}
+        - {x: -23.5, y: -10}
+        - {x: -16.5, y: -22}
+        - {x: 14.5, y: -22}
+        - {x: 23.5, y: -11}
+        - {x: 23.5, y: 13}
+        - {x: 9.5, y: 26}
     - name: spooky_5
       rect:
         serializedVersion: 2
@@ -131,8 +184,18 @@ TextureImporter:
         width: 47
         height: 46
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 23}
+        - {x: -13.5, y: 22}
+        - {x: -23.5, y: 7}
+        - {x: -23.5, y: -13}
+        - {x: -17.5, y: -23}
+        - {x: 20.5, y: -23}
+        - {x: 23.5, y: -15}
+        - {x: 23.5, y: 15}
+        - {x: 13.5, y: 23}
     - name: spooky_6
       rect:
         serializedVersion: 2
@@ -141,8 +204,17 @@ TextureImporter:
         width: 40
         height: 46
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 23}
+        - {x: -16, y: 22}
+        - {x: -20, y: 3}
+        - {x: -20, y: -17}
+        - {x: -12, y: -23}
+        - {x: 20, y: -23}
+        - {x: 20, y: 20}
+        - {x: 16, y: 23}
     - name: spooky_7
       rect:
         serializedVersion: 2
@@ -151,8 +223,18 @@ TextureImporter:
         width: 47
         height: 53
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.5, y: 26.5}
+        - {x: -19.5, y: 26.5}
+        - {x: -23.5, y: 11.5}
+        - {x: -23.5, y: -15.5}
+        - {x: -14.5, y: -21.5}
+        - {x: 13.5, y: -21.5}
+        - {x: 22.5, y: -11.5}
+        - {x: 23.5, y: -9.5}
+        - {x: 23.5, y: 12.5}
     - name: spooky_8
       rect:
         serializedVersion: 2
@@ -161,8 +243,17 @@ TextureImporter:
         width: 40
         height: 46
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 23}
+        - {x: -19, y: 23}
+        - {x: -20, y: 18}
+        - {x: -20, y: -23}
+        - {x: 12, y: -23}
+        - {x: 20, y: -18}
+        - {x: 20, y: 8}
+        - {x: 16, y: 22}
     - name: spooky_9
       rect:
         serializedVersion: 2
@@ -171,8 +262,9 @@ TextureImporter:
         width: 27
         height: 53
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: spooky_10
       rect:
         serializedVersion: 2
@@ -181,8 +273,15 @@ TextureImporter:
         width: 36
         height: 45
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 22.5}
+        - {x: -18, y: -22.5}
+        - {x: 13, y: -22.5}
+        - {x: 18, y: -21.5}
+        - {x: 18, y: 18.5}
+        - {x: 17, y: 22.5}
     - name: spooky_11
       rect:
         serializedVersion: 2
@@ -191,8 +290,9 @@ TextureImporter:
         width: 27
         height: 52
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: spooky_12
       rect:
         serializedVersion: 2
@@ -201,8 +301,15 @@ TextureImporter:
         width: 34
         height: 45
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 22.5}
+        - {x: -17, y: -22.5}
+        - {x: 15, y: -22.5}
+        - {x: 17, y: -15.5}
+        - {x: 17, y: 13.5}
+        - {x: 9, y: 22.5}
     - name: spooky_13
       rect:
         serializedVersion: 2
@@ -211,8 +318,9 @@ TextureImporter:
         width: 27
         height: 45
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: spooky_14
       rect:
         serializedVersion: 2
@@ -221,8 +329,17 @@ TextureImporter:
         width: 36
         height: 45
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 22.5}
+        - {x: -17, y: 19.5}
+        - {x: -18, y: 13.5}
+        - {x: -18, y: -20.5}
+        - {x: -13, y: -22.5}
+        - {x: 18, y: -22.5}
+        - {x: 18, y: 18.5}
+        - {x: 16, y: 22.5}
     - name: spooky_15
       rect:
         serializedVersion: 2
@@ -231,8 +348,9 @@ TextureImporter:
         width: 27
         height: 53
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: spooky_16
       rect:
         serializedVersion: 2
@@ -241,8 +359,16 @@ TextureImporter:
         width: 34
         height: 45
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 22.5}
+        - {x: -17, y: 12.5}
+        - {x: -17, y: -17.5}
+        - {x: -11, y: -22.5}
+        - {x: 17, y: -22.5}
+        - {x: 17, y: 18.5}
+        - {x: 15, y: 22.5}
     - name: spooky_17
       rect:
         serializedVersion: 2
@@ -251,8 +377,9 @@ TextureImporter:
         width: 13
         height: 29
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: spooky_18
       rect:
         serializedVersion: 2
@@ -261,8 +388,9 @@ TextureImporter:
         width: 13
         height: 27
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: spooky_19
       rect:
         serializedVersion: 2
@@ -271,8 +399,9 @@ TextureImporter:
         width: 13
         height: 24
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: spooky_20
       rect:
         serializedVersion: 2
@@ -281,8 +410,9 @@ TextureImporter:
         width: 13
         height: 18
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: spooky_21
       rect:
         serializedVersion: 2
@@ -291,8 +421,9 @@ TextureImporter:
         width: 15
         height: 8
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: spooky_22
       rect:
         serializedVersion: 2
@@ -301,8 +432,9 @@ TextureImporter:
         width: 15
         height: 8
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: spooky_23
       rect:
         serializedVersion: 2
@@ -311,8 +443,10 @@ TextureImporter:
         width: 33
         height: 4
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

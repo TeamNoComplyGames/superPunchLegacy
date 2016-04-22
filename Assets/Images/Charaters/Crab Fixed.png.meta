@@ -78,7 +78,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -98,16 +98,22 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: WebGL
+    maxTextureSize: 1024
+    textureFormat: -5
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
     sprites:
     - name: ART Fixed_0
@@ -120,6 +126,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_1
       rect:
         serializedVersion: 2
@@ -130,6 +137,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_2
       rect:
         serializedVersion: 2
@@ -140,6 +148,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_3
       rect:
         serializedVersion: 2
@@ -150,6 +159,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.899994, y: 17.325012}
+        - {x: -19.899994, y: -16.674988}
+        - {x: 20.100006, y: -16.674988}
+        - {x: 21.100006, y: -14.674988}
+        - {x: 21.100006, y: 9.325012}
+        - {x: 18.100006, y: 17.325012}
     - name: ART Fixed_4
       rect:
         serializedVersion: 2
@@ -160,6 +176,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.1, y: 17.075012}
+        - {x: -8.9, y: 17.075012}
+        - {x: -17.9, y: 12.075012}
+        - {x: -19.9, y: 10.075012}
+        - {x: -19.9, y: -15.924988}
+        - {x: -15.9, y: -16.924988}
+        - {x: 17.1, y: -16.924988}
+        - {x: 21.1, y: -11.924988}
+        - {x: 21.1, y: 9.075012}
+        - {x: 19.1, y: 15.075012}
     - name: ART Fixed_5
       rect:
         serializedVersion: 2
@@ -170,6 +197,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_6
       rect:
         serializedVersion: 2
@@ -180,6 +208,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_7
       rect:
         serializedVersion: 2
@@ -190,6 +219,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_8
       rect:
         serializedVersion: 2
@@ -200,6 +230,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_9
       rect:
         serializedVersion: 2
@@ -210,6 +241,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_10
       rect:
         serializedVersion: 2
@@ -220,6 +252,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_11
       rect:
         serializedVersion: 2
@@ -230,6 +263,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_12
       rect:
         serializedVersion: 2
@@ -240,6 +274,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_13
       rect:
         serializedVersion: 2
@@ -250,6 +285,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_14
       rect:
         serializedVersion: 2
@@ -260,6 +296,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_15
       rect:
         serializedVersion: 2
@@ -270,6 +307,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_16
       rect:
         serializedVersion: 2
@@ -280,6 +318,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 16}
+        - {x: -22, y: -16}
+        - {x: 15, y: -16}
+        - {x: 22, y: -8}
+        - {x: 22, y: 16}
     - name: ART Fixed_17
       rect:
         serializedVersion: 2
@@ -290,6 +334,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: -16}
+        - {x: 18, y: -16}
+        - {x: 22, y: -6}
+        - {x: 22, y: 16}
+        - {x: -22, y: 16}
+        - {x: -22, y: -16}
+        - {x: -3, y: -16}
+        - {x: -2, y: -15}
+        - {x: -3, y: -12}
     - name: ART Fixed_18
       rect:
         serializedVersion: 2
@@ -300,6 +354,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 16}
+        - {x: -22, y: -16}
+        - {x: 15, y: -16}
+        - {x: 22, y: -8}
+        - {x: 22, y: 16}
     - name: ART Fixed_19
       rect:
         serializedVersion: 2
@@ -310,6 +370,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 16}
+        - {x: -22, y: -16}
+        - {x: 15, y: -16}
+        - {x: 22, y: -8}
+        - {x: 22, y: 16}
     - name: ART Fixed_20
       rect:
         serializedVersion: 2
@@ -320,6 +386,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 16}
+        - {x: -22, y: -16}
+        - {x: 15, y: -16}
+        - {x: 22, y: -8}
+        - {x: 22, y: 16}
     - name: ART Fixed_21
       rect:
         serializedVersion: 2
@@ -330,6 +402,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_22
       rect:
         serializedVersion: 2
@@ -340,6 +413,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_23
       rect:
         serializedVersion: 2
@@ -350,6 +424,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_24
       rect:
         serializedVersion: 2
@@ -360,6 +435,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_25
       rect:
         serializedVersion: 2
@@ -370,6 +446,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_26
       rect:
         serializedVersion: 2
@@ -380,6 +457,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_27
       rect:
         serializedVersion: 2
@@ -390,6 +468,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_28
       rect:
         serializedVersion: 2
@@ -400,6 +479,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_29
       rect:
         serializedVersion: 2
@@ -410,6 +490,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_30
       rect:
         serializedVersion: 2
@@ -420,6 +501,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_31
       rect:
         serializedVersion: 2
@@ -430,6 +512,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_32
       rect:
         serializedVersion: 2
@@ -440,6 +523,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_33
       rect:
         serializedVersion: 2
@@ -450,6 +534,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_34
       rect:
         serializedVersion: 2
@@ -460,6 +545,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_35
       rect:
         serializedVersion: 2
@@ -470,6 +556,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_36
       rect:
         serializedVersion: 2
@@ -480,6 +567,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_37
       rect:
         serializedVersion: 2
@@ -490,6 +578,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_38
       rect:
         serializedVersion: 2
@@ -500,6 +589,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_39
       rect:
         serializedVersion: 2
@@ -510,6 +600,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_40
       rect:
         serializedVersion: 2
@@ -520,6 +611,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_41
       rect:
         serializedVersion: 2
@@ -530,6 +622,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_42
       rect:
         serializedVersion: 2
@@ -540,6 +633,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_43
       rect:
         serializedVersion: 2
@@ -550,6 +644,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_44
       rect:
         serializedVersion: 2
@@ -560,6 +655,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_45
       rect:
         serializedVersion: 2
@@ -570,6 +666,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_46
       rect:
         serializedVersion: 2
@@ -580,6 +677,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_47
       rect:
         serializedVersion: 2
@@ -590,6 +688,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_48
       rect:
         serializedVersion: 2
@@ -600,6 +699,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_49
       rect:
         serializedVersion: 2
@@ -610,6 +710,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_50
       rect:
         serializedVersion: 2
@@ -620,6 +721,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_51
       rect:
         serializedVersion: 2
@@ -630,6 +732,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_52
       rect:
         serializedVersion: 2
@@ -640,6 +743,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_53
       rect:
         serializedVersion: 2
@@ -650,6 +754,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.0750122, y: 20.27501}
+        - {x: -7.924988, y: 16.27501}
+        - {x: -15.924988, y: -0.72499084}
+        - {x: -15.924988, y: -19.72499}
+        - {x: 17.075012, y: -19.72499}
+        - {x: 17.075012, y: 20.27501}
     - name: ART Fixed_54
       rect:
         serializedVersion: 2
@@ -660,6 +771,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.924999, y: -19.974998}
+        - {x: 17.075, y: -19.974998}
+        - {x: 17.075, y: 20.025002}
+        - {x: -13.924999, y: 20.025002}
+        - {x: -14.924999, y: 19.025002}
+        - {x: -15.924999, y: 11.025002}
     - name: ART Fixed_55
       rect:
         serializedVersion: 2
@@ -670,6 +788,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_56
       rect:
         serializedVersion: 2
@@ -680,6 +799,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_57
       rect:
         serializedVersion: 2
@@ -690,6 +810,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_58
       rect:
         serializedVersion: 2
@@ -700,6 +821,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_59
       rect:
         serializedVersion: 2
@@ -710,6 +832,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: ART Fixed_60
       rect:
         serializedVersion: 2
@@ -720,6 +843,8 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

@@ -62,7 +62,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -82,16 +82,22 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: WebGL
+    maxTextureSize: 1024
+    textureFormat: -5
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
     sprites:
     - name: MightyKobra_0
@@ -104,6 +110,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.536797, y: -26.132446}
+        - {x: -23.536797, y: -31.132446}
+        - {x: 13.463203, y: -31.132446}
+        - {x: 26.463203, y: -22.132446}
+        - {x: 26.463203, y: 10.867554}
+        - {x: 20.463203, y: 32.867554}
+        - {x: -22.536797, y: 32.867554}
+        - {x: -25.536797, y: 30.867554}
     - name: MightyKobra_1
       rect:
         serializedVersion: 2
@@ -114,6 +129,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.625977, y: 21.867554}
+        - {x: 21.625977, y: 32.867554}
+        - {x: -18.374023, y: 32.867554}
+        - {x: -23.374023, y: 23.867554}
+        - {x: -23.374023, y: -29.132446}
+        - {x: -17.374023, y: -31.132446}
+        - {x: 15.625977, y: -31.132446}
+        - {x: 18.625977, y: -25.132446}
+        - {x: 18.625977, y: -16.132446}
+        - {x: 24.625977, y: -2.1324463}
     - name: MightyKobra_2
       rect:
         serializedVersion: 2
@@ -124,6 +150,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.89653, y: 32.867554}
+        - {x: -25.89653, y: 22.867554}
+        - {x: -25.89653, y: -29.132446}
+        - {x: -17.89653, y: -31.132446}
+        - {x: 27.10347, y: -31.132446}
+        - {x: 27.10347, y: 32.867554}
     - name: MightyKobra_3
       rect:
         serializedVersion: 2
@@ -134,6 +167,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.048462, y: 31.367554}
+        - {x: -23.048462, y: 18.367554}
+        - {x: -23.048462, y: -13.632446}
+        - {x: -21.048462, y: -27.632446}
+        - {x: -16.048462, y: -29.632446}
+        - {x: 17.951538, y: -29.632446}
+        - {x: 24.951538, y: -12.632446}
+        - {x: 24.951538, y: 26.367554}
+        - {x: 22.951538, y: 31.367554}
     - name: MightyKobra_4
       rect:
         serializedVersion: 2
@@ -144,6 +187,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.536797, y: 32.58185}
+        - {x: -23.536797, y: 21.581848}
+        - {x: -23.536797, y: -5.418152}
+        - {x: -20.536797, y: -31.418152}
+        - {x: 24.463203, y: -31.418152}
+        - {x: 24.463203, y: 26.581848}
+        - {x: 22.463203, y: 32.58185}
     - name: MightyKobra_5
       rect:
         serializedVersion: 2
@@ -154,6 +205,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.625977, y: 30.581848}
+        - {x: -21.374023, y: 30.581848}
+        - {x: -23.374023, y: 21.581848}
+        - {x: -23.374023, y: -9.418152}
+        - {x: -18.374023, y: -25.418152}
+        - {x: -12.374023, y: -29.418152}
+        - {x: 20.625977, y: -29.418152}
+        - {x: 24.625977, y: -12.418152}
+        - {x: 24.625977, y: 17.581848}
+        - {x: 23.625977, y: 20.581848}
     - name: MightyKobra_6
       rect:
         serializedVersion: 2
@@ -164,6 +226,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.211243, y: 32.58185}
+        - {x: -23.211243, y: 25.581848}
+        - {x: -23.211243, y: -14.418152}
+        - {x: -20.211243, y: -29.418152}
+        - {x: -13.211243, y: -31.418152}
+        - {x: 20.788757, y: -31.418152}
+        - {x: 24.788757, y: -19.418152}
+        - {x: 24.788757, y: 24.581848}
+        - {x: 21.788757, y: 32.58185}
     - name: MightyKobra_7
       rect:
         serializedVersion: 2
@@ -174,6 +246,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.048462, y: 65.974915}
+        - {x: -23.048462, y: 55.974915}
+        - {x: -23.048462, y: -17.025085}
+        - {x: -19.048462, y: -60.025085}
+        - {x: -15.048462, y: -64.025085}
+        - {x: 15.951538, y: -64.025085}
+        - {x: 24.951538, y: -25.025085}
+        - {x: 24.951538, y: 65.974915}
     - name: MightyKobra_8
       rect:
         serializedVersion: 2
@@ -184,6 +265,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_9
       rect:
         serializedVersion: 2
@@ -194,6 +276,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_10
       rect:
         serializedVersion: 2
@@ -204,6 +287,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_11
       rect:
         serializedVersion: 2
@@ -214,6 +298,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.289177, y: 65.68921}
+        - {x: -23.289177, y: -23.310791}
+        - {x: -2.289177, y: -64.31079}
+        - {x: 21.710823, y: -64.31079}
+        - {x: 24.710823, y: -63.31079}
+        - {x: 24.710823, y: 65.68921}
     - name: MightyKobra_12
       rect:
         serializedVersion: 2
@@ -224,6 +315,19 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.374023, y: 67.68921}
+        - {x: -23.374023, y: 54.68921}
+        - {x: -23.374023, y: 26.689209}
+        - {x: -10.374023, y: -5.310791}
+        - {x: -8.374023, y: -7.310791}
+        - {x: -19.374023, y: -19.310791}
+        - {x: -23.374023, y: -25.310791}
+        - {x: -23.374023, y: -56.31079}
+        - {x: -16.374023, y: -66.31079}
+        - {x: 10.625977, y: -66.31079}
+        - {x: 24.625977, y: -39.31079}
+        - {x: 24.625977, y: 67.68921}
     - name: MightyKobra_13
       rect:
         serializedVersion: 2
@@ -234,6 +338,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.758453, y: 30.842468}
+        - {x: 9.758453, y: 25.842468}
+        - {x: -42.241547, y: -2.1575317}
+        - {x: -42.241547, y: -24.157532}
+        - {x: -38.241547, y: -29.157532}
+        - {x: 36.758453, y: -29.157532}
+        - {x: 43.758453, y: -11.157532}
+        - {x: 43.758453, y: 23.842468}
+        - {x: 40.758453, y: 30.842468}
     - name: MightyKobra_14
       rect:
         serializedVersion: 2
@@ -244,6 +358,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.421234, y: 29.002197}
+        - {x: -11.578766, y: 19.002197}
+        - {x: -42.578766, y: -2.9978027}
+        - {x: -42.578766, y: -27.997803}
+        - {x: 39.421234, y: -27.997803}
+        - {x: 44.421234, y: -11.997803}
+        - {x: 44.421234, y: 28.002197}
+        - {x: 43.421234, y: 29.002197}
     - name: MightyKobra_15
       rect:
         serializedVersion: 2
@@ -254,6 +377,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.5671, y: -29.443268}
+        - {x: 38.4329, y: -29.443268}
+        - {x: 42.4329, y: -28.443268}
+        - {x: 45.4329, y: -17.443268}
+        - {x: 45.4329, y: 30.556732}
+        - {x: -7.5671005, y: 30.556732}
+        - {x: -44.5671, y: 15.556732}
     - name: MightyKobra_16
       rect:
         serializedVersion: 2
@@ -264,6 +395,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.595673, y: 28.716492}
+        - {x: -42.404327, y: -7.2835083}
+        - {x: -42.404327, y: -28.283508}
+        - {x: 41.595673, y: -28.283508}
+        - {x: 43.595673, y: -24.283508}
+        - {x: 43.595673, y: 21.716492}
+        - {x: 38.595673, y: 28.716492}
     - name: MightyKobra_17
       rect:
         serializedVersion: 2
@@ -274,6 +413,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34.556274, y: 28.716492}
+        - {x: -42.556274, y: 17.716492}
+        - {x: -42.556274, y: -20.283508}
+        - {x: -41.556274, y: -28.283508}
+        - {x: 44.443726, y: -28.283508}
+        - {x: 44.443726, y: -6.2835083}
+        - {x: -7.5562744, y: 28.716492}
     - name: MightyKobra_18
       rect:
         serializedVersion: 2
@@ -284,6 +431,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42.893494, y: -28.283508}
+        - {x: 43.106506, y: -28.283508}
+        - {x: 43.106506, y: -0.2835083}
+        - {x: 42.106506, y: 6.7164917}
+        - {x: -4.8934937, y: 28.716492}
+        - {x: -32.893494, y: 28.716492}
+        - {x: -42.893494, y: 25.716492}
     - name: MightyKobra_19
       rect:
         serializedVersion: 2
@@ -294,6 +449,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.81472, y: 29.770996}
+        - {x: -44.81472, y: 29.770996}
+        - {x: -44.81472, y: -7.229004}
+        - {x: -34.81472, y: -29.229004}
+        - {x: 43.18528, y: -29.229004}
+        - {x: 45.18528, y: -28.229004}
+        - {x: 45.18528, y: 2.770996}
+        - {x: 8.18528, y: 22.770996}
     - name: MightyKobra_20
       rect:
         serializedVersion: 2
@@ -304,6 +468,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35.219048, y: 29.430756}
+        - {x: -40.219048, y: 27.430756}
+        - {x: -42.219048, y: 23.430756}
+        - {x: -42.219048, y: -5.5692444}
+        - {x: -37.219048, y: -27.569244}
+        - {x: 43.780952, y: -27.569244}
+        - {x: 43.780952, y: -1.5692444}
+        - {x: -1.2190475, y: 29.430756}
     - name: MightyKobra_21
       rect:
         serializedVersion: 2
@@ -314,6 +487,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_22
       rect:
         serializedVersion: 2
@@ -324,6 +498,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_23
       rect:
         serializedVersion: 2
@@ -334,6 +509,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_24
       rect:
         serializedVersion: 2
@@ -344,6 +520,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_25
       rect:
         serializedVersion: 2
@@ -354,6 +531,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_26
       rect:
         serializedVersion: 2
@@ -364,6 +542,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_27
       rect:
         serializedVersion: 2
@@ -374,6 +553,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_28
       rect:
         serializedVersion: 2
@@ -384,6 +564,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_29
       rect:
         serializedVersion: 2
@@ -394,6 +575,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_30
       rect:
         serializedVersion: 2
@@ -404,6 +586,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_31
       rect:
         serializedVersion: 2
@@ -414,6 +597,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_32
       rect:
         serializedVersion: 2
@@ -424,6 +608,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_33
       rect:
         serializedVersion: 2
@@ -434,6 +619,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_34
       rect:
         serializedVersion: 2
@@ -444,6 +630,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_35
       rect:
         serializedVersion: 2
@@ -454,6 +641,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_36
       rect:
         serializedVersion: 2
@@ -464,6 +652,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_37
       rect:
         serializedVersion: 2
@@ -474,6 +663,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_38
       rect:
         serializedVersion: 2
@@ -484,6 +674,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_39
       rect:
         serializedVersion: 2
@@ -494,6 +685,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_40
       rect:
         serializedVersion: 2
@@ -504,6 +696,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_41
       rect:
         serializedVersion: 2
@@ -514,6 +707,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_42
       rect:
         serializedVersion: 2
@@ -524,6 +718,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_43
       rect:
         serializedVersion: 2
@@ -534,6 +729,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: MightyKobra_44
       rect:
         serializedVersion: 2
@@ -544,6 +740,8 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

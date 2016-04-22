@@ -33,7 +33,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -53,16 +53,22 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: WebGL
+    maxTextureSize: 1024
+    textureFormat: -5
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
     sprites:
     - name: newattackforeyeguy_0
@@ -73,8 +79,14 @@ TextureImporter:
         width: 39
         height: 64
       alignment: 9
-      pivot: {x: .55145371, y: .756062508}
+      pivot: {x: 0.5514537, y: 0.7560625}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.042595, y: 16.117004}
+        - {x: -20.042595, y: 11.117004}
+        - {x: -20.042595, y: -44.882996}
+        - {x: 17.957405, y: -44.882996}
+        - {x: 17.957405, y: 16.117004}
     - name: newattackforeyeguy_1
       rect:
         serializedVersion: 2
@@ -83,8 +95,14 @@ TextureImporter:
         width: 36
         height: 64
       alignment: 9
-      pivot: {x: .416388184, y: .761288643}
+      pivot: {x: 0.41638818, y: 0.76128864}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.887024, y: 15.805634}
+        - {x: -13.887024, y: -45.194366}
+        - {x: 21.112976, y: -45.194366}
+        - {x: 21.112976, y: 4.8056335}
+        - {x: 16.112976, y: 15.805634}
     - name: newattackforeyeguy_2
       rect:
         serializedVersion: 2
@@ -93,8 +111,38 @@ TextureImporter:
         width: 35
         height: 76
       alignment: 9
-      pivot: {x: .557333827, y: .790442228}
+      pivot: {x: 0.5573338, y: 0.7904422}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6.619232, y: -55.84671}
+        - {x: 15.619232, y: -48.84671}
+        - {x: 15.619232, y: 15.15329}
+        - {x: 13.619232, y: 16.15329}
+        - {x: -12.380768, y: 16.15329}
+        - {x: -17.380768, y: 11.15329}
+        - {x: -18.380768, y: 1.1532898}
+        - {x: -18.380768, y: -18.84671}
+        - {x: -14.380768, y: -19.84671}
+        - {x: -12.380768, y: -15.84671}
+        - {x: -12.380768, y: -13.84671}
+        - {x: -12.380768, y: -14.84671}
+        - {x: -13.380768, y: -19.84671}
+        - {x: -16.380768, y: -19.84671}
+        - {x: -18.380768, y: -22.84671}
+        - {x: -18.380768, y: -49.84671}
+        - {x: -16.380768, y: -49.84671}
+        - {x: -13.380768, y: -46.84671}
+        - {x: -8.380768, y: -39.84671}
+        - {x: -7.380768, y: -33.84671}
+        - {x: -5.380768, y: -33.84671}
+        - {x: -8.380768, y: -40.84671}
+        - {x: -11.380768, y: -46.84671}
+        - {x: -12.380768, y: -53.84671}
+        - {x: -12.380768, y: -55.84671}
+        - {x: -6.380768, y: -55.84671}
+        - {x: -5.380768, y: -54.84671}
+        - {x: -5.380768, y: -51.84671}
+        - {x: -3.3807678, y: -55.84671}
     - name: newattackforeyeguy_3
       rect:
         serializedVersion: 2
@@ -103,8 +151,42 @@ TextureImporter:
         width: 35
         height: 76
       alignment: 9
-      pivot: {x: .452222556, y: .7829566}
+      pivot: {x: 0.45222256, y: 0.7829566}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.236664, y: -49.31711}
+        - {x: 19.236664, y: -49.31711}
+        - {x: 19.236664, y: -22.317108}
+        - {x: 16.236664, y: -18.317108}
+        - {x: 14.236664, y: -18.317108}
+        - {x: 19.236664, y: -18.317108}
+        - {x: 19.236664, y: 14.682892}
+        - {x: 13.236664, y: 16.682892}
+        - {x: -14.763336, y: 16.682892}
+        - {x: -14.763336, y: -47.31711}
+        - {x: -6.763336, y: -47.31711}
+        - {x: -4.763336, y: -45.31711}
+        - {x: -3.7633362, y: -39.31711}
+        - {x: -2.7633362, y: -28.317108}
+        - {x: -2.7633362, y: -25.317108}
+        - {x: -4.763336, y: -23.317108}
+        - {x: -6.763336, y: -23.317108}
+        - {x: -8.763336, y: -25.317108}
+        - {x: -7.763336, y: -22.317108}
+        - {x: -6.763336, y: -23.317108}
+        - {x: -3.7633362, y: -23.317108}
+        - {x: -1.7633362, y: -21.317108}
+        - {x: -2.7633362, y: -34.31711}
+        - {x: -2.7633362, y: -42.31711}
+        - {x: -6.763336, y: -50.31711}
+        - {x: -6.763336, y: -52.31711}
+        - {x: -4.763336, y: -54.31711}
+        - {x: -1.7633362, y: -54.31711}
+        - {x: 1.2366638, y: -55.31711}
+        - {x: 14.236664, y: -55.31711}
+        - {x: 15.236664, y: -52.31711}
+        - {x: 10.236664, y: -39.31711}
+        - {x: 14.236664, y: -45.31711}
     - name: newattackforeyeguy_4
       rect:
         serializedVersion: 2
@@ -113,8 +195,9 @@ TextureImporter:
         width: 68
         height: 29
       alignment: 9
-      pivot: {x: .209816769, y: .465402544}
+      pivot: {x: 0.20981677, y: 0.46540254}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: newattackforeyeguy_5
       rect:
         serializedVersion: 2
@@ -123,8 +206,9 @@ TextureImporter:
         width: 68
         height: 29
       alignment: 9
-      pivot: {x: .214431539, y: .476936072}
+      pivot: {x: 0.21443154, y: 0.47693607}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: newattackforeyeguy_6
       rect:
         serializedVersion: 2
@@ -133,8 +217,9 @@ TextureImporter:
         width: 64
         height: 29
       alignment: 9
-      pivot: {x: .25816837, y: .511533558}
+      pivot: {x: 0.25816837, y: 0.51153356}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: newattackforeyeguy_7
       rect:
         serializedVersion: 2
@@ -143,8 +228,9 @@ TextureImporter:
         width: 64
         height: 29
       alignment: 9
-      pivot: {x: .243937969, y: .48846963}
+      pivot: {x: 0.24393797, y: 0.48846963}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: newattackforeyeguy_8
       rect:
         serializedVersion: 2
@@ -153,8 +239,9 @@ TextureImporter:
         width: 68
         height: 29
       alignment: 9
-      pivot: {x: .785264969, y: .523066044}
+      pivot: {x: 0.78526497, y: 0.52306604}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: newattackforeyeguy_9
       rect:
         serializedVersion: 2
@@ -163,8 +250,9 @@ TextureImporter:
         width: 68
         height: 29
       alignment: 9
-      pivot: {x: .780346572, y: .476935029}
+      pivot: {x: 0.7803466, y: 0.47693503}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: newattackforeyeguy_10
       rect:
         serializedVersion: 2
@@ -173,8 +261,9 @@ TextureImporter:
         width: 64
         height: 29
       alignment: 9
-      pivot: {x: .770693302, y: .481897801}
+      pivot: {x: 0.7706933, y: 0.4818978}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: newattackforeyeguy_11
       rect:
         serializedVersion: 2
@@ -183,8 +272,9 @@ TextureImporter:
         width: 64
         height: 29
       alignment: 9
-      pivot: {x: .779437065, y: .490053385}
+      pivot: {x: 0.77943707, y: 0.4900534}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: newattackforeyeguy_12
       rect:
         serializedVersion: 2
@@ -193,8 +283,22 @@ TextureImporter:
         width: 37
         height: 72
       alignment: 9
-      pivot: {x: .468815982, y: .207542419}
+      pivot: {x: 0.46881598, y: 0.20754242}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.635906, y: 53.689384}
+        - {x: 10.635906, y: 46.689384}
+        - {x: 10.635906, y: 51.689384}
+        - {x: 9.635906, y: 53.689384}
+        - {x: -3.3640938, y: 53.689384}
+        - {x: -5.364094, y: 51.689384}
+        - {x: -5.364094, y: 49.689384}
+        - {x: -7.364094, y: 53.689384}
+        - {x: -16.364094, y: 53.689384}
+        - {x: -16.364094, y: -12.310616}
+        - {x: -15.364094, y: -14.310616}
+        - {x: 18.635906, y: -14.310616}
+        - {x: 18.635906, y: 53.689384}
     - name: newattackforeyeguy_13
       rect:
         serializedVersion: 2
@@ -203,8 +307,14 @@ TextureImporter:
         width: 37
         height: 72
       alignment: 9
-      pivot: {x: .5311836, y: .227573812}
+      pivot: {x: 0.5311836, y: 0.22757381}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.404984, y: 52.346764}
+        - {x: -18.404984, y: -13.653236}
+        - {x: -11.4049835, y: -15.653236}
+        - {x: 17.595016, y: -15.653236}
+        - {x: 17.595016, y: 52.346764}
     - name: newattackforeyeguy_14
       rect:
         serializedVersion: 2
@@ -213,8 +323,34 @@ TextureImporter:
         width: 36
         height: 72
       alignment: 9
-      pivot: {x: .548074484, y: .199530065}
+      pivot: {x: 0.5480745, y: 0.19953007}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.3888855, y: 54.226418}
+        - {x: 6.3888855, y: 52.226418}
+        - {x: 8.3888855, y: 44.226418}
+        - {x: 6.3888855, y: 52.226418}
+        - {x: 6.3888855, y: 54.226418}
+        - {x: -13.6111145, y: 54.226418}
+        - {x: -18.611115, y: 52.226418}
+        - {x: -18.611115, y: 36.226418}
+        - {x: -17.611115, y: 33.226418}
+        - {x: -15.6111145, y: 32.226418}
+        - {x: -12.6111145, y: 33.226418}
+        - {x: -13.6111145, y: 33.226418}
+        - {x: -15.6111145, y: 32.226418}
+        - {x: -18.611115, y: 30.226418}
+        - {x: -18.611115, y: 4.2264175}
+        - {x: -16.611115, y: -7.7735825}
+        - {x: -14.6111145, y: -13.773582}
+        - {x: 13.3888855, y: -13.773582}
+        - {x: 15.3888855, y: -12.773582}
+        - {x: 15.3888855, y: 54.226418}
+      - - {x: -14.6111145, y: 48.226418}
+        - {x: -11.6111145, y: 49.226418}
+        - {x: -11.6111145, y: 54.226418}
+        - {x: -17.611115, y: 54.226418}
+        - {x: -17.611115, y: 52.226418}
     - name: newattackforeyeguy_15
       rect:
         serializedVersion: 2
@@ -223,8 +359,33 @@ TextureImporter:
         width: 35
         height: 72
       alignment: 9
-      pivot: {x: .516483009, y: .235586375}
+      pivot: {x: 0.516483, y: 0.23558637}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.2247925, y: 29.809715}
+        - {x: 11.2247925, y: 27.809715}
+        - {x: 8.2247925, y: 26.809715}
+        - {x: 6.2247925, y: 24.809715}
+        - {x: 6.2247925, y: 22.809715}
+        - {x: 6.2247925, y: 27.809715}
+        - {x: 9.2247925, y: 28.809715}
+        - {x: 13.2247925, y: 29.809715}
+        - {x: 16.224792, y: 29.809715}
+        - {x: 16.224792, y: 44.809715}
+        - {x: 10.2247925, y: 51.809715}
+        - {x: -16.775208, y: 51.809715}
+        - {x: -16.775208, y: -15.190285}
+        - {x: -11.7752075, y: -16.190285}
+        - {x: 14.2247925, y: -16.190285}
+        - {x: 16.224792, y: -12.190285}
+        - {x: 16.224792, y: 29.809715}
+      - - {x: 10.2247925, y: 51.809715}
+        - {x: 10.2247925, y: 47.809715}
+        - {x: 12.2247925, y: 45.809715}
+        - {x: 14.2247925, y: 45.809715}
+        - {x: 16.224792, y: 47.809715}
+        - {x: 16.224792, y: 51.809715}
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

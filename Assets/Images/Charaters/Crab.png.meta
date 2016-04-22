@@ -70,7 +70,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -90,16 +90,22 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: WebGL
+    maxTextureSize: 1024
+    textureFormat: -5
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
     sprites:
     - name: Crab_0
@@ -110,8 +116,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_1
       rect:
         serializedVersion: 2
@@ -120,8 +127,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_2
       rect:
         serializedVersion: 2
@@ -130,8 +138,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_3
       rect:
         serializedVersion: 2
@@ -140,8 +149,17 @@ TextureImporter:
         width: 41
         height: 34
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 17}
+        - {x: -20.5, y: 13}
+        - {x: -20.5, y: -12}
+        - {x: -14.5, y: -17}
+        - {x: 10.5, y: -17}
+        - {x: 20.5, y: -11}
+        - {x: 20.5, y: 14}
+        - {x: 19.5, y: 17}
     - name: Crab_4
       rect:
         serializedVersion: 2
@@ -150,8 +168,17 @@ TextureImporter:
         width: 41
         height: 34
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 17}
+        - {x: -20.5, y: 13}
+        - {x: -20.5, y: -12}
+        - {x: -14.5, y: -17}
+        - {x: 10.5, y: -17}
+        - {x: 20.5, y: -11}
+        - {x: 20.5, y: 14}
+        - {x: 19.5, y: 17}
     - name: Crab_5
       rect:
         serializedVersion: 2
@@ -160,8 +187,9 @@ TextureImporter:
         width: 33
         height: 18
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_6
       rect:
         serializedVersion: 2
@@ -170,8 +198,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_7
       rect:
         serializedVersion: 2
@@ -180,8 +209,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_8
       rect:
         serializedVersion: 2
@@ -190,8 +220,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_9
       rect:
         serializedVersion: 2
@@ -200,8 +231,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_10
       rect:
         serializedVersion: 2
@@ -210,8 +242,9 @@ TextureImporter:
         width: 31
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_11
       rect:
         serializedVersion: 2
@@ -220,8 +253,9 @@ TextureImporter:
         width: 31
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_12
       rect:
         serializedVersion: 2
@@ -230,8 +264,9 @@ TextureImporter:
         width: 31
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_13
       rect:
         serializedVersion: 2
@@ -240,8 +275,9 @@ TextureImporter:
         width: 31
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_14
       rect:
         serializedVersion: 2
@@ -250,8 +286,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_15
       rect:
         serializedVersion: 2
@@ -260,8 +297,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_16
       rect:
         serializedVersion: 2
@@ -270,8 +308,14 @@ TextureImporter:
         width: 44
         height: 32
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 16}
+        - {x: -22, y: -16}
+        - {x: 15, y: -16}
+        - {x: 22, y: -8}
+        - {x: 22, y: 16}
     - name: Crab_17
       rect:
         serializedVersion: 2
@@ -280,8 +324,18 @@ TextureImporter:
         width: 44
         height: 32
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: -16}
+        - {x: 18, y: -16}
+        - {x: 22, y: -6}
+        - {x: 22, y: 16}
+        - {x: -22, y: 16}
+        - {x: -22, y: -16}
+        - {x: -3, y: -16}
+        - {x: -2, y: -15}
+        - {x: -3, y: -12}
     - name: Crab_18
       rect:
         serializedVersion: 2
@@ -290,8 +344,14 @@ TextureImporter:
         width: 44
         height: 32
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 16}
+        - {x: -22, y: -16}
+        - {x: 15, y: -16}
+        - {x: 22, y: -8}
+        - {x: 22, y: 16}
     - name: Crab_19
       rect:
         serializedVersion: 2
@@ -300,8 +360,14 @@ TextureImporter:
         width: 44
         height: 32
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 16}
+        - {x: -22, y: -16}
+        - {x: 15, y: -16}
+        - {x: 22, y: -8}
+        - {x: 22, y: 16}
     - name: Crab_20
       rect:
         serializedVersion: 2
@@ -310,8 +376,14 @@ TextureImporter:
         width: 44
         height: 32
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 16}
+        - {x: -22, y: -16}
+        - {x: 15, y: -16}
+        - {x: 22, y: -8}
+        - {x: 22, y: 16}
     - name: Crab_21
       rect:
         serializedVersion: 2
@@ -320,8 +392,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_22
       rect:
         serializedVersion: 2
@@ -330,8 +403,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_23
       rect:
         serializedVersion: 2
@@ -340,8 +414,9 @@ TextureImporter:
         width: 46
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_24
       rect:
         serializedVersion: 2
@@ -350,8 +425,9 @@ TextureImporter:
         width: 52
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_25
       rect:
         serializedVersion: 2
@@ -360,8 +436,9 @@ TextureImporter:
         width: 53
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_26
       rect:
         serializedVersion: 2
@@ -370,8 +447,9 @@ TextureImporter:
         width: 53
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_27
       rect:
         serializedVersion: 2
@@ -380,8 +458,9 @@ TextureImporter:
         width: 58
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_28
       rect:
         serializedVersion: 2
@@ -390,8 +469,17 @@ TextureImporter:
         width: 62
         height: 36
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -31, y: 4}
+        - {x: -31, y: -12}
+        - {x: -27, y: -18}
+        - {x: 19, y: -18}
+        - {x: 31, y: -9}
+        - {x: 31, y: 10}
+        - {x: 27, y: 16}
     - name: Crab_29
       rect:
         serializedVersion: 2
@@ -400,8 +488,9 @@ TextureImporter:
         width: 62
         height: 31
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_31
       rect:
         serializedVersion: 2
@@ -410,8 +499,9 @@ TextureImporter:
         width: 61
         height: 31
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_33
       rect:
         serializedVersion: 2
@@ -420,8 +510,9 @@ TextureImporter:
         width: 62
         height: 31
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_34
       rect:
         serializedVersion: 2
@@ -430,8 +521,9 @@ TextureImporter:
         width: 63
         height: 31
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_35
       rect:
         serializedVersion: 2
@@ -440,8 +532,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_36
       rect:
         serializedVersion: 2
@@ -450,8 +543,9 @@ TextureImporter:
         width: 49
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_37
       rect:
         serializedVersion: 2
@@ -460,8 +554,9 @@ TextureImporter:
         width: 49
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_38
       rect:
         serializedVersion: 2
@@ -470,8 +565,9 @@ TextureImporter:
         width: 49
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_39
       rect:
         serializedVersion: 2
@@ -480,8 +576,9 @@ TextureImporter:
         width: 49
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_40
       rect:
         serializedVersion: 2
@@ -490,8 +587,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_41
       rect:
         serializedVersion: 2
@@ -500,8 +598,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_42
       rect:
         serializedVersion: 2
@@ -510,8 +609,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_43
       rect:
         serializedVersion: 2
@@ -520,8 +620,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_44
       rect:
         serializedVersion: 2
@@ -530,8 +631,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_45
       rect:
         serializedVersion: 2
@@ -540,8 +642,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_46
       rect:
         serializedVersion: 2
@@ -550,8 +653,16 @@ TextureImporter:
         width: 33
         height: 40
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -0.5, y: 20}
+        - {x: -9.5, y: 18}
+        - {x: -16.5, y: 7}
+        - {x: -16.5, y: -15}
+        - {x: -13.5, y: -20}
+        - {x: 16.5, y: -20}
+        - {x: 16.5, y: 20}
     - name: Crab_47
       rect:
         serializedVersion: 2
@@ -560,8 +671,15 @@ TextureImporter:
         width: 33
         height: 40
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: 20}
+        - {x: -16.5, y: 6}
+        - {x: -16.5, y: -16}
+        - {x: -13.5, y: -20}
+        - {x: 16.5, y: -20}
+        - {x: 16.5, y: 20}
     - name: Crab_48
       rect:
         serializedVersion: 2
@@ -570,8 +688,9 @@ TextureImporter:
         width: 31
         height: 37
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_49
       rect:
         serializedVersion: 2
@@ -580,8 +699,9 @@ TextureImporter:
         width: 31
         height: 37
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_50
       rect:
         serializedVersion: 2
@@ -590,8 +710,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_51
       rect:
         serializedVersion: 2
@@ -600,8 +721,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_52
       rect:
         serializedVersion: 2
@@ -610,8 +732,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_53
       rect:
         serializedVersion: 2
@@ -620,8 +743,9 @@ TextureImporter:
         width: 44
         height: 30
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Crab_30
       rect:
         serializedVersion: 2
@@ -630,8 +754,10 @@ TextureImporter:
         width: 33
         height: 19
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

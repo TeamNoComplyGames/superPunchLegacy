@@ -41,7 +41,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -61,16 +61,22 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: WebGL
+    maxTextureSize: 1024
+    textureFormat: -5
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
     sprites:
     - name: GoldenTiger_0
@@ -81,8 +87,15 @@ TextureImporter:
         width: 55
         height: 81
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.400002, y: 31.599976}
+        - {x: -21.400002, y: 18.599976}
+        - {x: -21.400002, y: -31.400024}
+        - {x: 22.599998, y: -31.400024}
+        - {x: 22.599998, y: 17.599976}
+        - {x: 16.599998, y: 31.599976}
     - name: GoldenTiger_1
       rect:
         serializedVersion: 2
@@ -91,8 +104,15 @@ TextureImporter:
         width: 55
         height: 81
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.150009, y: 31.599976}
+        - {x: -21.15001, y: 14.599976}
+        - {x: -21.15001, y: -31.400024}
+        - {x: 22.84999, y: -31.400024}
+        - {x: 22.84999, y: 21.599976}
+        - {x: 19.84999, y: 31.599976}
     - name: GoldenTiger_2
       rect:
         serializedVersion: 2
@@ -101,8 +121,15 @@ TextureImporter:
         width: 55
         height: 81
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.400009, y: 31.599976}
+        - {x: -21.40001, y: 20.599976}
+        - {x: -21.40001, y: -31.400024}
+        - {x: 21.59999, y: -31.400024}
+        - {x: 21.59999, y: 16.599976}
+        - {x: 13.599991, y: 31.599976}
     - name: GoldenTiger_3
       rect:
         serializedVersion: 2
@@ -111,8 +138,16 @@ TextureImporter:
         width: 55
         height: 81
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.300018, y: 31.599976}
+        - {x: -21.300018, y: 15.599976}
+        - {x: -21.300018, y: -19.400024}
+        - {x: -10.300018, y: -31.400024}
+        - {x: 22.699982, y: -31.400024}
+        - {x: 22.699982, y: 15.599976}
+        - {x: 12.699982, y: 31.599976}
     - name: GoldenTiger_4
       rect:
         serializedVersion: 2
@@ -121,8 +156,15 @@ TextureImporter:
         width: 55
         height: 81
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.225, y: 32.849976}
+        - {x: -21.225, y: 21.849976}
+        - {x: -21.225, y: -31.150024}
+        - {x: 13.775, y: -31.150024}
+        - {x: 21.775, y: -24.150024}
+        - {x: 21.775, y: 32.849976}
     - name: GoldenTiger_5
       rect:
         serializedVersion: 2
@@ -131,8 +173,16 @@ TextureImporter:
         width: 55
         height: 81
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.475006, y: 32.849976}
+        - {x: -21.475006, y: 16.849976}
+        - {x: -21.475006, y: -31.150024}
+        - {x: 10.524994, y: -31.150024}
+        - {x: 22.524994, y: -15.150024}
+        - {x: 22.524994, y: 16.849976}
+        - {x: 18.524994, y: 32.849976}
     - name: GoldenTiger_6
       rect:
         serializedVersion: 2
@@ -141,8 +191,15 @@ TextureImporter:
         width: 55
         height: 81
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.40001, y: 32.849976}
+        - {x: -21.40001, y: 24.849976}
+        - {x: -21.40001, y: -31.150024}
+        - {x: 9.599991, y: -31.150024}
+        - {x: 21.59999, y: -23.150024}
+        - {x: 21.59999, y: 32.849976}
     - name: GoldenTiger_7
       rect:
         serializedVersion: 2
@@ -151,8 +208,17 @@ TextureImporter:
         width: 55
         height: 81
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.275024, y: 32.849976}
+        - {x: -21.275024, y: 17.849976}
+        - {x: -21.275024, y: -9.150024}
+        - {x: -20.275024, y: -10.150024}
+        - {x: -10.275024, y: -31.150024}
+        - {x: 22.724976, y: -31.150024}
+        - {x: 22.724976, y: 25.849976}
+        - {x: 14.724976, y: 32.849976}
     - name: GoldenTiger_8
       rect:
         serializedVersion: 2
@@ -161,8 +227,16 @@ TextureImporter:
         width: 55
         height: 81
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.400002, y: 32.600006}
+        - {x: -10.400002, y: 30.600006}
+        - {x: -21.400002, y: 16.600006}
+        - {x: -21.400002, y: -31.399994}
+        - {x: 22.599998, y: -31.399994}
+        - {x: 22.599998, y: 14.600006}
+        - {x: 9.599998, y: 32.600006}
     - name: GoldenTiger_9
       rect:
         serializedVersion: 2
@@ -171,8 +245,15 @@ TextureImporter:
         width: 55
         height: 81
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.150009, y: 32.600006}
+        - {x: -21.15001, y: 18.600006}
+        - {x: -21.15001, y: -31.399994}
+        - {x: 22.84999, y: -31.399994}
+        - {x: 22.84999, y: 20.600006}
+        - {x: 11.849991, y: 32.600006}
     - name: GoldenTiger_10
       rect:
         serializedVersion: 2
@@ -181,8 +262,9 @@ TextureImporter:
         width: 27
         height: 81
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: GoldenTiger_11
       rect:
         serializedVersion: 2
@@ -191,8 +273,9 @@ TextureImporter:
         width: 27
         height: 81
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: GoldenTiger_12
       rect:
         serializedVersion: 2
@@ -201,8 +284,9 @@ TextureImporter:
         width: 27
         height: 81
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: GoldenTiger_13
       rect:
         serializedVersion: 2
@@ -211,8 +295,16 @@ TextureImporter:
         width: 59
         height: 76
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.574997, y: 30.22499}
+        - {x: -22.574997, y: -11.775009}
+        - {x: -13.574997, y: -29.77501}
+        - {x: 4.425003, y: -29.77501}
+        - {x: 24.425003, y: -18.77501}
+        - {x: 24.425003, y: 15.224991}
+        - {x: 12.425003, y: 30.22499}
     - name: GoldenTiger_14
       rect:
         serializedVersion: 2
@@ -221,8 +313,9 @@ TextureImporter:
         width: 27
         height: 81
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: GoldenTiger_15
       rect:
         serializedVersion: 2
@@ -231,8 +324,14 @@ TextureImporter:
         width: 62
         height: 81
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.400024, y: 32.574997}
+        - {x: -24.400024, y: -31.425003}
+        - {x: 5.5999756, y: -31.425003}
+        - {x: 24.599976, y: -8.425003}
+        - {x: 24.599976, y: 32.574997}
     - name: GoldenTiger_16
       rect:
         serializedVersion: 2
@@ -241,8 +340,9 @@ TextureImporter:
         width: 27
         height: 81
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: GoldenTiger_17
       rect:
         serializedVersion: 2
@@ -251,8 +351,9 @@ TextureImporter:
         width: 27
         height: 81
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: GoldenTiger_18
       rect:
         serializedVersion: 2
@@ -261,8 +362,9 @@ TextureImporter:
         width: 27
         height: 81
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: GoldenTiger_19
       rect:
         serializedVersion: 2
@@ -271,8 +373,15 @@ TextureImporter:
         width: 59
         height: 76
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.925018, y: 30.974998}
+        - {x: -22.925018, y: -23.025002}
+        - {x: -19.925018, y: -29.025002}
+        - {x: 16.074982, y: -29.025002}
+        - {x: 24.074982, y: -6.0250015}
+        - {x: 24.074982, y: 30.974998}
     - name: GoldenTiger_20
       rect:
         serializedVersion: 2
@@ -281,8 +390,9 @@ TextureImporter:
         width: 27
         height: 81
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: GoldenTiger_21
       rect:
         serializedVersion: 2
@@ -291,8 +401,15 @@ TextureImporter:
         width: 62
         height: 81
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.425003, y: 31.575}
+        - {x: -24.425003, y: 30.575}
+        - {x: -24.425003, y: -14.424999}
+        - {x: -13.425003, y: -31.425}
+        - {x: 24.574997, y: -31.425}
+        - {x: 24.574997, y: 31.575}
     - name: GoldenTiger_22
       rect:
         serializedVersion: 2
@@ -301,8 +418,17 @@ TextureImporter:
         width: 89
         height: 34
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 17}
+        - {x: -44.5, y: 9}
+        - {x: -44.5, y: -16}
+        - {x: -40.5, y: -17}
+        - {x: 41.5, y: -17}
+        - {x: 44.5, y: -16}
+        - {x: 44.5, y: 6}
+        - {x: 29.5, y: 17}
     - name: GoldenTiger_23
       rect:
         serializedVersion: 2
@@ -311,8 +437,18 @@ TextureImporter:
         width: 92
         height: 36
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 18}
+        - {x: -45, y: 12}
+        - {x: -46, y: 9}
+        - {x: -46, y: -17}
+        - {x: -43, y: -18}
+        - {x: 46, y: -18}
+        - {x: 46, y: 5}
+        - {x: 33, y: 18}
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

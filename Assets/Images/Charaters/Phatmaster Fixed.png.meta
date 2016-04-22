@@ -39,7 +39,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -59,16 +59,22 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: WebGL
+    maxTextureSize: 1024
+    textureFormat: -5
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
     sprites:
     - name: Phatmaster Fixed_0
@@ -81,6 +87,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Phatmaster Fixed_1
       rect:
         serializedVersion: 2
@@ -91,6 +98,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18.5}
+        - {x: -25, y: 15.5}
+        - {x: -25, y: -9.5}
+        - {x: -21, y: -18.5}
+        - {x: 21, y: -18.5}
+        - {x: 25, y: -8.5}
+        - {x: 25, y: 17.5}
+        - {x: 24, y: 18.5}
     - name: Phatmaster Fixed_2
       rect:
         serializedVersion: 2
@@ -101,6 +117,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.5, y: 14.5}
+        - {x: 20.5, y: 18.5}
+        - {x: -15.5, y: 18.5}
+        - {x: -22.5, y: 7.5}
+        - {x: -22.5, y: -18.5}
+        - {x: 22.5, y: -18.5}
     - name: Phatmaster Fixed_3
       rect:
         serializedVersion: 2
@@ -111,6 +134,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 18.5}
+        - {x: -22.5, y: 16.5}
+        - {x: -22.5, y: -7.5}
+        - {x: -19.5, y: -18.5}
+        - {x: 22.5, y: -18.5}
+        - {x: 22.5, y: 16.5}
+        - {x: 18.5, y: 18.5}
     - name: Phatmaster Fixed_4
       rect:
         serializedVersion: 2
@@ -121,6 +152,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18.5}
+        - {x: -25, y: 16.5}
+        - {x: -25, y: -13.5}
+        - {x: -23, y: -18.5}
+        - {x: 22, y: -18.5}
+        - {x: 25, y: -7.5}
+        - {x: 25, y: 14.5}
+        - {x: 22, y: 18.5}
     - name: Phatmaster Fixed_5
       rect:
         serializedVersion: 2
@@ -131,6 +171,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18.5}
+        - {x: -25, y: 15.5}
+        - {x: -25, y: -9.5}
+        - {x: -20, y: -18.5}
+        - {x: 24, y: -18.5}
+        - {x: 25, y: -15.5}
+        - {x: 25, y: 15.5}
+        - {x: 23, y: 18.5}
     - name: Phatmaster Fixed_6
       rect:
         serializedVersion: 2
@@ -141,6 +190,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18.5}
+        - {x: -25, y: 15.5}
+        - {x: -25, y: -9.5}
+        - {x: -21, y: -18.5}
+        - {x: 21, y: -18.5}
+        - {x: 25, y: -8.5}
+        - {x: 25, y: 17.5}
+        - {x: 24, y: 18.5}
     - name: Phatmaster Fixed_7
       rect:
         serializedVersion: 2
@@ -151,6 +209,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 18.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -18.5}
+        - {x: 21, y: -18.5}
+        - {x: 23, y: -17.5}
+        - {x: 25, y: -8.5}
+        - {x: 25, y: 11.5}
     - name: Phatmaster Fixed_8
       rect:
         serializedVersion: 2
@@ -161,6 +227,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 18.5}
+        - {x: -25, y: 14.5}
+        - {x: -25, y: -18.5}
+        - {x: 19, y: -18.5}
+        - {x: 23, y: -13.5}
+        - {x: 25, y: -1.5}
+        - {x: 25, y: 18.5}
     - name: Phatmaster Fixed_9
       rect:
         serializedVersion: 2
@@ -171,6 +245,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 18.5}
+        - {x: -25, y: 14.5}
+        - {x: -25, y: -18.5}
+        - {x: 23, y: -18.5}
+        - {x: 25, y: -15.5}
+        - {x: 25, y: 11.5}
+        - {x: 17, y: 18.5}
     - name: Phatmaster Fixed_10
       rect:
         serializedVersion: 2
@@ -181,6 +263,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 18.5}
+        - {x: -25, y: 14.5}
+        - {x: -25, y: -18.5}
+        - {x: 25, y: -18.5}
+        - {x: 25, y: 16.5}
+        - {x: 20, y: 18.5}
     - name: Phatmaster Fixed_11
       rect:
         serializedVersion: 2
@@ -191,6 +280,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Phatmaster Fixed_12
       rect:
         serializedVersion: 2
@@ -201,6 +291,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Phatmaster Fixed_13
       rect:
         serializedVersion: 2
@@ -211,6 +302,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Phatmaster Fixed_14
       rect:
         serializedVersion: 2
@@ -221,6 +313,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Phatmaster Fixed_15
       rect:
         serializedVersion: 2
@@ -231,6 +324,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Phatmaster Fixed_16
       rect:
         serializedVersion: 2
@@ -241,6 +335,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Phatmaster Fixed_17
       rect:
         serializedVersion: 2
@@ -251,6 +346,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Phatmaster Fixed_18
       rect:
         serializedVersion: 2
@@ -261,6 +357,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Phatmaster Fixed_19
       rect:
         serializedVersion: 2
@@ -271,6 +368,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Phatmaster Fixed_20
       rect:
         serializedVersion: 2
@@ -281,6 +379,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Phatmaster Fixed_21
       rect:
         serializedVersion: 2
@@ -291,6 +390,8 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

@@ -41,7 +41,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -61,16 +61,22 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: WebGL
+    maxTextureSize: 1024
+    textureFormat: -5
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
     sprites:
     - name: Dinosaur fighter_0
@@ -81,8 +87,14 @@ TextureImporter:
         width: 42
         height: 75
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 37.5}
+        - {x: -21, y: -33.5}
+        - {x: -16, y: -37.5}
+        - {x: 21, y: -37.5}
+        - {x: 21, y: 37.5}
     - name: Dinosaur fighter_1
       rect:
         serializedVersion: 2
@@ -91,8 +103,14 @@ TextureImporter:
         width: 42
         height: 75
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 37.5}
+        - {x: -21, y: -33.5}
+        - {x: -16, y: -37.5}
+        - {x: 21, y: -37.5}
+        - {x: 21, y: 37.5}
     - name: Dinosaur fighter_2
       rect:
         serializedVersion: 2
@@ -101,8 +119,15 @@ TextureImporter:
         width: 42
         height: 75
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 37.5}
+        - {x: -21, y: -32.5}
+        - {x: -14, y: -37.5}
+        - {x: 12, y: -37.5}
+        - {x: 21, y: -30.5}
+        - {x: 21, y: 37.5}
     - name: Dinosaur fighter_3
       rect:
         serializedVersion: 2
@@ -111,8 +136,14 @@ TextureImporter:
         width: 42
         height: 75
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 37.5}
+        - {x: -21, y: -33.5}
+        - {x: -16, y: -37.5}
+        - {x: 21, y: -37.5}
+        - {x: 21, y: 37.5}
     - name: Dinosaur fighter_4
       rect:
         serializedVersion: 2
@@ -121,8 +152,15 @@ TextureImporter:
         width: 42
         height: 69
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 34.5}
+        - {x: -21, y: -29.5}
+        - {x: -17, y: -34.5}
+        - {x: 21, y: -34.5}
+        - {x: 21, y: 10.5}
+        - {x: 16, y: 34.5}
     - name: Dinosaur fighter_5
       rect:
         serializedVersion: 2
@@ -131,8 +169,16 @@ TextureImporter:
         width: 42
         height: 69
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 34.5}
+        - {x: -21, y: -27.5}
+        - {x: -13, y: -34.5}
+        - {x: 10, y: -34.5}
+        - {x: 17, y: -31.5}
+        - {x: 21, y: -27.5}
+        - {x: 21, y: 34.5}
     - name: Dinosaur fighter_6
       rect:
         serializedVersion: 2
@@ -141,8 +187,17 @@ TextureImporter:
         width: 42
         height: 69
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 34.5}
+        - {x: -16, y: 32.5}
+        - {x: -21, y: 11.5}
+        - {x: -21, y: -33.5}
+        - {x: -19, y: -34.5}
+        - {x: 10, y: -34.5}
+        - {x: 21, y: -29.5}
+        - {x: 21, y: 34.5}
     - name: Dinosaur fighter_7
       rect:
         serializedVersion: 2
@@ -151,8 +206,15 @@ TextureImporter:
         width: 42
         height: 69
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 34.5}
+        - {x: -21, y: -31.5}
+        - {x: -15, y: -34.5}
+        - {x: 17, y: -34.5}
+        - {x: 21, y: -30.5}
+        - {x: 21, y: 34.5}
     - name: Dinosaur fighter_8
       rect:
         serializedVersion: 2
@@ -161,8 +223,16 @@ TextureImporter:
         width: 42
         height: 69
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 34.5}
+        - {x: -21, y: -5.5}
+        - {x: -21, y: -28.5}
+        - {x: -14, y: -34.5}
+        - {x: 17, y: -34.5}
+        - {x: 21, y: -33.5}
+        - {x: 21, y: 34.5}
     - name: Dinosaur fighter_9
       rect:
         serializedVersion: 2
@@ -171,8 +241,13 @@ TextureImporter:
         width: 42
         height: 69
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 34.5}
+        - {x: -21, y: -34.5}
+        - {x: 21, y: -34.5}
+        - {x: 21, y: 34.5}
     - name: Dinosaur fighter_10
       rect:
         serializedVersion: 2
@@ -181,8 +256,15 @@ TextureImporter:
         width: 42
         height: 69
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 34.5}
+        - {x: -21, y: -31.5}
+        - {x: -15, y: -34.5}
+        - {x: 17, y: -34.5}
+        - {x: 21, y: -30.5}
+        - {x: 21, y: 34.5}
     - name: Dinosaur fighter_11
       rect:
         serializedVersion: 2
@@ -191,8 +273,15 @@ TextureImporter:
         width: 42
         height: 75
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 37.5}
+        - {x: -21, y: 33.5}
+        - {x: -21, y: -33.5}
+        - {x: -16, y: -37.5}
+        - {x: 21, y: -37.5}
+        - {x: 21, y: 37.5}
     - name: Dinosaur fighter_12
       rect:
         serializedVersion: 2
@@ -201,8 +290,14 @@ TextureImporter:
         width: 42
         height: 75
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 37.5}
+        - {x: -21, y: -33.5}
+        - {x: -16, y: -37.5}
+        - {x: 21, y: -37.5}
+        - {x: 21, y: 37.5}
     - name: Dinosaur fighter_13
       rect:
         serializedVersion: 2
@@ -211,8 +306,16 @@ TextureImporter:
         width: 42
         height: 75
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: -37.5}
+        - {x: 12, y: -37.5}
+        - {x: 21, y: -30.5}
+        - {x: 21, y: 13.5}
+        - {x: 17, y: 37.5}
+        - {x: -21, y: 37.5}
+        - {x: -21, y: -32.5}
     - name: Dinosaur fighter_14
       rect:
         serializedVersion: 2
@@ -221,8 +324,16 @@ TextureImporter:
         width: 42
         height: 75
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 37.5}
+        - {x: -11, y: 22.5}
+        - {x: -21, y: -6.5}
+        - {x: -21, y: -30.5}
+        - {x: -7, y: -37.5}
+        - {x: 21, y: -37.5}
+        - {x: 21, y: 37.5}
     - name: Dinosaur fighter_15
       rect:
         serializedVersion: 2
@@ -231,8 +342,16 @@ TextureImporter:
         width: 51
         height: 73
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.9205017, y: 25.294876}
+        - {x: -8.920502, y: 22.294876}
+        - {x: -16.920502, y: 10.294876}
+        - {x: -16.920502, y: -23.705124}
+        - {x: 18.079498, y: -23.705124}
+        - {x: 18.079498, y: 11.294876}
+        - {x: 16.079498, y: 25.294876}
     - name: Dinosaur fighter_16
       rect:
         serializedVersion: 2
@@ -241,8 +360,16 @@ TextureImporter:
         width: 49
         height: 75
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.11282, y: 25.14872}
+        - {x: -16.11282, y: 12.14872}
+        - {x: -16.11282, y: -21.85128}
+        - {x: -15.11282, y: -23.85128}
+        - {x: -11.11282, y: -24.85128}
+        - {x: 17.88718, y: -24.85128}
+        - {x: 17.88718, y: 25.14872}
     - name: Dinosaur fighter_17
       rect:
         serializedVersion: 2
@@ -251,8 +378,14 @@ TextureImporter:
         width: 51
         height: 73
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.715378, y: 24.96154}
+        - {x: -16.715378, y: 6.96154}
+        - {x: -16.715378, y: -24.03846}
+        - {x: 18.284622, y: -24.03846}
+        - {x: 18.284622, y: 24.96154}
     - name: Dinosaur fighter_18
       rect:
         serializedVersion: 2
@@ -261,8 +394,15 @@ TextureImporter:
         width: 42
         height: 75
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 37.5}
+        - {x: -21, y: -37.5}
+        - {x: 8, y: -37.5}
+        - {x: 21, y: -33.5}
+        - {x: 21, y: 2.5}
+        - {x: 4, y: 37.5}
     - name: Dinosaur fighter_19
       rect:
         serializedVersion: 2
@@ -271,8 +411,16 @@ TextureImporter:
         width: 51
         height: 73
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.453857, y: 24.96154}
+        - {x: -14.546143, y: 24.96154}
+        - {x: -16.546143, y: 11.96154}
+        - {x: -16.546143, y: -24.03846}
+        - {x: 16.453857, y: -24.03846}
+        - {x: 18.453857, y: -20.03846}
+        - {x: 18.453857, y: 1.9615402}
     - name: Dinosaur fighter_20
       rect:
         serializedVersion: 2
@@ -281,8 +429,17 @@ TextureImporter:
         width: 49
         height: 75
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.9179497, y: 26.315384}
+        - {x: -14.08205, y: 26.315384}
+        - {x: -16.08205, y: 25.315384}
+        - {x: -16.08205, y: -23.684616}
+        - {x: -15.08205, y: -24.684616}
+        - {x: 17.91795, y: -24.684616}
+        - {x: 17.91795, y: -0.6846161}
+        - {x: 10.91795, y: 16.315384}
     - name: Dinosaur fighter_21
       rect:
         serializedVersion: 2
@@ -291,8 +448,15 @@ TextureImporter:
         width: 51
         height: 73
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.90512, y: 24.628204}
+        - {x: -16.90512, y: -24.371796}
+        - {x: 17.09488, y: -24.371796}
+        - {x: 18.09488, y: -23.371796}
+        - {x: 18.09488, y: 0.62820435}
+        - {x: 11.094879, y: 24.628204}
     - name: Dinosaur fighter_22
       rect:
         serializedVersion: 2
@@ -301,8 +465,15 @@ TextureImporter:
         width: 46
         height: 36
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 18}
+        - {x: -23, y: -18}
+        - {x: 22, y: -18}
+        - {x: 23, y: -15}
+        - {x: 23, y: 7}
+        - {x: 20, y: 18}
     - name: Dinosaur fighter_23
       rect:
         serializedVersion: 2
@@ -311,8 +482,16 @@ TextureImporter:
         width: 46
         height: 36
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 18}
+        - {x: -23, y: -18}
+        - {x: 22, y: -18}
+        - {x: 23, y: -15}
+        - {x: 23, y: 7}
+        - {x: 20, y: 18}
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

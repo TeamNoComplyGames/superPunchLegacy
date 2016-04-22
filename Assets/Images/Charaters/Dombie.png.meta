@@ -37,7 +37,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -57,16 +57,22 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: WebGL
+    maxTextureSize: 1024
+    textureFormat: -5
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
     sprites:
     - name: Dombie_0
@@ -77,8 +83,9 @@ TextureImporter:
         width: 40
         height: 9
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Dombie_1
       rect:
         serializedVersion: 2
@@ -87,8 +94,9 @@ TextureImporter:
         width: 22
         height: 43
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Dombie_2
       rect:
         serializedVersion: 2
@@ -97,8 +105,9 @@ TextureImporter:
         width: 22
         height: 43
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Dombie_3
       rect:
         serializedVersion: 2
@@ -107,8 +116,9 @@ TextureImporter:
         width: 22
         height: 43
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Dombie_4
       rect:
         serializedVersion: 2
@@ -117,8 +127,9 @@ TextureImporter:
         width: 21
         height: 43
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Dombie_5
       rect:
         serializedVersion: 2
@@ -127,8 +138,9 @@ TextureImporter:
         width: 21
         height: 43
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Dombie_6
       rect:
         serializedVersion: 2
@@ -137,8 +149,9 @@ TextureImporter:
         width: 22
         height: 41
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Dombie_7
       rect:
         serializedVersion: 2
@@ -147,8 +160,9 @@ TextureImporter:
         width: 22
         height: 41
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Dombie_8
       rect:
         serializedVersion: 2
@@ -157,8 +171,9 @@ TextureImporter:
         width: 22
         height: 41
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Dombie_9
       rect:
         serializedVersion: 2
@@ -167,8 +182,9 @@ TextureImporter:
         width: 22
         height: 41
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Dombie_10
       rect:
         serializedVersion: 2
@@ -177,8 +193,9 @@ TextureImporter:
         width: 22
         height: 41
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Dombie_11
       rect:
         serializedVersion: 2
@@ -187,8 +204,9 @@ TextureImporter:
         width: 20
         height: 42
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Dombie_12
       rect:
         serializedVersion: 2
@@ -197,8 +215,9 @@ TextureImporter:
         width: 20
         height: 42
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Dombie_13
       rect:
         serializedVersion: 2
@@ -207,8 +226,9 @@ TextureImporter:
         width: 20
         height: 40
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Dombie_14
       rect:
         serializedVersion: 2
@@ -217,8 +237,9 @@ TextureImporter:
         width: 18
         height: 41
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Dombie_15
       rect:
         serializedVersion: 2
@@ -227,8 +248,9 @@ TextureImporter:
         width: 20
         height: 42
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Dombie_16
       rect:
         serializedVersion: 2
@@ -237,8 +259,9 @@ TextureImporter:
         width: 20
         height: 42
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Dombie_17
       rect:
         serializedVersion: 2
@@ -247,8 +270,9 @@ TextureImporter:
         width: 20
         height: 40
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Dombie_18
       rect:
         serializedVersion: 2
@@ -257,8 +281,9 @@ TextureImporter:
         width: 18
         height: 41
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Dombie_19
       rect:
         serializedVersion: 2
@@ -267,8 +292,10 @@ TextureImporter:
         width: 41
         height: 10
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

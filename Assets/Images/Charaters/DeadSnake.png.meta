@@ -19,7 +19,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -39,16 +39,22 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: WebGL
+    maxTextureSize: 1024
+    textureFormat: -5
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
     sprites:
     - name: DeadSnake_0
@@ -61,6 +67,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 30.5}
+        - {x: -39, y: -7.5}
+        - {x: -44, y: -16.5}
+        - {x: -44, y: -27.5}
+        - {x: -38, y: -30.5}
+        - {x: 44, y: -30.5}
+        - {x: 44, y: 16.5}
+        - {x: 40, y: 30.5}
     - name: DeadSnake_1
       rect:
         serializedVersion: 2
@@ -69,8 +84,18 @@ TextureImporter:
         width: 88
         height: 61
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 30.5}
+        - {x: -39, y: -7.5}
+        - {x: -44, y: -16.5}
+        - {x: -44, y: -27.5}
+        - {x: -38, y: -30.5}
+        - {x: 44, y: -30.5}
+        - {x: 44, y: 16.5}
+        - {x: 40, y: 30.5}
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
